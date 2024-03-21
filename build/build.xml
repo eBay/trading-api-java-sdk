@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+
+<project default="help" basedir="." name="eBayService">
+    <property environment="env"/>
+    <property name="eBaySDK.home" value="${basedir}/.."/>
+    <property name="source.home" value="${eBaySDK.home}/source"/>
+    <property name="jdk.home" value="${env.JAVA_HOME}"/>
+
+    <property name="dependency.lib.home" value="${eBaySDK.home}/lib/externalLib/"/>
+
+    <!-- change the version number for a new release- -->
+    <property name="new.version" value="1331"/>
+    <property name="old.version" value="1131"/>
+    <!-- WSDL used for this release -->
+    <property name="WSDLURL" value="https://developer.ebay.com/webservices/${new.version}/eBaySvc.wsdl"/>
+    <property name="eBayWSDL" value="${eBaySDK.home}/source/wsdl/eBaySvc.wsdl"/>
+    <property name="javaGenPerl" value="${source.home}/javagen.pl"/>
+
+    <property name="srcSdkCore" value="${source.home}/core/src"/>
+    <property name="srcSoap" value="${source.home}/core/src/com/ebay/soap/eBLBaseComponents"/>
+    <property name="destSdkCore" value="${source.home}/core/build/ant_classes"/>
+    <property name="srcApiCalls" value="${source.home}/apiCalls/src"/>
+    <property name="destApiCalls" value="${source.home}/apiCalls/build/ant_classes"/>
+
+    <property name="srcHelper" value="${source.home}/helper/src"/>
+    <property name="destHelper" value="${source.home}/helper/build/ant_classes"/>
+
+    <property name="destLibDir" value="${eBaySDK.home}/lib"/>
+    <property name="destSrcJarDir" value="${eBaySDK.home}/lib/srcjar"/>
+
+    <property name="sdkCoreJar" value="ebaysdkcore.jar"/>
+    <property name="apiCallsJar" value="ebaycalls.jar"/>
+
+    <property name="helperJar" value="helper.jar"/>
+
+    <property name="sdkCoreSrcJar" value="ebaysdkcore-src.jar"/>
+    <property name="apiCallsSrcJar" value="ebaycalls-src.jar"/>
+
+    <property name="helperSrcJar" value="helper-src.jar"/>
+
+    <property name="destDoc" location="${eBaySDK.home}/docs/LibRef/"/>
+    <property name="srcDoc" location="${eBaySDK.home}/docgen/"/>
+    <property name="new.apiName" value="eBay SDK v${new.version}.0 for Java"/>
+    <property name="old.apiName" value="eBay SDK v${old.version}.0 for Java"/>
+    <property name="jdiffPath" value="${srcDoc}/jdiff-1.1.0/"/>
+
+    <!-- change the path for a new release if necessary -->
+    <property name="old.sdk.home" value="C:\TradingSDK"/>
+    <property name="old.source.home" value="${old.sdk.home}/source"/>
+    <property name="old.axis.lib.home" value="${old.sdk.home}/externalLib/axis-1_1/"/>
+    <property name="old.srcSdkCore" value="${old.source.home}/core/src"/>
+    <property name="old.srcApiCalls" value="${old.source.home}/apiCalls/src"/>
+
+    <property name="old.srcHelper" value="${old.source.home}/helper/src"/>
+    <property name="old.srcEps" value="${old.source.home}/eps/src"/>
+
+    <property name="old.srcPath" value="${old.srcSdkCore}:${old.srcApiCalls}:${old.srcEps}:${old.srcHelper}"/>
+    <property name="new.srcPath" value="${srcSdkCore}:${srcApiCalls}:${srcHelper}"/>
+
+    <path id="dependency.lib.classpath">
+        <pathelement location="${jdk.home}/lib/tools.jar"/>
+        <fileset dir="${dependency.lib.home}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <path id="sdk.classpath">
+        <pathelement location="${destSdkCore}"/>
+        <pathelement location="${destApiCalls}"/>
+        <pathelement location="${destHelper}"/>
+    </path>
+
+    <path id="old.jaxws.classpath">
+        <pathelement location="${jdk.home}/lib/tools.jar"/>
+        <fileset dir="${old.sdk.home}/lib/externalLib/">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="checkJavaHome" unless="env.JAVA_HOME">
+        <fail>
+            "JAVA_HOME" environment variable is not set. You may set "JAVA_HOME" in
+            setenv.bat in the SDK root and run it.
+        </fail>
+    </target>
+
+    <target name="checkEnvironment">
+        <antcall target="checkJavaHome"/>
+    </target>
+
+    <!--It should point to siteURL for the final build ##REVERT##-->
+    <target name="getWsdl">
+        <get src="${WSDLURL}" dest="${eBayWSDL}"/>
+    </target>
+
+    <!-- The wsimport tool for JAX-WS-->
+    <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+        <classpath refid="dependency.lib.classpath"/>
+    </taskdef>
+
+    <target name="clean" depends="cleanClasses">
+        <echo message="Deleting previous jax-ws ri generated Java files..."/>
+        <delete dir="${srcSoap}"/>
+    </target>
+
+    <target name="cleanClasses">
+        <delete dir="${destSdkCore}"/>
+        <delete dir="${destApiCalls}"/>
+        <delete dir="${destHelper}"/>
+        <delete file="${destLibDir}/${sdkCoreJar}"/>
+        <delete file="${destLibDir}/${apiCallsJar}"/>
+        <delete file="${destLibDir}/${helperJar}"/>
+        <delete file="${destSrcJarDir}/${sdkCoreSrcJar}"/>
+        <delete file="${destSrcJarDir}/${apiCallsSrcJar}"/>
+
+        <delete file="${destSrcJarDir}/${helperSrcJar}"/>
+    </target>
+
+    <target name="init" depends="checkEnvironment">
+        <echo message="--------initialize ${ant.project.name} --------"/>
+        <mkdir dir="${destSdkCore}"/>
+        <mkdir dir="${destApiCalls}"/>
+        <mkdir dir="${destHelper}"/>
+    </target>
+
+    <target name="codeGen" depends="clean, init">
+        <wsimport
+                fork="true"
+                debug="false"
+                verbose="true"
+                xnocompile="true"
+                sourcedestdir="${srcSdkCore}"
+                wsdl="${eBayWSDL}"
+                quiet="true"
+                package="com.ebay.soap.eBLBaseComponents">
+            <binding dir="${eBaySDK.home}" includes="build\custom-binding.xml, build\jaxb-binding.xjb"/>
+            <jvmarg value="-Xms64m"/>
+            <jvmarg value="-Xmx256m"/>
+        </wsimport>
+        <!--modify the first(header) comment of all CodeType, for document purpose-->
+        <replaceregexp>
+            <regexp pattern="\*/"/>
+            <substitution
+                    expression="* Note: Per JAXB standards, underscores are added to separate words in enumerations (e.g., PayPal becomes PAY_PAL).${line.separator} */"/>
+            <fileset dir="${srcSoap}" includes="*CodeType.java"/>
+        </replaceregexp>
+
+    </target>
+
+    <target name="buildSdkCore" depends="resourceSdkCore">
+
+        <echo message="Compile sdkCore source..."/>
+        <javac srcdir="${srcSdkCore}"
+               destdir="${destSdkCore}"
+               verbose="false">
+            <classpath refid="dependency.lib.classpath"/>
+        </javac>
+
+        <echo message="Creating sdkCore jar file..."/>
+        <jar destfile="${destLibDir}/${sdkCoreJar}"
+             basedir="${destSdkCore}"/>
+
+        <echo message="Creating sdkCore source jar file..."/>
+        <jar destfile="${destSrcJarDir}/${sdkCoreSrcJar}"
+             basedir="${srcSdkCore}">
+            <include name="**/*.java"/>
+        </jar>
+
+    </target>
+
+    <target name="resourceSdkCore">
+        <!--put the eBay wsdl into the package -->
+        <copy file="${eBayWSDL}" todir="${destSdkCore}"/>
+    </target>
+
+
+    <target name="buildApiCalls" depends="resourceApiCalls">
+
+        <echo message="Compile apiCalls source..."/>
+        <javac srcdir="${srcApiCalls}"
+               destdir="${destApiCalls}"
+               verbose="false"
+               debug="true">
+            <classpath refid="dependency.lib.classpath"/>
+            <classpath refid="sdk.classpath"/>
+        </javac>
+
+        <echo message="Creating apiCalls jar file..."/>
+        <jar destfile="${destLibDir}/${apiCallsJar}"
+             basedir="${destApiCalls}"
+             excludes="**/*.properties">
+            <fileset dir="${destApiCalls}">
+                <include name="*.xsl"/>
+            </fileset>
+        </jar>
+
+        <echo message="Creating apiCalls source jar file..."/>
+        <jar destfile="${destSrcJarDir}/${apiCallsSrcJar}"
+             basedir="${srcApiCalls}">
+            <include name="**/*.java"/>
+        </jar>
+    </target>
+
+
+    <target name="resourceApiCalls">
+        <copy todir="${destApiCalls}">
+            <fileset dir="${srcApiCalls}">
+                <include name="**/*.xsl"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="buildHelper" depends="resourceHelper">
+
+        <echo message="Compile helper source..."/>
+        <javac srcdir="${srcHelper}"
+               destdir="${destHelper}"
+               verbose="false"
+               debug="true">
+            <classpath refid="dependency.lib.classpath"/>
+            <classpath refid="sdk.classpath"/>
+        </javac>
+
+        <echo message="Creating helper jar file..."/>
+        <jar destfile="${destLibDir}/${helperJar}"
+             basedir="${destHelper}"
+             excludes="**/*.properties">
+            <fileset dir="${destHelper}">
+                <include name="*.xml"/>
+            </fileset>
+        </jar>
+
+        <echo message="Creating helper source jar file..."/>
+        <jar destfile="${destSrcJarDir}/${helperSrcJar}"
+             basedir="${srcHelper}">
+            <include name="**/*.java"/>
+        </jar>
+    </target>
+
+    <target name="resourceHelper">
+        <copy todir="${destHelper}">
+            <fileset dir="${srcHelper}">
+                <include name="**/*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="cleanDoc">
+        <echo message="Deleting previous javadoc files..."/>
+        <delete includeemptydirs="true">
+            <fileset dir="${destDoc}" includes="**/*"/>
+        </delete>
+    </target>
+
+    <!-- for internal use -->
+    <!--  <target name="docGen" depends="cleanDoc, javaDocGen, jDiffGen"/>-->
+    <target name="docGen" depends="cleanDoc, javaDocGen"/>
+
+
+    <!-- for internal use -->
+    <target name="javaDocGen">
+        <javadoc locale="en_US"
+                 sourcepath="${new.srcPath}"
+                 excludepackagenames="com.ebay.sdk.logging.*"
+                 destdir="${destDoc}"
+                 overview="${srcDoc}/SDKJavaOverview.htm"
+                 stylesheetfile="${srcDoc}/libref.css"
+                 use="true"
+                 splitindex="true"
+                 windowtitle="${new.apiName}"
+                 doctitle="${new.apiName}"
+                 maxmemory="256m">
+            <classpath refid="dependency.lib.classpath"/>
+            <link href="https://docs.oracle.com/javase/8/docs/api/"/>
+            <group title="API Library" packages="com.ebay.sdk.call:com.ebay.sdk.xmlapi:com.ebay.sdk.model"/>
+            <!--<group title="Attributes Library" packages="com.ebay.sdk.attributes*"/>-->
+            <group title="Kernel Library" packages="com.ebay.sdk:com.ebay.sdk.util:com.ebay.sdk.handler:com.ebay.soap*"/>
+            <group title="Helper Library" packages="com.ebay.sdk.helper*"/>
+            <group title="Picture Library" packages="com.ebay.sdk.pictureservice*"/>
+            <header><![CDATA[<a href="{@docroot}/changes.html" target="_blank">
+            	                     <FONT CLASS="NavBarFont2" SIZE="-2">Changes since<br>the last release</FONT>
+            	                 </a>]]>
+            </header>
+            <bottom><![CDATA[<p><font face="Verdana,Arial,Helvetica,sans-serif" size="-2">
+            	               The information contained in this document is proprietary and confidential. 
+            	               Use of this information and the eBay API requires a Non-Disclosure Agreement (NDA) between the user and eBay Inc. 
+            	               For information regarding a qualifying NDA, contact Developer Relations:
+            	               <a href="mailto:developer-relations@ebay.com">developer-relations@ebay.com</a>
+            	               <br>&copy; 2024 eBay Inc. All rights reserved.</font>]]>
+            </bottom>
+        </javadoc>
+    </target>
+
+    <!-- for internal use -->
+    <target name="jDiffGen">
+        <!-- generate xml file for new api -->
+        <javadoc sourcepath="${new.srcPath}"
+                 excludepackagenames="com.ebay.sdk.logging.*"
+                 maxmemory="256m">
+            <doclet name="jdiff.JDiff"
+                    path="${jdiffPath}/jdiff.jar">
+                <param name="-apiname" value="${new.apiName}"/>
+                <param name="-apidir" value="${srcDoc}"/>
+                <param name="-baseURI" value="http://www.w3.org"/>
+            </doclet>
+            <classpath refid="dependency.lib.classpath"/>
+        </javadoc>
+
+        <!-- generate xml file for old api -->
+        <javadoc sourcepath="${old.srcPath}"
+                 excludepackagenames="com.ebay.sdk.logging.*"
+                 maxmemory="256m">
+            <doclet name="jdiff.JDiff"
+                    path="${jdiffPath}/jdiff.jar">
+                <param name="-apiname" value="${old.apiName}"/>
+                <param name="-apidir" value="${srcDoc}"/>
+                <param name="-baseURI" value="http://www.w3.org"/>
+            </doclet>
+            <classpath refid="old.jaxws.classpath"/>
+        </javadoc>
+
+        <!-- generate jdiff doc -->
+        <javadoc maxmemory="256m">
+            <doclet name="jdiff.JDiff"
+                    path="${jdiffPath}/jdiff.jar;${jdiffPath}/xerces.jar">
+                <param name="-oldapi" value="${old.apiName}"/>
+                <param name="-oldapidir" value="${srcDoc}"/>
+                <param name="-newapi" value="${new.apiName}"/>
+                <param name="-newapidir" value="${srcDoc}"/>
+                <param name="-d" value="${destDoc}"/>
+                <param name="-stats"/>
+            </doclet>
+            <source file="${jdiffPath}/Null.java"/>
+        </javadoc>
+    </target>
+
+    <target name="build" depends="clean, init, codeGen, buildSdkCore, buildApiCalls, buildHelper"/>
+    <target name="fastbuild" depends="buildSdkCore, buildApiCalls, buildHelper"/>
+    <!-- for internal use -->
+    <target name="buildall" depends="clean, init, codeGen, buildSdkCore, buildApiCalls, buildHelper"/>
+
+    <target name="help">
+        <echo message="help : ant target-name"/>
+        <echo message="valid target names are : "/>
+        <echo message="clean                            ==> deletes all generated files and compiled classes"/>
+        <echo message="getWsdl				==> get wsdl from eBay developer site"/>
+        <echo message="codeGen                          ==> generates source file from wsdl"/>
+        <echo message="buildSdkCore                     ==> compiles and builds the ebaysdkcore.jar"/>
+        <echo message="buildApiCalls                    ==> compiles and builds the ebaycalls.jar"/>
+        <echo message="buildHelper                      ==> compiles and builds the helper.jar"/>
+        <echo message="build                            ==> compiles and builds all jars"/>
+        <echo message="fastbuild                        ==> compiles and builds all jars without re-generating proxy/wrappers from wsdl"/>
+    </target>
+
+</project>

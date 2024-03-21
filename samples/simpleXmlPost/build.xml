@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="run" name="SimpleXmlPost">
+  <property environment="env"/>
+  <property name="jdk.home" value="${env.JAVA_HOME}"/> 
+  <property name="dest" value="classes.ant"/>
+  <property name="jaxws.lib.home" value="${basedir}/../../lib/externalLib/"/>
+  <property name="ebaysdklib.home" value="../../lib"/>
+  <property name="src" value="src"/>
+    <path id="run.classpath">
+          <pathelement location="${jdk.home}/lib/tools.jar"/>
+    	  <pathelement path="${dest}"/>
+          <fileset dir="${ebaysdklib.home}">
+            <include name="*.jar"/>            
+          </fileset>
+          <fileset dir="${jaxws.lib.home}">
+                <include name="*.jar"/>            
+          </fileset>
+    </path>
+    
+  <target name="checkJavaHome" unless="env.JAVA_HOME">
+    	<fail>
+    	   "JAVA_HOME" environment variable is not set. You may set "JAVA_HOME" in
+    	   setenv.bat in the SDK root and run it.
+    	</fail>
+  </target>
+    
+  <target name="checkEnvironment">
+       <antcall target="checkJavaHome"/>
+  </target>
+     
+  <target depends="init" name="compile">
+    <javac debug="true" deprecation="true" destdir="${dest}" nowarn="false">
+        <classpath refid="run.classpath" />    
+    	<src path="${src}"/>
+    </javac>
+  </target>
+	
+    <target name="run" depends="compile"> 
+        <java classname="simplexmlpost.SimpleXmlPost"     
+            classpathref="run.classpath"
+            fork="true" maxmemory="256m">                
+        </java>    
+    </target>
+	
+  <target name="clean">
+    <delete failonerror="false" includeemptydirs="true">
+      <fileset dir="${dest}"/>
+    </delete>
+  </target>
+  <target name="init" depends="checkEnvironment">
+    <mkdir dir="${dest}"/>
+  </target>
+</project>

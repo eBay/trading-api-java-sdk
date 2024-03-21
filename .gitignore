@@ -1,0 +1,5 @@
+.idea
+.project
+.classpath
+log4j.properties
+*.log

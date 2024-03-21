@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="rebuild" name="signInRedirect">	
+  <property environment="env"/>
+  <property name="tomcat.home" value="${env.TOMCAT_HOME}"/>
+  <property name="jaxws.lib.home" value="${basedir}/../../lib/externalLib/"/>
+  <property name="jdk.home" value="${env.JAVA_HOME}"/> 
+  <property name="dest" value="classes.ant"/>
+  <property name="ebaysdklib.home" value="../../lib"/>
+  <property name="src" value="src"/>
+  <path id="jaxws.classpath">
+        <pathelement location="${jdk.home}/lib/tools.jar"/>
+        <fileset dir="${jaxws.lib.home}">
+            <include name="*.jar"/>            
+        </fileset>     	
+  </path>
+	
+  <path id="tomcat.classpath">
+        <fileset dir="${tomcat.home}/common/lib/">
+            <include name="*.jar"/>            
+        </fileset>
+  </path>
+	
+  <path id="sdk.classpath">
+    <fileset dir="${ebaysdklib.home}">
+        <include name="*.jar"/>            
+    </fileset>       
+  </path>
+  
+  <target name="checkJavaHome" unless="env.JAVA_HOME">
+    	<fail>
+    	   "JAVA_HOME" environment variable is not set. You may set "JAVA_HOME" in
+    	   setenv.bat in the SDK root and run it.
+    	</fail>
+  </target>
+  
+  <target name="checkTomcatHome" unless="env.TOMCAT_HOME">
+    	<fail>
+    	   "TOMCAT_HOME" environment variable is not set. You may set "TOMCAT_HOME" in
+    	   setenv.bat in the SDK root and run it.
+    	</fail>
+  </target>
+    
+  <target name="checkEnvironment">
+       <antcall target="checkJavaHome"/>
+       <antcall target="checkTomcatHome"/>
+  </target>  
+
+  <target depends="init" name="javacompile">
+    <javac debug="true" deprecation="true" destdir="${dest}" nowarn="false">
+      <classpath refid="jaxws.classpath" />
+      <classpath refid="tomcat.classpath" />
+      <classpath refid="sdk.classpath" />
+      <src path="${src}"/>
+    </javac>
+  </target>
+
+  <target depends="resource" name="WebModuleNode">
+    <war compress="false" destfile="signinRedirect.war" webxml="WebContent/WEB-INF/web.xml">
+      <fileset dir="WebContent">
+        <include name="errorPage.jsp"/>
+        <include name="credentials.jsp"/>
+        <include name="Accept.jsp"/>
+        <include name="Reject.jsp"/>
+      </fileset>
+    	
+      <fileset dir="WebContent">
+         <include name="images/*.*"/>
+      </fileset>
+    	
+      <classes dir="${dest}">
+	     <include name="**/*.*"/>
+      </classes>
+
+      <lib dir="${jaxws.lib.home}">
+          <include name="*.jar"/>
+      </lib>
+      <lib dir="${ebaysdklib.home}">
+          <include name="*.jar"/>
+      </lib>
+    </war>
+  </target>
+  <target name="cleanup">
+    <delete file="signinRedirect.war"/>
+    <delete failonerror="false" includeemptydirs="true">
+      <fileset dir="${dest}"/>
+    </delete>
+  </target>
+  <target name="resource">
+    <copy todir="${dest}">
+      <fileset dir="${src}">
+        <include name="**/*.jpe"/>
+        <include name="**/*.jpeg"/>
+        <include name="**/*.rmf"/>
+        <include name="**/*.wav"/>
+        <include name="**/*.mid"/>
+        <include name="**/*.midi"/>
+        <include name="**/*.au"/>
+        <include name="**/*.gif"/>
+        <include name="**/*.png"/>
+        <include name="**/*.jpg"/>
+        <include name="**/*.aiff"/>
+        <include name="**/*.properties"/>
+      </fileset>
+    </copy>
+  </target>
+  <target name="javadoc"/>
+  <target depends="cleanup" name="clean"/>
+  <target name="precompile"/>
+  <target depends="javacompile" name="compile"/>
+  <target name="postcompile"/>
+  <target depends="WebModuleNode,javadoc,resource" name="package"/>
+  <target name="deploy"/>
+  <target depends="precompile,compile,postcompile,package,deploy" name="make"/>
+  <target depends="clean,make" name="rebuild"/>
+  <target name="init" depends="checkEnvironment">
+    <mkdir dir="${dest}"/>
+  </target>
+</project>
