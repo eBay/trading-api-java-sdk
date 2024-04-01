@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 
-<project default="help" basedir="." name="eBayService">
+<project default="help" basedir="." name="eBayService"
+    xmlns:artifact="antlib:org.apache.maven.artifact.ant">
     <property environment="env"/>
     <property name="eBaySDK.home" value="${basedir}/.."/>
     <property name="source.home" value="${eBaySDK.home}/source"/>
     <property name="jdk.home" value="${env.JAVA_HOME}"/>
-
     <property name="dependency.lib.home" value="${eBaySDK.home}/lib/externalLib/"/>
+    <property name="ossrh-server-id" value="ossrh" />
+    <property name="ossrh.deploy.url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/"/>
 
     <!-- change the version number for a new release- -->
     <property name="new.version" value="1331"/>
@@ -77,6 +79,10 @@
         </fileset>
     </path>
 
+    <!-- Maven Ant Tasks -->
+    <path id="maven-ant-tasks.classpath" path="${eBaySDK.home}/lib/externalLib/maven-ant-tasks-2.1.3.jar" />
+    <typedef resource="org/apache/maven/artifact/ant/antlib.xml" uri="antlib:org.apache.maven.artifact.ant" classpathref="maven-ant-tasks.classpath" />
+
     <target name="checkJavaHome" unless="env.JAVA_HOME">
         <fail>
             "JAVA_HOME" environment variable is not set. You may set "JAVA_HOME" in
@@ -86,6 +92,102 @@
 
     <target name="checkEnvironment">
         <antcall target="checkJavaHome"/>
+    </target>
+    
+    <!-- Deploy the generated JARs to Maven Central -->
+    <target name="deploy">
+        <!-- Deploy the main JARs -->
+        <exec executable="mvn">
+            <arg value="gpg:sign-and-deploy-file"/>
+            <arg value="-Dgpg.keyname=${gpg.keyname}"/>
+            <arg value="-Dgpg.passphrase=${gpg.passphrase}"/>
+            <arg value="-Durl=${ossrh.deploy.url}"/>
+            <arg value="-DrepositoryId=ossrh"/>
+            <arg value="-Dfile=${eBaySDK.home}/lib/ebaycalls/ebaycalls.jar"/>
+            <arg value="-DpomFile=${eBaySDK.home}/lib/ebaycalls/pom.xml"/>
+        </exec>
+        <exec executable="mvn">
+            <arg value="gpg:sign-and-deploy-file"/>
+            <arg value="-Dgpg.keyname=${gpg.keyname}"/>
+            <arg value="-Dgpg.passphrase=${gpg.passphrase}"/>
+            <arg value="-Durl=${ossrh.deploy.url}"/>
+            <arg value="-DrepositoryId=ossrh"/>
+            <arg value="-Dfile=${eBaySDK.home}/lib/sdkcore/ebaysdkcore.jar"/>
+            <arg value="-DpomFile=${eBaySDK.home}/lib/sdkcore/pom.xml"/>
+        </exec>
+        <exec executable="mvn">
+            <arg value="gpg:sign-and-deploy-file"/>
+            <arg value="-Dgpg.keyname=${gpg.keyname}"/>
+            <arg value="-Dgpg.passphrase=${gpg.passphrase}"/>
+            <arg value="-Durl=${ossrh.deploy.url}"/>
+            <arg value="-DrepositoryId=ossrh"/>
+            <arg value="-Dfile=${eBaySDK.home}/lib/helper/helper.jar"/>
+            <arg value="-DpomFile=${eBaySDK.home}/lib/helper/pom.xml"/>
+        </exec>
+
+        <!-- Deploy the -sources JARs -->
+        <exec executable="mvn">
+            <arg value="gpg:sign-and-deploy-file"/>
+            <arg value="-Dgpg.keyname=${gpg.keyname}"/>
+            <arg value="-Dgpg.passphrase=${gpg.passphrase}"/>
+            <arg value="-Durl=${ossrh.deploy.url}"/>
+            <arg value="-DrepositoryId=ossrh"/>
+            <arg value="-Dfile=${eBaySDK.home}/lib/ebaycalls/ebaycalls-sources.jar"/>
+            <arg value="-DpomFile=${eBaySDK.home}/lib/ebaycalls/pom.xml"/>
+            <arg value="-Dclassifier=sources"/>
+        </exec>
+        <exec executable="mvn">
+            <arg value="gpg:sign-and-deploy-file"/>
+            <arg value="-Dgpg.keyname=${gpg.keyname}"/>
+            <arg value="-Dgpg.passphrase=${gpg.passphrase}"/>
+            <arg value="-Durl=${ossrh.deploy.url}"/>
+            <arg value="-DrepositoryId=ossrh"/>
+            <arg value="-Dfile=${eBaySDK.home}/lib/sdkcore/ebaysdkcore-sources.jar"/>
+            <arg value="-DpomFile=${eBaySDK.home}/lib/sdkcore/pom.xml"/>
+            <arg value="-Dclassifier=sources"/>
+        </exec>
+        <exec executable="mvn">
+            <arg value="gpg:sign-and-deploy-file"/>
+            <arg value="-Dgpg.keyname=${gpg.keyname}"/>
+            <arg value="-Dgpg.passphrase=${gpg.passphrase}"/>
+            <arg value="-Durl=${ossrh.deploy.url}"/>
+            <arg value="-DrepositoryId=ossrh"/>
+            <arg value="-Dfile=${eBaySDK.home}/lib/helper/helper-sources.jar"/>
+            <arg value="-DpomFile=${eBaySDK.home}/lib/helper/pom.xml"/>
+            <arg value="-Dclassifier=sources"/>
+        </exec>
+
+        <!-- Deploy the -javadocs JARs -->
+        <exec executable="mvn">
+            <arg value="gpg:sign-and-deploy-file"/>
+            <arg value="-Dgpg.keyname=${gpg.keyname}"/>
+            <arg value="-Dgpg.passphrase=${gpg.passphrase}"/>
+            <arg value="-Durl=${ossrh.deploy.url}"/>
+            <arg value="-DrepositoryId=ossrh"/>
+            <arg value="-Dfile=${eBaySDK.home}/lib/ebaycalls/ebaycalls-javadoc.jar"/>
+            <arg value="-DpomFile=${eBaySDK.home}/lib/ebaycalls/pom.xml"/>
+            <arg value="-Dclassifier=javadoc"/>
+        </exec>
+        <exec executable="mvn">
+            <arg value="gpg:sign-and-deploy-file"/>
+            <arg value="-Dgpg.keyname=${gpg.keyname}"/>
+            <arg value="-Dgpg.passphrase=${gpg.passphrase}"/>
+            <arg value="-Durl=${ossrh.deploy.url}"/>
+            <arg value="-DrepositoryId=ossrh"/>
+            <arg value="-Dfile=${eBaySDK.home}/lib/sdkcore/ebaysdkcore-javadoc.jar"/>
+            <arg value="-DpomFile=${eBaySDK.home}/lib/sdkcore/pom.xml"/>
+            <arg value="-Dclassifier=javadoc"/>
+        </exec>
+        <exec executable="mvn">
+            <arg value="gpg:sign-and-deploy-file"/>
+            <arg value="-Dgpg.keyname=${gpg.keyname}"/>
+            <arg value="-Dgpg.passphrase=${gpg.passphrase}"/>
+            <arg value="-Durl=${ossrh.deploy.url}"/>
+            <arg value="-DrepositoryId=ossrh"/>
+            <arg value="-Dfile=${eBaySDK.home}/lib/helper/helper-javadoc.jar"/>
+            <arg value="-DpomFile=${eBaySDK.home}/lib/helper/pom.xml"/>
+            <arg value="-Dclassifier=javadoc"/>
+        </exec>
     </target>
 
     <!--It should point to siteURL for the final build ##REVERT##-->
@@ -252,6 +354,50 @@
         </delete>
     </target>
 
+    <target name="generate-all-javadocs">
+        <antcall target="generate-javadoc-jar">
+            <param name="srcjar.dir" value="../lib/ebaycalls/ebaycalls-sources.jar"/>
+            <param name="javadoc.dir" value="../lib/ebaycalls/javadocs"/>
+            <param name="javadoc.jar" value="../lib/ebaycalls/ebaycalls-javadoc.jar"/>
+        </antcall>
+        <antcall target="generate-javadoc-jar">
+            <param name="srcjar.dir" value="../lib/helper/helper-sources.jar"/>
+            <param name="javadoc.dir" value="../lib/helper/javadocs"/>
+            <param name="javadoc.jar" value="../lib/helper/helper-javadoc.jar"/>
+        </antcall>
+        <antcall target="generate-javadoc-jar">
+            <param name="srcjar.dir" value="../lib/sdkcore/ebaysdkcore-sources.jar"/>
+            <param name="javadoc.dir" value="../lib/sdkcore/javadocs"/>
+            <param name="javadoc.jar" value="../lib/sdkcore/ebaysdkcore-javadoc.jar"/>
+        </antcall>
+    </target>
+
+    <target name="generate-javadoc-jar">
+        <!-- Create a temporary directory to extract the source JAR -->
+        <tempfile property="temp.dir" destdir="${java.io.tmpdir}" prefix="javadoc" deleteonexit="true"/>
+        <mkdir dir="${temp.dir}"/>
+
+        <!-- Check if the source JAR file exists -->
+        <available file="${srcjar.dir}" property="srcjar.exists"/>
+        <fail unless="srcjar.exists" message="Source JAR file ${srcjar.dir} does not exist"/>
+
+        <!-- Extract the source JAR to the temporary directory -->
+        <unjar src="${srcjar.dir}" dest="${temp.dir}"/>
+
+        <!-- Generate the Javadocs from the extracted source files -->
+        <javadoc sourcepath="${temp.dir}" destdir="${javadoc.dir}" packagenames="com.ebay.*">
+            <classpath>
+                <pathelement location="lib/some-library.jar"/>
+            </classpath>
+        </javadoc>
+
+        <!-- Package the Javadocs into a JAR -->
+        <jar basedir="${javadoc.dir}" destfile="${javadoc.jar}"/>
+
+        <!-- Delete the temporary directory -->
+        <delete dir="${temp.dir}"/>
+    </target>
+
     <!-- for internal use -->
     <!--  <target name="docGen" depends="cleanDoc, javaDocGen, jDiffGen"/>-->
     <target name="docGen" depends="cleanDoc, javaDocGen"/>
@@ -351,5 +497,4 @@
         <echo message="build                            ==> compiles and builds all jars"/>
         <echo message="fastbuild                        ==> compiles and builds all jars without re-generating proxy/wrappers from wsdl"/>
     </target>
-
 </project>

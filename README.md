@@ -1,19 +1,18 @@
-Trading API Java SDK
-=============================
+# Trading API Java SDK
 
 ## Installation Instructions
 
 Please note that upgrades to an SDK should always be done in a test environment and fully tested before used in production.
 
-1.  Download the zip file for the version of the eBay SDK for Java that you are using.
+1. Download the zip file for the version of the eBay SDK for Java that you are using.
 
-2.  Note the location of the zip file you downloaded, but before extracting the file, create the following folder: C:\\eBayJavaSDK.
+2. Note the location of the zip file you downloaded, but before extracting the file, create the following folder: C:\\eBayJavaSDK.
 
-3.  Within C:\\eBayJavaSDK, create an "SDKInstallDir" folder to contain the SDK files. You could name that folder according to the Trading API version of the SDK you are installing. For example, for the SDK for Trading API version 1331, you could name the folder _eBayJavaSDK1331_.
+3. Within C:\\eBayJavaSDK, create an "SDKInstallDir" folder to contain the SDK files. You could name that folder according to the Trading API version of the SDK you are installing. For example, for the SDK for Trading API version 1331, you could name the folder _eBayJavaSDK1331_.
 
-4.  Go the location of the zip file you downloaded (noted in step 3), and extract the zip file into the SDKInstallDir folder you created in step 4.
+4. Go the location of the zip file you downloaded (noted in step 3), and extract the zip file into the SDKInstallDir folder you created in step 4.
 
-5.  To build the SDK, see [Building the SDK](#building-the-sdk).(If you're using an Integrated Development Environment (IDE), you do not need to build the SDK, you just need to set the paths to point to the correct libraries and files. See [DevEnvReadme](DevEnvReadme.md) for more information for configuring an IDE)
+5. To build the SDK, see [Building the SDK](#building-the-sdk).(If you're using an Integrated Development Environment (IDE), you do not need to build the SDK, you just need to set the paths to point to the correct libraries and files. See [DevEnvReadme](DevEnvReadme.md) for more information for configuring an IDE)
 
 ---
 
@@ -24,19 +23,19 @@ Please note that upgrades to an SDK should always be done in a test environment 
 * [Post-Installation Configuration](#post-installation-configuration)
 
 * [SDK-Related Links](#sdk-related-links)
- 
+
 * [Building the SDK](#building-the-sdk)
- 
+
 * [Documentation](#documentation)
- 
+
 * [Known Issues](#known-issues)
- 
+
 * [Included in the eBay SDK for Java](#included-in-the-ebay-sdk-for-java)
- 
+
 * [WSDL Locations](#wsdl-locations)
- 
+
 * [WSDL Updates](#wsdl-updates)
- 
+
 * [Supported Client Environments](#supported-client-environments)
 
 * [Notes About Logging](#notes-about-logging)
@@ -77,6 +76,39 @@ Modify and run the [setenv.bat](./build/setenv.bat) file as follows:
 ---
 
 [Back to top](#top)
+
+## Usage
+
+### Prerequisites
+
+``` text
+Maven: version 3.5.0 
+Java: 8 or higher
+```
+
+### Install
+
+Adding dependency:
+
+```xml
+<dependency>
+  <groupId>com.ebay.developer</groupId>
+  <artifactId>trading-api-sdkcore</artifactId>
+  <version>1.0.0-RELEASE</version>
+</dependency>
+
+<dependency>
+  <groupId>com.ebay.developer</groupId>
+  <artifactId>trading-api-ebaycalls</artifactId>
+  <version>1.0.0-RELEASE</version>
+</dependency>
+
+<dependency>
+  <groupId>com.ebay.developer</groupId>
+  <artifactId>trading-api-helper</artifactId>
+  <version>1.0.0-RELEASE</version>
+</dependency>
+```
 
 ### Building the SDK
 
