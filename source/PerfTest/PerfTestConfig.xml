@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestConfiguration>
+
+    <!-- soap server, for production, use: https://api.ebay.com/wsapi -->
+    <ServerUrl>https://api.sandbox.ebay.com/wsapi</ServerUrl>
+    <!-- eps server, for production, use: https://api.ebay.com/ws/api.dll -->
+    <EpsServerUrl>https://api.sandbox.ebay.com/ws/api.dll</EpsServerUrl>
+    <SignInUrl>https://signin.sandbox.ebay.com/ws/eBayISAPI.dll?SignIn</SignInUrl>
+
+    <eBayCredential>
+        <!-- Token is used for both SOAP server and EPS server -->
+        <Token></Token>
+    </eBayCredential>
+
+</TestConfiguration>

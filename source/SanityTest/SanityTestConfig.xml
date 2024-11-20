@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestConfiguration>
+
+    <ServerUrl>https://api.sandbox.ebay.com/wsapi</ServerUrl>
+    <EpsServerUrl>https://api.sandbox.ebay.com/ws/api.dll</EpsServerUrl>
+
+    <ApiCredential>
+        <Developer></Developer>
+        <Application></Application>
+        <Certificate></Certificate>
+    </ApiCredential>
+
+    <eBayCredential>
+        <!-- Token is used for both SOAP server and EPS server -->
+        <Token></Token>
+    </eBayCredential>
+    <RuName></RuName>
+
+    <Timeout>90000</Timeout>>
+
+</TestConfiguration>
