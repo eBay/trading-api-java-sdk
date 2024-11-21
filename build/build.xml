@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <project default="help" basedir="." name="eBayService"
-    xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+         xmlns:artifact="antlib:org.apache.maven.artifact.ant">
     <property environment="env"/>
     <property name="eBaySDK.home" value="${basedir}/.."/>
     <property name="source.home" value="${eBaySDK.home}/source"/>
@@ -93,7 +93,7 @@
     <target name="checkEnvironment">
         <antcall target="checkJavaHome"/>
     </target>
-    
+
     <!-- Deploy the generated JARs to Maven Central -->
     <target name="deploy">
         <!-- Deploy the main JARs -->
