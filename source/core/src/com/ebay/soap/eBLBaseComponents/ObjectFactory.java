@@ -44,9 +44,6 @@ public class ObjectFactory {
     private final static QName _GetShippingDiscountProfilesRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetShippingDiscountProfilesRequest");
     private final static QName _GetOrdersRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetOrdersRequest");
     private final static QName _GetMemberMessagesResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetMemberMessagesResponse");
-    private final static QName _GetClientAlertsAuthTokenResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetClientAlertsAuthTokenResponse");
-    private final static QName _GetClientAlertsAuthTokenRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetClientAlertsAuthTokenRequest");
-    private final static QName _GetSellerDashboardRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetSellerDashboardRequest");
     private final static QName _GetSellerTransactionsResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetSellerTransactionsResponse");
     private final static QName _GetDescriptionTemplatesResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetDescriptionTemplatesResponse");
     private final static QName _LeaveFeedbackResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "LeaveFeedbackResponse");
@@ -60,7 +57,6 @@ public class ObjectFactory {
     private final static QName _ReviseItemResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "ReviseItemResponse");
     private final static QName _SetShippingDiscountProfilesRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "SetShippingDiscountProfilesRequest");
     private final static QName _DeleteMyMessagesRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "DeleteMyMessagesRequest");
-    private final static QName _GetSellerDashboardResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetSellerDashboardResponse");
     private final static QName _GetSessionIDRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetSessionIDRequest");
     private final static QName _GetUserContactDetailsRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetUserContactDetailsRequest");
     private final static QName _GetCategoryMappingsResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetCategoryMappingsResponse");
@@ -106,7 +102,6 @@ public class ObjectFactory {
     private final static QName _RelistItemResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "RelistItemResponse");
     private final static QName _EndItemsRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "EndItemsRequest");
     private final static QName _GetItemsAwaitingFeedbackResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetItemsAwaitingFeedbackResponse");
-    private final static QName _GetOrderTransactionsResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetOrderTransactionsResponse");
     private final static QName _RemoveFromWatchListRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "RemoveFromWatchListRequest");
     private final static QName _ExtendSiteHostedPicturesResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "ExtendSiteHostedPicturesResponse");
     private final static QName _GetTokenStatusResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetTokenStatusResponse");
@@ -120,7 +115,6 @@ public class ObjectFactory {
     private final static QName _GeteBayDetailsRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GeteBayDetailsRequest");
     private final static QName _GetStoreResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetStoreResponse");
     private final static QName _GetUserRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetUserRequest");
-    private final static QName _GetSuggestedCategoriesRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetSuggestedCategoriesRequest");
     private final static QName _VerifyAddItemRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "VerifyAddItemRequest");
     private final static QName _GetVeROReasonCodeDetailsResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetVeROReasonCodeDetailsResponse");
     private final static QName _RemoveFromWatchListResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "RemoveFromWatchListResponse");
@@ -156,7 +150,6 @@ public class ObjectFactory {
     private final static QName _SetUserPreferencesResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "SetUserPreferencesResponse");
     private final static QName _RelistItemRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "RelistItemRequest");
     private final static QName _AddItemRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "AddItemRequest");
-    private final static QName _GetSuggestedCategoriesResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetSuggestedCategoriesResponse");
     private final static QName _GetNotificationsUsageRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetNotificationsUsageRequest");
     private final static QName _GetShippingDiscountProfilesResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetShippingDiscountProfilesResponse");
     private final static QName _GetAdFormatLeadsResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetAdFormatLeadsResponse");
@@ -171,7 +164,6 @@ public class ObjectFactory {
     private final static QName _EndFixedPriceItemResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "EndFixedPriceItemResponse");
     private final static QName _EndItemRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "EndItemRequest");
     private final static QName _SetUserNotesResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "SetUserNotesResponse");
-    private final static QName _GetOrderTransactionsRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetOrderTransactionsRequest");
     private final static QName _GetFeedbackResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetFeedbackResponse");
     private final static QName _ReviseInventoryStatusResponse_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "ReviseInventoryStatusResponse");
     private final static QName _GetStoreCategoryUpdateStatusRequest_QNAME = new QName("urn:ebay:apis:eBLBaseComponents", "GetStoreCategoryUpdateStatusRequest");
@@ -215,2587 +207,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetMyMessagesRequestType }
-     * 
-     */
-    public GetMyMessagesRequestType createGetMyMessagesRequestType() {
-        return new GetMyMessagesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link RefundFundingSourceType }
-     * 
-     */
-    public RefundFundingSourceType createRefundFundingSourceType() {
-        return new RefundFundingSourceType();
-    }
-
-    /**
-     * Create an instance of {@link UserIDArrayType }
-     * 
-     */
-    public UserIDArrayType createUserIDArrayType() {
-        return new UserIDArrayType();
-    }
-
-    /**
-     * Create an instance of {@link VATDetailsType }
-     * 
-     */
-    public VATDetailsType createVATDetailsType() {
-        return new VATDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link VariationsEnabledDefinitionType }
-     * 
-     */
-    public VariationsEnabledDefinitionType createVariationsEnabledDefinitionType() {
-        return new VariationsEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link AuthenticityVerificationType }
-     * 
-     */
-    public AuthenticityVerificationType createAuthenticityVerificationType() {
-        return new AuthenticityVerificationType();
-    }
-
-    /**
-     * Create an instance of {@link ItemSpecificDetailsType }
-     * 
-     */
-    public ItemSpecificDetailsType createItemSpecificDetailsType() {
-        return new ItemSpecificDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link DomesticReturnsDurationDefinitionType }
-     * 
-     */
-    public DomesticReturnsDurationDefinitionType createDomesticReturnsDurationDefinitionType() {
-        return new DomesticReturnsDurationDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetSessionIDResponseType }
-     * 
-     */
-    public GetSessionIDResponseType createGetSessionIDResponseType() {
-        return new GetSessionIDResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ItemArrayType }
-     * 
-     */
-    public ItemArrayType createItemArrayType() {
-        return new ItemArrayType();
-    }
-
-    /**
-     * Create an instance of {@link DomesticReturnsDurationCodeType }
-     * 
-     */
-    public DomesticReturnsDurationCodeType createDomesticReturnsDurationCodeType() {
-        return new DomesticReturnsDurationCodeType();
-    }
-
-    /**
-     * Create an instance of {@link GetTokenStatusResponseType }
-     * 
-     */
-    public GetTokenStatusResponseType createGetTokenStatusResponseType() {
-        return new GetTokenStatusResponseType();
-    }
-
-    /**
-     * Create an instance of {@link EnergyEfficiencyType }
-     * 
-     */
-    public EnergyEfficiencyType createEnergyEfficiencyType() {
-        return new EnergyEfficiencyType();
-    }
-
-    /**
-     * Create an instance of {@link VerifyAddItemRequestType }
-     * 
-     */
-    public VerifyAddItemRequestType createVerifyAddItemRequestType() {
-        return new VerifyAddItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link SiteDefaultsType }
-     * 
-     */
-    public SiteDefaultsType createSiteDefaultsType() {
-        return new SiteDefaultsType();
-    }
-
-    /**
-     * Create an instance of {@link InternationalShippingServiceOptionsType }
-     * 
-     */
-    public InternationalShippingServiceOptionsType createInternationalShippingServiceOptionsType() {
-        return new InternationalShippingServiceOptionsType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdCompanyNameEnabledDefinitionType }
-     * 
-     */
-    public ClassifiedAdCompanyNameEnabledDefinitionType createClassifiedAdCompanyNameEnabledDefinitionType() {
-        return new ClassifiedAdCompanyNameEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link DomesticReturnsShipmentPayeeDefinitionType }
-     * 
-     */
-    public DomesticReturnsShipmentPayeeDefinitionType createDomesticReturnsShipmentPayeeDefinitionType() {
-        return new DomesticReturnsShipmentPayeeDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ReviseMyMessagesResponseType }
-     * 
-     */
-    public ReviseMyMessagesResponseType createReviseMyMessagesResponseType() {
-        return new ReviseMyMessagesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetClientAlertsAuthTokenRequestType }
-     * 
-     */
-    public GetClientAlertsAuthTokenRequestType createGetClientAlertsAuthTokenRequestType() {
-        return new GetClientAlertsAuthTokenRequestType();
-    }
-
-    /**
-     * Create an instance of {@link CombinedFixedPriceTreatmentEnabledDefinitionType }
-     * 
-     */
-    public CombinedFixedPriceTreatmentEnabledDefinitionType createCombinedFixedPriceTreatmentEnabledDefinitionType() {
-        return new CombinedFixedPriceTreatmentEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link EndItemsResponseType }
-     * 
-     */
-    public EndItemsResponseType createEndItemsResponseType() {
-        return new EndItemsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ValuePackEnabledDefinitionType }
-     * 
-     */
-    public ValuePackEnabledDefinitionType createValuePackEnabledDefinitionType() {
-        return new ValuePackEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link CountryPoliciesArrayType }
-     * 
-     */
-    public CountryPoliciesArrayType createCountryPoliciesArrayType() {
-        return new CountryPoliciesArrayType();
-    }
-
-    /**
-     * Create an instance of {@link HomePageFeaturedEnabledDefinitionType }
-     * 
-     */
-    public HomePageFeaturedEnabledDefinitionType createHomePageFeaturedEnabledDefinitionType() {
-        return new HomePageFeaturedEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProSellerContactDetailsEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProSellerContactDetailsEnabledDefinitionType createEBayMotorsProSellerContactDetailsEnabledDefinitionType() {
-        return new EBayMotorsProSellerContactDetailsEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link SetShippingDiscountProfilesRequestType }
-     * 
-     */
-    public SetShippingDiscountProfilesRequestType createSetShippingDiscountProfilesRequestType() {
-        return new SetShippingDiscountProfilesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link GetFeedbackResponseType }
-     * 
-     */
-    public GetFeedbackResponseType createGetFeedbackResponseType() {
-        return new GetFeedbackResponseType();
-    }
-
-    /**
-     * Create an instance of {@link AccountEntryType }
-     * 
-     */
-    public AccountEntryType createAccountEntryType() {
-        return new AccountEntryType();
-    }
-
-    /**
-     * Create an instance of {@link EndOfAuctionEmailPreferencesType }
-     * 
-     */
-    public EndOfAuctionEmailPreferencesType createEndOfAuctionEmailPreferencesType() {
-        return new EndOfAuctionEmailPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link EndFixedPriceItemRequestType }
-     * 
-     */
-    public EndFixedPriceItemRequestType createEndFixedPriceItemRequestType() {
-        return new EndFixedPriceItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link BidderNoticePreferencesType }
-     * 
-     */
-    public BidderNoticePreferencesType createBidderNoticePreferencesType() {
-        return new BidderNoticePreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link GetTokenStatusRequestType }
-     * 
-     */
-    public GetTokenStatusRequestType createGetTokenStatusRequestType() {
-        return new GetTokenStatusRequestType();
-    }
-
-    /**
-     * Create an instance of {@link FreePicturePackEnabledDefinitionType }
-     * 
-     */
-    public FreePicturePackEnabledDefinitionType createFreePicturePackEnabledDefinitionType() {
-        return new FreePicturePackEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProBestOfferEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProBestOfferEnabledDefinitionType createEBayMotorsProBestOfferEnabledDefinitionType() {
-        return new EBayMotorsProBestOfferEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link StoreOwnerExtendedListingDurationsType }
-     * 
-     */
-    public StoreOwnerExtendedListingDurationsType createStoreOwnerExtendedListingDurationsType() {
-        return new StoreOwnerExtendedListingDurationsType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingServicePackageDetailsType }
-     * 
-     */
-    public ShippingServicePackageDetailsType createShippingServicePackageDetailsType() {
-        return new ShippingServicePackageDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link DomesticReturnsAcceptedCodeType }
-     * 
-     */
-    public DomesticReturnsAcceptedCodeType createDomesticReturnsAcceptedCodeType() {
-        return new DomesticReturnsAcceptedCodeType();
-    }
-
-    /**
-     * Create an instance of {@link DeliveryURLDetailType }
-     * 
-     */
-    public DeliveryURLDetailType createDeliveryURLDetailType() {
-        return new DeliveryURLDetailType();
-    }
-
-    /**
-     * Create an instance of {@link ExpressPicturesRequiredDefinitionType }
-     * 
-     */
-    public ExpressPicturesRequiredDefinitionType createExpressPicturesRequiredDefinitionType() {
-        return new ExpressPicturesRequiredDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link FeedbackInfoType }
-     * 
-     */
-    public FeedbackInfoType createFeedbackInfoType() {
-        return new FeedbackInfoType();
-    }
-
-    /**
-     * Create an instance of {@link SellerReturnProfileType }
-     * 
-     */
-    public SellerReturnProfileType createSellerReturnProfileType() {
-        return new SellerReturnProfileType();
-    }
-
-    /**
-     * Create an instance of {@link MaximumUnpaidItemStrikesCountDetailsType }
-     * 
-     */
-    public MaximumUnpaidItemStrikesCountDetailsType createMaximumUnpaidItemStrikesCountDetailsType() {
-        return new MaximumUnpaidItemStrikesCountDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link RevokeTokenRequestType }
-     * 
-     */
-    public RevokeTokenRequestType createRevokeTokenRequestType() {
-        return new RevokeTokenRequestType();
-    }
-
-    /**
-     * Create an instance of {@link CancelOfferType }
-     * 
-     */
-    public CancelOfferType createCancelOfferType() {
-        return new CancelOfferType();
-    }
-
-    /**
-     * Create an instance of {@link VariationExtendedProducerResponsibilityType }
-     * 
-     */
-    public VariationExtendedProducerResponsibilityType createVariationExtendedProducerResponsibilityType() {
-        return new VariationExtendedProducerResponsibilityType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProAutoAcceptEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProAutoAcceptEnabledDefinitionType createEBayMotorsProAutoAcceptEnabledDefinitionType() {
-        return new EBayMotorsProAutoAcceptEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link UPCEnabledDefinitionType }
-     * 
-     */
-    public UPCEnabledDefinitionType createUPCEnabledDefinitionType() {
-        return new UPCEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentTransactionType }
-     * 
-     */
-    public PaymentTransactionType createPaymentTransactionType() {
-        return new PaymentTransactionType();
-    }
-
-    /**
-     * Create an instance of {@link PictureManagerDetailsType }
-     * 
-     */
-    public PictureManagerDetailsType createPictureManagerDetailsType() {
-        return new PictureManagerDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ListingDurationDefinitionType }
-     * 
-     */
-    public ListingDurationDefinitionType createListingDurationDefinitionType() {
-        return new ListingDurationDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link AddSecondChanceItemResponseType }
-     * 
-     */
-    public AddSecondChanceItemResponseType createAddSecondChanceItemResponseType() {
-        return new AddSecondChanceItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link CalculatedShippingPreferencesType }
-     * 
-     */
-    public CalculatedShippingPreferencesType createCalculatedShippingPreferencesType() {
-        return new CalculatedShippingPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link ItemPolicyViolationType }
-     * 
-     */
-    public ItemPolicyViolationType createItemPolicyViolationType() {
-        return new ItemPolicyViolationType();
-    }
-
-    /**
-     * Create an instance of {@link ConditionValuesDefinitionType }
-     * 
-     */
-    public ConditionValuesDefinitionType createConditionValuesDefinitionType() {
-        return new ConditionValuesDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link WarrantyOfferedDetailsType }
-     * 
-     */
-    public WarrantyOfferedDetailsType createWarrantyOfferedDetailsType() {
-        return new WarrantyOfferedDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link PictureManagerPictureDisplayType }
-     * 
-     */
-    public PictureManagerPictureDisplayType createPictureManagerPictureDisplayType() {
-        return new PictureManagerPictureDisplayType();
-    }
-
-    /**
-     * Create an instance of {@link GetItemRequestType }
-     * 
-     */
-    public GetItemRequestType createGetItemRequestType() {
-        return new GetItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link StorefrontType }
-     * 
-     */
-    public StorefrontType createStorefrontType() {
-        return new StorefrontType();
-    }
-
-    /**
-     * Create an instance of {@link BuyerType }
-     * 
-     */
-    public BuyerType createBuyerType() {
-        return new BuyerType();
-    }
-
-    /**
-     * Create an instance of {@link GetVeROReportStatusResponseType }
-     * 
-     */
-    public GetVeROReportStatusResponseType createGetVeROReportStatusResponseType() {
-        return new GetVeROReportStatusResponseType();
-    }
-
-    /**
-     * Create an instance of {@link AmountType }
-     * 
-     */
-    public AmountType createAmountType() {
-        return new AmountType();
-    }
-
-    /**
-     * Create an instance of {@link RelistFixedPriceItemResponseType }
-     * 
-     */
-    public RelistFixedPriceItemResponseType createRelistFixedPriceItemResponseType() {
-        return new RelistFixedPriceItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link EBayTaxReferenceValue }
-     * 
-     */
-    public EBayTaxReferenceValue createEBayTaxReferenceValue() {
-        return new EBayTaxReferenceValue();
-    }
-
-    /**
-     * Create an instance of {@link SetUserPreferencesRequestType }
-     * 
-     */
-    public SetUserPreferencesRequestType createSetUserPreferencesRequestType() {
-        return new SetUserPreferencesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link DispatchCutoffTimePreferencesType }
-     * 
-     */
-    public DispatchCutoffTimePreferencesType createDispatchCutoffTimePreferencesType() {
-        return new DispatchCutoffTimePreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link ProductSuggestionType }
-     * 
-     */
-    public ProductSuggestionType createProductSuggestionType() {
-        return new ProductSuggestionType();
-    }
-
-    /**
-     * Create an instance of {@link NotificationMessageType }
-     * 
-     */
-    public NotificationMessageType createNotificationMessageType() {
-        return new NotificationMessageType();
-    }
-
-    /**
-     * Create an instance of {@link ListingStartPriceDetailsType }
-     * 
-     */
-    public ListingStartPriceDetailsType createListingStartPriceDetailsType() {
-        return new ListingStartPriceDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link MemberMessageType }
-     * 
-     */
-    public MemberMessageType createMemberMessageType() {
-        return new MemberMessageType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingPackageInfoType }
-     * 
-     */
-    public ShippingPackageInfoType createShippingPackageInfoType() {
-        return new ShippingPackageInfoType();
-    }
-
-    /**
-     * Create an instance of {@link SellerFavoriteItemPreferencesType }
-     * 
-     */
-    public SellerFavoriteItemPreferencesType createSellerFavoriteItemPreferencesType() {
-        return new SellerFavoriteItemPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link ShipmentLineItemType }
-     * 
-     */
-    public ShipmentLineItemType createShipmentLineItemType() {
-        return new ShipmentLineItemType();
-    }
-
-    /**
-     * Create an instance of {@link NameValueListType }
-     * 
-     */
-    public NameValueListType createNameValueListType() {
-        return new NameValueListType();
-    }
-
-    /**
-     * Create an instance of {@link GetAllBiddersResponseType }
-     * 
-     */
-    public GetAllBiddersResponseType createGetAllBiddersResponseType() {
-        return new GetAllBiddersResponseType();
-    }
-
-    /**
-     * Create an instance of {@link InternationalRefundMethodCodeType }
-     * 
-     */
-    public InternationalRefundMethodCodeType createInternationalRefundMethodCodeType() {
-        return new InternationalRefundMethodCodeType();
-    }
-
-    /**
-     * Create an instance of {@link RecoupmentPolicyDetailsType }
-     * 
-     */
-    public RecoupmentPolicyDetailsType createRecoupmentPolicyDetailsType() {
-        return new RecoupmentPolicyDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentInformationCodeType }
-     * 
-     */
-    public PaymentInformationCodeType createPaymentInformationCodeType() {
-        return new PaymentInformationCodeType();
-    }
-
-    /**
-     * Create an instance of {@link RegionDetailsType }
-     * 
-     */
-    public RegionDetailsType createRegionDetailsType() {
-        return new RegionDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link RefundLineArrayType }
-     * 
-     */
-    public RefundLineArrayType createRefundLineArrayType() {
-        return new RefundLineArrayType();
-    }
-
-    /**
-     * Create an instance of {@link ISBNIdentifierEnabledDefinitionType }
-     * 
-     */
-    public ISBNIdentifierEnabledDefinitionType createISBNIdentifierEnabledDefinitionType() {
-        return new ISBNIdentifierEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ItemCompatibilityEnabledDefinitionType }
-     * 
-     */
-    public ItemCompatibilityEnabledDefinitionType createItemCompatibilityEnabledDefinitionType() {
-        return new ItemCompatibilityEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ScheduleType }
-     * 
-     */
-    public ScheduleType createScheduleType() {
-        return new ScheduleType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketCounterOfferEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketCounterOfferEnabledDefinitionType createLocalMarketCounterOfferEnabledDefinitionType() {
-        return new LocalMarketCounterOfferEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link MaximumUnpaidItemStrikesInfoDetailsType }
-     * 
-     */
-    public MaximumUnpaidItemStrikesInfoDetailsType createMaximumUnpaidItemStrikesInfoDetailsType() {
-        return new MaximumUnpaidItemStrikesInfoDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ProductDetailsType }
-     * 
-     */
-    public ProductDetailsType createProductDetailsType() {
-        return new ProductDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link SetMessagePreferencesRequestType }
-     * 
-     */
-    public SetMessagePreferencesRequestType createSetMessagePreferencesRequestType() {
-        return new SetMessagePreferencesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link CategoryGroupType }
-     * 
-     */
-    public CategoryGroupType createCategoryGroupType() {
-        return new CategoryGroupType();
-    }
-
-    /**
-     * Create an instance of {@link ConfirmIdentityResponseType }
-     * 
-     */
-    public ConfirmIdentityResponseType createConfirmIdentityResponseType() {
-        return new ConfirmIdentityResponseType();
-    }
-
-    /**
-     * Create an instance of {@link MyMessagesMessageType }
-     * 
-     */
-    public MyMessagesMessageType createMyMessagesMessageType() {
-        return new MyMessagesMessageType();
-    }
-
-    /**
-     * Create an instance of {@link BuyerPackageEnclosuresType }
-     * 
-     */
-    public BuyerPackageEnclosuresType createBuyerPackageEnclosuresType() {
-        return new BuyerPackageEnclosuresType();
-    }
-
-    /**
-     * Create an instance of {@link SellerContactDetailsEnabledDefinitionType }
-     * 
-     */
-    public SellerContactDetailsEnabledDefinitionType createSellerContactDetailsEnabledDefinitionType() {
-        return new SellerContactDetailsEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ExpressItemRequirementsType }
-     * 
-     */
-    public ExpressItemRequirementsType createExpressItemRequirementsType() {
-        return new ExpressItemRequirementsType();
-    }
-
-    /**
-     * Create an instance of {@link GetCategoriesRequestType }
-     * 
-     */
-    public GetCategoriesRequestType createGetCategoriesRequestType() {
-        return new GetCategoriesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link DeliveryStatusType }
-     * 
-     */
-    public DeliveryStatusType createDeliveryStatusType() {
-        return new DeliveryStatusType();
-    }
-
-    /**
-     * Create an instance of {@link AdFormatEnabledDefinitionType }
-     * 
-     */
-    public AdFormatEnabledDefinitionType createAdFormatEnabledDefinitionType() {
-        return new AdFormatEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link StatementsType }
-     * 
-     */
-    public StatementsType createStatementsType() {
-        return new StatementsType();
-    }
-
-    /**
-     * Create an instance of {@link MinimumFeedbackScoreDetailsType }
-     * 
-     */
-    public MinimumFeedbackScoreDetailsType createMinimumFeedbackScoreDetailsType() {
-        return new MinimumFeedbackScoreDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link SetStoreCategoriesRequestType }
-     * 
-     */
-    public SetStoreCategoriesRequestType createSetStoreCategoriesRequestType() {
-        return new SetStoreCategoriesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ReturnPolicyDescriptionEnabledDefinitionType }
-     * 
-     */
-    public ReturnPolicyDescriptionEnabledDefinitionType createReturnPolicyDescriptionEnabledDefinitionType() {
-        return new ReturnPolicyDescriptionEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link AverageRatingDetailsType }
-     * 
-     */
-    public AverageRatingDetailsType createAverageRatingDetailsType() {
-        return new AverageRatingDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link GetBidderListResponseType }
-     * 
-     */
-    public GetBidderListResponseType createGetBidderListResponseType() {
-        return new GetBidderListResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ItemTransactionIDArrayType }
-     * 
-     */
-    public ItemTransactionIDArrayType createItemTransactionIDArrayType() {
-        return new ItemTransactionIDArrayType();
-    }
-
-    /**
-     * Create an instance of {@link ISBNEnabledDefinitionType }
-     * 
-     */
-    public ISBNEnabledDefinitionType createISBNEnabledDefinitionType() {
-        return new ISBNEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetSellerListResponseType }
-     * 
-     */
-    public GetSellerListResponseType createGetSellerListResponseType() {
-        return new GetSellerListResponseType();
-    }
-
-    /**
-     * Create an instance of {@link RemoveFromWatchListResponseType }
-     * 
-     */
-    public RemoveFromWatchListResponseType createRemoveFromWatchListResponseType() {
-        return new RemoveFromWatchListResponseType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentHoldDetailType }
-     * 
-     */
-    public PaymentHoldDetailType createPaymentHoldDetailType() {
-        return new PaymentHoldDetailType();
-    }
-
-    /**
-     * Create an instance of {@link GetOrdersResponseType }
-     * 
-     */
-    public GetOrdersResponseType createGetOrdersResponseType() {
-        return new GetOrdersResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ReviseItemResponseType }
-     * 
-     */
-    public ReviseItemResponseType createReviseItemResponseType() {
-        return new ReviseItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link Group3MaxFlatShippingCostDefinitionType }
-     * 
-     */
-    public Group3MaxFlatShippingCostDefinitionType createGroup3MaxFlatShippingCostDefinitionType() {
-        return new Group3MaxFlatShippingCostDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link Base64BinaryType }
-     * 
-     */
-    public Base64BinaryType createBase64BinaryType() {
-        return new Base64BinaryType();
-    }
-
-    /**
-     * Create an instance of {@link CancelOfferArrayType }
-     * 
-     */
-    public CancelOfferArrayType createCancelOfferArrayType() {
-        return new CancelOfferArrayType();
-    }
-
-    /**
-     * Create an instance of {@link ServiceCostType }
-     * 
-     */
-    public ServiceCostType createServiceCostType() {
-        return new ServiceCostType();
-    }
-
-    /**
-     * Create an instance of {@link GetClientAlertsAuthTokenResponseType }
-     * 
-     */
-    public GetClientAlertsAuthTokenResponseType createGetClientAlertsAuthTokenResponseType() {
-        return new GetClientAlertsAuthTokenResponseType();
-    }
-
-    /**
-     * Create an instance of {@link DuplicateInvocationDetailsType }
-     * 
-     */
-    public DuplicateInvocationDetailsType createDuplicateInvocationDetailsType() {
-        return new DuplicateInvocationDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link CharitySellerType }
-     * 
-     */
-    public CharitySellerType createCharitySellerType() {
-        return new CharitySellerType();
-    }
-
-    /**
-     * Create an instance of {@link AddToWatchListResponseType }
-     * 
-     */
-    public AddToWatchListResponseType createAddToWatchListResponseType() {
-        return new AddToWatchListResponseType();
-    }
-
-    /**
      * Create an instance of {@link ReviseFixedPriceItemRequestType }
      * 
      */
     public ReviseFixedPriceItemRequestType createReviseFixedPriceItemRequestType() {
         return new ReviseFixedPriceItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link PictogramsType }
-     * 
-     */
-    public PictogramsType createPictogramsType() {
-        return new PictogramsType();
-    }
-
-    /**
-     * Create an instance of {@link GetMemberMessagesResponseType }
-     * 
-     */
-    public GetMemberMessagesResponseType createGetMemberMessagesResponseType() {
-        return new GetMemberMessagesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetSellerDashboardResponseType }
-     * 
-     */
-    public GetSellerDashboardResponseType createGetSellerDashboardResponseType() {
-        return new GetSellerDashboardResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetShippingDiscountProfilesResponseType }
-     * 
-     */
-    public GetShippingDiscountProfilesResponseType createGetShippingDiscountProfilesResponseType() {
-        return new GetShippingDiscountProfilesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link NameValueListArrayType }
-     * 
-     */
-    public NameValueListArrayType createNameValueListArrayType() {
-        return new NameValueListArrayType();
-    }
-
-    /**
-     * Create an instance of {@link AddItemResponseType }
-     * 
-     */
-    public AddItemResponseType createAddItemResponseType() {
-        return new AddItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ModifyNameType }
-     * 
-     */
-    public ModifyNameType createModifyNameType() {
-        return new ModifyNameType();
-    }
-
-    /**
-     * Create an instance of {@link DomesticRefundMethodDefinitionType }
-     * 
-     */
-    public DomesticRefundMethodDefinitionType createDomesticRefundMethodDefinitionType() {
-        return new DomesticRefundMethodDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ConditionValuesType }
-     * 
-     */
-    public ConditionValuesType createConditionValuesType() {
-        return new ConditionValuesType();
-    }
-
-    /**
-     * Create an instance of {@link DiscountPriceInfoType }
-     * 
-     */
-    public DiscountPriceInfoType createDiscountPriceInfoType() {
-        return new DiscountPriceInfoType();
-    }
-
-    /**
-     * Create an instance of {@link GetStoreCategoryUpdateStatusRequestType }
-     * 
-     */
-    public GetStoreCategoryUpdateStatusRequestType createGetStoreCategoryUpdateStatusRequestType() {
-        return new GetStoreCategoryUpdateStatusRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdStreetCountDefinitionType }
-     * 
-     */
-    public ClassifiedAdStreetCountDefinitionType createClassifiedAdStreetCountDefinitionType() {
-        return new ClassifiedAdStreetCountDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link RevokeTokenResponseType }
-     * 
-     */
-    public RevokeTokenResponseType createRevokeTokenResponseType() {
-        return new RevokeTokenResponseType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketAutoDeclineEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketAutoDeclineEnabledDefinitionType createLocalMarketAutoDeclineEnabledDefinitionType() {
-        return new LocalMarketAutoDeclineEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetSellerDashboardRequestType }
-     * 
-     */
-    public GetSellerDashboardRequestType createGetSellerDashboardRequestType() {
-        return new GetSellerDashboardRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdPayPerLeadEnabledDefinitionType }
-     * 
-     */
-    public ClassifiedAdPayPerLeadEnabledDefinitionType createClassifiedAdPayPerLeadEnabledDefinitionType() {
-        return new ClassifiedAdPayPerLeadEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetItemResponseType }
-     * 
-     */
-    public GetItemResponseType createGetItemResponseType() {
-        return new GetItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketPremiumSubscriptionDefinitionType }
-     * 
-     */
-    public LocalMarketPremiumSubscriptionDefinitionType createLocalMarketPremiumSubscriptionDefinitionType() {
-        return new LocalMarketPremiumSubscriptionDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ASQPreferencesType }
-     * 
-     */
-    public ASQPreferencesType createASQPreferencesType() {
-        return new ASQPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link ReviseInventoryStatusRequestType }
-     * 
-     */
-    public ReviseInventoryStatusRequestType createReviseInventoryStatusRequestType() {
-        return new ReviseInventoryStatusRequestType();
-    }
-
-    /**
-     * Create an instance of {@link GetFeedbackRequestType }
-     * 
-     */
-    public GetFeedbackRequestType createGetFeedbackRequestType() {
-        return new GetFeedbackRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ProStoresCheckoutPreferenceType }
-     * 
-     */
-    public ProStoresCheckoutPreferenceType createProStoresCheckoutPreferenceType() {
-        return new ProStoresCheckoutPreferenceType();
-    }
-
-    /**
-     * Create an instance of {@link AddToItemDescriptionRequestType }
-     * 
-     */
-    public AddToItemDescriptionRequestType createAddToItemDescriptionRequestType() {
-        return new AddToItemDescriptionRequestType();
-    }
-
-    /**
-     * Create an instance of {@link TaxIdentifierType }
-     * 
-     */
-    public TaxIdentifierType createTaxIdentifierType() {
-        return new TaxIdentifierType();
-    }
-
-    /**
-     * Create an instance of {@link CategoryFeatureType }
-     * 
-     */
-    public CategoryFeatureType createCategoryFeatureType() {
-        return new CategoryFeatureType();
-    }
-
-    /**
-     * Create an instance of {@link AddMemberMessageAAQToPartnerRequestType }
-     * 
-     */
-    public AddMemberMessageAAQToPartnerRequestType createAddMemberMessageAAQToPartnerRequestType() {
-        return new AddMemberMessageAAQToPartnerRequestType();
-    }
-
-    /**
-     * Create an instance of {@link MyeBayFavoriteSearchListType }
-     * 
-     */
-    public MyeBayFavoriteSearchListType createMyeBayFavoriteSearchListType() {
-        return new MyeBayFavoriteSearchListType();
-    }
-
-    /**
-     * Create an instance of {@link RemoveFromWatchListRequestType }
-     * 
-     */
-    public RemoveFromWatchListRequestType createRemoveFromWatchListRequestType() {
-        return new RemoveFromWatchListRequestType();
-    }
-
-    /**
-     * Create an instance of {@link GlobalShippingEnabledDefinitionType }
-     * 
-     */
-    public GlobalShippingEnabledDefinitionType createGlobalShippingEnabledDefinitionType() {
-        return new GlobalShippingEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetVeROReasonCodeDetailsResponseType }
-     * 
-     */
-    public GetVeROReasonCodeDetailsResponseType createGetVeROReasonCodeDetailsResponseType() {
-        return new GetVeROReasonCodeDetailsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ShipmentType }
-     * 
-     */
-    public ShipmentType createShipmentType() {
-        return new ShipmentType();
-    }
-
-    /**
-     * Create an instance of {@link PayPalRequiredForStoreOwnerDefinitionType }
-     * 
-     */
-    public PayPalRequiredForStoreOwnerDefinitionType createPayPalRequiredForStoreOwnerDefinitionType() {
-        return new PayPalRequiredForStoreOwnerDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PromotionDetailsType }
-     * 
-     */
-    public PromotionDetailsType createPromotionDetailsType() {
-        return new PromotionDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link CustomSecurityHeaderType }
-     * 
-     */
-    public CustomSecurityHeaderType createCustomSecurityHeaderType() {
-        return new CustomSecurityHeaderType();
-    }
-
-    /**
-     * Create an instance of {@link ItemRatingDetailArrayType }
-     * 
-     */
-    public ItemRatingDetailArrayType createItemRatingDetailArrayType() {
-        return new ItemRatingDetailArrayType();
-    }
-
-    /**
-     * Create an instance of {@link CheckoutStatusType }
-     * 
-     */
-    public CheckoutStatusType createCheckoutStatusType() {
-        return new CheckoutStatusType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdAutoDeclineEnabledDefinitionType }
-     * 
-     */
-    public ClassifiedAdAutoDeclineEnabledDefinitionType createClassifiedAdAutoDeclineEnabledDefinitionType() {
-        return new ClassifiedAdAutoDeclineEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProCounterOfferEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProCounterOfferEnabledDefinitionType createEBayMotorsProCounterOfferEnabledDefinitionType() {
-        return new EBayMotorsProCounterOfferEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link SellerPaymentPreferencesType }
-     * 
-     */
-    public SellerPaymentPreferencesType createSellerPaymentPreferencesType() {
-        return new SellerPaymentPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link GetSuggestedCategoriesRequestType }
-     * 
-     */
-    public GetSuggestedCategoriesRequestType createGetSuggestedCategoriesRequestType() {
-        return new GetSuggestedCategoriesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ReturnsWithinDetailsType }
-     * 
-     */
-    public ReturnsWithinDetailsType createReturnsWithinDetailsType() {
-        return new ReturnsWithinDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ItemListCustomizationType }
-     * 
-     */
-    public ItemListCustomizationType createItemListCustomizationType() {
-        return new ItemListCustomizationType();
-    }
-
-    /**
-     * Create an instance of {@link AddMemberMessageRTQResponseType }
-     * 
-     */
-    public AddMemberMessageRTQResponseType createAddMemberMessageRTQResponseType() {
-        return new AddMemberMessageRTQResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetCategoriesResponseType }
-     * 
-     */
-    public GetCategoriesResponseType createGetCategoriesResponseType() {
-        return new GetCategoriesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ItemCompatibilityType }
-     * 
-     */
-    public ItemCompatibilityType createItemCompatibilityType() {
-        return new ItemCompatibilityType();
-    }
-
-    /**
-     * Create an instance of {@link CompleteSaleResponseType }
-     * 
-     */
-    public CompleteSaleResponseType createCompleteSaleResponseType() {
-        return new CompleteSaleResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetStoreCategoryUpdateStatusResponseType }
-     * 
-     */
-    public GetStoreCategoryUpdateStatusResponseType createGetStoreCategoryUpdateStatusResponseType() {
-        return new GetStoreCategoryUpdateStatusResponseType();
-    }
-
-    /**
-     * Create an instance of {@link PaginatedItemArrayType }
-     * 
-     */
-    public PaginatedItemArrayType createPaginatedItemArrayType() {
-        return new PaginatedItemArrayType();
-    }
-
-    /**
-     * Create an instance of {@link DataElementSetType }
-     * 
-     */
-    public DataElementSetType createDataElementSetType() {
-        return new DataElementSetType();
-    }
-
-    /**
-     * Create an instance of {@link SellingStatusType }
-     * 
-     */
-    public SellingStatusType createSellingStatusType() {
-        return new SellingStatusType();
-    }
-
-    /**
-     * Create an instance of {@link VeROReportItemType }
-     * 
-     */
-    public VeROReportItemType createVeROReportItemType() {
-        return new VeROReportItemType();
-    }
-
-    /**
-     * Create an instance of {@link EndItemResponseContainerType }
-     * 
-     */
-    public EndItemResponseContainerType createEndItemResponseContainerType() {
-        return new EndItemResponseContainerType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentTransactionCodeType }
-     * 
-     */
-    public PaymentTransactionCodeType createPaymentTransactionCodeType() {
-        return new PaymentTransactionCodeType();
-    }
-
-    /**
-     * Create an instance of {@link GetOrderTransactionsResponseType }
-     * 
-     */
-    public GetOrderTransactionsResponseType createGetOrderTransactionsResponseType() {
-        return new GetOrderTransactionsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link FulfillmentType }
-     * 
-     */
-    public FulfillmentType createFulfillmentType() {
-        return new FulfillmentType();
-    }
-
-    /**
-     * Create an instance of {@link GetUserRequestType }
-     * 
-     */
-    public GetUserRequestType createGetUserRequestType() {
-        return new GetUserRequestType();
-    }
-
-    /**
-     * Create an instance of {@link FlatShippingPreferencesType }
-     * 
-     */
-    public FlatShippingPreferencesType createFlatShippingPreferencesType() {
-        return new FlatShippingPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link PickupDetailsType }
-     * 
-     */
-    public PickupDetailsType createPickupDetailsType() {
-        return new PickupDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link CrossPromotionPreferencesType }
-     * 
-     */
-    public CrossPromotionPreferencesType createCrossPromotionPreferencesType() {
-        return new CrossPromotionPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link QuantityInfoType }
-     * 
-     */
-    public QuantityInfoType createQuantityInfoType() {
-        return new QuantityInfoType();
-    }
-
-    /**
-     * Create an instance of {@link SellerProfilePreferencesType }
-     * 
-     */
-    public SellerProfilePreferencesType createSellerProfilePreferencesType() {
-        return new SellerProfilePreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link ProPackEnabledDefinitionType }
-     * 
-     */
-    public ProPackEnabledDefinitionType createProPackEnabledDefinitionType() {
-        return new ProPackEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link TransactionArrayType }
-     * 
-     */
-    public TransactionArrayType createTransactionArrayType() {
-        return new TransactionArrayType();
-    }
-
-    /**
-     * Create an instance of {@link ThemeGroupType }
-     * 
-     */
-    public ThemeGroupType createThemeGroupType() {
-        return new ThemeGroupType();
-    }
-
-    /**
-     * Create an instance of {@link INEscrowWorkflowTimelineDefinitionType }
-     * 
-     */
-    public INEscrowWorkflowTimelineDefinitionType createINEscrowWorkflowTimelineDefinitionType() {
-        return new INEscrowWorkflowTimelineDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ExtendedProducerResponsibilityType }
-     * 
-     */
-    public ExtendedProducerResponsibilityType createExtendedProducerResponsibilityType() {
-        return new ExtendedProducerResponsibilityType();
-    }
-
-    /**
-     * Create an instance of {@link RefundTransactionInfoType }
-     * 
-     */
-    public RefundTransactionInfoType createRefundTransactionInfoType() {
-        return new RefundTransactionInfoType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentInformationType }
-     * 
-     */
-    public PaymentInformationType createPaymentInformationType() {
-        return new PaymentInformationType();
-    }
-
-    /**
-     * Create an instance of {@link ListingFeatureDetailsType }
-     * 
-     */
-    public ListingFeatureDetailsType createListingFeatureDetailsType() {
-        return new ListingFeatureDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link TaxesType }
-     * 
-     */
-    public TaxesType createTaxesType() {
-        return new TaxesType();
-    }
-
-    /**
-     * Create an instance of {@link VeROReportItemsResponseType }
-     * 
-     */
-    public VeROReportItemsResponseType createVeROReportItemsResponseType() {
-        return new VeROReportItemsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetUserPreferencesRequestType }
-     * 
-     */
-    public GetUserPreferencesRequestType createGetUserPreferencesRequestType() {
-        return new GetUserPreferencesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link VerifiedUserRequirementsType }
-     * 
-     */
-    public VerifiedUserRequirementsType createVerifiedUserRequirementsType() {
-        return new VerifiedUserRequirementsType();
-    }
-
-    /**
-     * Create an instance of {@link StoreCustomCategoryType }
-     * 
-     */
-    public StoreCustomCategoryType createStoreCustomCategoryType() {
-        return new StoreCustomCategoryType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProPhoneCountDefinitionType }
-     * 
-     */
-    public EBayMotorsProPhoneCountDefinitionType createEBayMotorsProPhoneCountDefinitionType() {
-        return new EBayMotorsProPhoneCountDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link AddItemRequestContainerType }
-     * 
-     */
-    public AddItemRequestContainerType createAddItemRequestContainerType() {
-        return new AddItemRequestContainerType();
-    }
-
-    /**
-     * Create an instance of {@link RecoupmentPolicyConsentType }
-     * 
-     */
-    public RecoupmentPolicyConsentType createRecoupmentPolicyConsentType() {
-        return new RecoupmentPolicyConsentType();
-    }
-
-    /**
-     * Create an instance of {@link SellerDiscountsType }
-     * 
-     */
-    public SellerDiscountsType createSellerDiscountsType() {
-        return new SellerDiscountsType();
-    }
-
-    /**
-     * Create an instance of {@link InternationalReturnsDurationDefinitionType }
-     * 
-     */
-    public InternationalReturnsDurationDefinitionType createInternationalReturnsDurationDefinitionType() {
-        return new InternationalReturnsDurationDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PayPalRequiredDefinitionType }
-     * 
-     */
-    public PayPalRequiredDefinitionType createPayPalRequiredDefinitionType() {
-        return new PayPalRequiredDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link VerifyAddFixedPriceItemRequestType }
-     * 
-     */
-    public VerifyAddFixedPriceItemRequestType createVerifyAddFixedPriceItemRequestType() {
-        return new VerifyAddFixedPriceItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ExtendedProductFinderIDType }
-     * 
-     */
-    public ExtendedProductFinderIDType createExtendedProductFinderIDType() {
-        return new ExtendedProductFinderIDType();
-    }
-
-    /**
-     * Create an instance of {@link SuggestedBidValueType }
-     * 
-     */
-    public SuggestedBidValueType createSuggestedBidValueType() {
-        return new SuggestedBidValueType();
-    }
-
-    /**
-     * Create an instance of {@link RespondToFeedbackResponseType }
-     * 
-     */
-    public RespondToFeedbackResponseType createRespondToFeedbackResponseType() {
-        return new RespondToFeedbackResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetUserContactDetailsRequestType }
-     * 
-     */
-    public GetUserContactDetailsRequestType createGetUserContactDetailsRequestType() {
-        return new GetUserContactDetailsRequestType();
-    }
-
-    /**
-     * Create an instance of {@link TCREnabledDefinitionType }
-     * 
-     */
-    public TCREnabledDefinitionType createTCREnabledDefinitionType() {
-        return new TCREnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link AddItemsResponseType }
-     * 
-     */
-    public AddItemsResponseType createAddItemsResponseType() {
-        return new AddItemsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link AddToItemDescriptionResponseType }
-     * 
-     */
-    public AddToItemDescriptionResponseType createAddToItemDescriptionResponseType() {
-        return new AddToItemDescriptionResponseType();
-    }
-
-    /**
-     * Create an instance of {@link InternationalRefundMethodDefinitionType }
-     * 
-     */
-    public InternationalRefundMethodDefinitionType createInternationalRefundMethodDefinitionType() {
-        return new InternationalRefundMethodDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ReturnPolicyType }
-     * 
-     */
-    public ReturnPolicyType createReturnPolicyType() {
-        return new ReturnPolicyType();
-    }
-
-    /**
-     * Create an instance of {@link BasicAmountType }
-     * 
-     */
-    public BasicAmountType createBasicAmountType() {
-        return new BasicAmountType();
-    }
-
-    /**
-     * Create an instance of {@link AttributeConversionEnabledFeatureDefinitionType }
-     * 
-     */
-    public AttributeConversionEnabledFeatureDefinitionType createAttributeConversionEnabledFeatureDefinitionType() {
-        return new AttributeConversionEnabledFeatureDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdCounterOfferEnabledDefinitionType }
-     * 
-     */
-    public ClassifiedAdCounterOfferEnabledDefinitionType createClassifiedAdCounterOfferEnabledDefinitionType() {
-        return new ClassifiedAdCounterOfferEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link RegularSubscriptionDefinitionType }
-     * 
-     */
-    public RegularSubscriptionDefinitionType createRegularSubscriptionDefinitionType() {
-        return new RegularSubscriptionDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link NotificationEnableType }
-     * 
-     */
-    public NotificationEnableType createNotificationEnableType() {
-        return new NotificationEnableType();
-    }
-
-    /**
-     * Create an instance of {@link SellerRatingSummaryArrayType }
-     * 
-     */
-    public SellerRatingSummaryArrayType createSellerRatingSummaryArrayType() {
-        return new SellerRatingSummaryArrayType();
-    }
-
-    /**
-     * Create an instance of {@link GetAdFormatLeadsRequestType }
-     * 
-     */
-    public GetAdFormatLeadsRequestType createGetAdFormatLeadsRequestType() {
-        return new GetAdFormatLeadsRequestType();
-    }
-
-    /**
-     * Create an instance of {@link PromotionalShippingDiscountDetailsType }
-     * 
-     */
-    public PromotionalShippingDiscountDetailsType createPromotionalShippingDiscountDetailsType() {
-        return new PromotionalShippingDiscountDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link MyMessagesMessageArrayType }
-     * 
-     */
-    public MyMessagesMessageArrayType createMyMessagesMessageArrayType() {
-        return new MyMessagesMessageArrayType();
-    }
-
-    /**
-     * Create an instance of {@link VerifyRelistItemRequestType }
-     * 
-     */
-    public VerifyRelistItemRequestType createVerifyRelistItemRequestType() {
-        return new VerifyRelistItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link DutchBINEnabledDefinitionType }
-     * 
-     */
-    public DutchBINEnabledDefinitionType createDutchBINEnabledDefinitionType() {
-        return new DutchBINEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link AddMemberMessagesAAQToBidderResponseContainerType }
-     * 
-     */
-    public AddMemberMessagesAAQToBidderResponseContainerType createAddMemberMessagesAAQToBidderResponseContainerType() {
-        return new AddMemberMessagesAAQToBidderResponseContainerType();
-    }
-
-    /**
-     * Create an instance of {@link FeedbackDetailType }
-     * 
-     */
-    public FeedbackDetailType createFeedbackDetailType() {
-        return new FeedbackDetailType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketContactByAddressEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketContactByAddressEnabledDefinitionType createLocalMarketContactByAddressEnabledDefinitionType() {
-        return new LocalMarketContactByAddressEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PolicyViolationDurationDetailsType }
-     * 
-     */
-    public PolicyViolationDurationDetailsType createPolicyViolationDurationDetailsType() {
-        return new PolicyViolationDurationDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link GetSellerEventsRequestType }
-     * 
-     */
-    public GetSellerEventsRequestType createGetSellerEventsRequestType() {
-        return new GetSellerEventsRequestType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketPaymentMethodCheckOutEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketPaymentMethodCheckOutEnabledDefinitionType createLocalMarketPaymentMethodCheckOutEnabledDefinitionType() {
-        return new LocalMarketPaymentMethodCheckOutEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingServiceCostOverrideListType }
-     * 
-     */
-    public ShippingServiceCostOverrideListType createShippingServiceCostOverrideListType() {
-        return new ShippingServiceCostOverrideListType();
-    }
-
-    /**
-     * Create an instance of {@link NotificationDetailsArrayType }
-     * 
-     */
-    public NotificationDetailsArrayType createNotificationDetailsArrayType() {
-        return new NotificationDetailsArrayType();
-    }
-
-    /**
-     * Create an instance of {@link GetSuggestedCategoriesResponseType }
-     * 
-     */
-    public GetSuggestedCategoriesResponseType createGetSuggestedCategoriesResponseType() {
-        return new GetSuggestedCategoriesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetCategoryFeaturesResponseType }
-     * 
-     */
-    public GetCategoryFeaturesResponseType createGetCategoryFeaturesResponseType() {
-        return new GetCategoryFeaturesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link CancelDetailType }
-     * 
-     */
-    public CancelDetailType createCancelDetailType() {
-        return new CancelDetailType();
-    }
-
-    /**
-     * Create an instance of {@link ProfileCategoryGroupDefinitionType }
-     * 
-     */
-    public ProfileCategoryGroupDefinitionType createProfileCategoryGroupDefinitionType() {
-        return new ProfileCategoryGroupDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link CharityAffiliationDetailsType }
-     * 
-     */
-    public CharityAffiliationDetailsType createCharityAffiliationDetailsType() {
-        return new CharityAffiliationDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link AddItemResponseContainerType }
-     * 
-     */
-    public AddItemResponseContainerType createAddItemResponseContainerType() {
-        return new AddItemResponseContainerType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdContactByEmailEnabledDefintionType }
-     * 
-     */
-    public ClassifiedAdContactByEmailEnabledDefintionType createClassifiedAdContactByEmailEnabledDefintionType() {
-        return new ClassifiedAdContactByEmailEnabledDefintionType();
-    }
-
-    /**
-     * Create an instance of {@link ListingEnhancementDurationReferenceType }
-     * 
-     */
-    public ListingEnhancementDurationReferenceType createListingEnhancementDurationReferenceType() {
-        return new ListingEnhancementDurationReferenceType();
-    }
-
-    /**
-     * Create an instance of {@link TransactionReferenceType }
-     * 
-     */
-    public TransactionReferenceType createTransactionReferenceType() {
-        return new TransactionReferenceType();
-    }
-
-    /**
-     * Create an instance of {@link ListingDetailsType }
-     * 
-     */
-    public ListingDetailsType createListingDetailsType() {
-        return new ListingDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentOptionsGroupEnabledDefinitionType }
-     * 
-     */
-    public PaymentOptionsGroupEnabledDefinitionType createPaymentOptionsGroupEnabledDefinitionType() {
-        return new PaymentOptionsGroupEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketCompanyNameEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketCompanyNameEnabledDefinitionType createLocalMarketCompanyNameEnabledDefinitionType() {
-        return new LocalMarketCompanyNameEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GeteBayDetailsResponseType }
-     * 
-     */
-    public GeteBayDetailsResponseType createGeteBayDetailsResponseType() {
-        return new GeteBayDetailsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ValueCategoryDefinitionType }
-     * 
-     */
-    public ValueCategoryDefinitionType createValueCategoryDefinitionType() {
-        return new ValueCategoryDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link MyeBayFavoriteSellerListType }
-     * 
-     */
-    public MyeBayFavoriteSellerListType createMyeBayFavoriteSellerListType() {
-        return new MyeBayFavoriteSellerListType();
-    }
-
-    /**
-     * Create an instance of {@link GetChallengeTokenResponseType }
-     * 
-     */
-    public GetChallengeTokenResponseType createGetChallengeTokenResponseType() {
-        return new GetChallengeTokenResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingCarrierDetailsType }
-     * 
-     */
-    public ShippingCarrierDetailsType createShippingCarrierDetailsType() {
-        return new ShippingCarrierDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link UserConsentRequiredDefinitionType }
-     * 
-     */
-    public UserConsentRequiredDefinitionType createUserConsentRequiredDefinitionType() {
-        return new UserConsentRequiredDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link VeROReportedItemDetailsType }
-     * 
-     */
-    public VeROReportedItemDetailsType createVeROReportedItemDetailsType() {
-        return new VeROReportedItemDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link FeatureDefinitionsType }
-     * 
-     */
-    public FeatureDefinitionsType createFeatureDefinitionsType() {
-        return new FeatureDefinitionsType();
-    }
-
-    /**
-     * Create an instance of {@link MyMessagesSummaryType }
-     * 
-     */
-    public MyMessagesSummaryType createMyMessagesSummaryType() {
-        return new MyMessagesSummaryType();
-    }
-
-    /**
-     * Create an instance of {@link IntegratedMerchantCreditCardInfoType }
-     * 
-     */
-    public IntegratedMerchantCreditCardInfoType createIntegratedMerchantCreditCardInfoType() {
-        return new IntegratedMerchantCreditCardInfoType();
-    }
-
-    /**
-     * Create an instance of {@link StoreOwnerExtendedListingDurationsDefinitionType }
-     * 
-     */
-    public StoreOwnerExtendedListingDurationsDefinitionType createStoreOwnerExtendedListingDurationsDefinitionType() {
-        return new StoreOwnerExtendedListingDurationsDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link VariationsType }
-     * 
-     */
-    public VariationsType createVariationsType() {
-        return new VariationsType();
-    }
-
-    /**
-     * Create an instance of {@link ItemBestOffersType }
-     * 
-     */
-    public ItemBestOffersType createItemBestOffersType() {
-        return new ItemBestOffersType();
-    }
-
-    /**
-     * Create an instance of {@link SiteHostedPictureDetailsType }
-     * 
-     */
-    public SiteHostedPictureDetailsType createSiteHostedPictureDetailsType() {
-        return new SiteHostedPictureDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketContactByPhoneEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketContactByPhoneEnabledDefinitionType createLocalMarketContactByPhoneEnabledDefinitionType() {
-        return new LocalMarketContactByPhoneEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link RespondToFeedbackRequestType }
-     * 
-     */
-    public RespondToFeedbackRequestType createRespondToFeedbackRequestType() {
-        return new RespondToFeedbackRequestType();
-    }
-
-    /**
-     * Create an instance of {@link CombinedPaymentPreferencesType }
-     * 
-     */
-    public CombinedPaymentPreferencesType createCombinedPaymentPreferencesType() {
-        return new CombinedPaymentPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link BuyingGuideDetailsType }
-     * 
-     */
-    public BuyingGuideDetailsType createBuyingGuideDetailsType() {
-        return new BuyingGuideDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link PaginationType }
-     * 
-     */
-    public PaginationType createPaginationType() {
-        return new PaginationType();
-    }
-
-    /**
-     * Create an instance of {@link AddFixedPriceItemRequestType }
-     * 
-     */
-    public AddFixedPriceItemRequestType createAddFixedPriceItemRequestType() {
-        return new AddFixedPriceItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ListingDurationReferenceType }
-     * 
-     */
-    public ListingDurationReferenceType createListingDurationReferenceType() {
-        return new ListingDurationReferenceType();
-    }
-
-    /**
-     * Create an instance of {@link MaxItemCompatibilityDefinitionType }
-     * 
-     */
-    public MaxItemCompatibilityDefinitionType createMaxItemCompatibilityDefinitionType() {
-        return new MaxItemCompatibilityDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PictureURLsType }
-     * 
-     */
-    public PictureURLsType createPictureURLsType() {
-        return new PictureURLsType();
-    }
-
-    /**
-     * Create an instance of {@link SupportedEventTypesArrayType }
-     * 
-     */
-    public SupportedEventTypesArrayType createSupportedEventTypesArrayType() {
-        return new SupportedEventTypesArrayType();
-    }
-
-    /**
-     * Create an instance of {@link AddMemberMessagesAAQToBidderRequestContainerType }
-     * 
-     */
-    public AddMemberMessagesAAQToBidderRequestContainerType createAddMemberMessagesAAQToBidderRequestContainerType() {
-        return new AddMemberMessagesAAQToBidderRequestContainerType();
-    }
-
-    /**
-     * Create an instance of {@link VerifyAddFixedPriceItemResponseType }
-     * 
-     */
-    public VerifyAddFixedPriceItemResponseType createVerifyAddFixedPriceItemResponseType() {
-        return new VerifyAddFixedPriceItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link VariationType }
-     * 
-     */
-    public VariationType createVariationType() {
-        return new VariationType();
-    }
-
-    /**
-     * Create an instance of {@link UnpaidItemAssistancePreferencesType }
-     * 
-     */
-    public UnpaidItemAssistancePreferencesType createUnpaidItemAssistancePreferencesType() {
-        return new UnpaidItemAssistancePreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link VerifyAddSecondChanceItemRequestType }
-     * 
-     */
-    public VerifyAddSecondChanceItemRequestType createVerifyAddSecondChanceItemRequestType() {
-        return new VerifyAddSecondChanceItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ProductCreationEnabledDefinitionType }
-     * 
-     */
-    public ProductCreationEnabledDefinitionType createProductCreationEnabledDefinitionType() {
-        return new ProductCreationEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link UploadSiteHostedPicturesRequestType }
-     * 
-     */
-    public UploadSiteHostedPicturesRequestType createUploadSiteHostedPicturesRequestType() {
-        return new UploadSiteHostedPicturesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link CategoryMappingType }
-     * 
-     */
-    public CategoryMappingType createCategoryMappingType() {
-        return new CategoryMappingType();
-    }
-
-    /**
-     * Create an instance of {@link ConditionDescriptorsType }
-     * 
-     */
-    public ConditionDescriptorsType createConditionDescriptorsType() {
-        return new ConditionDescriptorsType();
-    }
-
-    /**
-     * Create an instance of {@link BuyerRequirementDetailsType }
-     * 
-     */
-    public BuyerRequirementDetailsType createBuyerRequirementDetailsType() {
-        return new BuyerRequirementDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link TaxJurisdictionType }
-     * 
-     */
-    public TaxJurisdictionType createTaxJurisdictionType() {
-        return new TaxJurisdictionType();
-    }
-
-    /**
-     * Create an instance of {@link RevisePriceAllowedDefinitionType }
-     * 
-     */
-    public RevisePriceAllowedDefinitionType createRevisePriceAllowedDefinitionType() {
-        return new RevisePriceAllowedDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ReviseFixedPriceItemResponseType }
-     * 
-     */
-    public ReviseFixedPriceItemResponseType createReviseFixedPriceItemResponseType() {
-        return new ReviseFixedPriceItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link BotBlockRequestType }
-     * 
-     */
-    public BotBlockRequestType createBotBlockRequestType() {
-        return new BotBlockRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ContactHoursDetailsType }
-     * 
-     */
-    public ContactHoursDetailsType createContactHoursDetailsType() {
-        return new ContactHoursDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link MinItemCompatibilityDefinitionType }
-     * 
-     */
-    public MinItemCompatibilityDefinitionType createMinItemCompatibilityDefinitionType() {
-        return new MinItemCompatibilityDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PaginatedOrderTransactionArrayType }
-     * 
-     */
-    public PaginatedOrderTransactionArrayType createPaginatedOrderTransactionArrayType() {
-        return new PaginatedOrderTransactionArrayType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentOptionDetailsType }
-     * 
-     */
-    public PaymentOptionDetailsType createPaymentOptionDetailsType() {
-        return new PaymentOptionDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link AddFixedPriceItemResponseType }
-     * 
-     */
-    public AddFixedPriceItemResponseType createAddFixedPriceItemResponseType() {
-        return new AddFixedPriceItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link SafePaymentRequiredDefinitionType }
-     * 
-     */
-    public SafePaymentRequiredDefinitionType createSafePaymentRequiredDefinitionType() {
-        return new SafePaymentRequiredDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link XSLFileType }
-     * 
-     */
-    public XSLFileType createXSLFileType() {
-        return new XSLFileType();
-    }
-
-    /**
-     * Create an instance of {@link EndItemsRequestType }
-     * 
-     */
-    public EndItemsRequestType createEndItemsRequestType() {
-        return new EndItemsRequestType();
-    }
-
-    /**
-     * Create an instance of {@link MyMessagesFolderSummaryType }
-     * 
-     */
-    public MyMessagesFolderSummaryType createMyMessagesFolderSummaryType() {
-        return new MyMessagesFolderSummaryType();
-    }
-
-    /**
-     * Create an instance of {@link RateTableDetailsType }
-     * 
-     */
-    public RateTableDetailsType createRateTableDetailsType() {
-        return new RateTableDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ExtendSiteHostedPicturesResponseType }
-     * 
-     */
-    public ExtendSiteHostedPicturesResponseType createExtendSiteHostedPicturesResponseType() {
-        return new ExtendSiteHostedPicturesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link RelistFixedPriceItemRequestType }
-     * 
-     */
-    public RelistFixedPriceItemRequestType createRelistFixedPriceItemRequestType() {
-        return new RelistFixedPriceItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link FeedbackDetailArrayType }
-     * 
-     */
-    public FeedbackDetailArrayType createFeedbackDetailArrayType() {
-        return new FeedbackDetailArrayType();
-    }
-
-    /**
-     * Create an instance of {@link ShipmentTrackingDetailsType }
-     * 
-     */
-    public ShipmentTrackingDetailsType createShipmentTrackingDetailsType() {
-        return new ShipmentTrackingDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link GetSellerListRequestType }
-     * 
-     */
-    public GetSellerListRequestType createGetSellerListRequestType() {
-        return new GetSellerListRequestType();
-    }
-
-    /**
-     * Create an instance of {@link SellerPaymentType }
-     * 
-     */
-    public SellerPaymentType createSellerPaymentType() {
-        return new SellerPaymentType();
-    }
-
-    /**
-     * Create an instance of {@link CategoryArrayType }
-     * 
-     */
-    public CategoryArrayType createCategoryArrayType() {
-        return new CategoryArrayType();
-    }
-
-    /**
-     * Create an instance of {@link UPCIdentifierEnabledDefinitionType }
-     * 
-     */
-    public UPCIdentifierEnabledDefinitionType createUPCIdentifierEnabledDefinitionType() {
-        return new UPCIdentifierEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link CrossPromotionsType }
-     * 
-     */
-    public CrossPromotionsType createCrossPromotionsType() {
-        return new CrossPromotionsType();
-    }
-
-    /**
-     * Create an instance of {@link UnitInfoType }
-     * 
-     */
-    public UnitInfoType createUnitInfoType() {
-        return new UnitInfoType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProCompanyNameEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProCompanyNameEnabledDefinitionType createEBayMotorsProCompanyNameEnabledDefinitionType() {
-        return new EBayMotorsProCompanyNameEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetItemsAwaitingFeedbackResponseType }
-     * 
-     */
-    public GetItemsAwaitingFeedbackResponseType createGetItemsAwaitingFeedbackResponseType() {
-        return new GetItemsAwaitingFeedbackResponseType();
-    }
-
-    /**
-     * Create an instance of {@link SellingSummaryType }
-     * 
-     */
-    public SellingSummaryType createSellingSummaryType() {
-        return new SellingSummaryType();
-    }
-
-    /**
-     * Create an instance of {@link PickupMethodSelectedType }
-     * 
-     */
-    public PickupMethodSelectedType createPickupMethodSelectedType() {
-        return new PickupMethodSelectedType();
-    }
-
-    /**
-     * Create an instance of {@link GetItemShippingRequestType }
-     * 
-     */
-    public GetItemShippingRequestType createGetItemShippingRequestType() {
-        return new GetItemShippingRequestType();
-    }
-
-    /**
-     * Create an instance of {@link GetAllBiddersRequestType }
-     * 
-     */
-    public GetAllBiddersRequestType createGetAllBiddersRequestType() {
-        return new GetAllBiddersRequestType();
-    }
-
-    /**
-     * Create an instance of {@link VeROSiteDetailType }
-     * 
-     */
-    public VeROSiteDetailType createVeROSiteDetailType() {
-        return new VeROSiteDetailType();
-    }
-
-    /**
-     * Create an instance of {@link UploadSiteHostedPicturesResponseType }
-     * 
-     */
-    public UploadSiteHostedPicturesResponseType createUploadSiteHostedPicturesResponseType() {
-        return new UploadSiteHostedPicturesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ExcludeShippingLocationDetailsType }
-     * 
-     */
-    public ExcludeShippingLocationDetailsType createExcludeShippingLocationDetailsType() {
-        return new ExcludeShippingLocationDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link BestOfferAutoDeclineEnabledDefinitionType }
-     * 
-     */
-    public BestOfferAutoDeclineEnabledDefinitionType createBestOfferAutoDeclineEnabledDefinitionType() {
-        return new BestOfferAutoDeclineEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link NotificationStatisticsType }
-     * 
-     */
-    public NotificationStatisticsType createNotificationStatisticsType() {
-        return new NotificationStatisticsType();
-    }
-
-    /**
-     * Create an instance of {@link GetStoreRequestType }
-     * 
-     */
-    public GetStoreRequestType createGetStoreRequestType() {
-        return new GetStoreRequestType();
-    }
-
-    /**
-     * Create an instance of {@link GetCategoryMappingsResponseType }
-     * 
-     */
-    public GetCategoryMappingsResponseType createGetCategoryMappingsResponseType() {
-        return new GetCategoryMappingsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link SKUArrayType }
-     * 
-     */
-    public SKUArrayType createSKUArrayType() {
-        return new SKUArrayType();
-    }
-
-    /**
-     * Create an instance of {@link BestOfferEnabledDefinitionType }
-     * 
-     */
-    public BestOfferEnabledDefinitionType createBestOfferEnabledDefinitionType() {
-        return new BestOfferEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link FetchTokenResponseType }
-     * 
-     */
-    public FetchTokenResponseType createFetchTokenResponseType() {
-        return new FetchTokenResponseType();
-    }
-
-    /**
-     * Create an instance of {@link EndFixedPriceItemResponseType }
-     * 
-     */
-    public EndFixedPriceItemResponseType createEndFixedPriceItemResponseType() {
-        return new EndFixedPriceItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ReasonCodeDetailType }
-     * 
-     */
-    public ReasonCodeDetailType createReasonCodeDetailType() {
-        return new ReasonCodeDetailType();
-    }
-
-    /**
-     * Create an instance of {@link EANIdentifierEnabledDefinitionType }
-     * 
-     */
-    public EANIdentifierEnabledDefinitionType createEANIdentifierEnabledDefinitionType() {
-        return new EANIdentifierEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentDetailsType }
-     * 
-     */
-    public PaymentDetailsType createPaymentDetailsType() {
-        return new PaymentDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link MyMessagesMessageIDArrayType }
-     * 
-     */
-    public MyMessagesMessageIDArrayType createMyMessagesMessageIDArrayType() {
-        return new MyMessagesMessageIDArrayType();
-    }
-
-    /**
-     * Create an instance of {@link GetCategoryFeaturesRequestType }
-     * 
-     */
-    public GetCategoryFeaturesRequestType createGetCategoryFeaturesRequestType() {
-        return new GetCategoryFeaturesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link BrandMPNType }
-     * 
-     */
-    public BrandMPNType createBrandMPNType() {
-        return new BrandMPNType();
-    }
-
-    /**
-     * Create an instance of {@link StoreType }
-     * 
-     */
-    public StoreType createStoreType() {
-        return new StoreType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingServiceCostOverrideType }
-     * 
-     */
-    public ShippingServiceCostOverrideType createShippingServiceCostOverrideType() {
-        return new ShippingServiceCostOverrideType();
-    }
-
-    /**
-     * Create an instance of {@link BuyingGuideType }
-     * 
-     */
-    public BuyingGuideType createBuyingGuideType() {
-        return new BuyingGuideType();
     }
 
     /**
@@ -2807,171 +223,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LabelType }
+     * Create an instance of {@link EndFixedPriceItemRequestType }
      * 
      */
-    public LabelType createLabelType() {
-        return new LabelType();
+    public EndFixedPriceItemRequestType createEndFixedPriceItemRequestType() {
+        return new EndFixedPriceItemRequestType();
     }
 
     /**
-     * Create an instance of {@link FeedbackSummaryType }
+     * Create an instance of {@link EBayMotorsProPhoneCountDefinitionType }
      * 
      */
-    public FeedbackSummaryType createFeedbackSummaryType() {
-        return new FeedbackSummaryType();
+    public EBayMotorsProPhoneCountDefinitionType createEBayMotorsProPhoneCountDefinitionType() {
+        return new EBayMotorsProPhoneCountDefinitionType();
     }
 
     /**
-     * Create an instance of {@link CartItemType }
+     * Create an instance of {@link GetVeROReportStatusRequestType }
      * 
      */
-    public CartItemType createCartItemType() {
-        return new CartItemType();
-    }
-
-    /**
-     * Create an instance of {@link VeROReportItemsRequestType }
-     * 
-     */
-    public VeROReportItemsRequestType createVeROReportItemsRequestType() {
-        return new VeROReportItemsRequestType();
-    }
-
-    /**
-     * Create an instance of {@link SiteBuyerRequirementDetailsType }
-     * 
-     */
-    public SiteBuyerRequirementDetailsType createSiteBuyerRequirementDetailsType() {
-        return new SiteBuyerRequirementDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link DigitalDeliverySelectedType }
-     * 
-     */
-    public DigitalDeliverySelectedType createDigitalDeliverySelectedType() {
-        return new DigitalDeliverySelectedType();
-    }
-
-    /**
-     * Create an instance of {@link FreeGalleryPlusEnabledDefinitionType }
-     * 
-     */
-    public FreeGalleryPlusEnabledDefinitionType createFreeGalleryPlusEnabledDefinitionType() {
-        return new FreeGalleryPlusEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link UserType }
-     * 
-     */
-    public UserType createUserType() {
-        return new UserType();
-    }
-
-    /**
-     * Create an instance of {@link GiftSummaryType }
-     * 
-     */
-    public GiftSummaryType createGiftSummaryType() {
-        return new GiftSummaryType();
-    }
-
-    /**
-     * Create an instance of {@link ValidateChallengeInputResponseType }
-     * 
-     */
-    public ValidateChallengeInputResponseType createValidateChallengeInputResponseType() {
-        return new ValidateChallengeInputResponseType();
-    }
-
-    /**
-     * Create an instance of {@link NettedTransactionSummaryType }
-     * 
-     */
-    public NettedTransactionSummaryType createNettedTransactionSummaryType() {
-        return new NettedTransactionSummaryType();
-    }
-
-    /**
-     * Create an instance of {@link PlaceOfferRequestType }
-     * 
-     */
-    public PlaceOfferRequestType createPlaceOfferRequestType() {
-        return new PlaceOfferRequestType();
-    }
-
-    /**
-     * Create an instance of {@link MessageMediaType }
-     * 
-     */
-    public MessageMediaType createMessageMediaType() {
-        return new MessageMediaType();
-    }
-
-    /**
-     * Create an instance of {@link CompatibleVehicleTypeDefinitionType }
-     * 
-     */
-    public CompatibleVehicleTypeDefinitionType createCompatibleVehicleTypeDefinitionType() {
-        return new CompatibleVehicleTypeDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetNotificationsUsageRequestType }
-     * 
-     */
-    public GetNotificationsUsageRequestType createGetNotificationsUsageRequestType() {
-        return new GetNotificationsUsageRequestType();
-    }
-
-    /**
-     * Create an instance of {@link WantItNowPostArrayType }
-     * 
-     */
-    public WantItNowPostArrayType createWantItNowPostArrayType() {
-        return new WantItNowPostArrayType();
-    }
-
-    /**
-     * Create an instance of {@link GetBestOffersResponseType }
-     * 
-     */
-    public GetBestOffersResponseType createGetBestOffersResponseType() {
-        return new GetBestOffersResponseType();
-    }
-
-    /**
-     * Create an instance of {@link LeaveFeedbackResponseType }
-     * 
-     */
-    public LeaveFeedbackResponseType createLeaveFeedbackResponseType() {
-        return new LeaveFeedbackResponseType();
-    }
-
-    /**
-     * Create an instance of {@link BasicUpgradePackEnabledDefinitionType }
-     * 
-     */
-    public BasicUpgradePackEnabledDefinitionType createBasicUpgradePackEnabledDefinitionType() {
-        return new BasicUpgradePackEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingServiceOptionsType }
-     * 
-     */
-    public ShippingServiceOptionsType createShippingServiceOptionsType() {
-        return new ShippingServiceOptionsType();
-    }
-
-    /**
-     * Create an instance of {@link MyeBayFavoriteSearchType }
-     * 
-     */
-    public MyeBayFavoriteSearchType createMyeBayFavoriteSearchType() {
-        return new MyeBayFavoriteSearchType();
+    public GetVeROReportStatusRequestType createGetVeROReportStatusRequestType() {
+        return new GetVeROReportStatusRequestType();
     }
 
     /**
@@ -2983,6 +255,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ConditionDescriptorType }
+     * 
+     */
+    public ConditionDescriptorType createConditionDescriptorType() {
+        return new ConditionDescriptorType();
+    }
+
+    /**
+     * Create an instance of {@link SupportedSellerProfilesType }
+     * 
+     */
+    public SupportedSellerProfilesType createSupportedSellerProfilesType() {
+        return new SupportedSellerProfilesType();
+    }
+
+    /**
      * Create an instance of {@link DeleteMyMessagesRequestType }
      * 
      */
@@ -2991,179 +279,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SetStoreCategoriesResponseType }
+     * Create an instance of {@link CalculatedShippingDiscountType }
      * 
      */
-    public SetStoreCategoriesResponseType createSetStoreCategoriesResponseType() {
-        return new SetStoreCategoriesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link DepositSupportedDefinitionType }
-     * 
-     */
-    public DepositSupportedDefinitionType createDepositSupportedDefinitionType() {
-        return new DepositSupportedDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link NotificationEventPropertyType }
-     * 
-     */
-    public NotificationEventPropertyType createNotificationEventPropertyType() {
-        return new NotificationEventPropertyType();
-    }
-
-    /**
-     * Create an instance of {@link GetStoreResponseType }
-     * 
-     */
-    public GetStoreResponseType createGetStoreResponseType() {
-        return new GetStoreResponseType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketSpecialitySubscriptionDefinitionType }
-     * 
-     */
-    public LocalMarketSpecialitySubscriptionDefinitionType createLocalMarketSpecialitySubscriptionDefinitionType() {
-        return new LocalMarketSpecialitySubscriptionDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetUserPreferencesResponseType }
-     * 
-     */
-    public GetUserPreferencesResponseType createGetUserPreferencesResponseType() {
-        return new GetUserPreferencesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProContactByEmailEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProContactByEmailEnabledDefinitionType createEBayMotorsProContactByEmailEnabledDefinitionType() {
-        return new EBayMotorsProContactByEmailEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link URLDetailsType }
-     * 
-     */
-    public URLDetailsType createURLDetailsType() {
-        return new URLDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link PromotionRuleArrayType }
-     * 
-     */
-    public PromotionRuleArrayType createPromotionRuleArrayType() {
-        return new PromotionRuleArrayType();
-    }
-
-    /**
-     * Create an instance of {@link TaxIdentifierAttributeType }
-     * 
-     */
-    public TaxIdentifierAttributeType createTaxIdentifierAttributeType() {
-        return new TaxIdentifierAttributeType();
-    }
-
-    /**
-     * Create an instance of {@link OrderIDArrayType }
-     * 
-     */
-    public OrderIDArrayType createOrderIDArrayType() {
-        return new OrderIDArrayType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketAutoAcceptEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketAutoAcceptEnabledDefinitionType createLocalMarketAutoAcceptEnabledDefinitionType() {
-        return new LocalMarketAutoAcceptEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link AccountEntriesType }
-     * 
-     */
-    public AccountEntriesType createAccountEntriesType() {
-        return new AccountEntriesType();
-    }
-
-    /**
-     * Create an instance of {@link Group1MaxFlatShippingCostDefinitionType }
-     * 
-     */
-    public Group1MaxFlatShippingCostDefinitionType createGroup1MaxFlatShippingCostDefinitionType() {
-        return new Group1MaxFlatShippingCostDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ReturnPolicyEnabledDefinitionType }
-     * 
-     */
-    public ReturnPolicyEnabledDefinitionType createReturnPolicyEnabledDefinitionType() {
-        return new ReturnPolicyEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link VariationSpecificPictureSetType }
-     * 
-     */
-    public VariationSpecificPictureSetType createVariationSpecificPictureSetType() {
-        return new VariationSpecificPictureSetType();
-    }
-
-    /**
-     * Create an instance of {@link AdditionalCompatibilityEnabledDefinitionType }
-     * 
-     */
-    public AdditionalCompatibilityEnabledDefinitionType createAdditionalCompatibilityEnabledDefinitionType() {
-        return new AdditionalCompatibilityEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PowerSellerDashboardType }
-     * 
-     */
-    public PowerSellerDashboardType createPowerSellerDashboardType() {
-        return new PowerSellerDashboardType();
-    }
-
-    /**
-     * Create an instance of {@link AddOrderResponseType }
-     * 
-     */
-    public AddOrderResponseType createAddOrderResponseType() {
-        return new AddOrderResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetSessionIDRequestType }
-     * 
-     */
-    public GetSessionIDRequestType createGetSessionIDRequestType() {
-        return new GetSessionIDRequestType();
-    }
-
-    /**
-     * Create an instance of {@link EndItemRequestContainerType }
-     * 
-     */
-    public EndItemRequestContainerType createEndItemRequestContainerType() {
-        return new EndItemRequestContainerType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingLocationDetailsType }
-     * 
-     */
-    public ShippingLocationDetailsType createShippingLocationDetailsType() {
-        return new ShippingLocationDetailsType();
+    public CalculatedShippingDiscountType createCalculatedShippingDiscountType() {
+        return new CalculatedShippingDiscountType();
     }
 
     /**
@@ -3175,243 +295,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link VariationKeyType }
+     * Create an instance of {@link InternationalReturnsShipmentPayeeCodeType }
      * 
      */
-    public VariationKeyType createVariationKeyType() {
-        return new VariationKeyType();
+    public InternationalReturnsShipmentPayeeCodeType createInternationalReturnsShipmentPayeeCodeType() {
+        return new InternationalReturnsShipmentPayeeCodeType();
     }
 
     /**
-     * Create an instance of {@link VeROReportItemsType }
+     * Create an instance of {@link GetFeedbackResponseType }
      * 
      */
-    public VeROReportItemsType createVeROReportItemsType() {
-        return new VeROReportItemsType();
+    public GetFeedbackResponseType createGetFeedbackResponseType() {
+        return new GetFeedbackResponseType();
     }
 
     /**
-     * Create an instance of {@link ItemCompatibilityListType }
+     * Create an instance of {@link DuplicateInvocationDetailsType }
      * 
      */
-    public ItemCompatibilityListType createItemCompatibilityListType() {
-        return new ItemCompatibilityListType();
-    }
-
-    /**
-     * Create an instance of {@link LocalSearchType }
-     * 
-     */
-    public LocalSearchType createLocalSearchType() {
-        return new LocalSearchType();
-    }
-
-    /**
-     * Create an instance of {@link ExpressEnabledDefinitionType }
-     * 
-     */
-    public ExpressEnabledDefinitionType createExpressEnabledDefinitionType() {
-        return new ExpressEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link AddMemberMessageAAQToPartnerResponseType }
-     * 
-     */
-    public AddMemberMessageAAQToPartnerResponseType createAddMemberMessageAAQToPartnerResponseType() {
-        return new AddMemberMessageAAQToPartnerResponseType();
-    }
-
-    /**
-     * Create an instance of {@link GetBestOffersRequestType }
-     * 
-     */
-    public GetBestOffersRequestType createGetBestOffersRequestType() {
-        return new GetBestOffersRequestType();
-    }
-
-    /**
-     * Create an instance of {@link SkypeMeTransactionalEnabledDefinitionType }
-     * 
-     */
-    public SkypeMeTransactionalEnabledDefinitionType createSkypeMeTransactionalEnabledDefinitionType() {
-        return new SkypeMeTransactionalEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentMethodDefinitionType }
-     * 
-     */
-    public PaymentMethodDefinitionType createPaymentMethodDefinitionType() {
-        return new PaymentMethodDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link MaximumBuyerPolicyViolationsDetailsType }
-     * 
-     */
-    public MaximumBuyerPolicyViolationsDetailsType createMaximumBuyerPolicyViolationsDetailsType() {
-        return new MaximumBuyerPolicyViolationsDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link TaxDetailsType }
-     * 
-     */
-    public TaxDetailsType createTaxDetailsType() {
-        return new TaxDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link GeteBayOfficialTimeRequestType }
-     * 
-     */
-    public GeteBayOfficialTimeRequestType createGeteBayOfficialTimeRequestType() {
-        return new GeteBayOfficialTimeRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ValidateTestUserRegistrationResponseType }
-     * 
-     */
-    public ValidateTestUserRegistrationResponseType createValidateTestUserRegistrationResponseType() {
-        return new ValidateTestUserRegistrationResponseType();
-    }
-
-    /**
-     * Create an instance of {@link BuyerRoleMetricsType }
-     * 
-     */
-    public BuyerRoleMetricsType createBuyerRoleMetricsType() {
-        return new BuyerRoleMetricsType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingDetailsType }
-     * 
-     */
-    public ShippingDetailsType createShippingDetailsType() {
-        return new ShippingDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link BuyerGuaranteeEnabledDefinitionType }
-     * 
-     */
-    public BuyerGuaranteeEnabledDefinitionType createBuyerGuaranteeEnabledDefinitionType() {
-        return new BuyerGuaranteeEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetTaxTableResponseType }
-     * 
-     */
-    public GetTaxTableResponseType createGetTaxTableResponseType() {
-        return new GetTaxTableResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ItemRatingDetailsType }
-     * 
-     */
-    public ItemRatingDetailsType createItemRatingDetailsType() {
-        return new ItemRatingDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link AccountSummaryType }
-     * 
-     */
-    public AccountSummaryType createAccountSummaryType() {
-        return new AccountSummaryType();
-    }
-
-    /**
-     * Create an instance of {@link SellerDiscountType }
-     * 
-     */
-    public SellerDiscountType createSellerDiscountType() {
-        return new SellerDiscountType();
-    }
-
-    /**
-     * Create an instance of {@link SetShippingDiscountProfilesResponseType }
-     * 
-     */
-    public SetShippingDiscountProfilesResponseType createSetShippingDiscountProfilesResponseType() {
-        return new SetShippingDiscountProfilesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link SellereBayPaymentProcessConsentCodeType }
-     * 
-     */
-    public SellereBayPaymentProcessConsentCodeType createSellereBayPaymentProcessConsentCodeType() {
-        return new SellereBayPaymentProcessConsentCodeType();
-    }
-
-    /**
-     * Create an instance of {@link PictureSetMemberType }
-     * 
-     */
-    public PictureSetMemberType createPictureSetMemberType() {
-        return new PictureSetMemberType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProPaymentMethodCheckOutEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProPaymentMethodCheckOutEnabledDefinitionType createEBayMotorsProPaymentMethodCheckOutEnabledDefinitionType() {
-        return new EBayMotorsProPaymentMethodCheckOutEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link BestOfferCounterEnabledDefinitionType }
-     * 
-     */
-    public BestOfferCounterEnabledDefinitionType createBestOfferCounterEnabledDefinitionType() {
-        return new BestOfferCounterEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ExtendSiteHostedPicturesRequestType }
-     * 
-     */
-    public ExtendSiteHostedPicturesRequestType createExtendSiteHostedPicturesRequestType() {
-        return new ExtendSiteHostedPicturesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketStreetCountDefinitionType }
-     * 
-     */
-    public LocalMarketStreetCountDefinitionType createLocalMarketStreetCountDefinitionType() {
-        return new LocalMarketStreetCountDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link SetNotificationPreferencesRequestType }
-     * 
-     */
-    public SetNotificationPreferencesRequestType createSetNotificationPreferencesRequestType() {
-        return new SetNotificationPreferencesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link RequiredSellerActionArrayType }
-     * 
-     */
-    public RequiredSellerActionArrayType createRequiredSellerActionArrayType() {
-        return new RequiredSellerActionArrayType();
-    }
-
-    /**
-     * Create an instance of {@link MyMessagesExternalMessageIDArrayType }
-     * 
-     */
-    public MyMessagesExternalMessageIDArrayType createMyMessagesExternalMessageIDArrayType() {
-        return new MyMessagesExternalMessageIDArrayType();
+    public DuplicateInvocationDetailsType createDuplicateInvocationDetailsType() {
+        return new DuplicateInvocationDetailsType();
     }
 
     /**
@@ -3423,883 +327,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetNotificationPreferencesRequestType }
+     * Create an instance of {@link GetNotificationsUsageRequestType }
      * 
      */
-    public GetNotificationPreferencesRequestType createGetNotificationPreferencesRequestType() {
-        return new GetNotificationPreferencesRequestType();
+    public GetNotificationsUsageRequestType createGetNotificationsUsageRequestType() {
+        return new GetNotificationsUsageRequestType();
     }
 
     /**
-     * Create an instance of {@link SetMessagePreferencesResponseType }
+     * Create an instance of {@link LeaveFeedbackResponseType }
      * 
      */
-    public SetMessagePreferencesResponseType createSetMessagePreferencesResponseType() {
-        return new SetMessagePreferencesResponseType();
+    public LeaveFeedbackResponseType createLeaveFeedbackResponseType() {
+        return new LeaveFeedbackResponseType();
     }
 
     /**
-     * Create an instance of {@link PromotedItemType }
+     * Create an instance of {@link AddMemberMessageAAQToPartnerRequestType }
      * 
      */
-    public PromotedItemType createPromotedItemType() {
-        return new PromotedItemType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingEstimatedDeliveryInfoType }
-     * 
-     */
-    public ShippingEstimatedDeliveryInfoType createShippingEstimatedDeliveryInfoType() {
-        return new ShippingEstimatedDeliveryInfoType();
-    }
-
-    /**
-     * Create an instance of {@link SetUserNotesResponseType }
-     * 
-     */
-    public SetUserNotesResponseType createSetUserNotesResponseType() {
-        return new SetUserNotesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link InventoryFeesType }
-     * 
-     */
-    public InventoryFeesType createInventoryFeesType() {
-        return new InventoryFeesType();
-    }
-
-    /**
-     * Create an instance of {@link DomesticRefundMethodCodeType }
-     * 
-     */
-    public DomesticRefundMethodCodeType createDomesticRefundMethodCodeType() {
-        return new DomesticRefundMethodCodeType();
-    }
-
-    /**
-     * Create an instance of {@link UnpaidItemType }
-     * 
-     */
-    public UnpaidItemType createUnpaidItemType() {
-        return new UnpaidItemType();
-    }
-
-    /**
-     * Create an instance of {@link SummaryEventScheduleType }
-     * 
-     */
-    public SummaryEventScheduleType createSummaryEventScheduleType() {
-        return new SummaryEventScheduleType();
-    }
-
-    /**
-     * Create an instance of {@link SellerPaymentProfileType }
-     * 
-     */
-    public SellerPaymentProfileType createSellerPaymentProfileType() {
-        return new SellerPaymentProfileType();
-    }
-
-    /**
-     * Create an instance of {@link LeaveFeedbackRequestType }
-     * 
-     */
-    public LeaveFeedbackRequestType createLeaveFeedbackRequestType() {
-        return new LeaveFeedbackRequestType();
-    }
-
-    /**
-     * Create an instance of {@link TopRatedSellerDetailsType }
-     * 
-     */
-    public TopRatedSellerDetailsType createTopRatedSellerDetailsType() {
-        return new TopRatedSellerDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link TransactionType }
-     * 
-     */
-    public TransactionType createTransactionType() {
-        return new TransactionType();
-    }
-
-    /**
-     * Create an instance of {@link NotificationEnableArrayType }
-     * 
-     */
-    public NotificationEnableArrayType createNotificationEnableArrayType() {
-        return new NotificationEnableArrayType();
-    }
-
-    /**
-     * Create an instance of {@link SetTaxTableRequestType }
-     * 
-     */
-    public SetTaxTableRequestType createSetTaxTableRequestType() {
-        return new SetTaxTableRequestType();
-    }
-
-    /**
-     * Create an instance of {@link RefundFundingSourceArrayType }
-     * 
-     */
-    public RefundFundingSourceArrayType createRefundFundingSourceArrayType() {
-        return new RefundFundingSourceArrayType();
-    }
-
-    /**
-     * Create an instance of {@link AdFormatLeadType }
-     * 
-     */
-    public AdFormatLeadType createAdFormatLeadType() {
-        return new AdFormatLeadType();
-    }
-
-    /**
-     * Create an instance of {@link PictureManagerSubscriptionType }
-     * 
-     */
-    public PictureManagerSubscriptionType createPictureManagerSubscriptionType() {
-        return new PictureManagerSubscriptionType();
-    }
-
-    /**
-     * Create an instance of {@link GetSellerEventsResponseType }
-     * 
-     */
-    public GetSellerEventsResponseType createGetSellerEventsResponseType() {
-        return new GetSellerEventsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link PlaceOfferResponseType }
-     * 
-     */
-    public PlaceOfferResponseType createPlaceOfferResponseType() {
-        return new PlaceOfferResponseType();
-    }
-
-    /**
-     * Create an instance of {@link BuyerPackageEnclosureType }
-     * 
-     */
-    public BuyerPackageEnclosureType createBuyerPackageEnclosureType() {
-        return new BuyerPackageEnclosureType();
-    }
-
-    /**
-     * Create an instance of {@link SetTaxTableResponseType }
-     * 
-     */
-    public SetTaxTableResponseType createSetTaxTableResponseType() {
-        return new SetTaxTableResponseType();
-    }
-
-    /**
-     * Create an instance of {@link SellerShippingProfileType }
-     * 
-     */
-    public SellerShippingProfileType createSellerShippingProfileType() {
-        return new SellerShippingProfileType();
-    }
-
-    /**
-     * Create an instance of {@link MyeBayFavoriteSellerType }
-     * 
-     */
-    public MyeBayFavoriteSellerType createMyeBayFavoriteSellerType() {
-        return new MyeBayFavoriteSellerType();
-    }
-
-    /**
-     * Create an instance of {@link InternationalReturnsAcceptedCodeType }
-     * 
-     */
-    public InternationalReturnsAcceptedCodeType createInternationalReturnsAcceptedCodeType() {
-        return new InternationalReturnsAcceptedCodeType();
-    }
-
-    /**
-     * Create an instance of {@link ReviseMyMessagesRequestType }
-     * 
-     */
-    public ReviseMyMessagesRequestType createReviseMyMessagesRequestType() {
-        return new ReviseMyMessagesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link FetchTokenRequestType }
-     * 
-     */
-    public FetchTokenRequestType createFetchTokenRequestType() {
-        return new FetchTokenRequestType();
-    }
-
-    /**
-     * Create an instance of {@link AddOrderRequestType }
-     * 
-     */
-    public AddOrderRequestType createAddOrderRequestType() {
-        return new AddOrderRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ProStoresDetailsType }
-     * 
-     */
-    public ProStoresDetailsType createProStoresDetailsType() {
-        return new ProStoresDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingOverrideType }
-     * 
-     */
-    public ShippingOverrideType createShippingOverrideType() {
-        return new ShippingOverrideType();
-    }
-
-    /**
-     * Create an instance of {@link BestOfferArrayType }
-     * 
-     */
-    public BestOfferArrayType createBestOfferArrayType() {
-        return new BestOfferArrayType();
-    }
-
-    /**
-     * Create an instance of {@link GetUserContactDetailsResponseType }
-     * 
-     */
-    public GetUserContactDetailsResponseType createGetUserContactDetailsResponseType() {
-        return new GetUserContactDetailsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link MinimumReservePriceDefinitionType }
-     * 
-     */
-    public MinimumReservePriceDefinitionType createMinimumReservePriceDefinitionType() {
-        return new MinimumReservePriceDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link SubscriptionType }
-     * 
-     */
-    public SubscriptionType createSubscriptionType() {
-        return new SubscriptionType();
-    }
-
-    /**
-     * Create an instance of {@link MemberMessageExchangeType }
-     * 
-     */
-    public MemberMessageExchangeType createMemberMessageExchangeType() {
-        return new MemberMessageExchangeType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProShippingMethodEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProShippingMethodEnabledDefinitionType createEBayMotorsProShippingMethodEnabledDefinitionType() {
-        return new EBayMotorsProShippingMethodEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link FlatShippingDiscountType }
-     * 
-     */
-    public FlatShippingDiscountType createFlatShippingDiscountType() {
-        return new FlatShippingDiscountType();
-    }
-
-    /**
-     * Create an instance of {@link OfferType }
-     * 
-     */
-    public OfferType createOfferType() {
-        return new OfferType();
-    }
-
-    /**
-     * Create an instance of {@link SuggestedCategoryArrayType }
-     * 
-     */
-    public SuggestedCategoryArrayType createSuggestedCategoryArrayType() {
-        return new SuggestedCategoryArrayType();
-    }
-
-    /**
-     * Create an instance of {@link InternationalReturnsShipmentPayeeCodeType }
-     * 
-     */
-    public InternationalReturnsShipmentPayeeCodeType createInternationalReturnsShipmentPayeeCodeType() {
-        return new InternationalReturnsShipmentPayeeCodeType();
-    }
-
-    /**
-     * Create an instance of {@link FeedbackPeriodArrayType }
-     * 
-     */
-    public FeedbackPeriodArrayType createFeedbackPeriodArrayType() {
-        return new FeedbackPeriodArrayType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketBestOfferEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketBestOfferEnabledDefinitionType createLocalMarketBestOfferEnabledDefinitionType() {
-        return new LocalMarketBestOfferEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link InsuranceDetailsType }
-     * 
-     */
-    public InsuranceDetailsType createInsuranceDetailsType() {
-        return new InsuranceDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link MarkUpMarkDownEventType }
-     * 
-     */
-    public MarkUpMarkDownEventType createMarkUpMarkDownEventType() {
-        return new MarkUpMarkDownEventType();
-    }
-
-    /**
-     * Create an instance of {@link NumberOfPolicyViolationsDetailsType }
-     * 
-     */
-    public NumberOfPolicyViolationsDetailsType createNumberOfPolicyViolationsDetailsType() {
-        return new NumberOfPolicyViolationsDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingCategoryDetailsType }
-     * 
-     */
-    public ShippingCategoryDetailsType createShippingCategoryDetailsType() {
-        return new ShippingCategoryDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ListingEnhancementDurationDefinitionType }
-     * 
-     */
-    public ListingEnhancementDurationDefinitionType createListingEnhancementDurationDefinitionType() {
-        return new ListingEnhancementDurationDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link DeliveryDetailsType }
-     * 
-     */
-    public DeliveryDetailsType createDeliveryDetailsType() {
-        return new DeliveryDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link GetMyMessagesResponseType }
-     * 
-     */
-    public GetMyMessagesResponseType createGetMyMessagesResponseType() {
-        return new GetMyMessagesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ConfirmIdentityRequestType }
-     * 
-     */
-    public ConfirmIdentityRequestType createConfirmIdentityRequestType() {
-        return new ConfirmIdentityRequestType();
-    }
-
-    /**
-     * Create an instance of {@link CompleteSaleRequestType }
-     * 
-     */
-    public CompleteSaleRequestType createCompleteSaleRequestType() {
-        return new CompleteSaleRequestType();
-    }
-
-    /**
-     * Create an instance of {@link GetChallengeTokenRequestType }
-     * 
-     */
-    public GetChallengeTokenRequestType createGetChallengeTokenRequestType() {
-        return new GetChallengeTokenRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ValidateTestUserRegistrationRequestType }
-     * 
-     */
-    public ValidateTestUserRegistrationRequestType createValidateTestUserRegistrationRequestType() {
-        return new ValidateTestUserRegistrationRequestType();
-    }
-
-    /**
-     * Create an instance of {@link PickupOptionsType }
-     * 
-     */
-    public PickupOptionsType createPickupOptionsType() {
-        return new PickupOptionsType();
-    }
-
-    /**
-     * Create an instance of {@link EBayPaymentMismatchDetailsType }
-     * 
-     */
-    public EBayPaymentMismatchDetailsType createEBayPaymentMismatchDetailsType() {
-        return new EBayPaymentMismatchDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link RefundLineType }
-     * 
-     */
-    public RefundLineType createRefundLineType() {
-        return new RefundLineType();
-    }
-
-    /**
-     * Create an instance of {@link DomesticReturnsShipmentPayeeCodeType }
-     * 
-     */
-    public DomesticReturnsShipmentPayeeCodeType createDomesticReturnsShipmentPayeeCodeType() {
-        return new DomesticReturnsShipmentPayeeCodeType();
-    }
-
-    /**
-     * Create an instance of {@link BuyerSatisfactionDashboardType }
-     * 
-     */
-    public BuyerSatisfactionDashboardType createBuyerSatisfactionDashboardType() {
-        return new BuyerSatisfactionDashboardType();
-    }
-
-    /**
-     * Create an instance of {@link EndItemResponseType }
-     * 
-     */
-    public EndItemResponseType createEndItemResponseType() {
-        return new EndItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link CharityIDType }
-     * 
-     */
-    public CharityIDType createCharityIDType() {
-        return new CharityIDType();
-    }
-
-    /**
-     * Create an instance of {@link ItemSpecificsEnabledDefinitionType }
-     * 
-     */
-    public ItemSpecificsEnabledDefinitionType createItemSpecificsEnabledDefinitionType() {
-        return new ItemSpecificsEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link AddMemberMessagesAAQToBidderRequestType }
-     * 
-     */
-    public AddMemberMessagesAAQToBidderRequestType createAddMemberMessagesAAQToBidderRequestType() {
-        return new AddMemberMessagesAAQToBidderRequestType();
-    }
-
-    /**
-     * Create an instance of {@link PayPalBuyerProtectionEnabledDefinitionType }
-     * 
-     */
-    public PayPalBuyerProtectionEnabledDefinitionType createPayPalBuyerProtectionEnabledDefinitionType() {
-        return new PayPalBuyerProtectionEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link SpecialitySubscriptionDefinitionType }
-     * 
-     */
-    public SpecialitySubscriptionDefinitionType createSpecialitySubscriptionDefinitionType() {
-        return new SpecialitySubscriptionDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link SkypeMeNonTransactionalEnabledDefinitionType }
-     * 
-     */
-    public SkypeMeNonTransactionalEnabledDefinitionType createSkypeMeNonTransactionalEnabledDefinitionType() {
-        return new SkypeMeNonTransactionalEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetMessagePreferencesResponseType }
-     * 
-     */
-    public GetMessagePreferencesResponseType createGetMessagePreferencesResponseType() {
-        return new GetMessagePreferencesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link OrderArrayType }
-     * 
-     */
-    public OrderArrayType createOrderArrayType() {
-        return new OrderArrayType();
-    }
-
-    /**
-     * Create an instance of {@link TimeZoneDetailsType }
-     * 
-     */
-    public TimeZoneDetailsType createTimeZoneDetailsType() {
-        return new TimeZoneDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProAdFormatEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProAdFormatEnabledDefinitionType createEBayMotorsProAdFormatEnabledDefinitionType() {
-        return new EBayMotorsProAdFormatEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link RespondToBestOfferRequestType }
-     * 
-     */
-    public RespondToBestOfferRequestType createRespondToBestOfferRequestType() {
-        return new RespondToBestOfferRequestType();
-    }
-
-    /**
-     * Create an instance of {@link RefundType }
-     * 
-     */
-    public RefundType createRefundType() {
-        return new RefundType();
-    }
-
-    /**
-     * Create an instance of {@link GetAccountRequestType }
-     * 
-     */
-    public GetAccountRequestType createGetAccountRequestType() {
-        return new GetAccountRequestType();
-    }
-
-    /**
-     * Create an instance of {@link LinkedLineItemType }
-     * 
-     */
-    public LinkedLineItemType createLinkedLineItemType() {
-        return new LinkedLineItemType();
-    }
-
-    /**
-     * Create an instance of {@link InventoryStatusType }
-     * 
-     */
-    public InventoryStatusType createInventoryStatusType() {
-        return new InventoryStatusType();
-    }
-
-    /**
-     * Create an instance of {@link GetDescriptionTemplatesResponseType }
-     * 
-     */
-    public GetDescriptionTemplatesResponseType createGetDescriptionTemplatesResponseType() {
-        return new GetDescriptionTemplatesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link AddressAttributeType }
-     * 
-     */
-    public AddressAttributeType createAddressAttributeType() {
-        return new AddressAttributeType();
-    }
-
-    /**
-     * Create an instance of {@link PolicyComplianceDashboardType }
-     * 
-     */
-    public PolicyComplianceDashboardType createPolicyComplianceDashboardType() {
-        return new PolicyComplianceDashboardType();
-    }
-
-    /**
-     * Create an instance of {@link MembershipDetailType }
-     * 
-     */
-    public MembershipDetailType createMembershipDetailType() {
-        return new MembershipDetailType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentsInformationCodeType }
-     * 
-     */
-    public PaymentsInformationCodeType createPaymentsInformationCodeType() {
-        return new PaymentsInformationCodeType();
-    }
-
-    /**
-     * Create an instance of {@link RefundArrayType }
-     * 
-     */
-    public RefundArrayType createRefundArrayType() {
-        return new RefundArrayType();
-    }
-
-    /**
-     * Create an instance of {@link DigitalGoodDeliveryEnabledDefinitionType }
-     * 
-     */
-    public DigitalGoodDeliveryEnabledDefinitionType createDigitalGoodDeliveryEnabledDefinitionType() {
-        return new DigitalGoodDeliveryEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdAutoAcceptEnabledDefinitionType }
-     * 
-     */
-    public ClassifiedAdAutoAcceptEnabledDefinitionType createClassifiedAdAutoAcceptEnabledDefinitionType() {
-        return new ClassifiedAdAutoAcceptEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link CharityType }
-     * 
-     */
-    public CharityType createCharityType() {
-        return new CharityType();
-    }
-
-    /**
-     * Create an instance of {@link PictureManagerFolderType }
-     * 
-     */
-    public PictureManagerFolderType createPictureManagerFolderType() {
-        return new PictureManagerFolderType();
-    }
-
-    /**
-     * Create an instance of {@link SellerExcludeShipToLocationPreferencesType }
-     * 
-     */
-    public SellerExcludeShipToLocationPreferencesType createSellerExcludeShipToLocationPreferencesType() {
-        return new SellerExcludeShipToLocationPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link SetUserNotesRequestType }
-     * 
-     */
-    public SetUserNotesRequestType createSetUserNotesRequestType() {
-        return new SetUserNotesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link BiddingDetailsType }
-     * 
-     */
-    public BiddingDetailsType createBiddingDetailsType() {
-        return new BiddingDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketAdFormatEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketAdFormatEnabledDefinitionType createLocalMarketAdFormatEnabledDefinitionType() {
-        return new LocalMarketAdFormatEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProStreetCountDefinitionType }
-     * 
-     */
-    public EBayMotorsProStreetCountDefinitionType createEBayMotorsProStreetCountDefinitionType() {
-        return new EBayMotorsProStreetCountDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link MotorsLocalMarketEnabledDefinitionType }
-     * 
-     */
-    public MotorsLocalMarketEnabledDefinitionType createMotorsLocalMarketEnabledDefinitionType() {
-        return new MotorsLocalMarketEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ExpressConditionRequiredDefinitionType }
-     * 
-     */
-    public ExpressConditionRequiredDefinitionType createExpressConditionRequiredDefinitionType() {
-        return new ExpressConditionRequiredDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetNotificationPreferencesResponseType }
-     * 
-     */
-    public GetNotificationPreferencesResponseType createGetNotificationPreferencesResponseType() {
-        return new GetNotificationPreferencesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link DateType }
-     * 
-     */
-    public DateType createDateType() {
-        return new DateType();
-    }
-
-    /**
-     * Create an instance of {@link ConditionDescriptorType }
-     * 
-     */
-    public ConditionDescriptorType createConditionDescriptorType() {
-        return new ConditionDescriptorType();
-    }
-
-    /**
-     * Create an instance of {@link GetItemTransactionsRequestType }
-     * 
-     */
-    public GetItemTransactionsRequestType createGetItemTransactionsRequestType() {
-        return new GetItemTransactionsRequestType();
-    }
-
-    /**
-     * Create an instance of {@link GetTaxTableRequestType }
-     * 
-     */
-    public GetTaxTableRequestType createGetTaxTableRequestType() {
-        return new GetTaxTableRequestType();
-    }
-
-    /**
-     * Create an instance of {@link PictureManagerPictureType }
-     * 
-     */
-    public PictureManagerPictureType createPictureManagerPictureType() {
-        return new PictureManagerPictureType();
-    }
-
-    /**
-     * Create an instance of {@link MaximumUnpaidItemStrikesInfoType }
-     * 
-     */
-    public MaximumUnpaidItemStrikesInfoType createMaximumUnpaidItemStrikesInfoType() {
-        return new MaximumUnpaidItemStrikesInfoType();
-    }
-
-    /**
-     * Create an instance of {@link SellerType }
-     * 
-     */
-    public SellerType createSellerType() {
-        return new SellerType();
-    }
-
-    /**
-     * Create an instance of {@link HazmatType }
-     * 
-     */
-    public HazmatType createHazmatType() {
-        return new HazmatType();
-    }
-
-    /**
-     * Create an instance of {@link VINSupportedDefinitionType }
-     * 
-     */
-    public VINSupportedDefinitionType createVINSupportedDefinitionType() {
-        return new VINSupportedDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ConditionType }
-     * 
-     */
-    public ConditionType createConditionType() {
-        return new ConditionType();
-    }
-
-    /**
-     * Create an instance of {@link RegulatoryType }
-     * 
-     */
-    public RegulatoryType createRegulatoryType() {
-        return new RegulatoryType();
-    }
-
-    /**
-     * Create an instance of {@link GetMyeBaySellingRequestType }
-     * 
-     */
-    public GetMyeBaySellingRequestType createGetMyeBaySellingRequestType() {
-        return new GetMyeBaySellingRequestType();
-    }
-
-    /**
-     * Create an instance of {@link WantItNowPostType }
-     * 
-     */
-    public WantItNowPostType createWantItNowPostType() {
-        return new WantItNowPostType();
-    }
-
-    /**
-     * Create an instance of {@link ValidateChallengeInputRequestType }
-     * 
-     */
-    public ValidateChallengeInputRequestType createValidateChallengeInputRequestType() {
-        return new ValidateChallengeInputRequestType();
-    }
-
-    /**
-     * Create an instance of {@link DigitalGoodInfoType }
-     * 
-     */
-    public DigitalGoodInfoType createDigitalGoodInfoType() {
-        return new DigitalGoodInfoType();
-    }
-
-    /**
-     * Create an instance of {@link MaximumBuyerPolicyViolationsType }
-     * 
-     */
-    public MaximumBuyerPolicyViolationsType createMaximumBuyerPolicyViolationsType() {
-        return new MaximumBuyerPolicyViolationsType();
-    }
-
-    /**
-     * Create an instance of {@link CurrencyDetailsType }
-     * 
-     */
-    public CurrencyDetailsType createCurrencyDetailsType() {
-        return new CurrencyDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link BiddingSummaryType }
-     * 
-     */
-    public BiddingSummaryType createBiddingSummaryType() {
-        return new BiddingSummaryType();
+    public AddMemberMessageAAQToPartnerRequestType createAddMemberMessageAAQToPartnerRequestType() {
+        return new AddMemberMessageAAQToPartnerRequestType();
     }
 
     /**
@@ -4311,123 +359,99 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MyeBaySellingSummaryType }
+     * Create an instance of {@link LocalListingDistancesSpecialtyDefinitionType }
      * 
      */
-    public MyeBaySellingSummaryType createMyeBaySellingSummaryType() {
-        return new MyeBaySellingSummaryType();
+    public LocalListingDistancesSpecialtyDefinitionType createLocalListingDistancesSpecialtyDefinitionType() {
+        return new LocalListingDistancesSpecialtyDefinitionType();
     }
 
     /**
-     * Create an instance of {@link SalesTaxType }
+     * Create an instance of {@link BestOfferAutoAcceptEnabledDefinitionType }
      * 
      */
-    public SalesTaxType createSalesTaxType() {
-        return new SalesTaxType();
+    public BestOfferAutoAcceptEnabledDefinitionType createBestOfferAutoAcceptEnabledDefinitionType() {
+        return new BestOfferAutoAcceptEnabledDefinitionType();
     }
 
     /**
-     * Create an instance of {@link GetAccountResponseType }
+     * Create an instance of {@link GetSessionIDResponseType }
      * 
      */
-    public GetAccountResponseType createGetAccountResponseType() {
-        return new GetAccountResponseType();
+    public GetSessionIDResponseType createGetSessionIDResponseType() {
+        return new GetSessionIDResponseType();
     }
 
     /**
-     * Create an instance of {@link UserIdPasswordType }
+     * Create an instance of {@link BotBlockResponseType }
      * 
      */
-    public UserIdPasswordType createUserIdPasswordType() {
-        return new UserIdPasswordType();
+    public BotBlockResponseType createBotBlockResponseType() {
+        return new BotBlockResponseType();
     }
 
     /**
-     * Create an instance of {@link ShippingServiceDetailsType }
+     * Create an instance of {@link TaxesType }
      * 
      */
-    public ShippingServiceDetailsType createShippingServiceDetailsType() {
-        return new ShippingServiceDetailsType();
+    public TaxesType createTaxesType() {
+        return new TaxesType();
     }
 
     /**
-     * Create an instance of {@link UserAgreementInfoType }
+     * Create an instance of {@link NumberOfPolicyViolationsDetailsType }
      * 
      */
-    public UserAgreementInfoType createUserAgreementInfoType() {
-        return new UserAgreementInfoType();
+    public NumberOfPolicyViolationsDetailsType createNumberOfPolicyViolationsDetailsType() {
+        return new NumberOfPolicyViolationsDetailsType();
     }
 
     /**
-     * Create an instance of {@link VariationDetailsType }
+     * Create an instance of {@link ListingFeatureDetailsType }
      * 
      */
-    public VariationDetailsType createVariationDetailsType() {
-        return new VariationDetailsType();
+    public ListingFeatureDetailsType createListingFeatureDetailsType() {
+        return new ListingFeatureDetailsType();
     }
 
     /**
-     * Create an instance of {@link RefundTransactionType }
+     * Create an instance of {@link ErrorParameterType }
      * 
      */
-    public RefundTransactionType createRefundTransactionType() {
-        return new RefundTransactionType();
+    public ErrorParameterType createErrorParameterType() {
+        return new ErrorParameterType();
     }
 
     /**
-     * Create an instance of {@link GetUserResponseType }
+     * Create an instance of {@link MinimumReservePriceDefinitionType }
      * 
      */
-    public GetUserResponseType createGetUserResponseType() {
-        return new GetUserResponseType();
+    public MinimumReservePriceDefinitionType createMinimumReservePriceDefinitionType() {
+        return new MinimumReservePriceDefinitionType();
     }
 
     /**
-     * Create an instance of {@link CategoryType }
+     * Create an instance of {@link NettedTransactionSummaryType }
      * 
      */
-    public CategoryType createCategoryType() {
-        return new CategoryType();
+    public NettedTransactionSummaryType createNettedTransactionSummaryType() {
+        return new NettedTransactionSummaryType();
     }
 
     /**
-     * Create an instance of {@link PremiumSubscriptionDefinitionType }
+     * Create an instance of {@link PaginatedItemArrayType }
      * 
      */
-    public PremiumSubscriptionDefinitionType createPremiumSubscriptionDefinitionType() {
-        return new PremiumSubscriptionDefinitionType();
+    public PaginatedItemArrayType createPaginatedItemArrayType() {
+        return new PaginatedItemArrayType();
     }
 
     /**
-     * Create an instance of {@link AnnouncementMessageType }
+     * Create an instance of {@link RefundDetailsType }
      * 
      */
-    public AnnouncementMessageType createAnnouncementMessageType() {
-        return new AnnouncementMessageType();
-    }
-
-    /**
-     * Create an instance of {@link UnitOfMeasurementType }
-     * 
-     */
-    public UnitOfMeasurementType createUnitOfMeasurementType() {
-        return new UnitOfMeasurementType();
-    }
-
-    /**
-     * Create an instance of {@link FeedbackRequirementsType }
-     * 
-     */
-    public FeedbackRequirementsType createFeedbackRequirementsType() {
-        return new FeedbackRequirementsType();
-    }
-
-    /**
-     * Create an instance of {@link FeatureEligibilityType }
-     * 
-     */
-    public FeatureEligibilityType createFeatureEligibilityType() {
-        return new FeatureEligibilityType();
+    public RefundDetailsType createRefundDetailsType() {
+        return new RefundDetailsType();
     }
 
     /**
@@ -4439,147 +463,339 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link InternationalReturnsAcceptedDefinitionType }
+     * Create an instance of {@link EBayPLUSPreferenceType }
      * 
      */
-    public InternationalReturnsAcceptedDefinitionType createInternationalReturnsAcceptedDefinitionType() {
-        return new InternationalReturnsAcceptedDefinitionType();
+    public EBayPLUSPreferenceType createEBayPLUSPreferenceType() {
+        return new EBayPLUSPreferenceType();
     }
 
     /**
-     * Create an instance of {@link DiscountDetailType }
+     * Create an instance of {@link VRMSupportedDefinitionType }
      * 
      */
-    public DiscountDetailType createDiscountDetailType() {
-        return new DiscountDetailType();
+    public VRMSupportedDefinitionType createVRMSupportedDefinitionType() {
+        return new VRMSupportedDefinitionType();
     }
 
     /**
-     * Create an instance of {@link MaximumItemRequirementsDetailsType }
+     * Create an instance of {@link MaximumBuyerPolicyViolationsDetailsType }
      * 
      */
-    public MaximumItemRequirementsDetailsType createMaximumItemRequirementsDetailsType() {
-        return new MaximumItemRequirementsDetailsType();
+    public MaximumBuyerPolicyViolationsDetailsType createMaximumBuyerPolicyViolationsDetailsType() {
+        return new MaximumBuyerPolicyViolationsDetailsType();
     }
 
     /**
-     * Create an instance of {@link SellerRoleMetricsType }
+     * Create an instance of {@link AddMemberMessagesAAQToBidderRequestContainerType }
      * 
      */
-    public SellerRoleMetricsType createSellerRoleMetricsType() {
-        return new SellerRoleMetricsType();
+    public AddMemberMessagesAAQToBidderRequestContainerType createAddMemberMessagesAAQToBidderRequestContainerType() {
+        return new AddMemberMessagesAAQToBidderRequestContainerType();
     }
 
     /**
-     * Create an instance of {@link ProductFinderConstraintType }
+     * Create an instance of {@link MaximumBuyerPolicyViolationsType }
      * 
      */
-    public ProductFinderConstraintType createProductFinderConstraintType() {
-        return new ProductFinderConstraintType();
+    public MaximumBuyerPolicyViolationsType createMaximumBuyerPolicyViolationsType() {
+        return new MaximumBuyerPolicyViolationsType();
     }
 
     /**
-     * Create an instance of {@link OrderTransactionArrayType }
+     * Create an instance of {@link PremiumSubscriptionDefinitionType }
      * 
      */
-    public OrderTransactionArrayType createOrderTransactionArrayType() {
-        return new OrderTransactionArrayType();
+    public PremiumSubscriptionDefinitionType createPremiumSubscriptionDefinitionType() {
+        return new PremiumSubscriptionDefinitionType();
     }
 
     /**
-     * Create an instance of {@link CharityAffiliationsType }
+     * Create an instance of {@link PurchaseReminderEmailPreferencesType }
      * 
      */
-    public CharityAffiliationsType createCharityAffiliationsType() {
-        return new CharityAffiliationsType();
+    public PurchaseReminderEmailPreferencesType createPurchaseReminderEmailPreferencesType() {
+        return new PurchaseReminderEmailPreferencesType();
     }
 
     /**
-     * Create an instance of {@link TransactionStatusType }
+     * Create an instance of {@link DigitalGoodDeliveryEnabledDefinitionType }
      * 
      */
-    public TransactionStatusType createTransactionStatusType() {
-        return new TransactionStatusType();
+    public DigitalGoodDeliveryEnabledDefinitionType createDigitalGoodDeliveryEnabledDefinitionType() {
+        return new DigitalGoodDeliveryEnabledDefinitionType();
     }
 
     /**
-     * Create an instance of {@link PerformanceDashboardType }
+     * Create an instance of {@link GetShippingDiscountProfilesRequestType }
      * 
      */
-    public PerformanceDashboardType createPerformanceDashboardType() {
-        return new PerformanceDashboardType();
+    public GetShippingDiscountProfilesRequestType createGetShippingDiscountProfilesRequestType() {
+        return new GetShippingDiscountProfilesRequestType();
     }
 
     /**
-     * Create an instance of {@link SupportedSellerProfileType }
+     * Create an instance of {@link EBayTaxReferenceValue }
      * 
      */
-    public SupportedSellerProfileType createSupportedSellerProfileType() {
-        return new SupportedSellerProfileType();
+    public EBayTaxReferenceValue createEBayTaxReferenceValue() {
+        return new EBayTaxReferenceValue();
     }
 
     /**
-     * Create an instance of {@link EndItemRequestType }
+     * Create an instance of {@link AddressAttributeType }
      * 
      */
-    public EndItemRequestType createEndItemRequestType() {
-        return new EndItemRequestType();
+    public AddressAttributeType createAddressAttributeType() {
+        return new AddressAttributeType();
     }
 
     /**
-     * Create an instance of {@link ItemTransactionIDType }
+     * Create an instance of {@link ReturnsWithinDetailsType }
      * 
      */
-    public ItemTransactionIDType createItemTransactionIDType() {
-        return new ItemTransactionIDType();
+    public ReturnsWithinDetailsType createReturnsWithinDetailsType() {
+        return new ReturnsWithinDetailsType();
     }
 
     /**
-     * Create an instance of {@link AverageRatingDetailArrayType }
+     * Create an instance of {@link ReturnPolicyEnabledDefinitionType }
      * 
      */
-    public AverageRatingDetailArrayType createAverageRatingDetailArrayType() {
-        return new AverageRatingDetailArrayType();
+    public ReturnPolicyEnabledDefinitionType createReturnPolicyEnabledDefinitionType() {
+        return new ReturnPolicyEnabledDefinitionType();
     }
 
     /**
-     * Create an instance of {@link AddressType }
+     * Create an instance of {@link PromotionalSaleDetailsType }
      * 
      */
-    public AddressType createAddressType() {
-        return new AddressType();
+    public PromotionalSaleDetailsType createPromotionalSaleDetailsType() {
+        return new PromotionalSaleDetailsType();
     }
 
     /**
-     * Create an instance of {@link CountryDetailsType }
+     * Create an instance of {@link GetItemsAwaitingFeedbackRequestType }
      * 
      */
-    public CountryDetailsType createCountryDetailsType() {
-        return new CountryDetailsType();
+    public GetItemsAwaitingFeedbackRequestType createGetItemsAwaitingFeedbackRequestType() {
+        return new GetItemsAwaitingFeedbackRequestType();
     }
 
     /**
-     * Create an instance of {@link ReviseMyMessagesFoldersRequestType }
+     * Create an instance of {@link OrderTransactionType }
      * 
      */
-    public ReviseMyMessagesFoldersRequestType createReviseMyMessagesFoldersRequestType() {
-        return new ReviseMyMessagesFoldersRequestType();
+    public OrderTransactionType createOrderTransactionType() {
+        return new OrderTransactionType();
     }
 
     /**
-     * Create an instance of {@link LocalMarketContactByEmailEnabledDefinitionType }
+     * Create an instance of {@link RespondToBestOfferRequestType }
      * 
      */
-    public LocalMarketContactByEmailEnabledDefinitionType createLocalMarketContactByEmailEnabledDefinitionType() {
-        return new LocalMarketContactByEmailEnabledDefinitionType();
+    public RespondToBestOfferRequestType createRespondToBestOfferRequestType() {
+        return new RespondToBestOfferRequestType();
     }
 
     /**
-     * Create an instance of {@link RefundFailureReasonType }
+     * Create an instance of {@link EBayMotorsProAutoAcceptEnabledDefinitionType }
      * 
      */
-    public RefundFailureReasonType createRefundFailureReasonType() {
-        return new RefundFailureReasonType();
+    public EBayMotorsProAutoAcceptEnabledDefinitionType createEBayMotorsProAutoAcceptEnabledDefinitionType() {
+        return new EBayMotorsProAutoAcceptEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link AffiliateTrackingDetailsType }
+     * 
+     */
+    public AffiliateTrackingDetailsType createAffiliateTrackingDetailsType() {
+        return new AffiliateTrackingDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link PicturesType }
+     * 
+     */
+    public PicturesType createPicturesType() {
+        return new PicturesType();
+    }
+
+    /**
+     * Create an instance of {@link DiscountPriceInfoType }
+     * 
+     */
+    public DiscountPriceInfoType createDiscountPriceInfoType() {
+        return new DiscountPriceInfoType();
+    }
+
+    /**
+     * Create an instance of {@link SetUserPreferencesRequestType }
+     * 
+     */
+    public SetUserPreferencesRequestType createSetUserPreferencesRequestType() {
+        return new SetUserPreferencesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link VerifyAddFixedPriceItemResponseType }
+     * 
+     */
+    public VerifyAddFixedPriceItemResponseType createVerifyAddFixedPriceItemResponseType() {
+        return new VerifyAddFixedPriceItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link INEscrowWorkflowTimelineDefinitionType }
+     * 
+     */
+    public INEscrowWorkflowTimelineDefinitionType createINEscrowWorkflowTimelineDefinitionType() {
+        return new INEscrowWorkflowTimelineDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link FreePicturePackEnabledDefinitionType }
+     * 
+     */
+    public FreePicturePackEnabledDefinitionType createFreePicturePackEnabledDefinitionType() {
+        return new FreePicturePackEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link FlatShippingDiscountType }
+     * 
+     */
+    public FlatShippingDiscountType createFlatShippingDiscountType() {
+        return new FlatShippingDiscountType();
+    }
+
+    /**
+     * Create an instance of {@link ListingDetailsType }
+     * 
+     */
+    public ListingDetailsType createListingDetailsType() {
+        return new ListingDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ShipmentLineItemType }
+     * 
+     */
+    public ShipmentLineItemType createShipmentLineItemType() {
+        return new ShipmentLineItemType();
+    }
+
+    /**
+     * Create an instance of {@link PickupInStoreDetailsType }
+     * 
+     */
+    public PickupInStoreDetailsType createPickupInStoreDetailsType() {
+        return new PickupInStoreDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link FeesType }
+     * 
+     */
+    public FeesType createFeesType() {
+        return new FeesType();
+    }
+
+    /**
+     * Create an instance of {@link PaymentTransactionType }
+     * 
+     */
+    public PaymentTransactionType createPaymentTransactionType() {
+        return new PaymentTransactionType();
+    }
+
+    /**
+     * Create an instance of {@link GetShippingDiscountProfilesResponseType }
+     * 
+     */
+    public GetShippingDiscountProfilesResponseType createGetShippingDiscountProfilesResponseType() {
+        return new GetShippingDiscountProfilesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link UploadSiteHostedPicturesResponseType }
+     * 
+     */
+    public UploadSiteHostedPicturesResponseType createUploadSiteHostedPicturesResponseType() {
+        return new UploadSiteHostedPicturesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ItemSpecificDetailsType }
+     * 
+     */
+    public ItemSpecificDetailsType createItemSpecificDetailsType() {
+        return new ItemSpecificDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link AdFormatEnabledDefinitionType }
+     * 
+     */
+    public AdFormatEnabledDefinitionType createAdFormatEnabledDefinitionType() {
+        return new AdFormatEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProContactByAddressEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProContactByAddressEnabledDefinitionType createEBayMotorsProContactByAddressEnabledDefinitionType() {
+        return new EBayMotorsProContactByAddressEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link AddToItemDescriptionRequestType }
+     * 
+     */
+    public AddToItemDescriptionRequestType createAddToItemDescriptionRequestType() {
+        return new AddToItemDescriptionRequestType();
+    }
+
+    /**
+     * Create an instance of {@link TopRatedSellerDetailsType }
+     * 
+     */
+    public TopRatedSellerDetailsType createTopRatedSellerDetailsType() {
+        return new TopRatedSellerDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ShipPackageDetailsType }
+     * 
+     */
+    public ShipPackageDetailsType createShipPackageDetailsType() {
+        return new ShipPackageDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link SetShippingDiscountProfilesResponseType }
+     * 
+     */
+    public SetShippingDiscountProfilesResponseType createSetShippingDiscountProfilesResponseType() {
+        return new SetShippingDiscountProfilesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link SetTaxTableResponseType }
+     * 
+     */
+    public SetTaxTableResponseType createSetTaxTableResponseType() {
+        return new SetTaxTableResponseType();
+    }
+
+    /**
+     * Create an instance of {@link StoreCustomCategoryType }
+     * 
+     */
+    public StoreCustomCategoryType createStoreCustomCategoryType() {
+        return new StoreCustomCategoryType();
     }
 
     /**
@@ -4591,11 +807,2771 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AffiliateTrackingDetailsType }
+     * Create an instance of {@link ItemArrayType }
      * 
      */
-    public AffiliateTrackingDetailsType createAffiliateTrackingDetailsType() {
-        return new AffiliateTrackingDetailsType();
+    public ItemArrayType createItemArrayType() {
+        return new ItemArrayType();
+    }
+
+    /**
+     * Create an instance of {@link ExpressPicturesRequiredDefinitionType }
+     * 
+     */
+    public ExpressPicturesRequiredDefinitionType createExpressPicturesRequiredDefinitionType() {
+        return new ExpressPicturesRequiredDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link VeROReportItemType }
+     * 
+     */
+    public VeROReportItemType createVeROReportItemType() {
+        return new VeROReportItemType();
+    }
+
+    /**
+     * Create an instance of {@link NameValueListType }
+     * 
+     */
+    public NameValueListType createNameValueListType() {
+        return new NameValueListType();
+    }
+
+    /**
+     * Create an instance of {@link NotificationEnableType }
+     * 
+     */
+    public NotificationEnableType createNotificationEnableType() {
+        return new NotificationEnableType();
+    }
+
+    /**
+     * Create an instance of {@link ItemRatingDetailArrayType }
+     * 
+     */
+    public ItemRatingDetailArrayType createItemRatingDetailArrayType() {
+        return new ItemRatingDetailArrayType();
+    }
+
+    /**
+     * Create an instance of {@link OrderIDArrayType }
+     * 
+     */
+    public OrderIDArrayType createOrderIDArrayType() {
+        return new OrderIDArrayType();
+    }
+
+    /**
+     * Create an instance of {@link MyMessagesResponseDetailsType }
+     * 
+     */
+    public MyMessagesResponseDetailsType createMyMessagesResponseDetailsType() {
+        return new MyMessagesResponseDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link InventoryStatusType }
+     * 
+     */
+    public InventoryStatusType createInventoryStatusType() {
+        return new InventoryStatusType();
+    }
+
+    /**
+     * Create an instance of {@link PromotionalShippingDiscountDetailsType }
+     * 
+     */
+    public PromotionalShippingDiscountDetailsType createPromotionalShippingDiscountDetailsType() {
+        return new PromotionalShippingDiscountDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link SetUserNotesResponseType }
+     * 
+     */
+    public SetUserNotesResponseType createSetUserNotesResponseType() {
+        return new SetUserNotesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetSellerListRequestType }
+     * 
+     */
+    public GetSellerListRequestType createGetSellerListRequestType() {
+        return new GetSellerListRequestType();
+    }
+
+    /**
+     * Create an instance of {@link VerifyAddItemRequestType }
+     * 
+     */
+    public VerifyAddItemRequestType createVerifyAddItemRequestType() {
+        return new VerifyAddItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdPhoneCountDefinitionType }
+     * 
+     */
+    public ClassifiedAdPhoneCountDefinitionType createClassifiedAdPhoneCountDefinitionType() {
+        return new ClassifiedAdPhoneCountDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetSellerEventsResponseType }
+     * 
+     */
+    public GetSellerEventsResponseType createGetSellerEventsResponseType() {
+        return new GetSellerEventsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ValuePackEnabledDefinitionType }
+     * 
+     */
+    public ValuePackEnabledDefinitionType createValuePackEnabledDefinitionType() {
+        return new ValuePackEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link XMLRequesterCredentialsType }
+     * 
+     */
+    public XMLRequesterCredentialsType createXMLRequesterCredentialsType() {
+        return new XMLRequesterCredentialsType();
+    }
+
+    /**
+     * Create an instance of {@link SiteDefaultsType }
+     * 
+     */
+    public SiteDefaultsType createSiteDefaultsType() {
+        return new SiteDefaultsType();
+    }
+
+    /**
+     * Create an instance of {@link DispatchTimeMaxDetailsType }
+     * 
+     */
+    public DispatchTimeMaxDetailsType createDispatchTimeMaxDetailsType() {
+        return new DispatchTimeMaxDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link BestOfferType }
+     * 
+     */
+    public BestOfferType createBestOfferType() {
+        return new BestOfferType();
+    }
+
+    /**
+     * Create an instance of {@link GetMyeBayBuyingRequestType }
+     * 
+     */
+    public GetMyeBayBuyingRequestType createGetMyeBayBuyingRequestType() {
+        return new GetMyeBayBuyingRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ListingDurationDefinitionsType }
+     * 
+     */
+    public ListingDurationDefinitionsType createListingDurationDefinitionsType() {
+        return new ListingDurationDefinitionsType();
+    }
+
+    /**
+     * Create an instance of {@link FreeGalleryPlusEnabledDefinitionType }
+     * 
+     */
+    public FreeGalleryPlusEnabledDefinitionType createFreeGalleryPlusEnabledDefinitionType() {
+        return new FreeGalleryPlusEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketRegularSubscriptionDefinitionType }
+     * 
+     */
+    public LocalMarketRegularSubscriptionDefinitionType createLocalMarketRegularSubscriptionDefinitionType() {
+        return new LocalMarketRegularSubscriptionDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link SellerRatingSummaryArrayType }
+     * 
+     */
+    public SellerRatingSummaryArrayType createSellerRatingSummaryArrayType() {
+        return new SellerRatingSummaryArrayType();
+    }
+
+    /**
+     * Create an instance of {@link ItemCompatibilityType }
+     * 
+     */
+    public ItemCompatibilityType createItemCompatibilityType() {
+        return new ItemCompatibilityType();
+    }
+
+    /**
+     * Create an instance of {@link DigitalDeliverySelectedType }
+     * 
+     */
+    public DigitalDeliverySelectedType createDigitalDeliverySelectedType() {
+        return new DigitalDeliverySelectedType();
+    }
+
+    /**
+     * Create an instance of {@link SiteBuyerRequirementDetailsType }
+     * 
+     */
+    public SiteBuyerRequirementDetailsType createSiteBuyerRequirementDetailsType() {
+        return new SiteBuyerRequirementDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingPackageDetailsType }
+     * 
+     */
+    public ShippingPackageDetailsType createShippingPackageDetailsType() {
+        return new ShippingPackageDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ProductDetailsType }
+     * 
+     */
+    public ProductDetailsType createProductDetailsType() {
+        return new ProductDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link GetDescriptionTemplatesResponseType }
+     * 
+     */
+    public GetDescriptionTemplatesResponseType createGetDescriptionTemplatesResponseType() {
+        return new GetDescriptionTemplatesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ProPackEnabledDefinitionType }
+     * 
+     */
+    public ProPackEnabledDefinitionType createProPackEnabledDefinitionType() {
+        return new ProPackEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link NotificationStatisticsType }
+     * 
+     */
+    public NotificationStatisticsType createNotificationStatisticsType() {
+        return new NotificationStatisticsType();
+    }
+
+    /**
+     * Create an instance of {@link GetTokenStatusResponseType }
+     * 
+     */
+    public GetTokenStatusResponseType createGetTokenStatusResponseType() {
+        return new GetTokenStatusResponseType();
+    }
+
+    /**
+     * Create an instance of {@link TransactionType }
+     * 
+     */
+    public TransactionType createTransactionType() {
+        return new TransactionType();
+    }
+
+    /**
+     * Create an instance of {@link InventoryFeesType }
+     * 
+     */
+    public InventoryFeesType createInventoryFeesType() {
+        return new InventoryFeesType();
+    }
+
+    /**
+     * Create an instance of {@link ExpressEnabledDefinitionType }
+     * 
+     */
+    public ExpressEnabledDefinitionType createExpressEnabledDefinitionType() {
+        return new ExpressEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link StoreType }
+     * 
+     */
+    public StoreType createStoreType() {
+        return new StoreType();
+    }
+
+    /**
+     * Create an instance of {@link ReviseQuantityAllowedDefinitionType }
+     * 
+     */
+    public ReviseQuantityAllowedDefinitionType createReviseQuantityAllowedDefinitionType() {
+        return new ReviseQuantityAllowedDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link TimeZoneDetailsType }
+     * 
+     */
+    public TimeZoneDetailsType createTimeZoneDetailsType() {
+        return new TimeZoneDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link FetchTokenResponseType }
+     * 
+     */
+    public FetchTokenResponseType createFetchTokenResponseType() {
+        return new FetchTokenResponseType();
+    }
+
+    /**
+     * Create an instance of {@link FetchTokenRequestType }
+     * 
+     */
+    public FetchTokenRequestType createFetchTokenRequestType() {
+        return new FetchTokenRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ValidateTestUserRegistrationResponseType }
+     * 
+     */
+    public ValidateTestUserRegistrationResponseType createValidateTestUserRegistrationResponseType() {
+        return new ValidateTestUserRegistrationResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetAdFormatLeadsRequestType }
+     * 
+     */
+    public GetAdFormatLeadsRequestType createGetAdFormatLeadsRequestType() {
+        return new GetAdFormatLeadsRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ListingEnhancementDurationDefinitionType }
+     * 
+     */
+    public ListingEnhancementDurationDefinitionType createListingEnhancementDurationDefinitionType() {
+        return new ListingEnhancementDurationDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link HandlingTimeEnabledDefinitionType }
+     * 
+     */
+    public HandlingTimeEnabledDefinitionType createHandlingTimeEnabledDefinitionType() {
+        return new HandlingTimeEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link LinkedLineItemType }
+     * 
+     */
+    public LinkedLineItemType createLinkedLineItemType() {
+        return new LinkedLineItemType();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalAccountType }
+     * 
+     */
+    public AdditionalAccountType createAdditionalAccountType() {
+        return new AdditionalAccountType();
+    }
+
+    /**
+     * Create an instance of {@link VariationKeyType }
+     * 
+     */
+    public VariationKeyType createVariationKeyType() {
+        return new VariationKeyType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdAutoDeclineEnabledDefinitionType }
+     * 
+     */
+    public ClassifiedAdAutoDeclineEnabledDefinitionType createClassifiedAdAutoDeclineEnabledDefinitionType() {
+        return new ClassifiedAdAutoDeclineEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link CharityAffiliationDetailType }
+     * 
+     */
+    public CharityAffiliationDetailType createCharityAffiliationDetailType() {
+        return new CharityAffiliationDetailType();
+    }
+
+    /**
+     * Create an instance of {@link ExtendedPictureDetailsType }
+     * 
+     */
+    public ExtendedPictureDetailsType createExtendedPictureDetailsType() {
+        return new ExtendedPictureDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ModifyNameType }
+     * 
+     */
+    public ModifyNameType createModifyNameType() {
+        return new ModifyNameType();
+    }
+
+    /**
+     * Create an instance of {@link InternationalShippingServiceOptionsType }
+     * 
+     */
+    public InternationalShippingServiceOptionsType createInternationalShippingServiceOptionsType() {
+        return new InternationalShippingServiceOptionsType();
+    }
+
+    /**
+     * Create an instance of {@link UPCEnabledDefinitionType }
+     * 
+     */
+    public UPCEnabledDefinitionType createUPCEnabledDefinitionType() {
+        return new UPCEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link RelistItemResponseType }
+     * 
+     */
+    public RelistItemResponseType createRelistItemResponseType() {
+        return new RelistItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetBestOffersRequestType }
+     * 
+     */
+    public GetBestOffersRequestType createGetBestOffersRequestType() {
+        return new GetBestOffersRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SellerPaymentPreferencesType }
+     * 
+     */
+    public SellerPaymentPreferencesType createSellerPaymentPreferencesType() {
+        return new SellerPaymentPreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link ProductCreationEnabledDefinitionType }
+     * 
+     */
+    public ProductCreationEnabledDefinitionType createProductCreationEnabledDefinitionType() {
+        return new ProductCreationEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link UnpaidItemAssistancePreferencesType }
+     * 
+     */
+    public UnpaidItemAssistancePreferencesType createUnpaidItemAssistancePreferencesType() {
+        return new UnpaidItemAssistancePreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link ExtendSiteHostedPicturesRequestType }
+     * 
+     */
+    public ExtendSiteHostedPicturesRequestType createExtendSiteHostedPicturesRequestType() {
+        return new ExtendSiteHostedPicturesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link GeteBayOfficialTimeResponseType }
+     * 
+     */
+    public GeteBayOfficialTimeResponseType createGeteBayOfficialTimeResponseType() {
+        return new GeteBayOfficialTimeResponseType();
+    }
+
+    /**
+     * Create an instance of {@link MyMessagesExternalMessageIDArrayType }
+     * 
+     */
+    public MyMessagesExternalMessageIDArrayType createMyMessagesExternalMessageIDArrayType() {
+        return new MyMessagesExternalMessageIDArrayType();
+    }
+
+    /**
+     * Create an instance of {@link UserIdentityType }
+     * 
+     */
+    public UserIdentityType createUserIdentityType() {
+        return new UserIdentityType();
+    }
+
+    /**
+     * Create an instance of {@link GetItemTransactionsRequestType }
+     * 
+     */
+    public GetItemTransactionsRequestType createGetItemTransactionsRequestType() {
+        return new GetItemTransactionsRequestType();
+    }
+
+    /**
+     * Create an instance of {@link DomesticRefundMethodDefinitionType }
+     * 
+     */
+    public DomesticRefundMethodDefinitionType createDomesticRefundMethodDefinitionType() {
+        return new DomesticRefundMethodDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetItemResponseType }
+     * 
+     */
+    public GetItemResponseType createGetItemResponseType() {
+        return new GetItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetTaxTableRequestType }
+     * 
+     */
+    public GetTaxTableRequestType createGetTaxTableRequestType() {
+        return new GetTaxTableRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SKUArrayType }
+     * 
+     */
+    public SKUArrayType createSKUArrayType() {
+        return new SKUArrayType();
+    }
+
+    /**
+     * Create an instance of {@link GetSellerListResponseType }
+     * 
+     */
+    public GetSellerListResponseType createGetSellerListResponseType() {
+        return new GetSellerListResponseType();
+    }
+
+    /**
+     * Create an instance of {@link MarkUpMarkDownHistoryType }
+     * 
+     */
+    public MarkUpMarkDownHistoryType createMarkUpMarkDownHistoryType() {
+        return new MarkUpMarkDownHistoryType();
+    }
+
+    /**
+     * Create an instance of {@link GetUserContactDetailsResponseType }
+     * 
+     */
+    public GetUserContactDetailsResponseType createGetUserContactDetailsResponseType() {
+        return new GetUserContactDetailsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link BuyerPackageEnclosuresType }
+     * 
+     */
+    public BuyerPackageEnclosuresType createBuyerPackageEnclosuresType() {
+        return new BuyerPackageEnclosuresType();
+    }
+
+    /**
+     * Create an instance of {@link CrossBorderTradeAustraliaEnabledDefinitionType }
+     * 
+     */
+    public CrossBorderTradeAustraliaEnabledDefinitionType createCrossBorderTradeAustraliaEnabledDefinitionType() {
+        return new CrossBorderTradeAustraliaEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ReviseItemResponseType }
+     * 
+     */
+    public ReviseItemResponseType createReviseItemResponseType() {
+        return new ReviseItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link CrossBorderTradeNorthAmericaEnabledDefinitionType }
+     * 
+     */
+    public CrossBorderTradeNorthAmericaEnabledDefinitionType createCrossBorderTradeNorthAmericaEnabledDefinitionType() {
+        return new CrossBorderTradeNorthAmericaEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link RateTableDetailsType }
+     * 
+     */
+    public RateTableDetailsType createRateTableDetailsType() {
+        return new RateTableDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingServicePackageDetailsType }
+     * 
+     */
+    public ShippingServicePackageDetailsType createShippingServicePackageDetailsType() {
+        return new ShippingServicePackageDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link MyMessagesFolderType }
+     * 
+     */
+    public MyMessagesFolderType createMyMessagesFolderType() {
+        return new MyMessagesFolderType();
+    }
+
+    /**
+     * Create an instance of {@link ProductListingDetailsType }
+     * 
+     */
+    public ProductListingDetailsType createProductListingDetailsType() {
+        return new ProductListingDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link NotificationUserDataType }
+     * 
+     */
+    public NotificationUserDataType createNotificationUserDataType() {
+        return new NotificationUserDataType();
+    }
+
+    /**
+     * Create an instance of {@link SetStoreCategoriesRequestType }
+     * 
+     */
+    public SetStoreCategoriesRequestType createSetStoreCategoriesRequestType() {
+        return new SetStoreCategoriesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link OrderTransactionArrayType }
+     * 
+     */
+    public OrderTransactionArrayType createOrderTransactionArrayType() {
+        return new OrderTransactionArrayType();
+    }
+
+    /**
+     * Create an instance of {@link ExtendedProducerResponsibilityType }
+     * 
+     */
+    public ExtendedProducerResponsibilityType createExtendedProducerResponsibilityType() {
+        return new ExtendedProducerResponsibilityType();
+    }
+
+    /**
+     * Create an instance of {@link MaximumUnpaidItemStrikesDurationDetailsType }
+     * 
+     */
+    public MaximumUnpaidItemStrikesDurationDetailsType createMaximumUnpaidItemStrikesDurationDetailsType() {
+        return new MaximumUnpaidItemStrikesDurationDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link GetChallengeTokenResponseType }
+     * 
+     */
+    public GetChallengeTokenResponseType createGetChallengeTokenResponseType() {
+        return new GetChallengeTokenResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ListingStartPriceDetailsType }
+     * 
+     */
+    public ListingStartPriceDetailsType createListingStartPriceDetailsType() {
+        return new ListingStartPriceDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link BuyingSummaryType }
+     * 
+     */
+    public BuyingSummaryType createBuyingSummaryType() {
+        return new BuyingSummaryType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketContactByEmailEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketContactByEmailEnabledDefinitionType createLocalMarketContactByEmailEnabledDefinitionType() {
+        return new LocalMarketContactByEmailEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link SellingSummaryType }
+     * 
+     */
+    public SellingSummaryType createSellingSummaryType() {
+        return new SellingSummaryType();
+    }
+
+    /**
+     * Create an instance of {@link RelistItemRequestType }
+     * 
+     */
+    public RelistItemRequestType createRelistItemRequestType() {
+        return new RelistItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link RevokeTokenResponseType }
+     * 
+     */
+    public RevokeTokenResponseType createRevokeTokenResponseType() {
+        return new RevokeTokenResponseType();
+    }
+
+    /**
+     * Create an instance of {@link MyeBayFavoriteSearchListType }
+     * 
+     */
+    public MyeBayFavoriteSearchListType createMyeBayFavoriteSearchListType() {
+        return new MyeBayFavoriteSearchListType();
+    }
+
+    /**
+     * Create an instance of {@link InternationalRefundMethodCodeType }
+     * 
+     */
+    public InternationalRefundMethodCodeType createInternationalRefundMethodCodeType() {
+        return new InternationalRefundMethodCodeType();
+    }
+
+    /**
+     * Create an instance of {@link CategoryFeatureType }
+     * 
+     */
+    public CategoryFeatureType createCategoryFeatureType() {
+        return new CategoryFeatureType();
+    }
+
+    /**
+     * Create an instance of {@link FeedbackInfoType }
+     * 
+     */
+    public FeedbackInfoType createFeedbackInfoType() {
+        return new FeedbackInfoType();
+    }
+
+    /**
+     * Create an instance of {@link ReviseStatusType }
+     * 
+     */
+    public ReviseStatusType createReviseStatusType() {
+        return new ReviseStatusType();
+    }
+
+    /**
+     * Create an instance of {@link BuyerRequirementDetailsType }
+     * 
+     */
+    public BuyerRequirementDetailsType createBuyerRequirementDetailsType() {
+        return new BuyerRequirementDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link StoreInventoryEnabledDefinitionType }
+     * 
+     */
+    public StoreInventoryEnabledDefinitionType createStoreInventoryEnabledDefinitionType() {
+        return new StoreInventoryEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProContactByEmailEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProContactByEmailEnabledDefinitionType createEBayMotorsProContactByEmailEnabledDefinitionType() {
+        return new EBayMotorsProContactByEmailEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link PayPalRequiredDefinitionType }
+     * 
+     */
+    public PayPalRequiredDefinitionType createPayPalRequiredDefinitionType() {
+        return new PayPalRequiredDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetBestOffersResponseType }
+     * 
+     */
+    public GetBestOffersResponseType createGetBestOffersResponseType() {
+        return new GetBestOffersResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetNotificationsUsageResponseType }
+     * 
+     */
+    public GetNotificationsUsageResponseType createGetNotificationsUsageResponseType() {
+        return new GetNotificationsUsageResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetItemRequestType }
+     * 
+     */
+    public GetItemRequestType createGetItemRequestType() {
+        return new GetItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingServiceOptionsType }
+     * 
+     */
+    public ShippingServiceOptionsType createShippingServiceOptionsType() {
+        return new ShippingServiceOptionsType();
+    }
+
+    /**
+     * Create an instance of {@link UserIDArrayType }
+     * 
+     */
+    public UserIDArrayType createUserIDArrayType() {
+        return new UserIDArrayType();
+    }
+
+    /**
+     * Create an instance of {@link SellerContactDetailsEnabledDefinitionType }
+     * 
+     */
+    public SellerContactDetailsEnabledDefinitionType createSellerContactDetailsEnabledDefinitionType() {
+        return new SellerContactDetailsEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link SkypeMeNonTransactionalEnabledDefinitionType }
+     * 
+     */
+    public SkypeMeNonTransactionalEnabledDefinitionType createSkypeMeNonTransactionalEnabledDefinitionType() {
+        return new SkypeMeNonTransactionalEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link BestOfferEnabledDefinitionType }
+     * 
+     */
+    public BestOfferEnabledDefinitionType createBestOfferEnabledDefinitionType() {
+        return new BestOfferEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link Base64BinaryType }
+     * 
+     */
+    public Base64BinaryType createBase64BinaryType() {
+        return new Base64BinaryType();
+    }
+
+    /**
+     * Create an instance of {@link FeeType }
+     * 
+     */
+    public FeeType createFeeType() {
+        return new FeeType();
+    }
+
+    /**
+     * Create an instance of {@link ReviseMyMessagesFoldersRequestType }
+     * 
+     */
+    public ReviseMyMessagesFoldersRequestType createReviseMyMessagesFoldersRequestType() {
+        return new ReviseMyMessagesFoldersRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ShipmentTrackingDetailsType }
+     * 
+     */
+    public ShipmentTrackingDetailsType createShipmentTrackingDetailsType() {
+        return new ShipmentTrackingDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link SiteDetailsType }
+     * 
+     */
+    public SiteDetailsType createSiteDetailsType() {
+        return new SiteDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link VariationsEnabledDefinitionType }
+     * 
+     */
+    public VariationsEnabledDefinitionType createVariationsEnabledDefinitionType() {
+        return new VariationsEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetMessagePreferencesRequestType }
+     * 
+     */
+    public GetMessagePreferencesRequestType createGetMessagePreferencesRequestType() {
+        return new GetMessagePreferencesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link StoreLogoType }
+     * 
+     */
+    public StoreLogoType createStoreLogoType() {
+        return new StoreLogoType();
+    }
+
+    /**
+     * Create an instance of {@link AddOrderRequestType }
+     * 
+     */
+    public AddOrderRequestType createAddOrderRequestType() {
+        return new AddOrderRequestType();
+    }
+
+    /**
+     * Create an instance of {@link OfferType }
+     * 
+     */
+    public OfferType createOfferType() {
+        return new OfferType();
+    }
+
+    /**
+     * Create an instance of {@link VariationSpecificPictureSetType }
+     * 
+     */
+    public VariationSpecificPictureSetType createVariationSpecificPictureSetType() {
+        return new VariationSpecificPictureSetType();
+    }
+
+    /**
+     * Create an instance of {@link MyMessagesMessageType }
+     * 
+     */
+    public MyMessagesMessageType createMyMessagesMessageType() {
+        return new MyMessagesMessageType();
+    }
+
+    /**
+     * Create an instance of {@link DispatchCutoffTimePreferencesType }
+     * 
+     */
+    public DispatchCutoffTimePreferencesType createDispatchCutoffTimePreferencesType() {
+        return new DispatchCutoffTimePreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link DocumentsType }
+     * 
+     */
+    public DocumentsType createDocumentsType() {
+        return new DocumentsType();
+    }
+
+    /**
+     * Create an instance of {@link RespondToFeedbackResponseType }
+     * 
+     */
+    public RespondToFeedbackResponseType createRespondToFeedbackResponseType() {
+        return new RespondToFeedbackResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ItemBestOffersType }
+     * 
+     */
+    public ItemBestOffersType createItemBestOffersType() {
+        return new ItemBestOffersType();
+    }
+
+    /**
+     * Create an instance of {@link Group2MaxFlatShippingCostDefinitionType }
+     * 
+     */
+    public Group2MaxFlatShippingCostDefinitionType createGroup2MaxFlatShippingCostDefinitionType() {
+        return new Group2MaxFlatShippingCostDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketBestOfferEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketBestOfferEnabledDefinitionType createLocalMarketBestOfferEnabledDefinitionType() {
+        return new LocalMarketBestOfferEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link TCREnabledDefinitionType }
+     * 
+     */
+    public TCREnabledDefinitionType createTCREnabledDefinitionType() {
+        return new TCREnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link BiddingDetailsType }
+     * 
+     */
+    public BiddingDetailsType createBiddingDetailsType() {
+        return new BiddingDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link LocalListingDistancesNonSubscriptionDefinitionType }
+     * 
+     */
+    public LocalListingDistancesNonSubscriptionDefinitionType createLocalListingDistancesNonSubscriptionDefinitionType() {
+        return new LocalListingDistancesNonSubscriptionDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link BrandMPNIdentifierEnabledDefinitionType }
+     * 
+     */
+    public BrandMPNIdentifierEnabledDefinitionType createBrandMPNIdentifierEnabledDefinitionType() {
+        return new BrandMPNIdentifierEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link TransactionProgramType }
+     * 
+     */
+    public TransactionProgramType createTransactionProgramType() {
+        return new TransactionProgramType();
+    }
+
+    /**
+     * Create an instance of {@link TokenStatusType }
+     * 
+     */
+    public TokenStatusType createTokenStatusType() {
+        return new TokenStatusType();
+    }
+
+    /**
+     * Create an instance of {@link NotificationDetailsArrayType }
+     * 
+     */
+    public NotificationDetailsArrayType createNotificationDetailsArrayType() {
+        return new NotificationDetailsArrayType();
+    }
+
+    /**
+     * Create an instance of {@link TaxDetailsType }
+     * 
+     */
+    public TaxDetailsType createTaxDetailsType() {
+        return new TaxDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link GetVeROReasonCodeDetailsResponseType }
+     * 
+     */
+    public GetVeROReasonCodeDetailsResponseType createGetVeROReasonCodeDetailsResponseType() {
+        return new GetVeROReasonCodeDetailsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link CombinedFixedPriceTreatmentEnabledDefinitionType }
+     * 
+     */
+    public CombinedFixedPriceTreatmentEnabledDefinitionType createCombinedFixedPriceTreatmentEnabledDefinitionType() {
+        return new CombinedFixedPriceTreatmentEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketAdFormatEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketAdFormatEnabledDefinitionType createLocalMarketAdFormatEnabledDefinitionType() {
+        return new LocalMarketAdFormatEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ShipmentType }
+     * 
+     */
+    public ShipmentType createShipmentType() {
+        return new ShipmentType();
+    }
+
+    /**
+     * Create an instance of {@link AddMemberMessageAAQToPartnerResponseType }
+     * 
+     */
+    public AddMemberMessageAAQToPartnerResponseType createAddMemberMessageAAQToPartnerResponseType() {
+        return new AddMemberMessageAAQToPartnerResponseType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketShippingMethodEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketShippingMethodEnabledDefinitionType createLocalMarketShippingMethodEnabledDefinitionType() {
+        return new LocalMarketShippingMethodEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link BuyerGuaranteeEnabledDefinitionType }
+     * 
+     */
+    public BuyerGuaranteeEnabledDefinitionType createBuyerGuaranteeEnabledDefinitionType() {
+        return new BuyerGuaranteeEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link DeliveryDetailsType }
+     * 
+     */
+    public DeliveryDetailsType createDeliveryDetailsType() {
+        return new DeliveryDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ProPackPlusEnabledDefinitionType }
+     * 
+     */
+    public ProPackPlusEnabledDefinitionType createProPackPlusEnabledDefinitionType() {
+        return new ProPackPlusEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ListingEnhancementDurationReferenceType }
+     * 
+     */
+    public ListingEnhancementDurationReferenceType createListingEnhancementDurationReferenceType() {
+        return new ListingEnhancementDurationReferenceType();
+    }
+
+    /**
+     * Create an instance of {@link ValidateChallengeInputRequestType }
+     * 
+     */
+    public ValidateChallengeInputRequestType createValidateChallengeInputRequestType() {
+        return new ValidateChallengeInputRequestType();
+    }
+
+    /**
+     * Create an instance of {@link GetMyeBaySellingRequestType }
+     * 
+     */
+    public GetMyeBaySellingRequestType createGetMyeBaySellingRequestType() {
+        return new GetMyeBaySellingRequestType();
+    }
+
+    /**
+     * Create an instance of {@link LeaveFeedbackRequestType }
+     * 
+     */
+    public LeaveFeedbackRequestType createLeaveFeedbackRequestType() {
+        return new LeaveFeedbackRequestType();
+    }
+
+    /**
+     * Create an instance of {@link PaymentInformationType }
+     * 
+     */
+    public PaymentInformationType createPaymentInformationType() {
+        return new PaymentInformationType();
+    }
+
+    /**
+     * Create an instance of {@link VariationExtendedProducerResponsibilityType }
+     * 
+     */
+    public VariationExtendedProducerResponsibilityType createVariationExtendedProducerResponsibilityType() {
+        return new VariationExtendedProducerResponsibilityType();
+    }
+
+    /**
+     * Create an instance of {@link MyeBayFavoriteSellerType }
+     * 
+     */
+    public MyeBayFavoriteSellerType createMyeBayFavoriteSellerType() {
+        return new MyeBayFavoriteSellerType();
+    }
+
+    /**
+     * Create an instance of {@link UserType }
+     * 
+     */
+    public UserType createUserType() {
+        return new UserType();
+    }
+
+    /**
+     * Create an instance of {@link EndFixedPriceItemResponseType }
+     * 
+     */
+    public EndFixedPriceItemResponseType createEndFixedPriceItemResponseType() {
+        return new EndFixedPriceItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link BestOfferAutoDeclineEnabledDefinitionType }
+     * 
+     */
+    public BestOfferAutoDeclineEnabledDefinitionType createBestOfferAutoDeclineEnabledDefinitionType() {
+        return new BestOfferAutoDeclineEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link DocumentType }
+     * 
+     */
+    public DocumentType createDocumentType() {
+        return new DocumentType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketStreetCountDefinitionType }
+     * 
+     */
+    public LocalMarketStreetCountDefinitionType createLocalMarketStreetCountDefinitionType() {
+        return new LocalMarketStreetCountDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ProductSafetyType }
+     * 
+     */
+    public ProductSafetyType createProductSafetyType() {
+        return new ProductSafetyType();
+    }
+
+    /**
+     * Create an instance of {@link DigitalGoodInfoType }
+     * 
+     */
+    public DigitalGoodInfoType createDigitalGoodInfoType() {
+        return new DigitalGoodInfoType();
+    }
+
+    /**
+     * Create an instance of {@link CategoryGroupType }
+     * 
+     */
+    public CategoryGroupType createCategoryGroupType() {
+        return new CategoryGroupType();
+    }
+
+    /**
+     * Create an instance of {@link CategoryMappingType }
+     * 
+     */
+    public CategoryMappingType createCategoryMappingType() {
+        return new CategoryMappingType();
+    }
+
+    /**
+     * Create an instance of {@link GetAccountRequestType }
+     * 
+     */
+    public GetAccountRequestType createGetAccountRequestType() {
+        return new GetAccountRequestType();
+    }
+
+    /**
+     * Create an instance of {@link GetAccountResponseType }
+     * 
+     */
+    public GetAccountResponseType createGetAccountResponseType() {
+        return new GetAccountResponseType();
+    }
+
+    /**
+     * Create an instance of {@link AuthenticityVerificationType }
+     * 
+     */
+    public AuthenticityVerificationType createAuthenticityVerificationType() {
+        return new AuthenticityVerificationType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketAutoDeclineEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketAutoDeclineEnabledDefinitionType createLocalMarketAutoDeclineEnabledDefinitionType() {
+        return new LocalMarketAutoDeclineEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link DeleteMyMessagesResponseType }
+     * 
+     */
+    public DeleteMyMessagesResponseType createDeleteMyMessagesResponseType() {
+        return new DeleteMyMessagesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketCompanyNameEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketCompanyNameEnabledDefinitionType createLocalMarketCompanyNameEnabledDefinitionType() {
+        return new LocalMarketCompanyNameEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link DomesticReturnsShipmentPayeeCodeType }
+     * 
+     */
+    public DomesticReturnsShipmentPayeeCodeType createDomesticReturnsShipmentPayeeCodeType() {
+        return new DomesticReturnsShipmentPayeeCodeType();
+    }
+
+    /**
+     * Create an instance of {@link RegularSubscriptionDefinitionType }
+     * 
+     */
+    public RegularSubscriptionDefinitionType createRegularSubscriptionDefinitionType() {
+        return new RegularSubscriptionDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link MaxFlatShippingCostDefinitionType }
+     * 
+     */
+    public MaxFlatShippingCostDefinitionType createMaxFlatShippingCostDefinitionType() {
+        return new MaxFlatShippingCostDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link MaxFlatShippingCostCBTExemptDefinitionType }
+     * 
+     */
+    public MaxFlatShippingCostCBTExemptDefinitionType createMaxFlatShippingCostCBTExemptDefinitionType() {
+        return new MaxFlatShippingCostCBTExemptDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ReturnsAcceptedDetailsType }
+     * 
+     */
+    public ReturnsAcceptedDetailsType createReturnsAcceptedDetailsType() {
+        return new ReturnsAcceptedDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link PickupMethodSelectedType }
+     * 
+     */
+    public PickupMethodSelectedType createPickupMethodSelectedType() {
+        return new PickupMethodSelectedType();
+    }
+
+    /**
+     * Create an instance of {@link BidderNoticePreferencesType }
+     * 
+     */
+    public BidderNoticePreferencesType createBidderNoticePreferencesType() {
+        return new BidderNoticePreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link GetNotificationPreferencesRequestType }
+     * 
+     */
+    public GetNotificationPreferencesRequestType createGetNotificationPreferencesRequestType() {
+        return new GetNotificationPreferencesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketAutoAcceptEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketAutoAcceptEnabledDefinitionType createLocalMarketAutoAcceptEnabledDefinitionType() {
+        return new LocalMarketAutoAcceptEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ASQPreferencesType }
+     * 
+     */
+    public ASQPreferencesType createASQPreferencesType() {
+        return new ASQPreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdContactByPhoneEnabledDefinitionType }
+     * 
+     */
+    public ClassifiedAdContactByPhoneEnabledDefinitionType createClassifiedAdContactByPhoneEnabledDefinitionType() {
+        return new ClassifiedAdContactByPhoneEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link AccountEntryType }
+     * 
+     */
+    public AccountEntryType createAccountEntryType() {
+        return new AccountEntryType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingServiceCostOverrideListType }
+     * 
+     */
+    public ShippingServiceCostOverrideListType createShippingServiceCostOverrideListType() {
+        return new ShippingServiceCostOverrideListType();
+    }
+
+    /**
+     * Create an instance of {@link InternationalReturnsDurationCodeType }
+     * 
+     */
+    public InternationalReturnsDurationCodeType createInternationalReturnsDurationCodeType() {
+        return new InternationalReturnsDurationCodeType();
+    }
+
+    /**
+     * Create an instance of {@link RelistFixedPriceItemResponseType }
+     * 
+     */
+    public RelistFixedPriceItemResponseType createRelistFixedPriceItemResponseType() {
+        return new RelistFixedPriceItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link RegulatoryType }
+     * 
+     */
+    public RegulatoryType createRegulatoryType() {
+        return new RegulatoryType();
+    }
+
+    /**
+     * Create an instance of {@link ConditionValuesType }
+     * 
+     */
+    public ConditionValuesType createConditionValuesType() {
+        return new ConditionValuesType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProBestOfferEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProBestOfferEnabledDefinitionType createEBayMotorsProBestOfferEnabledDefinitionType() {
+        return new EBayMotorsProBestOfferEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link AddItemsResponseType }
+     * 
+     */
+    public AddItemsResponseType createAddItemsResponseType() {
+        return new AddItemsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link VerifyAddSecondChanceItemResponseType }
+     * 
+     */
+    public VerifyAddSecondChanceItemResponseType createVerifyAddSecondChanceItemResponseType() {
+        return new VerifyAddSecondChanceItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link AddFixedPriceItemRequestType }
+     * 
+     */
+    public AddFixedPriceItemRequestType createAddFixedPriceItemRequestType() {
+        return new AddFixedPriceItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ConfirmIdentityRequestType }
+     * 
+     */
+    public ConfirmIdentityRequestType createConfirmIdentityRequestType() {
+        return new ConfirmIdentityRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ConditionType }
+     * 
+     */
+    public ConditionType createConditionType() {
+        return new ConditionType();
+    }
+
+    /**
+     * Create an instance of {@link ValidateTestUserRegistrationRequestType }
+     * 
+     */
+    public ValidateTestUserRegistrationRequestType createValidateTestUserRegistrationRequestType() {
+        return new ValidateTestUserRegistrationRequestType();
+    }
+
+    /**
+     * Create an instance of {@link RespondToBestOfferResponseType }
+     * 
+     */
+    public RespondToBestOfferResponseType createRespondToBestOfferResponseType() {
+        return new RespondToBestOfferResponseType();
+    }
+
+    /**
+     * Create an instance of {@link AmountType }
+     * 
+     */
+    public AmountType createAmountType() {
+        return new AmountType();
+    }
+
+    /**
+     * Create an instance of {@link ContactHoursDetailsType }
+     * 
+     */
+    public ContactHoursDetailsType createContactHoursDetailsType() {
+        return new ContactHoursDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link AddSecondChanceItemRequestType }
+     * 
+     */
+    public AddSecondChanceItemRequestType createAddSecondChanceItemRequestType() {
+        return new AddSecondChanceItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link GetMemberMessagesRequestType }
+     * 
+     */
+    public GetMemberMessagesRequestType createGetMemberMessagesRequestType() {
+        return new GetMemberMessagesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link CombinedPaymentPreferencesType }
+     * 
+     */
+    public CombinedPaymentPreferencesType createCombinedPaymentPreferencesType() {
+        return new CombinedPaymentPreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link InternationalReturnsAcceptedDefinitionType }
+     * 
+     */
+    public InternationalReturnsAcceptedDefinitionType createInternationalReturnsAcceptedDefinitionType() {
+        return new InternationalReturnsAcceptedDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link VerifyRelistItemRequestType }
+     * 
+     */
+    public VerifyRelistItemRequestType createVerifyRelistItemRequestType() {
+        return new VerifyRelistItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link MemberMessageExchangeArrayType }
+     * 
+     */
+    public MemberMessageExchangeArrayType createMemberMessageExchangeArrayType() {
+        return new MemberMessageExchangeArrayType();
+    }
+
+    /**
+     * Create an instance of {@link MaxItemCompatibilityDefinitionType }
+     * 
+     */
+    public MaxItemCompatibilityDefinitionType createMaxItemCompatibilityDefinitionType() {
+        return new MaxItemCompatibilityDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link SalesTaxType }
+     * 
+     */
+    public SalesTaxType createSalesTaxType() {
+        return new SalesTaxType();
+    }
+
+    /**
+     * Create an instance of {@link CurrencyDetailsType }
+     * 
+     */
+    public CurrencyDetailsType createCurrencyDetailsType() {
+        return new CurrencyDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingDetailsType }
+     * 
+     */
+    public ShippingDetailsType createShippingDetailsType() {
+        return new ShippingDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link BuyerPackageEnclosureType }
+     * 
+     */
+    public BuyerPackageEnclosureType createBuyerPackageEnclosureType() {
+        return new BuyerPackageEnclosureType();
+    }
+
+    /**
+     * Create an instance of {@link VerifyAddSecondChanceItemRequestType }
+     * 
+     */
+    public VerifyAddSecondChanceItemRequestType createVerifyAddSecondChanceItemRequestType() {
+        return new VerifyAddSecondChanceItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link BasicUpgradePackEnabledDefinitionType }
+     * 
+     */
+    public BasicUpgradePackEnabledDefinitionType createBasicUpgradePackEnabledDefinitionType() {
+        return new BasicUpgradePackEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link BuyerRoleMetricsType }
+     * 
+     */
+    public BuyerRoleMetricsType createBuyerRoleMetricsType() {
+        return new BuyerRoleMetricsType();
+    }
+
+    /**
+     * Create an instance of {@link MyMessagesMessageArrayType }
+     * 
+     */
+    public MyMessagesMessageArrayType createMyMessagesMessageArrayType() {
+        return new MyMessagesMessageArrayType();
+    }
+
+    /**
+     * Create an instance of {@link GetStoreCategoryUpdateStatusRequestType }
+     * 
+     */
+    public GetStoreCategoryUpdateStatusRequestType createGetStoreCategoryUpdateStatusRequestType() {
+        return new GetStoreCategoryUpdateStatusRequestType();
+    }
+
+    /**
+     * Create an instance of {@link CountryDetailsType }
+     * 
+     */
+    public CountryDetailsType createCountryDetailsType() {
+        return new CountryDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link InternationalReturnsDurationDefinitionType }
+     * 
+     */
+    public InternationalReturnsDurationDefinitionType createInternationalReturnsDurationDefinitionType() {
+        return new InternationalReturnsDurationDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link SellerType }
+     * 
+     */
+    public SellerType createSellerType() {
+        return new SellerType();
+    }
+
+    /**
+     * Create an instance of {@link CharityType }
+     * 
+     */
+    public CharityType createCharityType() {
+        return new CharityType();
+    }
+
+    /**
+     * Create an instance of {@link AddItemsRequestType }
+     * 
+     */
+    public AddItemsRequestType createAddItemsRequestType() {
+        return new AddItemsRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SellingStatusType }
+     * 
+     */
+    public SellingStatusType createSellingStatusType() {
+        return new SellingStatusType();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalCompatibilityEnabledDefinitionType }
+     * 
+     */
+    public AdditionalCompatibilityEnabledDefinitionType createAdditionalCompatibilityEnabledDefinitionType() {
+        return new AdditionalCompatibilityEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link RestockingFeeValueDetailsType }
+     * 
+     */
+    public RestockingFeeValueDetailsType createRestockingFeeValueDetailsType() {
+        return new RestockingFeeValueDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ISBNEnabledDefinitionType }
+     * 
+     */
+    public ISBNEnabledDefinitionType createISBNEnabledDefinitionType() {
+        return new ISBNEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetItemsAwaitingFeedbackResponseType }
+     * 
+     */
+    public GetItemsAwaitingFeedbackResponseType createGetItemsAwaitingFeedbackResponseType() {
+        return new GetItemsAwaitingFeedbackResponseType();
+    }
+
+    /**
+     * Create an instance of {@link FeatureEligibilityType }
+     * 
+     */
+    public FeatureEligibilityType createFeatureEligibilityType() {
+        return new FeatureEligibilityType();
+    }
+
+    /**
+     * Create an instance of {@link AccountEntriesType }
+     * 
+     */
+    public AccountEntriesType createAccountEntriesType() {
+        return new AccountEntriesType();
+    }
+
+    /**
+     * Create an instance of {@link PaymentOptionDetailsType }
+     * 
+     */
+    public PaymentOptionDetailsType createPaymentOptionDetailsType() {
+        return new PaymentOptionDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link VariationsType }
+     * 
+     */
+    public VariationsType createVariationsType() {
+        return new VariationsType();
+    }
+
+    /**
+     * Create an instance of {@link MyMessagesMessageIDArrayType }
+     * 
+     */
+    public MyMessagesMessageIDArrayType createMyMessagesMessageIDArrayType() {
+        return new MyMessagesMessageIDArrayType();
+    }
+
+    /**
+     * Create an instance of {@link ProductSuggestionsType }
+     * 
+     */
+    public ProductSuggestionsType createProductSuggestionsType() {
+        return new ProductSuggestionsType();
+    }
+
+    /**
+     * Create an instance of {@link GetMyeBayBuyingResponseType }
+     * 
+     */
+    public GetMyeBayBuyingResponseType createGetMyeBayBuyingResponseType() {
+        return new GetMyeBayBuyingResponseType();
+    }
+
+    /**
+     * Create an instance of {@link EndItemRequestContainerType }
+     * 
+     */
+    public EndItemRequestContainerType createEndItemRequestContainerType() {
+        return new EndItemRequestContainerType();
+    }
+
+    /**
+     * Create an instance of {@link TransactionReferenceType }
+     * 
+     */
+    public TransactionReferenceType createTransactionReferenceType() {
+        return new TransactionReferenceType();
+    }
+
+    /**
+     * Create an instance of {@link ValueCategoryDefinitionType }
+     * 
+     */
+    public ValueCategoryDefinitionType createValueCategoryDefinitionType() {
+        return new ValueCategoryDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link InternationalReturnsShipmentPayeeDefinitionType }
+     * 
+     */
+    public InternationalReturnsShipmentPayeeDefinitionType createInternationalReturnsShipmentPayeeDefinitionType() {
+        return new InternationalReturnsShipmentPayeeDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link VeROReasonCodeDetailsType }
+     * 
+     */
+    public VeROReasonCodeDetailsType createVeROReasonCodeDetailsType() {
+        return new VeROReasonCodeDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ServiceCostType }
+     * 
+     */
+    public ServiceCostType createServiceCostType() {
+        return new ServiceCostType();
+    }
+
+    /**
+     * Create an instance of {@link AddToWatchListRequestType }
+     * 
+     */
+    public AddToWatchListRequestType createAddToWatchListRequestType() {
+        return new AddToWatchListRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SellerDiscountType }
+     * 
+     */
+    public SellerDiscountType createSellerDiscountType() {
+        return new SellerDiscountType();
+    }
+
+    /**
+     * Create an instance of {@link URLDetailsType }
+     * 
+     */
+    public URLDetailsType createURLDetailsType() {
+        return new URLDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingCostPaidByDetailsType }
+     * 
+     */
+    public ShippingCostPaidByDetailsType createShippingCostPaidByDetailsType() {
+        return new ShippingCostPaidByDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ProfileCategoryGroupDefinitionType }
+     * 
+     */
+    public ProfileCategoryGroupDefinitionType createProfileCategoryGroupDefinitionType() {
+        return new ProfileCategoryGroupDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetStoreRequestType }
+     * 
+     */
+    public GetStoreRequestType createGetStoreRequestType() {
+        return new GetStoreRequestType();
+    }
+
+    /**
+     * Create an instance of {@link GetCategoryFeaturesResponseType }
+     * 
+     */
+    public GetCategoryFeaturesResponseType createGetCategoryFeaturesResponseType() {
+        return new GetCategoryFeaturesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ItemSpecificsEnabledDefinitionType }
+     * 
+     */
+    public ItemSpecificsEnabledDefinitionType createItemSpecificsEnabledDefinitionType() {
+        return new ItemSpecificsEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketPaymentMethodCheckOutEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketPaymentMethodCheckOutEnabledDefinitionType createLocalMarketPaymentMethodCheckOutEnabledDefinitionType() {
+        return new LocalMarketPaymentMethodCheckOutEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link DomesticReturnsShipmentPayeeDefinitionType }
+     * 
+     */
+    public DomesticReturnsShipmentPayeeDefinitionType createDomesticReturnsShipmentPayeeDefinitionType() {
+        return new DomesticReturnsShipmentPayeeDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link Group1MaxFlatShippingCostDefinitionType }
+     * 
+     */
+    public Group1MaxFlatShippingCostDefinitionType createGroup1MaxFlatShippingCostDefinitionType() {
+        return new Group1MaxFlatShippingCostDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdBestOfferEnabledDefinitionType }
+     * 
+     */
+    public ClassifiedAdBestOfferEnabledDefinitionType createClassifiedAdBestOfferEnabledDefinitionType() {
+        return new ClassifiedAdBestOfferEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetTokenStatusRequestType }
+     * 
+     */
+    public GetTokenStatusRequestType createGetTokenStatusRequestType() {
+        return new GetTokenStatusRequestType();
+    }
+
+    /**
+     * Create an instance of {@link EndItemsResponseType }
+     * 
+     */
+    public EndItemsResponseType createEndItemsResponseType() {
+        return new EndItemsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link RegionOfOriginDetailsType }
+     * 
+     */
+    public RegionOfOriginDetailsType createRegionOfOriginDetailsType() {
+        return new RegionOfOriginDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link EpidSupportedDefinitionType }
+     * 
+     */
+    public EpidSupportedDefinitionType createEpidSupportedDefinitionType() {
+        return new EpidSupportedDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link BiddingSummaryType }
+     * 
+     */
+    public BiddingSummaryType createBiddingSummaryType() {
+        return new BiddingSummaryType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingServiceDetailsType }
+     * 
+     */
+    public ShippingServiceDetailsType createShippingServiceDetailsType() {
+        return new ShippingServiceDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link PaginationResultType }
+     * 
+     */
+    public PaginationResultType createPaginationResultType() {
+        return new PaginationResultType();
+    }
+
+    /**
+     * Create an instance of {@link BuyerType }
+     * 
+     */
+    public BuyerType createBuyerType() {
+        return new BuyerType();
+    }
+
+    /**
+     * Create an instance of {@link GeteBayDetailsResponseType }
+     * 
+     */
+    public GeteBayDetailsResponseType createGeteBayDetailsResponseType() {
+        return new GeteBayDetailsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link SetNotificationPreferencesRequestType }
+     * 
+     */
+    public SetNotificationPreferencesRequestType createSetNotificationPreferencesRequestType() {
+        return new SetNotificationPreferencesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link RevokeTokenRequestType }
+     * 
+     */
+    public RevokeTokenRequestType createRevokeTokenRequestType() {
+        return new RevokeTokenRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SellerProfilePreferencesType }
+     * 
+     */
+    public SellerProfilePreferencesType createSellerProfilePreferencesType() {
+        return new SellerProfilePreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link ReturnPolicyDescriptionEnabledDefinitionType }
+     * 
+     */
+    public ReturnPolicyDescriptionEnabledDefinitionType createReturnPolicyDescriptionEnabledDefinitionType() {
+        return new ReturnPolicyDescriptionEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link HazmatType }
+     * 
+     */
+    public HazmatType createHazmatType() {
+        return new HazmatType();
+    }
+
+    /**
+     * Create an instance of {@link AdFormatLeadType }
+     * 
+     */
+    public AdFormatLeadType createAdFormatLeadType() {
+        return new AdFormatLeadType();
+    }
+
+    /**
+     * Create an instance of {@link VeROReportItemsType }
+     * 
+     */
+    public VeROReportItemsType createVeROReportItemsType() {
+        return new VeROReportItemsType();
+    }
+
+    /**
+     * Create an instance of {@link SellerReturnProfileType }
+     * 
+     */
+    public SellerReturnProfileType createSellerReturnProfileType() {
+        return new SellerReturnProfileType();
+    }
+
+    /**
+     * Create an instance of {@link DeliveryURLDetailType }
+     * 
+     */
+    public DeliveryURLDetailType createDeliveryURLDetailType() {
+        return new DeliveryURLDetailType();
+    }
+
+    /**
+     * Create an instance of {@link MyeBaySellingSummaryType }
+     * 
+     */
+    public MyeBaySellingSummaryType createMyeBaySellingSummaryType() {
+        return new MyeBaySellingSummaryType();
+    }
+
+    /**
+     * Create an instance of {@link MyeBayFavoriteSearchType }
+     * 
+     */
+    public MyeBayFavoriteSearchType createMyeBayFavoriteSearchType() {
+        return new MyeBayFavoriteSearchType();
+    }
+
+    /**
+     * Create an instance of {@link VariationProductListingDetailsType }
+     * 
+     */
+    public VariationProductListingDetailsType createVariationProductListingDetailsType() {
+        return new VariationProductListingDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link NotificationEventPropertyType }
+     * 
+     */
+    public NotificationEventPropertyType createNotificationEventPropertyType() {
+        return new NotificationEventPropertyType();
+    }
+
+    /**
+     * Create an instance of {@link GetBidderListRequestType }
+     * 
+     */
+    public GetBidderListRequestType createGetBidderListRequestType() {
+        return new GetBidderListRequestType();
+    }
+
+    /**
+     * Create an instance of {@link VeROReportedItemType }
+     * 
+     */
+    public VeROReportedItemType createVeROReportedItemType() {
+        return new VeROReportedItemType();
+    }
+
+    /**
+     * Create an instance of {@link DiscountDetailType }
+     * 
+     */
+    public DiscountDetailType createDiscountDetailType() {
+        return new DiscountDetailType();
+    }
+
+    /**
+     * Create an instance of {@link GetMemberMessagesResponseType }
+     * 
+     */
+    public GetMemberMessagesResponseType createGetMemberMessagesResponseType() {
+        return new GetMemberMessagesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProCounterOfferEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProCounterOfferEnabledDefinitionType createEBayMotorsProCounterOfferEnabledDefinitionType() {
+        return new EBayMotorsProCounterOfferEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link CustomSecurityHeaderType }
+     * 
+     */
+    public CustomSecurityHeaderType createCustomSecurityHeaderType() {
+        return new CustomSecurityHeaderType();
+    }
+
+    /**
+     * Create an instance of {@link MultiLegShippingServiceType }
+     * 
+     */
+    public MultiLegShippingServiceType createMultiLegShippingServiceType() {
+        return new MultiLegShippingServiceType();
+    }
+
+    /**
+     * Create an instance of {@link GeteBayDetailsRequestType }
+     * 
+     */
+    public GeteBayDetailsRequestType createGeteBayDetailsRequestType() {
+        return new GeteBayDetailsRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SellerRoleMetricsType }
+     * 
+     */
+    public SellerRoleMetricsType createSellerRoleMetricsType() {
+        return new SellerRoleMetricsType();
+    }
+
+    /**
+     * Create an instance of {@link MyeBayFavoriteSellerListType }
+     * 
+     */
+    public MyeBayFavoriteSellerListType createMyeBayFavoriteSellerListType() {
+        return new MyeBayFavoriteSellerListType();
+    }
+
+    /**
+     * Create an instance of {@link DiscountType }
+     * 
+     */
+    public DiscountType createDiscountType() {
+        return new DiscountType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketPhoneCountDefinitionType }
+     * 
+     */
+    public LocalMarketPhoneCountDefinitionType createLocalMarketPhoneCountDefinitionType() {
+        return new LocalMarketPhoneCountDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link BestOfferArrayType }
+     * 
+     */
+    public BestOfferArrayType createBestOfferArrayType() {
+        return new BestOfferArrayType();
+    }
+
+    /**
+     * Create an instance of {@link GetCategoryMappingsResponseType }
+     * 
+     */
+    public GetCategoryMappingsResponseType createGetCategoryMappingsResponseType() {
+        return new GetCategoryMappingsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetItemShippingRequestType }
+     * 
+     */
+    public GetItemShippingRequestType createGetItemShippingRequestType() {
+        return new GetItemShippingRequestType();
+    }
+
+    /**
+     * Create an instance of {@link EndOfAuctionEmailPreferencesType }
+     * 
+     */
+    public EndOfAuctionEmailPreferencesType createEndOfAuctionEmailPreferencesType() {
+        return new EndOfAuctionEmailPreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link GetOrdersResponseType }
+     * 
+     */
+    public GetOrdersResponseType createGetOrdersResponseType() {
+        return new GetOrdersResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetCategoriesRequestType }
+     * 
+     */
+    public GetCategoriesRequestType createGetCategoriesRequestType() {
+        return new GetCategoriesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link OrderArrayType }
+     * 
+     */
+    public OrderArrayType createOrderArrayType() {
+        return new OrderArrayType();
+    }
+
+    /**
+     * Create an instance of {@link GetSellerTransactionsResponseType }
+     * 
+     */
+    public GetSellerTransactionsResponseType createGetSellerTransactionsResponseType() {
+        return new GetSellerTransactionsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetSessionIDRequestType }
+     * 
+     */
+    public GetSessionIDRequestType createGetSessionIDRequestType() {
+        return new GetSessionIDRequestType();
+    }
+
+    /**
+     * Create an instance of {@link GetMyeBaySellingResponseType }
+     * 
+     */
+    public GetMyeBaySellingResponseType createGetMyeBaySellingResponseType() {
+        return new GetMyeBaySellingResponseType();
+    }
+
+    /**
+     * Create an instance of {@link SellerPaymentProfileType }
+     * 
+     */
+    public SellerPaymentProfileType createSellerPaymentProfileType() {
+        return new SellerPaymentProfileType();
+    }
+
+    /**
+     * Create an instance of {@link DeliveryStatusType }
+     * 
+     */
+    public DeliveryStatusType createDeliveryStatusType() {
+        return new DeliveryStatusType();
+    }
+
+    /**
+     * Create an instance of {@link PaisaPayFullEscrowEnabledDefinitionType }
+     * 
+     */
+    public PaisaPayFullEscrowEnabledDefinitionType createPaisaPayFullEscrowEnabledDefinitionType() {
+        return new PaisaPayFullEscrowEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link FeedbackPeriodArrayType }
+     * 
+     */
+    public FeedbackPeriodArrayType createFeedbackPeriodArrayType() {
+        return new FeedbackPeriodArrayType();
+    }
+
+    /**
+     * Create an instance of {@link InternationalRefundMethodDefinitionType }
+     * 
+     */
+    public InternationalRefundMethodDefinitionType createInternationalRefundMethodDefinitionType() {
+        return new InternationalRefundMethodDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link StoreOwnerExtendedListingDurationsEnabledDefinitionType }
+     * 
+     */
+    public StoreOwnerExtendedListingDurationsEnabledDefinitionType createStoreOwnerExtendedListingDurationsEnabledDefinitionType() {
+        return new StoreOwnerExtendedListingDurationsEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link LineItemType }
+     * 
+     */
+    public LineItemType createLineItemType() {
+        return new LineItemType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProSellerContactDetailsEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProSellerContactDetailsEnabledDefinitionType createEBayMotorsProSellerContactDetailsEnabledDefinitionType() {
+        return new EBayMotorsProSellerContactDetailsEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdAutoAcceptEnabledDefinitionType }
+     * 
+     */
+    public ClassifiedAdAutoAcceptEnabledDefinitionType createClassifiedAdAutoAcceptEnabledDefinitionType() {
+        return new ClassifiedAdAutoAcceptEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link SetNotificationPreferencesResponseType }
+     * 
+     */
+    public SetNotificationPreferencesResponseType createSetNotificationPreferencesResponseType() {
+        return new SetNotificationPreferencesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link SetTaxTableRequestType }
+     * 
+     */
+    public SetTaxTableRequestType createSetTaxTableRequestType() {
+        return new SetTaxTableRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SupportedSellerProfileType }
+     * 
+     */
+    public SupportedSellerProfileType createSupportedSellerProfileType() {
+        return new SupportedSellerProfileType();
+    }
+
+    /**
+     * Create an instance of {@link GetItemTransactionsResponseType }
+     * 
+     */
+    public GetItemTransactionsResponseType createGetItemTransactionsResponseType() {
+        return new GetItemTransactionsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link DomesticReturnsDurationDefinitionType }
+     * 
+     */
+    public DomesticReturnsDurationDefinitionType createDomesticReturnsDurationDefinitionType() {
+        return new DomesticReturnsDurationDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ExpressConditionRequiredDefinitionType }
+     * 
+     */
+    public ExpressConditionRequiredDefinitionType createExpressConditionRequiredDefinitionType() {
+        return new ExpressConditionRequiredDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link StatementsType }
+     * 
+     */
+    public StatementsType createStatementsType() {
+        return new StatementsType();
+    }
+
+    /**
+     * Create an instance of {@link RevisePriceAllowedDefinitionType }
+     * 
+     */
+    public RevisePriceAllowedDefinitionType createRevisePriceAllowedDefinitionType() {
+        return new RevisePriceAllowedDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link MyMessagesFolderSummaryType }
+     * 
+     */
+    public MyMessagesFolderSummaryType createMyMessagesFolderSummaryType() {
+        return new MyMessagesFolderSummaryType();
+    }
+
+    /**
+     * Create an instance of {@link MinimumFeedbackScoreDetailsType }
+     * 
+     */
+    public MinimumFeedbackScoreDetailsType createMinimumFeedbackScoreDetailsType() {
+        return new MinimumFeedbackScoreDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ResponsiblePersonsType }
+     * 
+     */
+    public ResponsiblePersonsType createResponsiblePersonsType() {
+        return new ResponsiblePersonsType();
+    }
+
+    /**
+     * Create an instance of {@link NonSubscriptionDefinitionType }
+     * 
+     */
+    public NonSubscriptionDefinitionType createNonSubscriptionDefinitionType() {
+        return new NonSubscriptionDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link MaximumUnpaidItemStrikesCountDetailsType }
+     * 
+     */
+    public MaximumUnpaidItemStrikesCountDetailsType createMaximumUnpaidItemStrikesCountDetailsType() {
+        return new MaximumUnpaidItemStrikesCountDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link CategoryArrayType }
+     * 
+     */
+    public CategoryArrayType createCategoryArrayType() {
+        return new CategoryArrayType();
+    }
+
+    /**
+     * Create an instance of {@link ItemCompatibilityListType }
+     * 
+     */
+    public ItemCompatibilityListType createItemCompatibilityListType() {
+        return new ItemCompatibilityListType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingLocationDetailsType }
+     * 
+     */
+    public ShippingLocationDetailsType createShippingLocationDetailsType() {
+        return new ShippingLocationDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link AccountSummaryType }
+     * 
+     */
+    public AccountSummaryType createAccountSummaryType() {
+        return new AccountSummaryType();
+    }
+
+    /**
+     * Create an instance of {@link ValidateChallengeInputResponseType }
+     * 
+     */
+    public ValidateChallengeInputResponseType createValidateChallengeInputResponseType() {
+        return new ValidateChallengeInputResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ItemCompatibilityEnabledDefinitionType }
+     * 
+     */
+    public ItemCompatibilityEnabledDefinitionType createItemCompatibilityEnabledDefinitionType() {
+        return new ItemCompatibilityEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link StoreOwnerExtendedListingDurationsType }
+     * 
+     */
+    public StoreOwnerExtendedListingDurationsType createStoreOwnerExtendedListingDurationsType() {
+        return new StoreOwnerExtendedListingDurationsType();
+    }
+
+    /**
+     * Create an instance of {@link SetMessagePreferencesRequestType }
+     * 
+     */
+    public SetMessagePreferencesRequestType createSetMessagePreferencesRequestType() {
+        return new SetMessagePreferencesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link GlobalShippingEnabledDefinitionType }
+     * 
+     */
+    public GlobalShippingEnabledDefinitionType createGlobalShippingEnabledDefinitionType() {
+        return new GlobalShippingEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link MultiLegShipmentType }
+     * 
+     */
+    public MultiLegShipmentType createMultiLegShipmentType() {
+        return new MultiLegShipmentType();
+    }
+
+    /**
+     * Create an instance of {@link SafePaymentRequiredDefinitionType }
+     * 
+     */
+    public SafePaymentRequiredDefinitionType createSafePaymentRequiredDefinitionType() {
+        return new SafePaymentRequiredDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link RemoveFromWatchListRequestType }
+     * 
+     */
+    public RemoveFromWatchListRequestType createRemoveFromWatchListRequestType() {
+        return new RemoveFromWatchListRequestType();
+    }
+
+    /**
+     * Create an instance of {@link RefundTransactionInfoType }
+     * 
+     */
+    public RefundTransactionInfoType createRefundTransactionInfoType() {
+        return new RefundTransactionInfoType();
+    }
+
+    /**
+     * Create an instance of {@link PaymentsInformationType }
+     * 
+     */
+    public PaymentsInformationType createPaymentsInformationType() {
+        return new PaymentsInformationType();
+    }
+
+    /**
+     * Create an instance of {@link NotificationDetailsType }
+     * 
+     */
+    public NotificationDetailsType createNotificationDetailsType() {
+        return new NotificationDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link SetMessagePreferencesResponseType }
+     * 
+     */
+    public SetMessagePreferencesResponseType createSetMessagePreferencesResponseType() {
+        return new SetMessagePreferencesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link RecoupmentPolicyConsentType }
+     * 
+     */
+    public RecoupmentPolicyConsentType createRecoupmentPolicyConsentType() {
+        return new RecoupmentPolicyConsentType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProContactByPhoneEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProContactByPhoneEnabledDefinitionType createEBayMotorsProContactByPhoneEnabledDefinitionType() {
+        return new EBayMotorsProContactByPhoneEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link MyMessagesSummaryType }
+     * 
+     */
+    public MyMessagesSummaryType createMyMessagesSummaryType() {
+        return new MyMessagesSummaryType();
+    }
+
+    /**
+     * Create an instance of {@link EndItemResponseType }
+     * 
+     */
+    public EndItemResponseType createEndItemResponseType() {
+        return new EndItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link FeedbackPeriodType }
+     * 
+     */
+    public FeedbackPeriodType createFeedbackPeriodType() {
+        return new FeedbackPeriodType();
+    }
+
+    /**
+     * Create an instance of {@link GetMyMessagesRequestType }
+     * 
+     */
+    public GetMyMessagesRequestType createGetMyMessagesRequestType() {
+        return new GetMyMessagesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SuggestedBidValueType }
+     * 
+     */
+    public SuggestedBidValueType createSuggestedBidValueType() {
+        return new SuggestedBidValueType();
+    }
+
+    /**
+     * Create an instance of {@link AddItemResponseContainerType }
+     * 
+     */
+    public AddItemResponseContainerType createAddItemResponseContainerType() {
+        return new AddItemResponseContainerType();
+    }
+
+    /**
+     * Create an instance of {@link CompleteSaleResponseType }
+     * 
+     */
+    public CompleteSaleResponseType createCompleteSaleResponseType() {
+        return new CompleteSaleResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ResponsiblePersonType }
+     * 
+     */
+    public ResponsiblePersonType createResponsiblePersonType() {
+        return new ResponsiblePersonType();
+    }
+
+    /**
+     * Create an instance of {@link SellerProfilesType }
+     * 
+     */
+    public SellerProfilesType createSellerProfilesType() {
+        return new SellerProfilesType();
+    }
+
+    /**
+     * Create an instance of {@link ItemBestOffersArrayType }
+     * 
+     */
+    public ItemBestOffersArrayType createItemBestOffersArrayType() {
+        return new ItemBestOffersArrayType();
+    }
+
+    /**
+     * Create an instance of {@link GetAdFormatLeadsResponseType }
+     * 
+     */
+    public GetAdFormatLeadsResponseType createGetAdFormatLeadsResponseType() {
+        return new GetAdFormatLeadsResponseType();
+    }
+
+    /**
+     * Create an instance of {@link BestOfferCounterEnabledDefinitionType }
+     * 
+     */
+    public BestOfferCounterEnabledDefinitionType createBestOfferCounterEnabledDefinitionType() {
+        return new BestOfferCounterEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link CountryPoliciesArrayType }
+     * 
+     */
+    public CountryPoliciesArrayType createCountryPoliciesArrayType() {
+        return new CountryPoliciesArrayType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketSellerContactDetailsEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketSellerContactDetailsEnabledDefinitionType createLocalMarketSellerContactDetailsEnabledDefinitionType() {
+        return new LocalMarketSellerContactDetailsEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketContactByPhoneEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketContactByPhoneEnabledDefinitionType createLocalMarketContactByPhoneEnabledDefinitionType() {
+        return new LocalMarketContactByPhoneEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link CalculatedShippingRateType }
+     * 
+     */
+    public CalculatedShippingRateType createCalculatedShippingRateType() {
+        return new CalculatedShippingRateType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdPayPerLeadEnabledDefinitionType }
+     * 
+     */
+    public ClassifiedAdPayPerLeadEnabledDefinitionType createClassifiedAdPayPerLeadEnabledDefinitionType() {
+        return new ClassifiedAdPayPerLeadEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link NotificationMessageType }
+     * 
+     */
+    public NotificationMessageType createNotificationMessageType() {
+        return new NotificationMessageType();
     }
 
     /**
@@ -4615,78 +3591,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ClassifiedAdBestOfferEnabledDefinitionType }
-     * 
-     */
-    public ClassifiedAdBestOfferEnabledDefinitionType createClassifiedAdBestOfferEnabledDefinitionType() {
-        return new ClassifiedAdBestOfferEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link SMSSubscriptionType }
-     * 
-     */
-    public SMSSubscriptionType createSMSSubscriptionType() {
-        return new SMSSubscriptionType();
-    }
-
-    /**
-     * Create an instance of {@link ReviseStatusType }
-     * 
-     */
-    public ReviseStatusType createReviseStatusType() {
-        return new ReviseStatusType();
-    }
-
-    /**
-     * Create an instance of {@link SearchDetailsType }
-     * 
-     */
-    public SearchDetailsType createSearchDetailsType() {
-        return new SearchDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link DiscountProfileType }
-     * 
-     */
-    public DiscountProfileType createDiscountProfileType() {
-        return new DiscountProfileType();
-    }
-
-    /**
-     * Create an instance of {@link GetItemTransactionsResponseType }
-     * 
-     */
-    public GetItemTransactionsResponseType createGetItemTransactionsResponseType() {
-        return new GetItemTransactionsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link PicturesType }
-     * 
-     */
-    public PicturesType createPicturesType() {
-        return new PicturesType();
-    }
-
-    /**
-     * Create an instance of {@link GetSellerTransactionsResponseType }
-     * 
-     */
-    public GetSellerTransactionsResponseType createGetSellerTransactionsResponseType() {
-        return new GetSellerTransactionsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link PaymentsInformationType }
-     * 
-     */
-    public PaymentsInformationType createPaymentsInformationType() {
-        return new PaymentsInformationType();
-    }
-
-    /**
      * Create an instance of {@link ExtendedContactDetailsType }
      * 
      */
@@ -4695,691 +3599,43 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NotificationUserDataType }
+     * Create an instance of {@link PickupDetailsType }
      * 
      */
-    public NotificationUserDataType createNotificationUserDataType() {
-        return new NotificationUserDataType();
+    public PickupDetailsType createPickupDetailsType() {
+        return new PickupDetailsType();
     }
 
     /**
-     * Create an instance of {@link ExtendedPictureDetailsType }
+     * Create an instance of {@link ItemListCustomizationType }
      * 
      */
-    public ExtendedPictureDetailsType createExtendedPictureDetailsType() {
-        return new ExtendedPictureDetailsType();
+    public ItemListCustomizationType createItemListCustomizationType() {
+        return new ItemListCustomizationType();
     }
 
     /**
-     * Create an instance of {@link MembershipDetailsType }
+     * Create an instance of {@link EBayMotorsProShippingMethodEnabledDefinitionType }
      * 
      */
-    public MembershipDetailsType createMembershipDetailsType() {
-        return new MembershipDetailsType();
+    public EBayMotorsProShippingMethodEnabledDefinitionType createEBayMotorsProShippingMethodEnabledDefinitionType() {
+        return new EBayMotorsProShippingMethodEnabledDefinitionType();
     }
 
     /**
-     * Create an instance of {@link DistanceType }
+     * Create an instance of {@link ClassifiedAdStreetCountDefinitionType }
      * 
      */
-    public DistanceType createDistanceType() {
-        return new DistanceType();
+    public ClassifiedAdStreetCountDefinitionType createClassifiedAdStreetCountDefinitionType() {
+        return new ClassifiedAdStreetCountDefinitionType();
     }
 
     /**
-     * Create an instance of {@link GetMyeBayBuyingRequestType }
+     * Create an instance of {@link MaximumItemRequirementsDetailsType }
      * 
      */
-    public GetMyeBayBuyingRequestType createGetMyeBayBuyingRequestType() {
-        return new GetMyeBayBuyingRequestType();
-    }
-
-    /**
-     * Create an instance of {@link GetMyeBaySellingResponseType }
-     * 
-     */
-    public GetMyeBaySellingResponseType createGetMyeBaySellingResponseType() {
-        return new GetMyeBaySellingResponseType();
-    }
-
-    /**
-     * Create an instance of {@link SetUserPreferencesResponseType }
-     * 
-     */
-    public SetUserPreferencesResponseType createSetUserPreferencesResponseType() {
-        return new SetUserPreferencesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketRegularSubscriptionDefinitionType }
-     * 
-     */
-    public LocalMarketRegularSubscriptionDefinitionType createLocalMarketRegularSubscriptionDefinitionType() {
-        return new LocalMarketRegularSubscriptionDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ListingDurationDefinitionsType }
-     * 
-     */
-    public ListingDurationDefinitionsType createListingDurationDefinitionsType() {
-        return new ListingDurationDefinitionsType();
-    }
-
-    /**
-     * Create an instance of {@link CalculatedShippingDiscountType }
-     * 
-     */
-    public CalculatedShippingDiscountType createCalculatedShippingDiscountType() {
-        return new CalculatedShippingDiscountType();
-    }
-
-    /**
-     * Create an instance of {@link ShipPackageDetailsType }
-     * 
-     */
-    public ShipPackageDetailsType createShipPackageDetailsType() {
-        return new ShipPackageDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link AddItemsRequestType }
-     * 
-     */
-    public AddItemsRequestType createAddItemsRequestType() {
-        return new AddItemsRequestType();
-    }
-
-    /**
-     * Create an instance of {@link SchedulingInfoType }
-     * 
-     */
-    public SchedulingInfoType createSchedulingInfoType() {
-        return new SchedulingInfoType();
-    }
-
-    /**
-     * Create an instance of {@link GetDescriptionTemplatesRequestType }
-     * 
-     */
-    public GetDescriptionTemplatesRequestType createGetDescriptionTemplatesRequestType() {
-        return new GetDescriptionTemplatesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ErrorParameterType }
-     * 
-     */
-    public ErrorParameterType createErrorParameterType() {
-        return new ErrorParameterType();
-    }
-
-    /**
-     * Create an instance of {@link GetAdFormatLeadsResponseType }
-     * 
-     */
-    public GetAdFormatLeadsResponseType createGetAdFormatLeadsResponseType() {
-        return new GetAdFormatLeadsResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdPhoneCountDefinitionType }
-     * 
-     */
-    public ClassifiedAdPhoneCountDefinitionType createClassifiedAdPhoneCountDefinitionType() {
-        return new ClassifiedAdPhoneCountDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link CheckoutOrderDetailType }
-     * 
-     */
-    public CheckoutOrderDetailType createCheckoutOrderDetailType() {
-        return new CheckoutOrderDetailType();
-    }
-
-    /**
-     * Create an instance of {@link FeeType }
-     * 
-     */
-    public FeeType createFeeType() {
-        return new FeeType();
-    }
-
-    /**
-     * Create an instance of {@link CharityAffiliationDetailType }
-     * 
-     */
-    public CharityAffiliationDetailType createCharityAffiliationDetailType() {
-        return new CharityAffiliationDetailType();
-    }
-
-    /**
-     * Create an instance of {@link MyMessagesResponseDetailsType }
-     * 
-     */
-    public MyMessagesResponseDetailsType createMyMessagesResponseDetailsType() {
-        return new MyMessagesResponseDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link SupportedSellerProfilesType }
-     * 
-     */
-    public SupportedSellerProfilesType createSupportedSellerProfilesType() {
-        return new SupportedSellerProfilesType();
-    }
-
-    /**
-     * Create an instance of {@link ReturnPolicyDetailsType }
-     * 
-     */
-    public ReturnPolicyDetailsType createReturnPolicyDetailsType() {
-        return new ReturnPolicyDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link VerifyRelistItemResponseType }
-     * 
-     */
-    public VerifyRelistItemResponseType createVerifyRelistItemResponseType() {
-        return new VerifyRelistItemResponseType();
-    }
-
-    /**
-     * Create an instance of {@link DescriptionTemplateType }
-     * 
-     */
-    public DescriptionTemplateType createDescriptionTemplateType() {
-        return new DescriptionTemplateType();
-    }
-
-    /**
-     * Create an instance of {@link MultiLegShippingDetailsType }
-     * 
-     */
-    public MultiLegShippingDetailsType createMultiLegShippingDetailsType() {
-        return new MultiLegShippingDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link MarkUpMarkDownHistoryType }
-     * 
-     */
-    public MarkUpMarkDownHistoryType createMarkUpMarkDownHistoryType() {
-        return new MarkUpMarkDownHistoryType();
-    }
-
-    /**
-     * Create an instance of {@link StoreOwnerExtendedListingDurationsEnabledDefinitionType }
-     * 
-     */
-    public StoreOwnerExtendedListingDurationsEnabledDefinitionType createStoreOwnerExtendedListingDurationsEnabledDefinitionType() {
-        return new StoreOwnerExtendedListingDurationsEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetNotificationsUsageResponseType }
-     * 
-     */
-    public GetNotificationsUsageResponseType createGetNotificationsUsageResponseType() {
-        return new GetNotificationsUsageResponseType();
-    }
-
-    /**
-     * Create an instance of {@link DispatchTimeMaxDetailsType }
-     * 
-     */
-    public DispatchTimeMaxDetailsType createDispatchTimeMaxDetailsType() {
-        return new DispatchTimeMaxDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link MemberMessageExchangeArrayType }
-     * 
-     */
-    public MemberMessageExchangeArrayType createMemberMessageExchangeArrayType() {
-        return new MemberMessageExchangeArrayType();
-    }
-
-    /**
-     * Create an instance of {@link PaginationResultType }
-     * 
-     */
-    public PaginationResultType createPaginationResultType() {
-        return new PaginationResultType();
-    }
-
-    /**
-     * Create an instance of {@link HandlingTimeEnabledDefinitionType }
-     * 
-     */
-    public HandlingTimeEnabledDefinitionType createHandlingTimeEnabledDefinitionType() {
-        return new HandlingTimeEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PickupInStoreDetailsType }
-     * 
-     */
-    public PickupInStoreDetailsType createPickupInStoreDetailsType() {
-        return new PickupInStoreDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link BestOfferDetailsType }
-     * 
-     */
-    public BestOfferDetailsType createBestOfferDetailsType() {
-        return new BestOfferDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link BestOfferType }
-     * 
-     */
-    public BestOfferType createBestOfferType() {
-        return new BestOfferType();
-    }
-
-    /**
-     * Create an instance of {@link RefundTransactionArrayType }
-     * 
-     */
-    public RefundTransactionArrayType createRefundTransactionArrayType() {
-        return new RefundTransactionArrayType();
-    }
-
-    /**
-     * Create an instance of {@link MaxFlatShippingCostCBTExemptDefinitionType }
-     * 
-     */
-    public MaxFlatShippingCostCBTExemptDefinitionType createMaxFlatShippingCostCBTExemptDefinitionType() {
-        return new MaxFlatShippingCostCBTExemptDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link KTypeSupportedDefinitionType }
-     * 
-     */
-    public KTypeSupportedDefinitionType createKTypeSupportedDefinitionType() {
-        return new KTypeSupportedDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link VariationProductListingDetailsType }
-     * 
-     */
-    public VariationProductListingDetailsType createVariationProductListingDetailsType() {
-        return new VariationProductListingDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link StoreLogoType }
-     * 
-     */
-    public StoreLogoType createStoreLogoType() {
-        return new StoreLogoType();
-    }
-
-    /**
-     * Create an instance of {@link StoreInventoryEnabledDefinitionType }
-     * 
-     */
-    public StoreInventoryEnabledDefinitionType createStoreInventoryEnabledDefinitionType() {
-        return new StoreInventoryEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link MultiLegShipmentType }
-     * 
-     */
-    public MultiLegShipmentType createMultiLegShipmentType() {
-        return new MultiLegShipmentType();
-    }
-
-    /**
-     * Create an instance of {@link CharityAffiliationType }
-     * 
-     */
-    public CharityAffiliationType createCharityAffiliationType() {
-        return new CharityAffiliationType();
-    }
-
-    /**
-     * Create an instance of {@link AddSecondChanceItemRequestType }
-     * 
-     */
-    public AddSecondChanceItemRequestType createAddSecondChanceItemRequestType() {
-        return new AddSecondChanceItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link GetVeROReportStatusRequestType }
-     * 
-     */
-    public GetVeROReportStatusRequestType createGetVeROReportStatusRequestType() {
-        return new GetVeROReportStatusRequestType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketShippingMethodEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketShippingMethodEnabledDefinitionType createLocalMarketShippingMethodEnabledDefinitionType() {
-        return new LocalMarketShippingMethodEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link SendInvoiceResponseType }
-     * 
-     */
-    public SendInvoiceResponseType createSendInvoiceResponseType() {
-        return new SendInvoiceResponseType();
-    }
-
-    /**
-     * Create an instance of {@link PaisaPayFullEscrowEnabledDefinitionType }
-     * 
-     */
-    public PaisaPayFullEscrowEnabledDefinitionType createPaisaPayFullEscrowEnabledDefinitionType() {
-        return new PaisaPayFullEscrowEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetOrderTransactionsRequestType }
-     * 
-     */
-    public GetOrderTransactionsRequestType createGetOrderTransactionsRequestType() {
-        return new GetOrderTransactionsRequestType();
-    }
-
-    /**
-     * Create an instance of {@link DigitalDeliveryUserType }
-     * 
-     */
-    public DigitalDeliveryUserType createDigitalDeliveryUserType() {
-        return new DigitalDeliveryUserType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdShippingMethodEnabledDefinitionType }
-     * 
-     */
-    public ClassifiedAdShippingMethodEnabledDefinitionType createClassifiedAdShippingMethodEnabledDefinitionType() {
-        return new ClassifiedAdShippingMethodEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ReturnsAcceptedDetailsType }
-     * 
-     */
-    public ReturnsAcceptedDetailsType createReturnsAcceptedDetailsType() {
-        return new ReturnsAcceptedDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ErrorType }
-     * 
-     */
-    public ErrorType createErrorType() {
-        return new ErrorType();
-    }
-
-    /**
-     * Create an instance of {@link AverageRatingSummaryType }
-     * 
-     */
-    public AverageRatingSummaryType createAverageRatingSummaryType() {
-        return new AverageRatingSummaryType();
-    }
-
-    /**
-     * Create an instance of {@link ProductListingDetailsType }
-     * 
-     */
-    public ProductListingDetailsType createProductListingDetailsType() {
-        return new ProductListingDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link FaultDetailsType }
-     * 
-     */
-    public FaultDetailsType createFaultDetailsType() {
-        return new FaultDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link MyeBaySecondChanceOfferListType }
-     * 
-     */
-    public MyeBaySecondChanceOfferListType createMyeBaySecondChanceOfferListType() {
-        return new MyeBaySecondChanceOfferListType();
-    }
-
-    /**
-     * Create an instance of {@link LinkedLineItemArrayType }
-     * 
-     */
-    public LinkedLineItemArrayType createLinkedLineItemArrayType() {
-        return new LinkedLineItemArrayType();
-    }
-
-    /**
-     * Create an instance of {@link UserDefinedListType }
-     * 
-     */
-    public UserDefinedListType createUserDefinedListType() {
-        return new UserDefinedListType();
-    }
-
-    /**
-     * Create an instance of {@link AddMemberMessagesAAQToBidderResponseType }
-     * 
-     */
-    public AddMemberMessagesAAQToBidderResponseType createAddMemberMessagesAAQToBidderResponseType() {
-        return new AddMemberMessagesAAQToBidderResponseType();
-    }
-
-    /**
-     * Create an instance of {@link SuggestedCategoryType }
-     * 
-     */
-    public SuggestedCategoryType createSuggestedCategoryType() {
-        return new SuggestedCategoryType();
-    }
-
-    /**
-     * Create an instance of {@link CrossBorderTradeAustraliaEnabledDefinitionType }
-     * 
-     */
-    public CrossBorderTradeAustraliaEnabledDefinitionType createCrossBorderTradeAustraliaEnabledDefinitionType() {
-        return new CrossBorderTradeAustraliaEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetItemsAwaitingFeedbackRequestType }
-     * 
-     */
-    public GetItemsAwaitingFeedbackRequestType createGetItemsAwaitingFeedbackRequestType() {
-        return new GetItemsAwaitingFeedbackRequestType();
-    }
-
-    /**
-     * Create an instance of {@link AddToWatchListRequestType }
-     * 
-     */
-    public AddToWatchListRequestType createAddToWatchListRequestType() {
-        return new AddToWatchListRequestType();
-    }
-
-    /**
-     * Create an instance of {@link ProPackPlusEnabledDefinitionType }
-     * 
-     */
-    public ProPackPlusEnabledDefinitionType createProPackPlusEnabledDefinitionType() {
-        return new ProPackPlusEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PurchaseReminderEmailPreferencesType }
-     * 
-     */
-    public PurchaseReminderEmailPreferencesType createPurchaseReminderEmailPreferencesType() {
-        return new PurchaseReminderEmailPreferencesType();
-    }
-
-    /**
-     * Create an instance of {@link SiteDetailsType }
-     * 
-     */
-    public SiteDetailsType createSiteDetailsType() {
-        return new SiteDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ProductRequiredEnabledDefinitionType }
-     * 
-     */
-    public ProductRequiredEnabledDefinitionType createProductRequiredEnabledDefinitionType() {
-        return new ProductRequiredEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingCostPaidByDetailsType }
-     * 
-     */
-    public ShippingCostPaidByDetailsType createShippingCostPaidByDetailsType() {
-        return new ShippingCostPaidByDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link PromotionalSaleDetailsType }
-     * 
-     */
-    public PromotionalSaleDetailsType createPromotionalSaleDetailsType() {
-        return new PromotionalSaleDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link PaginatedTransactionArrayType }
-     * 
-     */
-    public PaginatedTransactionArrayType createPaginatedTransactionArrayType() {
-        return new PaginatedTransactionArrayType();
-    }
-
-    /**
-     * Create an instance of {@link ReviseInventoryStatusResponseType }
-     * 
-     */
-    public ReviseInventoryStatusResponseType createReviseInventoryStatusResponseType() {
-        return new ReviseInventoryStatusResponseType();
-    }
-
-    /**
-     * Create an instance of {@link ShippingTermRequiredDefinitionType }
-     * 
-     */
-    public ShippingTermRequiredDefinitionType createShippingTermRequiredDefinitionType() {
-        return new ShippingTermRequiredDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketSellerContactDetailsEnabledDefinitionType }
-     * 
-     */
-    public LocalMarketSellerContactDetailsEnabledDefinitionType createLocalMarketSellerContactDetailsEnabledDefinitionType() {
-        return new LocalMarketSellerContactDetailsEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PictureDetailsType }
-     * 
-     */
-    public PictureDetailsType createPictureDetailsType() {
-        return new PictureDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ProductSuggestionsType }
-     * 
-     */
-    public ProductSuggestionsType createProductSuggestionsType() {
-        return new ProductSuggestionsType();
-    }
-
-    /**
-     * Create an instance of {@link BestOfferAutoAcceptEnabledDefinitionType }
-     * 
-     */
-    public BestOfferAutoAcceptEnabledDefinitionType createBestOfferAutoAcceptEnabledDefinitionType() {
-        return new BestOfferAutoAcceptEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link CrossBorderTradeGBEnabledDefinitionType }
-     * 
-     */
-    public CrossBorderTradeGBEnabledDefinitionType createCrossBorderTradeGBEnabledDefinitionType() {
-        return new CrossBorderTradeGBEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link DeleteMyMessagesResponseType }
-     * 
-     */
-    public DeleteMyMessagesResponseType createDeleteMyMessagesResponseType() {
-        return new DeleteMyMessagesResponseType();
-    }
-
-    /**
-     * Create an instance of {@link FeesType }
-     * 
-     */
-    public FeesType createFeesType() {
-        return new FeesType();
-    }
-
-    /**
-     * Create an instance of {@link GeteBayOfficialTimeResponseType }
-     * 
-     */
-    public GeteBayOfficialTimeResponseType createGeteBayOfficialTimeResponseType() {
-        return new GeteBayOfficialTimeResponseType();
-    }
-
-    /**
-     * Create an instance of {@link RefundInformationType }
-     * 
-     */
-    public RefundInformationType createRefundInformationType() {
-        return new RefundInformationType();
-    }
-
-    /**
-     * Create an instance of {@link GetShippingDiscountProfilesRequestType }
-     * 
-     */
-    public GetShippingDiscountProfilesRequestType createGetShippingDiscountProfilesRequestType() {
-        return new GetShippingDiscountProfilesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link MaximumItemRequirementsType }
-     * 
-     */
-    public MaximumItemRequirementsType createMaximumItemRequirementsType() {
-        return new MaximumItemRequirementsType();
-    }
-
-    /**
-     * Create an instance of {@link GetItemShippingResponseType }
-     * 
-     */
-    public GetItemShippingResponseType createGetItemShippingResponseType() {
-        return new GetItemShippingResponseType();
+    public MaximumItemRequirementsDetailsType createMaximumItemRequirementsDetailsType() {
+        return new MaximumItemRequirementsDetailsType();
     }
 
     /**
@@ -5391,315 +3647,43 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ItemBestOffersArrayType }
+     * Create an instance of {@link VerifyAddFixedPriceItemRequestType }
      * 
      */
-    public ItemBestOffersArrayType createItemBestOffersArrayType() {
-        return new ItemBestOffersArrayType();
+    public VerifyAddFixedPriceItemRequestType createVerifyAddFixedPriceItemRequestType() {
+        return new VerifyAddFixedPriceItemRequestType();
     }
 
     /**
-     * Create an instance of {@link SellerDashboardAlertType }
+     * Create an instance of {@link MinItemCompatibilityDefinitionType }
      * 
      */
-    public SellerDashboardAlertType createSellerDashboardAlertType() {
-        return new SellerDashboardAlertType();
+    public MinItemCompatibilityDefinitionType createMinItemCompatibilityDefinitionType() {
+        return new MinItemCompatibilityDefinitionType();
     }
 
     /**
-     * Create an instance of {@link VeROReasonCodeDetailsType }
+     * Create an instance of {@link ReviseInventoryStatusResponseType }
      * 
      */
-    public VeROReasonCodeDetailsType createVeROReasonCodeDetailsType() {
-        return new VeROReasonCodeDetailsType();
+    public ReviseInventoryStatusResponseType createReviseInventoryStatusResponseType() {
+        return new ReviseInventoryStatusResponseType();
     }
 
     /**
-     * Create an instance of {@link EANEnabledDefinitionType }
+     * Create an instance of {@link GetDescriptionTemplatesRequestType }
      * 
      */
-    public EANEnabledDefinitionType createEANEnabledDefinitionType() {
-        return new EANEnabledDefinitionType();
+    public GetDescriptionTemplatesRequestType createGetDescriptionTemplatesRequestType() {
+        return new GetDescriptionTemplatesRequestType();
     }
 
     /**
-     * Create an instance of {@link QuantityRestrictionPerBuyerInfoType }
+     * Create an instance of {@link CompatibleVehicleTypeDefinitionType }
      * 
      */
-    public QuantityRestrictionPerBuyerInfoType createQuantityRestrictionPerBuyerInfoType() {
-        return new QuantityRestrictionPerBuyerInfoType();
-    }
-
-    /**
-     * Create an instance of {@link Group2MaxFlatShippingCostDefinitionType }
-     * 
-     */
-    public Group2MaxFlatShippingCostDefinitionType createGroup2MaxFlatShippingCostDefinitionType() {
-        return new Group2MaxFlatShippingCostDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link NonSubscriptionDefinitionType }
-     * 
-     */
-    public NonSubscriptionDefinitionType createNonSubscriptionDefinitionType() {
-        return new NonSubscriptionDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link SellerAccountDashboardType }
-     * 
-     */
-    public SellerAccountDashboardType createSellerAccountDashboardType() {
-        return new SellerAccountDashboardType();
-    }
-
-    /**
-     * Create an instance of {@link WarrantyDurationDetailsType }
-     * 
-     */
-    public WarrantyDurationDetailsType createWarrantyDurationDetailsType() {
-        return new WarrantyDurationDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link OfferArrayType }
-     * 
-     */
-    public OfferArrayType createOfferArrayType() {
-        return new OfferArrayType();
-    }
-
-    /**
-     * Create an instance of {@link TaxTableType }
-     * 
-     */
-    public TaxTableType createTaxTableType() {
-        return new TaxTableType();
-    }
-
-    /**
-     * Create an instance of {@link RefundDetailsType }
-     * 
-     */
-    public RefundDetailsType createRefundDetailsType() {
-        return new RefundDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link LineItemType }
-     * 
-     */
-    public LineItemType createLineItemType() {
-        return new LineItemType();
-    }
-
-    /**
-     * Create an instance of {@link InternationalReturnsDurationCodeType }
-     * 
-     */
-    public InternationalReturnsDurationCodeType createInternationalReturnsDurationCodeType() {
-        return new InternationalReturnsDurationCodeType();
-    }
-
-    /**
-     * Create an instance of {@link MultiLegShippingServiceType }
-     * 
-     */
-    public MultiLegShippingServiceType createMultiLegShippingServiceType() {
-        return new MultiLegShippingServiceType();
-    }
-
-    /**
-     * Create an instance of {@link GetSellerTransactionsRequestType }
-     * 
-     */
-    public GetSellerTransactionsRequestType createGetSellerTransactionsRequestType() {
-        return new GetSellerTransactionsRequestType();
-    }
-
-    /**
-     * Create an instance of {@link MyMessagesFolderType }
-     * 
-     */
-    public MyMessagesFolderType createMyMessagesFolderType() {
-        return new MyMessagesFolderType();
-    }
-
-    /**
-     * Create an instance of {@link ListingCheckoutRedirectPreferenceType }
-     * 
-     */
-    public ListingCheckoutRedirectPreferenceType createListingCheckoutRedirectPreferenceType() {
-        return new ListingCheckoutRedirectPreferenceType();
-    }
-
-    /**
-     * Create an instance of {@link SendInvoiceRequestType }
-     * 
-     */
-    public SendInvoiceRequestType createSendInvoiceRequestType() {
-        return new SendInvoiceRequestType();
-    }
-
-    /**
-     * Create an instance of {@link SearchStandingDashboardType }
-     * 
-     */
-    public SearchStandingDashboardType createSearchStandingDashboardType() {
-        return new SearchStandingDashboardType();
-    }
-
-    /**
-     * Create an instance of {@link EBayMotorsProAutoDeclineEnabledDefinitionType }
-     * 
-     */
-    public EBayMotorsProAutoDeclineEnabledDefinitionType createEBayMotorsProAutoDeclineEnabledDefinitionType() {
-        return new EBayMotorsProAutoDeclineEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdPaymentMethodEnabledDefinitionType }
-     * 
-     */
-    public ClassifiedAdPaymentMethodEnabledDefinitionType createClassifiedAdPaymentMethodEnabledDefinitionType() {
-        return new ClassifiedAdPaymentMethodEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link TokenStatusType }
-     * 
-     */
-    public TokenStatusType createTokenStatusType() {
-        return new TokenStatusType();
-    }
-
-    /**
-     * Create an instance of {@link RelistItemRequestType }
-     * 
-     */
-    public RelistItemRequestType createRelistItemRequestType() {
-        return new RelistItemRequestType();
-    }
-
-    /**
-     * Create an instance of {@link BuyingSummaryType }
-     * 
-     */
-    public BuyingSummaryType createBuyingSummaryType() {
-        return new BuyingSummaryType();
-    }
-
-    /**
-     * Create an instance of {@link VRMSupportedDefinitionType }
-     * 
-     */
-    public VRMSupportedDefinitionType createVRMSupportedDefinitionType() {
-        return new VRMSupportedDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link ReviseQuantityAllowedDefinitionType }
-     * 
-     */
-    public ReviseQuantityAllowedDefinitionType createReviseQuantityAllowedDefinitionType() {
-        return new ReviseQuantityAllowedDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link VideoDetailsType }
-     * 
-     */
-    public VideoDetailsType createVideoDetailsType() {
-        return new VideoDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ClassifiedAdContactByPhoneEnabledDefinitionType }
-     * 
-     */
-    public ClassifiedAdContactByPhoneEnabledDefinitionType createClassifiedAdContactByPhoneEnabledDefinitionType() {
-        return new ClassifiedAdContactByPhoneEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PromotionRuleType }
-     * 
-     */
-    public PromotionRuleType createPromotionRuleType() {
-        return new PromotionRuleType();
-    }
-
-    /**
-     * Create an instance of {@link ItemTotalsType }
-     * 
-     */
-    public ItemTotalsType createItemTotalsType() {
-        return new ItemTotalsType();
-    }
-
-    /**
-     * Create an instance of {@link LocalMarketNonSubscriptionDefinitionType }
-     * 
-     */
-    public LocalMarketNonSubscriptionDefinitionType createLocalMarketNonSubscriptionDefinitionType() {
-        return new LocalMarketNonSubscriptionDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link BotBlockResponseType }
-     * 
-     */
-    public BotBlockResponseType createBotBlockResponseType() {
-        return new BotBlockResponseType();
-    }
-
-    /**
-     * Create an instance of {@link NotificationDetailsType }
-     * 
-     */
-    public NotificationDetailsType createNotificationDetailsType() {
-        return new NotificationDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link VeROReportedItemType }
-     * 
-     */
-    public VeROReportedItemType createVeROReportedItemType() {
-        return new VeROReportedItemType();
-    }
-
-    /**
-     * Create an instance of {@link CustomPoliciesType }
-     * 
-     */
-    public CustomPoliciesType createCustomPoliciesType() {
-        return new CustomPoliciesType();
-    }
-
-    /**
-     * Create an instance of {@link OfferDiscountsType }
-     * 
-     */
-    public OfferDiscountsType createOfferDiscountsType() {
-        return new OfferDiscountsType();
-    }
-
-    /**
-     * Create an instance of {@link FeedbackPeriodType }
-     * 
-     */
-    public FeedbackPeriodType createFeedbackPeriodType() {
-        return new FeedbackPeriodType();
-    }
-
-    /**
-     * Create an instance of {@link LocalListingDistancesSpecialtyDefinitionType }
-     * 
-     */
-    public LocalListingDistancesSpecialtyDefinitionType createLocalListingDistancesSpecialtyDefinitionType() {
-        return new LocalListingDistancesSpecialtyDefinitionType();
+    public CompatibleVehicleTypeDefinitionType createCompatibleVehicleTypeDefinitionType() {
+        return new CompatibleVehicleTypeDefinitionType();
     }
 
     /**
@@ -5711,211 +3695,163 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AddMemberMessageRTQRequestType }
+     * Create an instance of {@link DomesticReturnsAcceptedCodeType }
      * 
      */
-    public AddMemberMessageRTQRequestType createAddMemberMessageRTQRequestType() {
-        return new AddMemberMessageRTQRequestType();
+    public DomesticReturnsAcceptedCodeType createDomesticReturnsAcceptedCodeType() {
+        return new DomesticReturnsAcceptedCodeType();
     }
 
     /**
-     * Create an instance of {@link RegionOfOriginDetailsType }
+     * Create an instance of {@link PaginationType }
      * 
      */
-    public RegionOfOriginDetailsType createRegionOfOriginDetailsType() {
-        return new RegionOfOriginDetailsType();
+    public PaginationType createPaginationType() {
+        return new PaginationType();
     }
 
     /**
-     * Create an instance of {@link VerifyAddItemResponseType }
+     * Create an instance of {@link LinkedLineItemArrayType }
      * 
      */
-    public VerifyAddItemResponseType createVerifyAddItemResponseType() {
-        return new VerifyAddItemResponseType();
+    public LinkedLineItemArrayType createLinkedLineItemArrayType() {
+        return new LinkedLineItemArrayType();
     }
 
     /**
-     * Create an instance of {@link ItemBidDetailsType }
+     * Create an instance of {@link AddToItemDescriptionResponseType }
      * 
      */
-    public ItemBidDetailsType createItemBidDetailsType() {
-        return new ItemBidDetailsType();
+    public AddToItemDescriptionResponseType createAddToItemDescriptionResponseType() {
+        return new AddToItemDescriptionResponseType();
     }
 
     /**
-     * Create an instance of {@link NonProfitAddressType }
+     * Create an instance of {@link RespondToFeedbackRequestType }
      * 
      */
-    public NonProfitAddressType createNonProfitAddressType() {
-        return new NonProfitAddressType();
+    public RespondToFeedbackRequestType createRespondToFeedbackRequestType() {
+        return new RespondToFeedbackRequestType();
     }
 
     /**
-     * Create an instance of {@link VerifyAddSecondChanceItemResponseType }
+     * Create an instance of {@link RefundInformationType }
      * 
      */
-    public VerifyAddSecondChanceItemResponseType createVerifyAddSecondChanceItemResponseType() {
-        return new VerifyAddSecondChanceItemResponseType();
+    public RefundInformationType createRefundInformationType() {
+        return new RefundInformationType();
     }
 
     /**
-     * Create an instance of {@link TicketListingDetailsType }
+     * Create an instance of {@link GetFeedbackRequestType }
      * 
      */
-    public TicketListingDetailsType createTicketListingDetailsType() {
-        return new TicketListingDetailsType();
+    public GetFeedbackRequestType createGetFeedbackRequestType() {
+        return new GetFeedbackRequestType();
     }
 
     /**
-     * Create an instance of {@link ReviseMyMessagesFoldersResponseType }
+     * Create an instance of {@link AddToWatchListResponseType }
      * 
      */
-    public ReviseMyMessagesFoldersResponseType createReviseMyMessagesFoldersResponseType() {
-        return new ReviseMyMessagesFoldersResponseType();
+    public AddToWatchListResponseType createAddToWatchListResponseType() {
+        return new AddToWatchListResponseType();
     }
 
     /**
-     * Create an instance of {@link ReviseItemRequestType }
+     * Create an instance of {@link MaximumUnpaidItemStrikesInfoType }
      * 
      */
-    public ReviseItemRequestType createReviseItemRequestType() {
-        return new ReviseItemRequestType();
+    public MaximumUnpaidItemStrikesInfoType createMaximumUnpaidItemStrikesInfoType() {
+        return new MaximumUnpaidItemStrikesInfoType();
     }
 
     /**
-     * Create an instance of {@link CalculatedHandlingDiscountType }
+     * Create an instance of {@link FeedbackDetailArrayType }
      * 
      */
-    public CalculatedHandlingDiscountType createCalculatedHandlingDiscountType() {
-        return new CalculatedHandlingDiscountType();
+    public FeedbackDetailArrayType createFeedbackDetailArrayType() {
+        return new FeedbackDetailArrayType();
     }
 
     /**
-     * Create an instance of {@link AddItemRequestType }
+     * Create an instance of {@link RelistFixedPriceItemRequestType }
      * 
      */
-    public AddItemRequestType createAddItemRequestType() {
-        return new AddItemRequestType();
+    public RelistFixedPriceItemRequestType createRelistFixedPriceItemRequestType() {
+        return new RelistFixedPriceItemRequestType();
     }
 
     /**
-     * Create an instance of {@link BuyerProtectionDetailsType }
+     * Create an instance of {@link KTypeSupportedDefinitionType }
      * 
      */
-    public BuyerProtectionDetailsType createBuyerProtectionDetailsType() {
-        return new BuyerProtectionDetailsType();
+    public KTypeSupportedDefinitionType createKTypeSupportedDefinitionType() {
+        return new KTypeSupportedDefinitionType();
     }
 
     /**
-     * Create an instance of {@link LocalListingDistancesRegularDefinitionType }
+     * Create an instance of {@link FeedbackDetailType }
      * 
      */
-    public LocalListingDistancesRegularDefinitionType createLocalListingDistancesRegularDefinitionType() {
-        return new LocalListingDistancesRegularDefinitionType();
+    public FeedbackDetailType createFeedbackDetailType() {
+        return new FeedbackDetailType();
     }
 
     /**
-     * Create an instance of {@link MaxGranularFitmentCountDefinitionType }
+     * Create an instance of {@link PayPalRequiredForStoreOwnerDefinitionType }
      * 
      */
-    public MaxGranularFitmentCountDefinitionType createMaxGranularFitmentCountDefinitionType() {
-        return new MaxGranularFitmentCountDefinitionType();
+    public PayPalRequiredForStoreOwnerDefinitionType createPayPalRequiredForStoreOwnerDefinitionType() {
+        return new PayPalRequiredForStoreOwnerDefinitionType();
     }
 
     /**
-     * Create an instance of {@link DiscountType }
+     * Create an instance of {@link AddMemberMessagesAAQToBidderRequestType }
      * 
      */
-    public DiscountType createDiscountType() {
-        return new DiscountType();
+    public AddMemberMessagesAAQToBidderRequestType createAddMemberMessagesAAQToBidderRequestType() {
+        return new AddMemberMessagesAAQToBidderRequestType();
     }
 
     /**
-     * Create an instance of {@link GetMessagePreferencesRequestType }
+     * Create an instance of {@link ResponsiblePersonCodeTypes }
      * 
      */
-    public GetMessagePreferencesRequestType createGetMessagePreferencesRequestType() {
-        return new GetMessagePreferencesRequestType();
+    public ResponsiblePersonCodeTypes createResponsiblePersonCodeTypes() {
+        return new ResponsiblePersonCodeTypes();
     }
 
     /**
-     * Create an instance of {@link EBayMotorsProContactByAddressEnabledDefinitionType }
+     * Create an instance of {@link LocalMarketPremiumSubscriptionDefinitionType }
      * 
      */
-    public EBayMotorsProContactByAddressEnabledDefinitionType createEBayMotorsProContactByAddressEnabledDefinitionType() {
-        return new EBayMotorsProContactByAddressEnabledDefinitionType();
+    public LocalMarketPremiumSubscriptionDefinitionType createLocalMarketPremiumSubscriptionDefinitionType() {
+        return new LocalMarketPremiumSubscriptionDefinitionType();
     }
 
     /**
-     * Create an instance of {@link SellerFeeDiscountDashboardType }
+     * Create an instance of {@link MemberMessageExchangeType }
      * 
      */
-    public SellerFeeDiscountDashboardType createSellerFeeDiscountDashboardType() {
-        return new SellerFeeDiscountDashboardType();
+    public MemberMessageExchangeType createMemberMessageExchangeType() {
+        return new MemberMessageExchangeType();
     }
 
     /**
-     * Create an instance of {@link GeteBayDetailsRequestType }
+     * Create an instance of {@link VeROReportItemsResponseType }
      * 
      */
-    public GeteBayDetailsRequestType createGeteBayDetailsRequestType() {
-        return new GeteBayDetailsRequestType();
+    public VeROReportItemsResponseType createVeROReportItemsResponseType() {
+        return new VeROReportItemsResponseType();
     }
 
     /**
-     * Create an instance of {@link CalculatedShippingRateType }
+     * Create an instance of {@link ProductRequiredEnabledDefinitionType }
      * 
      */
-    public CalculatedShippingRateType createCalculatedShippingRateType() {
-        return new CalculatedShippingRateType();
-    }
-
-    /**
-     * Create an instance of {@link CrossBorderTradeNorthAmericaEnabledDefinitionType }
-     * 
-     */
-    public CrossBorderTradeNorthAmericaEnabledDefinitionType createCrossBorderTradeNorthAmericaEnabledDefinitionType() {
-        return new CrossBorderTradeNorthAmericaEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link PickupDropOffEnabledDefinitionType }
-     * 
-     */
-    public PickupDropOffEnabledDefinitionType createPickupDropOffEnabledDefinitionType() {
-        return new PickupDropOffEnabledDefinitionType();
-    }
-
-    /**
-     * Create an instance of {@link GetMemberMessagesRequestType }
-     * 
-     */
-    public GetMemberMessagesRequestType createGetMemberMessagesRequestType() {
-        return new GetMemberMessagesRequestType();
-    }
-
-    /**
-     * Create an instance of {@link SellingManagerProductDetailsType }
-     * 
-     */
-    public SellingManagerProductDetailsType createSellingManagerProductDetailsType() {
-        return new SellingManagerProductDetailsType();
-    }
-
-    /**
-     * Create an instance of {@link ExternalTransactionType }
-     * 
-     */
-    public ExternalTransactionType createExternalTransactionType() {
-        return new ExternalTransactionType();
-    }
-
-    /**
-     * Create an instance of {@link SiteLocationType }
-     * 
-     */
-    public SiteLocationType createSiteLocationType() {
-        return new SiteLocationType();
+    public ProductRequiredEnabledDefinitionType createProductRequiredEnabledDefinitionType() {
+        return new ProductRequiredEnabledDefinitionType();
     }
 
     /**
@@ -5927,131 +3863,379 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link QuantityType }
+     * Create an instance of {@link GiftSummaryType }
      * 
      */
-    public QuantityType createQuantityType() {
-        return new QuantityType();
+    public GiftSummaryType createGiftSummaryType() {
+        return new GiftSummaryType();
     }
 
     /**
-     * Create an instance of {@link MaxFlatShippingCostDefinitionType }
+     * Create an instance of {@link SendInvoiceResponseType }
      * 
      */
-    public MaxFlatShippingCostDefinitionType createMaxFlatShippingCostDefinitionType() {
-        return new MaxFlatShippingCostDefinitionType();
+    public SendInvoiceResponseType createSendInvoiceResponseType() {
+        return new SendInvoiceResponseType();
     }
 
     /**
-     * Create an instance of {@link MaximumUnpaidItemStrikesDurationDetailsType }
+     * Create an instance of {@link CategoryType }
      * 
      */
-    public MaximumUnpaidItemStrikesDurationDetailsType createMaximumUnpaidItemStrikesDurationDetailsType() {
-        return new MaximumUnpaidItemStrikesDurationDetailsType();
+    public CategoryType createCategoryType() {
+        return new CategoryType();
     }
 
     /**
-     * Create an instance of {@link StoreCustomCategoryArrayType }
+     * Create an instance of {@link TransactionStatusType }
      * 
      */
-    public StoreCustomCategoryArrayType createStoreCustomCategoryArrayType() {
-        return new StoreCustomCategoryArrayType();
+    public TransactionStatusType createTransactionStatusType() {
+        return new TransactionStatusType();
     }
 
     /**
-     * Create an instance of {@link TransactionProgramType }
+     * Create an instance of {@link SellerDiscountsType }
      * 
      */
-    public TransactionProgramType createTransactionProgramType() {
-        return new TransactionProgramType();
+    public SellerDiscountsType createSellerDiscountsType() {
+        return new SellerDiscountsType();
     }
 
     /**
-     * Create an instance of {@link ShippingPackageDetailsType }
+     * Create an instance of {@link ItemRatingDetailsType }
      * 
      */
-    public ShippingPackageDetailsType createShippingPackageDetailsType() {
-        return new ShippingPackageDetailsType();
+    public ItemRatingDetailsType createItemRatingDetailsType() {
+        return new ItemRatingDetailsType();
     }
 
     /**
-     * Create an instance of {@link GetBidderListRequestType }
+     * Create an instance of {@link ExtendSiteHostedPicturesResponseType }
      * 
      */
-    public GetBidderListRequestType createGetBidderListRequestType() {
-        return new GetBidderListRequestType();
+    public ExtendSiteHostedPicturesResponseType createExtendSiteHostedPicturesResponseType() {
+        return new ExtendSiteHostedPicturesResponseType();
     }
 
     /**
-     * Create an instance of {@link EBayMotorsProContactByPhoneEnabledDefinitionType }
+     * Create an instance of {@link ReviseInventoryStatusRequestType }
      * 
      */
-    public EBayMotorsProContactByPhoneEnabledDefinitionType createEBayMotorsProContactByPhoneEnabledDefinitionType() {
-        return new EBayMotorsProContactByPhoneEnabledDefinitionType();
+    public ReviseInventoryStatusRequestType createReviseInventoryStatusRequestType() {
+        return new ReviseInventoryStatusRequestType();
     }
 
     /**
-     * Create an instance of {@link RestockingFeeValueDetailsType }
+     * Create an instance of {@link TaxIdentifierType }
      * 
      */
-    public RestockingFeeValueDetailsType createRestockingFeeValueDetailsType() {
-        return new RestockingFeeValueDetailsType();
+    public TaxIdentifierType createTaxIdentifierType() {
+        return new TaxIdentifierType();
     }
 
     /**
-     * Create an instance of {@link CountryPoliciesType }
+     * Create an instance of {@link ShippingCategoryDetailsType }
      * 
      */
-    public CountryPoliciesType createCountryPoliciesType() {
-        return new CountryPoliciesType();
+    public ShippingCategoryDetailsType createShippingCategoryDetailsType() {
+        return new ShippingCategoryDetailsType();
     }
 
     /**
-     * Create an instance of {@link InternationalReturnsShipmentPayeeDefinitionType }
+     * Create an instance of {@link LocalMarketNonSubscriptionDefinitionType }
      * 
      */
-    public InternationalReturnsShipmentPayeeDefinitionType createInternationalReturnsShipmentPayeeDefinitionType() {
-        return new InternationalReturnsShipmentPayeeDefinitionType();
+    public LocalMarketNonSubscriptionDefinitionType createLocalMarketNonSubscriptionDefinitionType() {
+        return new LocalMarketNonSubscriptionDefinitionType();
     }
 
     /**
-     * Create an instance of {@link VerifiedUserRequirementsDetailsType }
+     * Create an instance of {@link ListingDurationDefinitionType }
      * 
      */
-    public VerifiedUserRequirementsDetailsType createVerifiedUserRequirementsDetailsType() {
-        return new VerifiedUserRequirementsDetailsType();
+    public ListingDurationDefinitionType createListingDurationDefinitionType() {
+        return new ListingDurationDefinitionType();
     }
 
     /**
-     * Create an instance of {@link LocalListingDistancesNonSubscriptionDefinitionType }
+     * Create an instance of {@link ReasonCodeDetailType }
      * 
      */
-    public LocalListingDistancesNonSubscriptionDefinitionType createLocalListingDistancesNonSubscriptionDefinitionType() {
-        return new LocalListingDistancesNonSubscriptionDefinitionType();
+    public ReasonCodeDetailType createReasonCodeDetailType() {
+        return new ReasonCodeDetailType();
     }
 
     /**
-     * Create an instance of {@link LocalMarketPhoneCountDefinitionType }
+     * Create an instance of {@link ListingDurationReferenceType }
      * 
      */
-    public LocalMarketPhoneCountDefinitionType createLocalMarketPhoneCountDefinitionType() {
-        return new LocalMarketPhoneCountDefinitionType();
+    public ListingDurationReferenceType createListingDurationReferenceType() {
+        return new ListingDurationReferenceType();
     }
 
     /**
-     * Create an instance of {@link SellerProvidedTitleSupportedDefinitionType }
+     * Create an instance of {@link EndItemResponseContainerType }
      * 
      */
-    public SellerProvidedTitleSupportedDefinitionType createSellerProvidedTitleSupportedDefinitionType() {
-        return new SellerProvidedTitleSupportedDefinitionType();
+    public EndItemResponseContainerType createEndItemResponseContainerType() {
+        return new EndItemResponseContainerType();
     }
 
     /**
-     * Create an instance of {@link GetMyeBayBuyingResponseType }
+     * Create an instance of {@link TaxIdentifierAttributeType }
      * 
      */
-    public GetMyeBayBuyingResponseType createGetMyeBayBuyingResponseType() {
-        return new GetMyeBayBuyingResponseType();
+    public TaxIdentifierAttributeType createTaxIdentifierAttributeType() {
+        return new TaxIdentifierAttributeType();
+    }
+
+    /**
+     * Create an instance of {@link AverageRatingDetailsType }
+     * 
+     */
+    public AverageRatingDetailsType createAverageRatingDetailsType() {
+        return new AverageRatingDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link EndItemRequestType }
+     * 
+     */
+    public EndItemRequestType createEndItemRequestType() {
+        return new EndItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link AddMemberMessageRTQResponseType }
+     * 
+     */
+    public AddMemberMessageRTQResponseType createAddMemberMessageRTQResponseType() {
+        return new AddMemberMessageRTQResponseType();
+    }
+
+    /**
+     * Create an instance of {@link CustomPoliciesType }
+     * 
+     */
+    public CustomPoliciesType createCustomPoliciesType() {
+        return new CustomPoliciesType();
+    }
+
+    /**
+     * Create an instance of {@link SetStoreCategoriesResponseType }
+     * 
+     */
+    public SetStoreCategoriesResponseType createSetStoreCategoriesResponseType() {
+        return new SetStoreCategoriesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link PictureURLsType }
+     * 
+     */
+    public PictureURLsType createPictureURLsType() {
+        return new PictureURLsType();
+    }
+
+    /**
+     * Create an instance of {@link GetStoreCategoryUpdateStatusResponseType }
+     * 
+     */
+    public GetStoreCategoryUpdateStatusResponseType createGetStoreCategoryUpdateStatusResponseType() {
+        return new GetStoreCategoryUpdateStatusResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdContactByEmailEnabledDefintionType }
+     * 
+     */
+    public ClassifiedAdContactByEmailEnabledDefintionType createClassifiedAdContactByEmailEnabledDefintionType() {
+        return new ClassifiedAdContactByEmailEnabledDefintionType();
+    }
+
+    /**
+     * Create an instance of {@link PaginatedOrderTransactionArrayType }
+     * 
+     */
+    public PaginatedOrderTransactionArrayType createPaginatedOrderTransactionArrayType() {
+        return new PaginatedOrderTransactionArrayType();
+    }
+
+    /**
+     * Create an instance of {@link VINSupportedDefinitionType }
+     * 
+     */
+    public VINSupportedDefinitionType createVINSupportedDefinitionType() {
+        return new VINSupportedDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProAutoDeclineEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProAutoDeclineEnabledDefinitionType createEBayMotorsProAutoDeclineEnabledDefinitionType() {
+        return new EBayMotorsProAutoDeclineEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link PictureDetailsType }
+     * 
+     */
+    public PictureDetailsType createPictureDetailsType() {
+        return new PictureDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link RemoveFromWatchListResponseType }
+     * 
+     */
+    public RemoveFromWatchListResponseType createRemoveFromWatchListResponseType() {
+        return new RemoveFromWatchListResponseType();
+    }
+
+    /**
+     * Create an instance of {@link VariationDetailsType }
+     * 
+     */
+    public VariationDetailsType createVariationDetailsType() {
+        return new VariationDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link GetStoreResponseType }
+     * 
+     */
+    public GetStoreResponseType createGetStoreResponseType() {
+        return new GetStoreResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingTermRequiredDefinitionType }
+     * 
+     */
+    public ShippingTermRequiredDefinitionType createShippingTermRequiredDefinitionType() {
+        return new ShippingTermRequiredDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ItemPolicyViolationType }
+     * 
+     */
+    public ItemPolicyViolationType createItemPolicyViolationType() {
+        return new ItemPolicyViolationType();
+    }
+
+    /**
+     * Create an instance of {@link MembershipDetailsType }
+     * 
+     */
+    public MembershipDetailsType createMembershipDetailsType() {
+        return new MembershipDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link GetUserContactDetailsRequestType }
+     * 
+     */
+    public GetUserContactDetailsRequestType createGetUserContactDetailsRequestType() {
+        return new GetUserContactDetailsRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SetUserPreferencesResponseType }
+     * 
+     */
+    public SetUserPreferencesResponseType createSetUserPreferencesResponseType() {
+        return new SetUserPreferencesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link PickupDropOffEnabledDefinitionType }
+     * 
+     */
+    public PickupDropOffEnabledDefinitionType createPickupDropOffEnabledDefinitionType() {
+        return new PickupDropOffEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link UploadSiteHostedPicturesRequestType }
+     * 
+     */
+    public UploadSiteHostedPicturesRequestType createUploadSiteHostedPicturesRequestType() {
+        return new UploadSiteHostedPicturesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link CalculatedHandlingDiscountType }
+     * 
+     */
+    public CalculatedHandlingDiscountType createCalculatedHandlingDiscountType() {
+        return new CalculatedHandlingDiscountType();
+    }
+
+    /**
+     * Create an instance of {@link ReturnPolicyDetailsType }
+     * 
+     */
+    public ReturnPolicyDetailsType createReturnPolicyDetailsType() {
+        return new ReturnPolicyDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProCompanyNameEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProCompanyNameEnabledDefinitionType createEBayMotorsProCompanyNameEnabledDefinitionType() {
+        return new EBayMotorsProCompanyNameEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link SellerFavoriteItemPreferencesType }
+     * 
+     */
+    public SellerFavoriteItemPreferencesType createSellerFavoriteItemPreferencesType() {
+        return new SellerFavoriteItemPreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link GetAllBiddersResponseType }
+     * 
+     */
+    public GetAllBiddersResponseType createGetAllBiddersResponseType() {
+        return new GetAllBiddersResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ManufacturerType }
+     * 
+     */
+    public ManufacturerType createManufacturerType() {
+        return new ManufacturerType();
+    }
+
+    /**
+     * Create an instance of {@link VerifyRelistItemResponseType }
+     * 
+     */
+    public VerifyRelistItemResponseType createVerifyRelistItemResponseType() {
+        return new VerifyRelistItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link TaxJurisdictionType }
+     * 
+     */
+    public TaxJurisdictionType createTaxJurisdictionType() {
+        return new TaxJurisdictionType();
+    }
+
+    /**
+     * Create an instance of {@link CompleteSaleRequestType }
+     * 
+     */
+    public CompleteSaleRequestType createCompleteSaleRequestType() {
+        return new CompleteSaleRequestType();
     }
 
     /**
@@ -6063,27 +4247,939 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SetNotificationPreferencesResponseType }
+     * Create an instance of {@link AddMemberMessagesAAQToBidderResponseType }
      * 
      */
-    public SetNotificationPreferencesResponseType createSetNotificationPreferencesResponseType() {
-        return new SetNotificationPreferencesResponseType();
+    public AddMemberMessagesAAQToBidderResponseType createAddMemberMessagesAAQToBidderResponseType() {
+        return new AddMemberMessagesAAQToBidderResponseType();
     }
 
     /**
-     * Create an instance of {@link OrderTransactionType }
+     * Create an instance of {@link LocalMarketCounterOfferEnabledDefinitionType }
      * 
      */
-    public OrderTransactionType createOrderTransactionType() {
-        return new OrderTransactionType();
+    public LocalMarketCounterOfferEnabledDefinitionType createLocalMarketCounterOfferEnabledDefinitionType() {
+        return new LocalMarketCounterOfferEnabledDefinitionType();
     }
 
     /**
-     * Create an instance of {@link BrandMPNIdentifierEnabledDefinitionType }
+     * Create an instance of {@link ConditionValuesDefinitionType }
      * 
      */
-    public BrandMPNIdentifierEnabledDefinitionType createBrandMPNIdentifierEnabledDefinitionType() {
-        return new BrandMPNIdentifierEnabledDefinitionType();
+    public ConditionValuesDefinitionType createConditionValuesDefinitionType() {
+        return new ConditionValuesDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link SpecialitySubscriptionDefinitionType }
+     * 
+     */
+    public SpecialitySubscriptionDefinitionType createSpecialitySubscriptionDefinitionType() {
+        return new SpecialitySubscriptionDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ConditionDescriptorsType }
+     * 
+     */
+    public ConditionDescriptorsType createConditionDescriptorsType() {
+        return new ConditionDescriptorsType();
+    }
+
+    /**
+     * Create an instance of {@link DigitalDeliveryUserType }
+     * 
+     */
+    public DigitalDeliveryUserType createDigitalDeliveryUserType() {
+        return new DigitalDeliveryUserType();
+    }
+
+    /**
+     * Create an instance of {@link AnnouncementMessageType }
+     * 
+     */
+    public AnnouncementMessageType createAnnouncementMessageType() {
+        return new AnnouncementMessageType();
+    }
+
+    /**
+     * Create an instance of {@link ReviseMyMessagesFoldersResponseType }
+     * 
+     */
+    public ReviseMyMessagesFoldersResponseType createReviseMyMessagesFoldersResponseType() {
+        return new ReviseMyMessagesFoldersResponseType();
+    }
+
+    /**
+     * Create an instance of {@link CheckoutStatusType }
+     * 
+     */
+    public CheckoutStatusType createCheckoutStatusType() {
+        return new CheckoutStatusType();
+    }
+
+    /**
+     * Create an instance of {@link CrossBorderTradeGBEnabledDefinitionType }
+     * 
+     */
+    public CrossBorderTradeGBEnabledDefinitionType createCrossBorderTradeGBEnabledDefinitionType() {
+        return new CrossBorderTradeGBEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProPaymentMethodCheckOutEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProPaymentMethodCheckOutEnabledDefinitionType createEBayMotorsProPaymentMethodCheckOutEnabledDefinitionType() {
+        return new EBayMotorsProPaymentMethodCheckOutEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingServiceCostOverrideType }
+     * 
+     */
+    public ShippingServiceCostOverrideType createShippingServiceCostOverrideType() {
+        return new ShippingServiceCostOverrideType();
+    }
+
+    /**
+     * Create an instance of {@link AddMemberMessageRTQRequestType }
+     * 
+     */
+    public AddMemberMessageRTQRequestType createAddMemberMessageRTQRequestType() {
+        return new AddMemberMessageRTQRequestType();
+    }
+
+    /**
+     * Create an instance of {@link DepositSupportedDefinitionType }
+     * 
+     */
+    public DepositSupportedDefinitionType createDepositSupportedDefinitionType() {
+        return new DepositSupportedDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetAllBiddersRequestType }
+     * 
+     */
+    public GetAllBiddersRequestType createGetAllBiddersRequestType() {
+        return new GetAllBiddersRequestType();
+    }
+
+    /**
+     * Create an instance of {@link Group3MaxFlatShippingCostDefinitionType }
+     * 
+     */
+    public Group3MaxFlatShippingCostDefinitionType createGroup3MaxFlatShippingCostDefinitionType() {
+        return new Group3MaxFlatShippingCostDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ItemBidDetailsType }
+     * 
+     */
+    public ItemBidDetailsType createItemBidDetailsType() {
+        return new ItemBidDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link BotBlockRequestType }
+     * 
+     */
+    public BotBlockRequestType createBotBlockRequestType() {
+        return new BotBlockRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ExcludeShippingLocationDetailsType }
+     * 
+     */
+    public ExcludeShippingLocationDetailsType createExcludeShippingLocationDetailsType() {
+        return new ExcludeShippingLocationDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link VariationType }
+     * 
+     */
+    public VariationType createVariationType() {
+        return new VariationType();
+    }
+
+    /**
+     * Create an instance of {@link GetUserPreferencesResponseType }
+     * 
+     */
+    public GetUserPreferencesResponseType createGetUserPreferencesResponseType() {
+        return new GetUserPreferencesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetBidderListResponseType }
+     * 
+     */
+    public GetBidderListResponseType createGetBidderListResponseType() {
+        return new GetBidderListResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingPackageInfoType }
+     * 
+     */
+    public ShippingPackageInfoType createShippingPackageInfoType() {
+        return new ShippingPackageInfoType();
+    }
+
+    /**
+     * Create an instance of {@link VeROReportItemsRequestType }
+     * 
+     */
+    public VeROReportItemsRequestType createVeROReportItemsRequestType() {
+        return new VeROReportItemsRequestType();
+    }
+
+    /**
+     * Create an instance of {@link SetUserNotesRequestType }
+     * 
+     */
+    public SetUserNotesRequestType createSetUserNotesRequestType() {
+        return new SetUserNotesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link NotificationEnableArrayType }
+     * 
+     */
+    public NotificationEnableArrayType createNotificationEnableArrayType() {
+        return new NotificationEnableArrayType();
+    }
+
+    /**
+     * Create an instance of {@link SellerProvidedTitleSupportedDefinitionType }
+     * 
+     */
+    public SellerProvidedTitleSupportedDefinitionType createSellerProvidedTitleSupportedDefinitionType() {
+        return new SellerProvidedTitleSupportedDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link DomesticRefundMethodCodeType }
+     * 
+     */
+    public DomesticRefundMethodCodeType createDomesticRefundMethodCodeType() {
+        return new DomesticRefundMethodCodeType();
+    }
+
+    /**
+     * Create an instance of {@link SiteHostedPictureDetailsType }
+     * 
+     */
+    public SiteHostedPictureDetailsType createSiteHostedPictureDetailsType() {
+        return new SiteHostedPictureDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link UserIdPasswordType }
+     * 
+     */
+    public UserIdPasswordType createUserIdPasswordType() {
+        return new UserIdPasswordType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketSpecialitySubscriptionDefinitionType }
+     * 
+     */
+    public LocalMarketSpecialitySubscriptionDefinitionType createLocalMarketSpecialitySubscriptionDefinitionType() {
+        return new LocalMarketSpecialitySubscriptionDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link AddItemResponseType }
+     * 
+     */
+    public AddItemResponseType createAddItemResponseType() {
+        return new AddItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link BuyerProtectionDetailsType }
+     * 
+     */
+    public BuyerProtectionDetailsType createBuyerProtectionDetailsType() {
+        return new BuyerProtectionDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link SchedulingInfoType }
+     * 
+     */
+    public SchedulingInfoType createSchedulingInfoType() {
+        return new SchedulingInfoType();
+    }
+
+    /**
+     * Create an instance of {@link PlaceOfferRequestType }
+     * 
+     */
+    public PlaceOfferRequestType createPlaceOfferRequestType() {
+        return new PlaceOfferRequestType();
+    }
+
+    /**
+     * Create an instance of {@link AddSecondChanceItemResponseType }
+     * 
+     */
+    public AddSecondChanceItemResponseType createAddSecondChanceItemResponseType() {
+        return new AddSecondChanceItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link NameValueListArrayType }
+     * 
+     */
+    public NameValueListArrayType createNameValueListArrayType() {
+        return new NameValueListArrayType();
+    }
+
+    /**
+     * Create an instance of {@link DiscountProfileType }
+     * 
+     */
+    public DiscountProfileType createDiscountProfileType() {
+        return new DiscountProfileType();
+    }
+
+    /**
+     * Create an instance of {@link MaximumItemRequirementsType }
+     * 
+     */
+    public MaximumItemRequirementsType createMaximumItemRequirementsType() {
+        return new MaximumItemRequirementsType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProAdFormatEnabledDefinitionType }
+     * 
+     */
+    public EBayMotorsProAdFormatEnabledDefinitionType createEBayMotorsProAdFormatEnabledDefinitionType() {
+        return new EBayMotorsProAdFormatEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetMyMessagesResponseType }
+     * 
+     */
+    public GetMyMessagesResponseType createGetMyMessagesResponseType() {
+        return new GetMyMessagesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link OfferArrayType }
+     * 
+     */
+    public OfferArrayType createOfferArrayType() {
+        return new OfferArrayType();
+    }
+
+    /**
+     * Create an instance of {@link IntegratedMerchantCreditCardInfoType }
+     * 
+     */
+    public IntegratedMerchantCreditCardInfoType createIntegratedMerchantCreditCardInfoType() {
+        return new IntegratedMerchantCreditCardInfoType();
+    }
+
+    /**
+     * Create an instance of {@link SetShippingDiscountProfilesRequestType }
+     * 
+     */
+    public SetShippingDiscountProfilesRequestType createSetShippingDiscountProfilesRequestType() {
+        return new SetShippingDiscountProfilesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link AddOrderResponseType }
+     * 
+     */
+    public AddOrderResponseType createAddOrderResponseType() {
+        return new AddOrderResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ReturnPolicyType }
+     * 
+     */
+    public ReturnPolicyType createReturnPolicyType() {
+        return new ReturnPolicyType();
+    }
+
+    /**
+     * Create an instance of {@link AddItemRequestContainerType }
+     * 
+     */
+    public AddItemRequestContainerType createAddItemRequestContainerType() {
+        return new AddItemRequestContainerType();
+    }
+
+    /**
+     * Create an instance of {@link PickupOptionsType }
+     * 
+     */
+    public PickupOptionsType createPickupOptionsType() {
+        return new PickupOptionsType();
+    }
+
+    /**
+     * Create an instance of {@link StoreCustomCategoryArrayType }
+     * 
+     */
+    public StoreCustomCategoryArrayType createStoreCustomCategoryArrayType() {
+        return new StoreCustomCategoryArrayType();
+    }
+
+    /**
+     * Create an instance of {@link VerifyAddItemResponseType }
+     * 
+     */
+    public VerifyAddItemResponseType createVerifyAddItemResponseType() {
+        return new VerifyAddItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetSellerTransactionsRequestType }
+     * 
+     */
+    public GetSellerTransactionsRequestType createGetSellerTransactionsRequestType() {
+        return new GetSellerTransactionsRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ShippingCarrierDetailsType }
+     * 
+     */
+    public ShippingCarrierDetailsType createShippingCarrierDetailsType() {
+        return new ShippingCarrierDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link TransactionArrayType }
+     * 
+     */
+    public TransactionArrayType createTransactionArrayType() {
+        return new TransactionArrayType();
+    }
+
+    /**
+     * Create an instance of {@link EndItemsRequestType }
+     * 
+     */
+    public EndItemsRequestType createEndItemsRequestType() {
+        return new EndItemsRequestType();
+    }
+
+    /**
+     * Create an instance of {@link GetChallengeTokenRequestType }
+     * 
+     */
+    public GetChallengeTokenRequestType createGetChallengeTokenRequestType() {
+        return new GetChallengeTokenRequestType();
+    }
+
+    /**
+     * Create an instance of {@link LocalListingDistancesRegularDefinitionType }
+     * 
+     */
+    public LocalListingDistancesRegularDefinitionType createLocalListingDistancesRegularDefinitionType() {
+        return new LocalListingDistancesRegularDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link AverageRatingSummaryType }
+     * 
+     */
+    public AverageRatingSummaryType createAverageRatingSummaryType() {
+        return new AverageRatingSummaryType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdCounterOfferEnabledDefinitionType }
+     * 
+     */
+    public ClassifiedAdCounterOfferEnabledDefinitionType createClassifiedAdCounterOfferEnabledDefinitionType() {
+        return new ClassifiedAdCounterOfferEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetCategoryFeaturesRequestType }
+     * 
+     */
+    public GetCategoryFeaturesRequestType createGetCategoryFeaturesRequestType() {
+        return new GetCategoryFeaturesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link UserDefinedListType }
+     * 
+     */
+    public UserDefinedListType createUserDefinedListType() {
+        return new UserDefinedListType();
+    }
+
+    /**
+     * Create an instance of {@link AddressType }
+     * 
+     */
+    public AddressType createAddressType() {
+        return new AddressType();
+    }
+
+    /**
+     * Create an instance of {@link ConfirmIdentityResponseType }
+     * 
+     */
+    public ConfirmIdentityResponseType createConfirmIdentityResponseType() {
+        return new ConfirmIdentityResponseType();
+    }
+
+    /**
+     * Create an instance of {@link VeROSiteDetailType }
+     * 
+     */
+    public VeROSiteDetailType createVeROSiteDetailType() {
+        return new VeROSiteDetailType();
+    }
+
+    /**
+     * Create an instance of {@link GeteBayOfficialTimeRequestType }
+     * 
+     */
+    public GeteBayOfficialTimeRequestType createGeteBayOfficialTimeRequestType() {
+        return new GeteBayOfficialTimeRequestType();
+    }
+
+    /**
+     * Create an instance of {@link PictogramsType }
+     * 
+     */
+    public PictogramsType createPictogramsType() {
+        return new PictogramsType();
+    }
+
+    /**
+     * Create an instance of {@link EBayMotorsProStreetCountDefinitionType }
+     * 
+     */
+    public EBayMotorsProStreetCountDefinitionType createEBayMotorsProStreetCountDefinitionType() {
+        return new EBayMotorsProStreetCountDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link PolicyViolationDurationDetailsType }
+     * 
+     */
+    public PolicyViolationDurationDetailsType createPolicyViolationDurationDetailsType() {
+        return new PolicyViolationDurationDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link SkypeMeTransactionalEnabledDefinitionType }
+     * 
+     */
+    public SkypeMeTransactionalEnabledDefinitionType createSkypeMeTransactionalEnabledDefinitionType() {
+        return new SkypeMeTransactionalEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link BestOfferDetailsType }
+     * 
+     */
+    public BestOfferDetailsType createBestOfferDetailsType() {
+        return new BestOfferDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link SellerExcludeShipToLocationPreferencesType }
+     * 
+     */
+    public SellerExcludeShipToLocationPreferencesType createSellerExcludeShipToLocationPreferencesType() {
+        return new SellerExcludeShipToLocationPreferencesType();
+    }
+
+    /**
+     * Create an instance of {@link LocalMarketContactByAddressEnabledDefinitionType }
+     * 
+     */
+    public LocalMarketContactByAddressEnabledDefinitionType createLocalMarketContactByAddressEnabledDefinitionType() {
+        return new LocalMarketContactByAddressEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdPaymentMethodEnabledDefinitionType }
+     * 
+     */
+    public ClassifiedAdPaymentMethodEnabledDefinitionType createClassifiedAdPaymentMethodEnabledDefinitionType() {
+        return new ClassifiedAdPaymentMethodEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link RegionDetailsType }
+     * 
+     */
+    public RegionDetailsType createRegionDetailsType() {
+        return new RegionDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link GetUserRequestType }
+     * 
+     */
+    public GetUserRequestType createGetUserRequestType() {
+        return new GetUserRequestType();
+    }
+
+    /**
+     * Create an instance of {@link CountryPoliciesType }
+     * 
+     */
+    public CountryPoliciesType createCountryPoliciesType() {
+        return new CountryPoliciesType();
+    }
+
+    /**
+     * Create an instance of {@link UserConsentRequiredDefinitionType }
+     * 
+     */
+    public UserConsentRequiredDefinitionType createUserConsentRequiredDefinitionType() {
+        return new UserConsentRequiredDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link DutchBINEnabledDefinitionType }
+     * 
+     */
+    public DutchBINEnabledDefinitionType createDutchBINEnabledDefinitionType() {
+        return new DutchBINEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link MaximumUnpaidItemStrikesInfoDetailsType }
+     * 
+     */
+    public MaximumUnpaidItemStrikesInfoDetailsType createMaximumUnpaidItemStrikesInfoDetailsType() {
+        return new MaximumUnpaidItemStrikesInfoDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link MemberMessageType }
+     * 
+     */
+    public MemberMessageType createMemberMessageType() {
+        return new MemberMessageType();
+    }
+
+    /**
+     * Create an instance of {@link ReviseItemRequestType }
+     * 
+     */
+    public ReviseItemRequestType createReviseItemRequestType() {
+        return new ReviseItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link MaxGranularFitmentCountDefinitionType }
+     * 
+     */
+    public MaxGranularFitmentCountDefinitionType createMaxGranularFitmentCountDefinitionType() {
+        return new MaxGranularFitmentCountDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link AddItemRequestType }
+     * 
+     */
+    public AddItemRequestType createAddItemRequestType() {
+        return new AddItemRequestType();
+    }
+
+    /**
+     * Create an instance of {@link AttributeConversionEnabledFeatureDefinitionType }
+     * 
+     */
+    public AttributeConversionEnabledFeatureDefinitionType createAttributeConversionEnabledFeatureDefinitionType() {
+        return new AttributeConversionEnabledFeatureDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdCompanyNameEnabledDefinitionType }
+     * 
+     */
+    public ClassifiedAdCompanyNameEnabledDefinitionType createClassifiedAdCompanyNameEnabledDefinitionType() {
+        return new ClassifiedAdCompanyNameEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link InternationalReturnsAcceptedCodeType }
+     * 
+     */
+    public InternationalReturnsAcceptedCodeType createInternationalReturnsAcceptedCodeType() {
+        return new InternationalReturnsAcceptedCodeType();
+    }
+
+    /**
+     * Create an instance of {@link RecoupmentPolicyDetailsType }
+     * 
+     */
+    public RecoupmentPolicyDetailsType createRecoupmentPolicyDetailsType() {
+        return new RecoupmentPolicyDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link AddFixedPriceItemResponseType }
+     * 
+     */
+    public AddFixedPriceItemResponseType createAddFixedPriceItemResponseType() {
+        return new AddFixedPriceItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetCategoriesResponseType }
+     * 
+     */
+    public GetCategoriesResponseType createGetCategoriesResponseType() {
+        return new GetCategoriesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link MultiLegShippingDetailsType }
+     * 
+     */
+    public MultiLegShippingDetailsType createMultiLegShippingDetailsType() {
+        return new MultiLegShippingDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ClassifiedAdShippingMethodEnabledDefinitionType }
+     * 
+     */
+    public ClassifiedAdShippingMethodEnabledDefinitionType createClassifiedAdShippingMethodEnabledDefinitionType() {
+        return new ClassifiedAdShippingMethodEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetItemShippingResponseType }
+     * 
+     */
+    public GetItemShippingResponseType createGetItemShippingResponseType() {
+        return new GetItemShippingResponseType();
+    }
+
+    /**
+     * Create an instance of {@link BrandMPNType }
+     * 
+     */
+    public BrandMPNType createBrandMPNType() {
+        return new BrandMPNType();
+    }
+
+    /**
+     * Create an instance of {@link VideoDetailsType }
+     * 
+     */
+    public VideoDetailsType createVideoDetailsType() {
+        return new VideoDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link StoreOwnerExtendedListingDurationsDefinitionType }
+     * 
+     */
+    public StoreOwnerExtendedListingDurationsDefinitionType createStoreOwnerExtendedListingDurationsDefinitionType() {
+        return new StoreOwnerExtendedListingDurationsDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link PaymentDetailsType }
+     * 
+     */
+    public PaymentDetailsType createPaymentDetailsType() {
+        return new PaymentDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link ReviseFixedPriceItemResponseType }
+     * 
+     */
+    public ReviseFixedPriceItemResponseType createReviseFixedPriceItemResponseType() {
+        return new ReviseFixedPriceItemResponseType();
+    }
+
+    /**
+     * Create an instance of {@link DomesticReturnsDurationCodeType }
+     * 
+     */
+    public DomesticReturnsDurationCodeType createDomesticReturnsDurationCodeType() {
+        return new DomesticReturnsDurationCodeType();
+    }
+
+    /**
+     * Create an instance of {@link PictureSetMemberType }
+     * 
+     */
+    public PictureSetMemberType createPictureSetMemberType() {
+        return new PictureSetMemberType();
+    }
+
+    /**
+     * Create an instance of {@link TaxTableType }
+     * 
+     */
+    public TaxTableType createTaxTableType() {
+        return new TaxTableType();
+    }
+
+    /**
+     * Create an instance of {@link PaginatedTransactionArrayType }
+     * 
+     */
+    public PaginatedTransactionArrayType createPaginatedTransactionArrayType() {
+        return new PaginatedTransactionArrayType();
+    }
+
+    /**
+     * Create an instance of {@link GetVeROReportStatusResponseType }
+     * 
+     */
+    public GetVeROReportStatusResponseType createGetVeROReportStatusResponseType() {
+        return new GetVeROReportStatusResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetUserResponseType }
+     * 
+     */
+    public GetUserResponseType createGetUserResponseType() {
+        return new GetUserResponseType();
+    }
+
+    /**
+     * Create an instance of {@link FeatureDefinitionsType }
+     * 
+     */
+    public FeatureDefinitionsType createFeatureDefinitionsType() {
+        return new FeatureDefinitionsType();
+    }
+
+    /**
+     * Create an instance of {@link GetNotificationPreferencesResponseType }
+     * 
+     */
+    public GetNotificationPreferencesResponseType createGetNotificationPreferencesResponseType() {
+        return new GetNotificationPreferencesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link ReviseMyMessagesRequestType }
+     * 
+     */
+    public ReviseMyMessagesRequestType createReviseMyMessagesRequestType() {
+        return new ReviseMyMessagesRequestType();
+    }
+
+    /**
+     * Create an instance of {@link ReviseMyMessagesResponseType }
+     * 
+     */
+    public ReviseMyMessagesResponseType createReviseMyMessagesResponseType() {
+        return new ReviseMyMessagesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link VATDetailsType }
+     * 
+     */
+    public VATDetailsType createVATDetailsType() {
+        return new VATDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link HomePageFeaturedEnabledDefinitionType }
+     * 
+     */
+    public HomePageFeaturedEnabledDefinitionType createHomePageFeaturedEnabledDefinitionType() {
+        return new HomePageFeaturedEnabledDefinitionType();
+    }
+
+    /**
+     * Create an instance of {@link GetMessagePreferencesResponseType }
+     * 
+     */
+    public GetMessagePreferencesResponseType createGetMessagePreferencesResponseType() {
+        return new GetMessagePreferencesResponseType();
+    }
+
+    /**
+     * Create an instance of {@link EnergyEfficiencyType }
+     * 
+     */
+    public EnergyEfficiencyType createEnergyEfficiencyType() {
+        return new EnergyEfficiencyType();
+    }
+
+    /**
+     * Create an instance of {@link SendInvoiceRequestType }
+     * 
+     */
+    public SendInvoiceRequestType createSendInvoiceRequestType() {
+        return new SendInvoiceRequestType();
+    }
+
+    /**
+     * Create an instance of {@link DescriptionTemplateType }
+     * 
+     */
+    public DescriptionTemplateType createDescriptionTemplateType() {
+        return new DescriptionTemplateType();
+    }
+
+    /**
+     * Create an instance of {@link QuantityRestrictionPerBuyerInfoType }
+     * 
+     */
+    public QuantityRestrictionPerBuyerInfoType createQuantityRestrictionPerBuyerInfoType() {
+        return new QuantityRestrictionPerBuyerInfoType();
+    }
+
+    /**
+     * Create an instance of {@link StorefrontType }
+     * 
+     */
+    public StorefrontType createStorefrontType() {
+        return new StorefrontType();
+    }
+
+    /**
+     * Create an instance of {@link ErrorType }
+     * 
+     */
+    public ErrorType createErrorType() {
+        return new ErrorType();
+    }
+
+    /**
+     * Create an instance of {@link UnitInfoType }
+     * 
+     */
+    public UnitInfoType createUnitInfoType() {
+        return new UnitInfoType();
+    }
+
+    /**
+     * Create an instance of {@link ProductSuggestionType }
+     * 
+     */
+    public ProductSuggestionType createProductSuggestionType() {
+        return new ProductSuggestionType();
     }
 
     /**
@@ -6095,83 +5191,131 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AdditionalAccountType }
+     * Create an instance of {@link AddMemberMessagesAAQToBidderResponseContainerType }
      * 
      */
-    public AdditionalAccountType createAdditionalAccountType() {
-        return new AdditionalAccountType();
+    public AddMemberMessagesAAQToBidderResponseContainerType createAddMemberMessagesAAQToBidderResponseContainerType() {
+        return new AddMemberMessagesAAQToBidderResponseContainerType();
     }
 
     /**
-     * Create an instance of {@link RelistItemResponseType }
+     * Create an instance of {@link ThemeGroupType }
      * 
      */
-    public RelistItemResponseType createRelistItemResponseType() {
-        return new RelistItemResponseType();
+    public ThemeGroupType createThemeGroupType() {
+        return new ThemeGroupType();
     }
 
     /**
-     * Create an instance of {@link UserIdentityType }
+     * Create an instance of {@link EANEnabledDefinitionType }
      * 
      */
-    public UserIdentityType createUserIdentityType() {
-        return new UserIdentityType();
+    public EANEnabledDefinitionType createEANEnabledDefinitionType() {
+        return new EANEnabledDefinitionType();
     }
 
     /**
-     * Create an instance of {@link XMLRequesterCredentialsType }
+     * Create an instance of {@link MarkUpMarkDownEventType }
      * 
      */
-    public XMLRequesterCredentialsType createXMLRequesterCredentialsType() {
-        return new XMLRequesterCredentialsType();
+    public MarkUpMarkDownEventType createMarkUpMarkDownEventType() {
+        return new MarkUpMarkDownEventType();
     }
 
     /**
-     * Create an instance of {@link RespondToBestOfferResponseType }
+     * Create an instance of {@link GetSellerEventsRequestType }
      * 
      */
-    public RespondToBestOfferResponseType createRespondToBestOfferResponseType() {
-        return new RespondToBestOfferResponseType();
+    public GetSellerEventsRequestType createGetSellerEventsRequestType() {
+        return new GetSellerEventsRequestType();
     }
 
     /**
-     * Create an instance of {@link WarrantyTypeDetailsType }
+     * Create an instance of {@link GetUserPreferencesRequestType }
      * 
      */
-    public WarrantyTypeDetailsType createWarrantyTypeDetailsType() {
-        return new WarrantyTypeDetailsType();
+    public GetUserPreferencesRequestType createGetUserPreferencesRequestType() {
+        return new GetUserPreferencesRequestType();
     }
 
     /**
-     * Create an instance of {@link SellerProfilesType }
+     * Create an instance of {@link PaymentMethodDefinitionType }
      * 
      */
-    public SellerProfilesType createSellerProfilesType() {
-        return new SellerProfilesType();
+    public PaymentMethodDefinitionType createPaymentMethodDefinitionType() {
+        return new PaymentMethodDefinitionType();
     }
 
     /**
-     * Create an instance of {@link EBayPLUSPreferenceType }
+     * Create an instance of {@link SellerShippingProfileType }
      * 
      */
-    public EBayPLUSPreferenceType createEBayPLUSPreferenceType() {
-        return new EBayPLUSPreferenceType();
+    public SellerShippingProfileType createSellerShippingProfileType() {
+        return new SellerShippingProfileType();
     }
 
     /**
-     * Create an instance of {@link UnitOfMeasurementDetailsType }
+     * Create an instance of {@link FeedbackSummaryType }
      * 
      */
-    public UnitOfMeasurementDetailsType createUnitOfMeasurementDetailsType() {
-        return new UnitOfMeasurementDetailsType();
+    public FeedbackSummaryType createFeedbackSummaryType() {
+        return new FeedbackSummaryType();
     }
 
     /**
-     * Create an instance of {@link EpidSupportedDefinitionType }
+     * Create an instance of {@link VeROReportedItemDetailsType }
      * 
      */
-    public EpidSupportedDefinitionType createEpidSupportedDefinitionType() {
-        return new EpidSupportedDefinitionType();
+    public VeROReportedItemDetailsType createVeROReportedItemDetailsType() {
+        return new VeROReportedItemDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link FulfillmentType }
+     * 
+     */
+    public FulfillmentType createFulfillmentType() {
+        return new FulfillmentType();
+    }
+
+    /**
+     * Create an instance of {@link PlaceOfferResponseType }
+     * 
+     */
+    public PlaceOfferResponseType createPlaceOfferResponseType() {
+        return new PlaceOfferResponseType();
+    }
+
+    /**
+     * Create an instance of {@link GetTaxTableResponseType }
+     * 
+     */
+    public GetTaxTableResponseType createGetTaxTableResponseType() {
+        return new GetTaxTableResponseType();
+    }
+
+    /**
+     * Create an instance of {@link CharityAffiliationDetailsType }
+     * 
+     */
+    public CharityAffiliationDetailsType createCharityAffiliationDetailsType() {
+        return new CharityAffiliationDetailsType();
+    }
+
+    /**
+     * Create an instance of {@link MessageMediaType }
+     * 
+     */
+    public MessageMediaType createMessageMediaType() {
+        return new MessageMediaType();
+    }
+
+    /**
+     * Create an instance of {@link MembershipDetailType }
+     * 
+     */
+    public MembershipDetailType createMembershipDetailType() {
+        return new MembershipDetailType();
     }
 
     /**
@@ -6355,33 +5499,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetClientAlertsAuthTokenResponseType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "GetClientAlertsAuthTokenResponse")
-    public JAXBElement<GetClientAlertsAuthTokenResponseType> createGetClientAlertsAuthTokenResponse(GetClientAlertsAuthTokenResponseType value) {
-        return new JAXBElement<GetClientAlertsAuthTokenResponseType>(_GetClientAlertsAuthTokenResponse_QNAME, GetClientAlertsAuthTokenResponseType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetClientAlertsAuthTokenRequestType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "GetClientAlertsAuthTokenRequest")
-    public JAXBElement<GetClientAlertsAuthTokenRequestType> createGetClientAlertsAuthTokenRequest(GetClientAlertsAuthTokenRequestType value) {
-        return new JAXBElement<GetClientAlertsAuthTokenRequestType>(_GetClientAlertsAuthTokenRequest_QNAME, GetClientAlertsAuthTokenRequestType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetSellerDashboardRequestType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "GetSellerDashboardRequest")
-    public JAXBElement<GetSellerDashboardRequestType> createGetSellerDashboardRequest(GetSellerDashboardRequestType value) {
-        return new JAXBElement<GetSellerDashboardRequestType>(_GetSellerDashboardRequest_QNAME, GetSellerDashboardRequestType.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetSellerTransactionsResponseType }{@code >}}
      * 
      */
@@ -6496,15 +5613,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "DeleteMyMessagesRequest")
     public JAXBElement<DeleteMyMessagesRequestType> createDeleteMyMessagesRequest(DeleteMyMessagesRequestType value) {
         return new JAXBElement<DeleteMyMessagesRequestType>(_DeleteMyMessagesRequest_QNAME, DeleteMyMessagesRequestType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetSellerDashboardResponseType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "GetSellerDashboardResponse")
-    public JAXBElement<GetSellerDashboardResponseType> createGetSellerDashboardResponse(GetSellerDashboardResponseType value) {
-        return new JAXBElement<GetSellerDashboardResponseType>(_GetSellerDashboardResponse_QNAME, GetSellerDashboardResponseType.class, null, value);
     }
 
     /**
@@ -6913,15 +6021,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetOrderTransactionsResponseType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "GetOrderTransactionsResponse")
-    public JAXBElement<GetOrderTransactionsResponseType> createGetOrderTransactionsResponse(GetOrderTransactionsResponseType value) {
-        return new JAXBElement<GetOrderTransactionsResponseType>(_GetOrderTransactionsResponse_QNAME, GetOrderTransactionsResponseType.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RemoveFromWatchListRequestType }{@code >}}
      * 
      */
@@ -7036,15 +6135,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "GetUserRequest")
     public JAXBElement<GetUserRequestType> createGetUserRequest(GetUserRequestType value) {
         return new JAXBElement<GetUserRequestType>(_GetUserRequest_QNAME, GetUserRequestType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetSuggestedCategoriesRequestType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "GetSuggestedCategoriesRequest")
-    public JAXBElement<GetSuggestedCategoriesRequestType> createGetSuggestedCategoriesRequest(GetSuggestedCategoriesRequestType value) {
-        return new JAXBElement<GetSuggestedCategoriesRequestType>(_GetSuggestedCategoriesRequest_QNAME, GetSuggestedCategoriesRequestType.class, null, value);
     }
 
     /**
@@ -7363,15 +6453,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetSuggestedCategoriesResponseType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "GetSuggestedCategoriesResponse")
-    public JAXBElement<GetSuggestedCategoriesResponseType> createGetSuggestedCategoriesResponse(GetSuggestedCategoriesResponseType value) {
-        return new JAXBElement<GetSuggestedCategoriesResponseType>(_GetSuggestedCategoriesResponse_QNAME, GetSuggestedCategoriesResponseType.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetNotificationsUsageRequestType }{@code >}}
      * 
      */
@@ -7495,15 +6576,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "SetUserNotesResponse")
     public JAXBElement<SetUserNotesResponseType> createSetUserNotesResponse(SetUserNotesResponseType value) {
         return new JAXBElement<SetUserNotesResponseType>(_SetUserNotesResponse_QNAME, SetUserNotesResponseType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetOrderTransactionsRequestType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:ebay:apis:eBLBaseComponents", name = "GetOrderTransactionsRequest")
-    public JAXBElement<GetOrderTransactionsRequestType> createGetOrderTransactionsRequest(GetOrderTransactionsRequestType value) {
-        return new JAXBElement<GetOrderTransactionsRequestType>(_GetOrderTransactionsRequest_QNAME, GetOrderTransactionsRequestType.class, null, value);
     }
 
     /**

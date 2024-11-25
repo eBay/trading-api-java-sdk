@@ -14,8 +14,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				<span class="tablenote"><b>Note: </b> This type is currently available only on the German (DE) marketplace.</span>
- * 				<br />Type defining the <b>Pictograms</b> and <b>Statements</b> containers, and the <b>Component</b> and <b>SignalWord</b> fields, that provide hazardous material related information. For additional information, see <a href="https://developer.ebay.com/api-docs/sell/static/metadata/feature-regulatorhazmatcontainer.html#Signal" target="_blank">Signal word information</a>. 
+ * 				Type defining the <b>Pictograms</b> and <b>Statements</b> containers, and the <b>Component</b> and <b>SignalWord</b> fields, that provide hazardous material related information. For additional information, see <a href="https://developer.ebay.com/api-docs/sell/static/metadata/feature-regulatorhazmatcontainer.html#Signal" target="_blank">Signal word information</a>.
  * 			
  * 
  * <p>Java class for HazmatType complex type.

@@ -212,7 +212,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the <b>SiteDefaults.HomePageFeaturedEnabled</b> boolean field in the <b>GetCategoryFeatures</b> response will indicate whether or not the specified eBay site supports the featuring of items within a special area of eBay's home page. This is a listing enhancement that requires a fee, and support for this feature varies by site.
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -257,7 +257,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 							If this value is specified, the <b>SiteDefaults.ProPackEnabled</b> and <b>Category.ProPackEnabled</b> boolean fields in the <b>GetCategoryFeatures</b> response will indicate whether or not the specified eBay site and individual categories support the Pro Pack listing enhancement bundle.
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -275,7 +275,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the <b>SiteDefaults.ValuePackEnabled</b> and <b>Category.ValuePackEnabled</b> boolean fields in the <b>GetCategoryFeatures</b> response will indicate whether or not the specified eBay site and individual categories support the Value Pack listing enhancement bundle. The Value Pack bundle includes the Gallery Plus feature, a listing subtitle, and use of a Listing Designer template.
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -284,7 +284,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the <b>SiteDefaults.ProPackPlusEnabled</b> and <b>Category.ProPackPlusEnabled</b> boolean fields in the <b>GetCategoryFeatures</b> response will indicate whether or not the specified eBay site and individual categories support the Pro Pack Plus listing enhancement bundle. The Pro Pack Plus bundle includes the Bold Title, Border, Highlight, Featured, and Gallery features for a discounted price.
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -653,7 +653,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the <b>SiteDefaults.GalleryFeaturedDurations</b> container in the <b>GetCategoryFeatures</b> response will indicate the listing duration times that the Featured Gallery feature may be enabled for a listing.
+     * 						The Featured Gallery feature is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -977,7 +977,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the <b>SiteDefaults.StoreOwnerExtendedListingDurationsEnabled</b> and <b>Category.StoreOwnerExtendedListingDurationsEnabled</b> boolean fields in the <b>GetCategoryFeatures</b> response will indicate whether or not the specified eBay site and individual categories allow eBay Store sellers to create fixed-price listings with longer listing durations than sellers without eBay Stores. This value is only applicable to fixed-price listings.
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -986,7 +986,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the <b>SiteDefaults.StoreOwnerExtendedListingDurations</b> container in the <b>GetCategoryFeatures</b> response will indicate the extended listing duration times that eBay Store sellers may set when creating a fixed-price listing.  This value is only applicable to fixed-price listings. The site and category must support extended listing durations (<b>StoreOwnerExtendedListingDurationsEnabled</b>=true).
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -1040,7 +1040,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the <b>Category.Group1MaxFlatShippingCost</b> fields in the <b>GetCategoryFeatures</b> response will indicate the maximum flat-rate shipping costs that the seller may charge the buyer to ship one item domestically using a Group 1 shipping service. At least one available Group 1 shipping service option has to be under this value. Handling cost (if any) goes toward this maximum cost threshold.
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -1049,7 +1049,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the <b>Category.Group2MaxFlatShippingCost</b> fields in the <b>GetCategoryFeatures</b> response will indicate the maximum flat-rate shipping costs that the seller may charge the buyer to ship one item domestically using a Group 2 shipping service. At least one available Group 2 shipping service option has to be under this value. Handling cost (if any) goes toward this maximum cost threshold.
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					 
      * 
      */
@@ -1058,7 +1058,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the <b>Category.Group3MaxFlatShippingCost</b> fields in the <b>GetCategoryFeatures</b> response will indicate the maximum flat-rate shipping costs that the seller may charge the buyer to ship one item domestically using a Group 3 shipping service. At least one available Group 3 shipping service option has to be under this value. Handling cost (if any) goes toward this maximum cost threshold.
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -1157,7 +1157,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						If this value is specified, the  <b>Category.ProductCreationEnabled</b> field in the <b>GetCategoryFeatures</b> response will indicate which categories support the use of an eBay catalog product when creating/revising listings. When a seller associates an eBay catalog product when creating/revising a listing, the listing will automatically be created using the eBay catalog product's image(s), product aspects, description, and title. This field will not be returned if one or more <b>FeatureID</b> fields are included in the call request and <code>ProductCreationEnabled</code> is not one of the values passed into those <a href="types/FeatureIDCodeType.html">FeatureID</a> fields.
+     * 						This value is <b>deprecated</b> and should no longer be used.
      * 					
      * 
      */
@@ -1353,7 +1353,7 @@ public enum FeatureIDCodeType {
 
     /**
      * 
-     * 						This value is deprecated and should not be used.
+     * 						The feature associated with this value is deprecated, so specifying this value as a <b>FeatureID</b> value has no practical use.
      * 					
      * 
      */
@@ -1366,8 +1366,9 @@ public enum FeatureIDCodeType {
      *             <br><br>
      *             The values returned in this field are pertinent only if <b>ReturnPolicyEnabled</b> in GetCategoryFeatures is set to <code>true</code> for the associated marketplace and category.
      *             <br><br>
-     * 						<span class="tablenote"><b>Note:</b> In May 2018, eBay added the ability to create a separate international return policy for items that are shipped to international customers. If a seller does not add a separate international return policy, the settings in the domestic return policy will be used instead. For more information on setting separate domestic and international return policies, see the
-     * 						<a href="https://pages.ebay.com/seller-center/seller-updates/2018-summer/simplified-returns.html#international-returns-policy" target="_blank">International returns policy</a> help topic. For the international equivalent of this field, see the <b>InternationalReturnsAcceptedValues</b> field.</span>
+     * 						<span class="tablenote"><b>Note:</b>
+     * 							Sellers have the option of using the same return policy settings for both domestic and international returns, or different settings for domestic and international return policies. To see the supported returns accepted options for international returns, the <b>InternationalReturnsAcceptedValues</b> enum should be used.
+     * 						</span>
      * 					
      * 
      */
@@ -1380,8 +1381,9 @@ public enum FeatureIDCodeType {
      *             <br><br>
      *             The values returned in this field are pertinent only if <b>ReturnPolicyEnabled</b> in GetCategoryFeatures is set to <code>true</code> for the associated marketplace and category.
      *             <br><br>
-     * 						<span class="tablenote"><b>Note:</b> In May 2018, eBay added the ability to create a separate international return policy for items that are shipped to international customers. If a seller does not add a separate international return policy, the settings in the domestic return policy will be used instead. For more information on setting separate domestic and international return policies, see the
-     * 						<a href="https://pages.ebay.com/seller-center/seller-updates/2018-summer/simplified-returns.html#international-returns-policy" target="_blank">International returns policy</a> help topic. For the international equivalent of this field, see the <b>InternationalReturnsAcceptedValues</b> field.</span>
+     * 						<span class="tablenote"><b>Note:</b>
+     * 							Sellers have the option of using the same return policy settings for both domestic and international returns, or different settings for domestic and international return policies. To see the supported returns accepted options for domestic returns, the <b>DomesticReturnsAcceptedValues</b> enum should be used.
+     * 						</span>
      * 					
      * 
      */
@@ -1394,8 +1396,9 @@ public enum FeatureIDCodeType {
      *             <br><br>
      *             The values returned in this field are pertinent only if <b>ReturnPolicyEnabled</b> in GetCategoryFeatures is set to <code>true</code> for the associated marketplace and category.
      *             <br><br>
-     * 						<span class="tablenote"><b>Note:</b> In May 2018, eBay added the ability to create a separate international return policy for items that are shipped to international customers. If a seller does not add a separate international return policy, the settings in the domestic return policy will be used instead. For more information on setting separate domestic and international return policies, see the
-     * 						<a href="https://pages.ebay.com/seller-center/seller-updates/2018-summer/simplified-returns.html#international-returns-policy" target="_blank">International returns policy</a> help topic. For the international equivalent of this field, see the <b>InternationalReturnsAcceptedValues</b> field.</span>
+     * 						<span class="tablenote"><b>Note:</b>
+     * 							Sellers have the option of using the same return policy settings for both domestic and international returns, or different settings for domestic and international return policies. To see the supported return windows for international returns, the <b>InternationalReturnsDurationValues</b> enum should be used.
+     * 						</span>
      * 					
      * 
      */
@@ -1408,8 +1411,9 @@ public enum FeatureIDCodeType {
      *             <br><br>
      *             The values returned in this field are pertinent only if <b>ReturnPolicyEnabled</b> in GetCategoryFeatures is set to <code>true</code> for the associated marketplace and category.
      *             <br><br>
-     * 						<span class="tablenote"><b>Note:</b> In May 2018, eBay added the ability to create a separate international return policy for items that are shipped to international customers. If a seller does not add a separate international return policy, the settings in the domestic return policy will be used instead. For more information on setting separate domestic and international return policies, see the
-     * 						<a href="https://pages.ebay.com/seller-center/seller-updates/2018-summer/simplified-returns.html#international-returns-policy" target="_blank">International returns policy</a> help topic. For the international equivalent of this field, see the <b>InternationalReturnsAcceptedValues</b> field.</span>
+     * 						<span class="tablenote"><b>Note:</b>
+     * 							Sellers have the option of using the same return policy settings for both domestic and international returns, or different settings for domestic and international return policies. To see the supported return windows for domestic returns, the <b>DomesticReturnsDurationValues</b> enum should be used.
+     * 						</span>
      * 					
      * 
      */
@@ -1422,8 +1426,9 @@ public enum FeatureIDCodeType {
      *             <br><br>
      *             The values returned in this field are pertinent only if <b>ReturnPolicyEnabled</b> in GetCategoryFeatures is set to <code>true</code> for the associated marketplace and category.
      *             <br><br>
-     * 						<span class="tablenote"><b>Note:</b> In May 2018, eBay added the ability to create a separate international return policy for items that are shipped to international customers. If a seller does not add a separate international return policy, the settings in the domestic return policy will be used instead. For more information on setting separate domestic and international return policies, see the
-     * 						<a href="https://pages.ebay.com/seller-center/seller-updates/2018-summer/simplified-returns.html#international-returns-policy" target="_blank">International returns policy</a> help topic. For the international equivalent of this field, see the <b>InternationalReturnsAcceptedValues</b> field.</span>
+     * 						<span class="tablenote"><b>Note:</b>
+     * 							Sellers have the option of using the same return policy settings for both domestic and international returns, or different settings for domestic and international return policies. To see the supported return shipment payee values for international returns, the <b>InternationalReturnsShipmentPayeeValues</b> enum should be used.
+     * 						</span>
      * 					
      * 
      */
@@ -1436,8 +1441,9 @@ public enum FeatureIDCodeType {
      *             <br><br>
      *             The values returned in this field are pertinent only if <b>ReturnPolicyEnabled</b> in GetCategoryFeatures is set to <code>true</code> for the associated marketplace and category.
      *             <br><br>
-     * 						<span class="tablenote"><b>Note:</b> In May 2018, eBay added the ability to create a separate international return policy for items that are shipped to international customers. If a seller does not add a separate international return policy, the settings in the domestic return policy will be used instead. For more information on setting separate domestic and international return policies, see the
-     * 						<a href="https://pages.ebay.com/seller-center/seller-updates/2018-summer/simplified-returns.html#international-returns-policy" target="_blank">International returns policy</a> help topic. For the international equivalent of this field, see the <b>InternationalReturnsAcceptedValues</b> field.</span>
+     * 						<span class="tablenote"><b>Note:</b>
+     * 							Sellers have the option of using the same return policy settings for both domestic and international returns, or different settings for domestic and international return policies. To see the supported return shipment payee values for domestic returns, the <b>DomesticReturnsShipmentPayeeValues</b> enum should be used.
+     * 						</span>
      * 					
      * 
      */
@@ -1450,8 +1456,9 @@ public enum FeatureIDCodeType {
      *             <br><br>
      *             The values returned in this field are pertinent only if <b>ReturnPolicyEnabled</b> in GetCategoryFeatures is set to <code>true</code> for the associated marketplace and category.
      *             <br><br>
-     * 						<span class="tablenote"><b>Note:</b> In May 2018, eBay added the ability to create a separate international return policy for items that are shipped to international customers. If a seller does not add a separate international return policy, the settings in the domestic return policy will be used instead. For more information on setting separate domestic and international return policies, see the
-     * 						<a href="https://pages.ebay.com/seller-center/seller-updates/2018-summer/simplified-returns.html#international-returns-policy" target="_blank">International returns policy</a> help topic. For the international equivalent of this field, see the <b>InternationalReturnsAcceptedValues</b> field.</span>
+     * 						<span class="tablenote"><b>Note:</b>
+     * 							Sellers have the option of using the same return policy settings for both domestic and international returns, or different settings for domestic and international return policies. To see the supported refund method options for international returns, the <b>InternationalRefundMethodValues</b> enum should be used.
+     * 						</span>
      * 					
      * 
      */
@@ -1464,8 +1471,9 @@ public enum FeatureIDCodeType {
      *             <br><br>
      *             The values returned in this field are pertinent only if <b>ReturnPolicyEnabled</b> in GetCategoryFeatures is set to <code>true</code> for the associated marketplace and category.
      *             <br><br>
-     * 						<span class="tablenote"><b>Note:</b> In May 2018, eBay added the ability to create a separate international return policy for items that are shipped to international customers. If a seller does not add a separate international return policy, the settings in the domestic return policy will be used instead. For more information on setting separate domestic and international return policies, see the
-     * 						<a href="https://pages.ebay.com/seller-center/seller-updates/2018-summer/simplified-returns.html#international-returns-policy" target="_blank">International returns policy</a> help topic. For the international equivalent of this field, see the <b>InternationalReturnsAcceptedValues</b> field.</span>
+     * 						<span class="tablenote"><b>Note:</b>
+     * 							Sellers have the option of using the same return policy settings for both domestic and international returns, or different settings for domestic and international return policies. To see the supported refund method options for domestic returns, the <b>DomesticRefundMethodValues</b> enum should be used.
+     * 						</span>
      * 					
      * 
      */

@@ -14,8 +14,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				This container returns the URLs of the seller's self-hosted (hosted outside of eBay) pictures and the URL for the corresponding eBay
- * 				Picture Services (EPS), that was generated when the self-hosted picture was uploaded.
+ * 				This type is used by the <b>ExtendedPictureDetails</b> container, which is no longer returned under any circumstances, including when self-hosted pictures are used for the item. When self-hosted pictures are used by the seller, only the external URL of the gallery image is shown in the <b>PictureDetails.ExternalPictureURL</b> field, and only the equivalent eBay Picture Server (EPS) URLs are shown for the rest of the item's images in separate <b>PictureDetails.PictureURL</b> fields.
  * 			
  * 
  * <p>Java class for ExtendedPictureDetailsType complex type.

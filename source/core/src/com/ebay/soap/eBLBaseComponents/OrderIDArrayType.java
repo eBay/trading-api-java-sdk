@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				Type defining the <b>OrderIDArray</b> container, which consists of an array of order IDs. The <b>OrderIDArray</b> container is used to specify one or more orders to retrieve in a <b>GetOrders</b> or <b>GetOrderTransactions</b> call.
+ * 				Type defining the <b>OrderIDArray</b> container, which consists of an array of order IDs. The <b>OrderIDArray</b> container is used to specify one or more orders to retrieve in a <b>GetOrders</b> call.
  * 			
  * 
  * <p>Java class for OrderIDArrayType complex type.

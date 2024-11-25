@@ -29,7 +29,6 @@ import org.w3c.dom.Element;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="PaymentStatus" type="{urn:ebay:apis:eBLBaseComponents}PaymentTransactionStatusCodeType" minOccurs="0"/>
  *         &lt;element name="Payer" type="{urn:ebay:apis:eBLBaseComponents}UserIdentityType" minOccurs="0"/>
  *         &lt;element name="Payee" type="{urn:ebay:apis:eBLBaseComponents}UserIdentityType" minOccurs="0"/>
  *         &lt;element name="PaymentTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
@@ -48,7 +47,6 @@ import org.w3c.dom.Element;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PaymentTransactionType", propOrder = {
-    "paymentStatus",
     "payer",
     "payee",
     "paymentTime",
@@ -63,8 +61,6 @@ public class PaymentTransactionType
 {
 
     private final static long serialVersionUID = 12343L;
-    @XmlElement(name = "PaymentStatus")
-    protected PaymentTransactionStatusCodeType paymentStatus;
     @XmlElement(name = "Payer")
     protected UserIdentityType payer;
     @XmlElement(name = "Payee")
@@ -83,30 +79,6 @@ public class PaymentTransactionType
     protected List<TransactionReferenceType> paymentReferenceID;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
-
-    /**
-     * Gets the value of the paymentStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaymentTransactionStatusCodeType }
-     *     
-     */
-    public PaymentTransactionStatusCodeType getPaymentStatus() {
-        return paymentStatus;
-    }
-
-    /**
-     * Sets the value of the paymentStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaymentTransactionStatusCodeType }
-     *     
-     */
-    public void setPaymentStatus(PaymentTransactionStatusCodeType value) {
-        this.paymentStatus = value;
-    }
 
     /**
      * Gets the value of the payer property.

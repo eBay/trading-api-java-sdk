@@ -15,7 +15,7 @@ import org.w3c.dom.Element;
 /**
  * 
  * 			Type defining the <b>PaymentDetails</b> container, which is used by the seller to
- * 			specify the amount of the initial deposit, and the due dates for the deposit and the full payment for a motor vehicle listing. 
+ * 			specify the amount of the initial deposit, and the due dates for the deposit and the full payment for a motor vehicle listing.
  * 			<br/>
  * 			<br/>
  * 			<span class="tablenote"><b>Note:</b>

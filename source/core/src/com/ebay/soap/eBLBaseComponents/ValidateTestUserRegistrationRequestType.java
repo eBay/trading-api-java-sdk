@@ -27,8 +27,6 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *       &lt;sequence>
  *         &lt;element name="FeedbackScore" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="RegistrationDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="SubscribeSA" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SubscribeSAPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="SubscribeSM" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="SubscribeSMPro" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *       &lt;/sequence>
@@ -43,8 +41,6 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlType(name = "ValidateTestUserRegistrationRequestType", propOrder = {
     "feedbackScore",
     "registrationDate",
-    "subscribeSA",
-    "subscribeSAPro",
     "subscribeSM",
     "subscribeSMPro"
 })
@@ -60,10 +56,6 @@ public class ValidateTestUserRegistrationRequestType
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "dateTime")
     protected Calendar registrationDate;
-    @XmlElement(name = "SubscribeSA")
-    protected Boolean subscribeSA;
-    @XmlElement(name = "SubscribeSAPro")
-    protected Boolean subscribeSAPro;
     @XmlElement(name = "SubscribeSM")
     protected Boolean subscribeSM;
     @XmlElement(name = "SubscribeSMPro")
@@ -115,54 +107,6 @@ public class ValidateTestUserRegistrationRequestType
      */
     public void setRegistrationDate(Calendar value) {
         this.registrationDate = value;
-    }
-
-    /**
-     * Gets the value of the subscribeSA property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isSubscribeSA() {
-        return subscribeSA;
-    }
-
-    /**
-     * Sets the value of the subscribeSA property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setSubscribeSA(Boolean value) {
-        this.subscribeSA = value;
-    }
-
-    /**
-     * Gets the value of the subscribeSAPro property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isSubscribeSAPro() {
-        return subscribeSAPro;
-    }
-
-    /**
-     * Sets the value of the subscribeSAPro property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setSubscribeSAPro(Boolean value) {
-        this.subscribeSAPro = value;
     }
 
     /**

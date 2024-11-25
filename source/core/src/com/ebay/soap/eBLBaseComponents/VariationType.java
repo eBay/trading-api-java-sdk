@@ -31,7 +31,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="StartPrice" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="Quantity" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="VariationSpecifics" type="{urn:ebay:apis:eBLBaseComponents}NameValueListArrayType" minOccurs="0"/>
- *         &lt;element name="UnitsAvailable" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="SellingStatus" type="{urn:ebay:apis:eBLBaseComponents}SellingStatusType" minOccurs="0"/>
  *         &lt;element name="VariationTitle" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="VariationViewItemURL" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
@@ -56,7 +55,6 @@ import org.w3c.dom.Element;
     "startPrice",
     "quantity",
     "variationSpecifics",
-    "unitsAvailable",
     "sellingStatus",
     "variationTitle",
     "variationViewItemURL",
@@ -81,8 +79,6 @@ public class VariationType
     protected Integer quantity;
     @XmlElement(name = "VariationSpecifics")
     protected NameValueListArrayType variationSpecifics;
-    @XmlElement(name = "UnitsAvailable")
-    protected Integer unitsAvailable;
     @XmlElement(name = "SellingStatus")
     protected SellingStatusType sellingStatus;
     @XmlElement(name = "VariationTitle")
@@ -199,30 +195,6 @@ public class VariationType
      */
     public void setVariationSpecifics(NameValueListArrayType value) {
         this.variationSpecifics = value;
-    }
-
-    /**
-     * Gets the value of the unitsAvailable property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getUnitsAvailable() {
-        return unitsAvailable;
-    }
-
-    /**
-     * Sets the value of the unitsAvailable property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setUnitsAvailable(Integer value) {
-        this.unitsAvailable = value;
     }
 
     /**

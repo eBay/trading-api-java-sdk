@@ -29,7 +29,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="MessageType" type="{urn:ebay:apis:eBLBaseComponents}MessageTypeCodeType" minOccurs="0"/>
  *         &lt;element name="QuestionType" type="{urn:ebay:apis:eBLBaseComponents}QuestionTypeCodeType" minOccurs="0"/>
  *         &lt;element name="EmailCopyToSender" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="HideSendersEmailAddress" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="DisplayToPublic" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="SenderID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="SenderEmail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -53,7 +52,6 @@ import org.w3c.dom.Element;
     "messageType",
     "questionType",
     "emailCopyToSender",
-    "hideSendersEmailAddress",
     "displayToPublic",
     "senderID",
     "senderEmail",
@@ -76,8 +74,6 @@ public class MemberMessageType
     protected QuestionTypeCodeType questionType;
     @XmlElement(name = "EmailCopyToSender")
     protected Boolean emailCopyToSender;
-    @XmlElement(name = "HideSendersEmailAddress")
-    protected Boolean hideSendersEmailAddress;
     @XmlElement(name = "DisplayToPublic")
     protected Boolean displayToPublic;
     @XmlElement(name = "SenderID")
@@ -169,30 +165,6 @@ public class MemberMessageType
      */
     public void setEmailCopyToSender(Boolean value) {
         this.emailCopyToSender = value;
-    }
-
-    /**
-     * Gets the value of the hideSendersEmailAddress property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isHideSendersEmailAddress() {
-        return hideSendersEmailAddress;
-    }
-
-    /**
-     * Sets the value of the hideSendersEmailAddress property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setHideSendersEmailAddress(Boolean value) {
-        this.hideSendersEmailAddress = value;
     }
 
     /**

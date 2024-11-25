@@ -13,7 +13,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				Indicates which phone option the site supports 
+ * 				Indicates which phone option the site supports
  * 				for contacting the seller about Classified Ad format listings.
  * 				Added for EbayMotors Pro users.
  * 			

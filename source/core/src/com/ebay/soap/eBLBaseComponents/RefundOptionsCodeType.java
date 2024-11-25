@@ -51,7 +51,7 @@ public enum RefundOptionsCodeType {
 
     /**
      * 
-     * 						This value is deprecated since receiving money back must always be one of the options in a return policy and not just store credit. 
+     * 						This value is deprecated since receiving money back must always be one of the options in a return policy and not just store credit.
      * 					
      * 
      */

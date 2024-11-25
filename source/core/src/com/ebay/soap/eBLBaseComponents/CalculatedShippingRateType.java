@@ -14,11 +14,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				Details pertinent to one or more items for which
- * 				calculated shipping (or flat rate shipping using shipping rate tables with
- * 				weight surcharges) has been offered by the seller, such as package
- * 				dimension and weight and packaging/handling costs. Also returned
- * 				with the data for an item's transaction.
+ * 				This type is used to specify domestic and international package handling costs if calculated shipping is being used.
  * 			
  * 
  * <p>Java class for CalculatedShippingRateType complex type.
@@ -30,10 +26,7 @@ import org.w3c.dom.Element;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="OriginatingPostalCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="MeasurementUnit" type="{urn:ebay:apis:eBLBaseComponents}MeasurementSystemCodeType" minOccurs="0"/>
  *         &lt;element name="PackagingHandlingCosts" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
- *         &lt;element name="ShippingIrregular" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="InternationalPackagingHandlingCosts" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;any/>
  *       &lt;/sequence>
@@ -46,10 +39,7 @@ import org.w3c.dom.Element;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CalculatedShippingRateType", propOrder = {
-    "originatingPostalCode",
-    "measurementUnit",
     "packagingHandlingCosts",
-    "shippingIrregular",
     "internationalPackagingHandlingCosts",
     "any"
 })
@@ -58,66 +48,12 @@ public class CalculatedShippingRateType
 {
 
     private final static long serialVersionUID = 12343L;
-    @XmlElement(name = "OriginatingPostalCode")
-    protected String originatingPostalCode;
-    @XmlElement(name = "MeasurementUnit")
-    protected MeasurementSystemCodeType measurementUnit;
     @XmlElement(name = "PackagingHandlingCosts")
     protected AmountType packagingHandlingCosts;
-    @XmlElement(name = "ShippingIrregular")
-    protected Boolean shippingIrregular;
     @XmlElement(name = "InternationalPackagingHandlingCosts")
     protected AmountType internationalPackagingHandlingCosts;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
-
-    /**
-     * Gets the value of the originatingPostalCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOriginatingPostalCode() {
-        return originatingPostalCode;
-    }
-
-    /**
-     * Sets the value of the originatingPostalCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOriginatingPostalCode(String value) {
-        this.originatingPostalCode = value;
-    }
-
-    /**
-     * Gets the value of the measurementUnit property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link MeasurementSystemCodeType }
-     *     
-     */
-    public MeasurementSystemCodeType getMeasurementUnit() {
-        return measurementUnit;
-    }
-
-    /**
-     * Sets the value of the measurementUnit property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link MeasurementSystemCodeType }
-     *     
-     */
-    public void setMeasurementUnit(MeasurementSystemCodeType value) {
-        this.measurementUnit = value;
-    }
 
     /**
      * Gets the value of the packagingHandlingCosts property.
@@ -141,30 +77,6 @@ public class CalculatedShippingRateType
      */
     public void setPackagingHandlingCosts(AmountType value) {
         this.packagingHandlingCosts = value;
-    }
-
-    /**
-     * Gets the value of the shippingIrregular property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isShippingIrregular() {
-        return shippingIrregular;
-    }
-
-    /**
-     * Sets the value of the shippingIrregular property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setShippingIrregular(Boolean value) {
-        this.shippingIrregular = value;
     }
 
     /**

@@ -41,17 +41,8 @@ import org.w3c.dom.Element;
  *         &lt;element name="ReturnsAcceptedOption" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
  *         &lt;element name="ReturnsAccepted" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="WarrantyOfferedOption" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
- *         &lt;element name="WarrantyOffered" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="WarrantyTypeOption" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
- *         &lt;element name="WarrantyType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="WarrantyDurationOption" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
- *         &lt;element name="WarrantyDuration" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="ShippingCostPaidByOption" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
  *         &lt;element name="ShippingCostPaidBy" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RestockingFeeValue" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
- *         &lt;element name="RestockingFeeValueOption" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
- *         &lt;element name="ExtendedHolidayReturns" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="InternationalRefundOption" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
  *         &lt;element name="InternationalReturnsAcceptedOption" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
  *         &lt;element name="InternationalReturnsWithinOption" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
@@ -74,17 +65,8 @@ import org.w3c.dom.Element;
     "returnsAcceptedOption",
     "returnsAccepted",
     "description",
-    "warrantyOfferedOption",
-    "warrantyOffered",
-    "warrantyTypeOption",
-    "warrantyType",
-    "warrantyDurationOption",
-    "warrantyDuration",
     "shippingCostPaidByOption",
     "shippingCostPaidBy",
-    "restockingFeeValue",
-    "restockingFeeValueOption",
-    "extendedHolidayReturns",
     "internationalRefundOption",
     "internationalReturnsAcceptedOption",
     "internationalReturnsWithinOption",
@@ -116,40 +98,12 @@ public class ReturnPolicyType
     protected String returnsAccepted;
     @XmlElement(name = "Description")
     protected String description;
-    @XmlElement(name = "WarrantyOfferedOption")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    @XmlSchemaType(name = "token")
-    protected String warrantyOfferedOption;
-    @XmlElement(name = "WarrantyOffered")
-    protected String warrantyOffered;
-    @XmlElement(name = "WarrantyTypeOption")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    @XmlSchemaType(name = "token")
-    protected String warrantyTypeOption;
-    @XmlElement(name = "WarrantyType")
-    protected String warrantyType;
-    @XmlElement(name = "WarrantyDurationOption")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    @XmlSchemaType(name = "token")
-    protected String warrantyDurationOption;
-    @XmlElement(name = "WarrantyDuration")
-    protected String warrantyDuration;
     @XmlElement(name = "ShippingCostPaidByOption")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "token")
     protected String shippingCostPaidByOption;
     @XmlElement(name = "ShippingCostPaidBy")
     protected String shippingCostPaidBy;
-    @XmlElement(name = "RestockingFeeValue")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    @XmlSchemaType(name = "token")
-    protected String restockingFeeValue;
-    @XmlElement(name = "RestockingFeeValueOption")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    @XmlSchemaType(name = "token")
-    protected String restockingFeeValueOption;
-    @XmlElement(name = "ExtendedHolidayReturns")
-    protected Boolean extendedHolidayReturns;
     @XmlElement(name = "InternationalRefundOption")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "token")
@@ -338,150 +292,6 @@ public class ReturnPolicyType
     }
 
     /**
-     * Gets the value of the warrantyOfferedOption property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getWarrantyOfferedOption() {
-        return warrantyOfferedOption;
-    }
-
-    /**
-     * Sets the value of the warrantyOfferedOption property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setWarrantyOfferedOption(String value) {
-        this.warrantyOfferedOption = value;
-    }
-
-    /**
-     * Gets the value of the warrantyOffered property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getWarrantyOffered() {
-        return warrantyOffered;
-    }
-
-    /**
-     * Sets the value of the warrantyOffered property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setWarrantyOffered(String value) {
-        this.warrantyOffered = value;
-    }
-
-    /**
-     * Gets the value of the warrantyTypeOption property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getWarrantyTypeOption() {
-        return warrantyTypeOption;
-    }
-
-    /**
-     * Sets the value of the warrantyTypeOption property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setWarrantyTypeOption(String value) {
-        this.warrantyTypeOption = value;
-    }
-
-    /**
-     * Gets the value of the warrantyType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getWarrantyType() {
-        return warrantyType;
-    }
-
-    /**
-     * Sets the value of the warrantyType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setWarrantyType(String value) {
-        this.warrantyType = value;
-    }
-
-    /**
-     * Gets the value of the warrantyDurationOption property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getWarrantyDurationOption() {
-        return warrantyDurationOption;
-    }
-
-    /**
-     * Sets the value of the warrantyDurationOption property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setWarrantyDurationOption(String value) {
-        this.warrantyDurationOption = value;
-    }
-
-    /**
-     * Gets the value of the warrantyDuration property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getWarrantyDuration() {
-        return warrantyDuration;
-    }
-
-    /**
-     * Sets the value of the warrantyDuration property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setWarrantyDuration(String value) {
-        this.warrantyDuration = value;
-    }
-
-    /**
      * Gets the value of the shippingCostPaidByOption property.
      * 
      * @return
@@ -527,78 +337,6 @@ public class ReturnPolicyType
      */
     public void setShippingCostPaidBy(String value) {
         this.shippingCostPaidBy = value;
-    }
-
-    /**
-     * Gets the value of the restockingFeeValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRestockingFeeValue() {
-        return restockingFeeValue;
-    }
-
-    /**
-     * Sets the value of the restockingFeeValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRestockingFeeValue(String value) {
-        this.restockingFeeValue = value;
-    }
-
-    /**
-     * Gets the value of the restockingFeeValueOption property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRestockingFeeValueOption() {
-        return restockingFeeValueOption;
-    }
-
-    /**
-     * Sets the value of the restockingFeeValueOption property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRestockingFeeValueOption(String value) {
-        this.restockingFeeValueOption = value;
-    }
-
-    /**
-     * Gets the value of the extendedHolidayReturns property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isExtendedHolidayReturns() {
-        return extendedHolidayReturns;
-    }
-
-    /**
-     * Sets the value of the extendedHolidayReturns property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setExtendedHolidayReturns(Boolean value) {
-        this.extendedHolidayReturns = value;
     }
 
     /**

@@ -29,7 +29,7 @@ public enum NotificationPayloadTypeCodeType {
 
     /**
      * 
-     * 						New Schema format (used by the new schema XML API and SOAP API).
+     * 						The only schema format supported for both standard XML and SOAP API payloads.
      * 					
      * 
      */

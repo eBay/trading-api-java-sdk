@@ -30,6 +30,7 @@ import java.io.FileInputStream;
 import java.net.ProtocolException;
 import java.net.URL;
 
+import javax.xml.stream.XMLStreamException;
 import javax.net.ssl.HttpsURLConnection;
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -59,7 +60,6 @@ import com.ebay.sdk.SiteIDUtil;
 import com.ebay.sdk.pictureservice.PictureInfo;
 import com.ebay.sdk.pictureservice.PictureService;
 import com.ebay.soap.eBLBaseComponents.UploadSiteHostedPicturesRequestType;
-import com.oracle.xmlns.internal.webservices.jaxws_databinding.ObjectFactory;
 import org.apache.commons.text.StringEscapeUtils;
 
 import com.ebay.sdk.util.*;
@@ -86,13 +86,13 @@ import org.w3c.dom.Node;
 public class eBayPictureServiceXMLCall implements PictureService {
 
 	private ApiContext apiContext;
-	
+
 	private static final Logger log = LoggerFactory.getLogger(eBayPictureServiceXMLCall.class);
-	
+
 	public eBayPictureServiceXMLCall(ApiContext apiContext){
 		this.apiContext = apiContext;
 	}
-	
+
 		    
 	//This method supports only a URL, not a local file path.	
 	public UploadSiteHostedPicturesResponseType uploadSiteHostedPictures(UploadSiteHostedPicturesRequestType request)
@@ -227,122 +227,122 @@ public class eBayPictureServiceXMLCall implements PictureService {
 			
 	        //Serialize the request into the XML Document
 			Document doc = this.marshal(request);
-	        
-	        //Add eBay API token to the document
-	        addAuthToken(doc);
-        	if (apiLogging != null && apiLogging.isLogSOAPMessages()) {
-        		String formattedReqXmlString = XmlUtil.getXmlStringFromDom(doc);
-	        	logMessage("UploadSiteHostedPicturesRequest", formattedReqXmlString);
-        	}
-	        
-	        //Convert XML Document to XML String
-	        String requestXmlString = xmlToString(doc);
-	        
-	        //Send file and get response string
-	        String respString = sendFile(picInfo.getPictureFilePath(), requestXmlString);
-        	if (apiLogging != null && apiLogging.isLogSOAPMessages()) {
-        		Document respDom = XmlUtil.createDom(respString);
-        		String formattedRespXmlString = XmlUtil.getXmlStringFromDom(respDom);
-	        	logMessage("UploadSiteHostedPicturesResponse", formattedRespXmlString);
-        	}
-	        
-	        //Deserialize the response String into UploadSiteHostedPicturesResponseType object
-	        UploadSiteHostedPicturesResponseType response = unmarshal(respString);
-	        
-	        //Update PictureInfo object
-	        picInfo.setReponse(response);
-			
+
+			//Add eBay API token to the document
+			addAuthToken(doc);
+			if (apiLogging != null && apiLogging.isLogSOAPMessages()) {
+				String formattedReqXmlString = XmlUtil.getXmlStringFromDom(doc);
+				logMessage("UploadSiteHostedPicturesRequest", formattedReqXmlString);
+			}
+
+			//Convert XML Document to XML String
+			String requestXmlString = xmlToString(doc);
+
+			//Send file and get response string
+			String respString = sendFile(picInfo.getPictureFilePath(), requestXmlString);
+			if (apiLogging != null && apiLogging.isLogSOAPMessages()) {
+				Document respDom = XmlUtil.createDom(respString);
+				String formattedRespXmlString = XmlUtil.getXmlStringFromDom(respDom);
+				logMessage("UploadSiteHostedPicturesResponse", formattedRespXmlString);
+			}
+
+			//Deserialize the response String into UploadSiteHostedPicturesResponseType object
+			UploadSiteHostedPicturesResponseType response = unmarshal(respString);
+
+			//Update PictureInfo object
+			picInfo.setReponse(response);
+
 			//success case
-	        if ( response.getErrors() == null || response.getErrors().length == 0 ) {
+			if ( response.getErrors() == null || response.getErrors().length == 0 ) {
 				picInfo.setURL(response.getSiteHostedPictureDetails().getFullURL());
 				return true;
 			}
-			
-	        //warning case
+
+			//warning case
 			if ( response.getErrors().length > 0 && response.getAck() == AckCodeType.WARNING) {
 				picInfo.setURL(response.getSiteHostedPictureDetails().getFullURL());
-				
+
 				picInfo.setErrorType("PICTURE SERVICE RESPONSE WARNING");
 				picInfo.setErrorMessage(response.getErrors()[0].getShortMessage());
-				
-	    		if (apiLogging != null && apiLogging.isLogExceptions()) {
-	    			log.warn("PICTURE SERVICE RESPONSE WARNING");
-	    			log.warn(response.getErrors()[0].getShortMessage());
-	    		}
-				
+
+				if (apiLogging != null && apiLogging.isLogExceptions()) {
+					log.warn("PICTURE SERVICE RESPONSE WARNING");
+					log.warn(response.getErrors()[0].getShortMessage());
+				}
+
 				return true;
 			}
-			
+
 			//error case
 			picInfo.setErrorType("PICTURE SERVICE RESPONSE ERROR");
 			picInfo.setErrorMessage(response.getErrors()[0].getShortMessage());
-			
-    		if (apiLogging != null && apiLogging.isLogExceptions()) {
-    			log.error("PICTURE SERVICE RESPONSE ERROR");
-    			log.error(response.getErrors()[0].getShortMessage());
-    		}
-			
+
+			if (apiLogging != null && apiLogging.isLogExceptions()) {
+				log.error("PICTURE SERVICE RESPONSE ERROR");
+				log.error(response.getErrors()[0].getShortMessage());
+			}
+
 			return false;
 		} catch (Exception e) {
 			picInfo.setErrorType("PICTURE SERVICE UPLOAD ERROR");
 			picInfo.setErrorMessage(e.getMessage());
-			
-    		if (apiLogging != null && apiLogging.isLogExceptions()) {
-    			log.error("fail to upload picture to eBay picture server!");
-    			log.error(e.getMessage());
-    		}
-    		
+
+			if (apiLogging != null && apiLogging.isLogExceptions()) {
+				log.error("fail to upload picture to eBay picture server!");
+				log.error(e.getMessage());
+			}
+
 			return false;
 		}
 	}
-	
+
 	private void logMessage(String msgName, String msgStr) {
 		String reqTime = eBayUtil.toAPITimeString(java.util.Calendar.getInstance().getTime());
-        log.info(java.text.MessageFormat.format("[{0}][{1}][{2}]\n",
-                new Object[] {msgName, 
-        		reqTime,
-                this.apiContext.getEpsServerUrl()}));
-        log.info(msgStr);
-	} 
-	
-	
-	  /**
-	   * Upload one picture file to EPS server.
-       * @param picInfo Contains the local picture file path, uploading error,
-       * response object and URL if the uploading succeeded.
-	   * @return true means the uploading succeeded. Otherwise check picInfo
-	   * for detailed error information.
-	   */
-	
+		log.info(java.text.MessageFormat.format("[{0}][{1}][{2}]\n",
+			new Object[] {msgName,
+				reqTime,
+				this.apiContext.getEpsServerUrl()}));
+		log.info(msgStr);
+	}
+
+
+	/**
+	 * Upload one picture file to EPS server.
+	 * @param picInfo Contains the local picture file path, uploading error,
+	 * response object and URL if the uploading succeeded.
+	 * @return true means the uploading succeeded. Otherwise check picInfo
+	 * for detailed error information.
+	 */
+
 	public boolean uploadPicture(PictureInfo picInfo) {
 
 		UploadSiteHostedPicturesRequestType request = new UploadSiteHostedPicturesRequestType();
-		
+
 		return UpLoadSiteHostedPicture(picInfo, request);
 	}
-	
-	
 
-	  /**
-	   * Upload list of picture files to EPS server.
-	   * @param picInfoList List of PictureInfo objects. Each object contains
-	   * the local picture file path, uploading error, response object and URI if the uploading
-	   * succeeded.
-	   * @return Number of pictures that have been successfully uploaded. Loop
-	   * through picInfoList for individual uploading error.
-	   */
-	
-	
+
+
+	/**
+	 * Upload list of picture files to EPS server.
+	 * @param picInfoList List of PictureInfo objects. Each object contains
+	 * the local picture file path, uploading error, response object and URI if the uploading
+	 * succeeded.
+	 * @return Number of pictures that have been successfully uploaded. Loop
+	 * through picInfoList for individual uploading error.
+	 */
+
+
 	public int uploadPictures(PictureInfo[] picInfoList) {
-		
-    	int nSuccess = 0;
-      	for(int i = 0; i < picInfoList.length; i++ )
-      	{
-        	if( uploadPicture( picInfoList[i]) )
-          		nSuccess ++;
-      	}
-		
-      	return nSuccess;
+
+		int nSuccess = 0;
+		for(int i = 0; i < picInfoList.length; i++ )
+		{
+			if( uploadPicture( picInfoList[i]) )
+				nSuccess ++;
+		}
+
+		return nSuccess;
 	}
 	/**
 	 * Convert an XML Document to an XML String
@@ -362,7 +362,7 @@ public class eBayPictureServiceXMLCall implements PictureService {
 		transformer.transform(source, result);
 		return stringWriter.getBuffer().toString();
 	}
-	
+
 	/**
 	 * Serialize an UploadSiteHostedPicturesRequestType object into
 	 * an XML Document
@@ -372,51 +372,51 @@ public class eBayPictureServiceXMLCall implements PictureService {
 	 * @throws ParserConfigurationException
 	 */
 	private Document marshal(UploadSiteHostedPicturesRequestType uploadSiteHostedPicturesRequest) throws JAXBException, ParserConfigurationException {
-		
-        JAXBContext reqContext = JAXBContext.newInstance(
-        		new Class[]{com.ebay.soap.eBLBaseComponents.UploadSiteHostedPicturesRequestType.class}); 
-        Marshaller marshaller = reqContext.createMarshaller();
-        if(uploadSiteHostedPicturesRequest == null){
-        	uploadSiteHostedPicturesRequest = new UploadSiteHostedPicturesRequestType();
-        }
-        JAXBElement<UploadSiteHostedPicturesRequestType> reqElement = 
-        	(new ObjectFactory()).createUploadSiteHostedPicturesRequest(uploadSiteHostedPicturesRequest);
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        dbf.setXIncludeAware(false);
-		dbf.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);	
+
+		JAXBContext reqContext = JAXBContext.newInstance(
+			new Class[]{com.ebay.soap.eBLBaseComponents.UploadSiteHostedPicturesRequestType.class});
+		Marshaller marshaller = reqContext.createMarshaller();
+		if(uploadSiteHostedPicturesRequest == null){
+			uploadSiteHostedPicturesRequest = new UploadSiteHostedPicturesRequestType();
+		}
+		JAXBElement<UploadSiteHostedPicturesRequestType> reqElement =
+			(new ObjectFactory()).createUploadSiteHostedPicturesRequest(uploadSiteHostedPicturesRequest);
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		dbf.setXIncludeAware(false);
+		dbf.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
 		dbf.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
 		dbf.setAttribute(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
 
 		DocumentBuilder db = dbf.newDocumentBuilder();
-        Document doc = db.newDocument();
-        marshaller.marshal(reqElement, doc);
-        
-        return doc;
+		Document doc = db.newDocument();
+		marshaller.marshal(reqElement, doc);
+
+		return doc;
 	}
-	
+
 	/**
 	 * Deserialize an XML string into an UploadSiteHostedPicturesResponseType object
 	 * @param responseXmlString, response XML string
 	 * @return the UploadSiteHostedPicturesResponseType object
 	 * @throws JAXBException
 	 */
-	private UploadSiteHostedPicturesResponseType unmarshal(String responseXmlString) throws JAXBException {
-		
-        JAXBContext respContext = JAXBContext.newInstance(
-        		new Class[]{com.ebay.soap.eBLBaseComponents.UploadSiteHostedPicturesResponseType.class}); 
-        Unmarshaller unmarshaller = respContext.createUnmarshaller();
+	private UploadSiteHostedPicturesResponseType unmarshal(String responseXmlString) throws JAXBException, XMLStreamException{
+
+		JAXBContext respContext = JAXBContext.newInstance(
+			new Class[]{com.ebay.soap.eBLBaseComponents.UploadSiteHostedPicturesResponseType.class});
+		Unmarshaller unmarshaller = respContext.createUnmarshaller();
 
 		XMLInputFactory xif = XMLInputFactory.newFactory();
-    	// Disable DTDs
-    	xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
+		// Disable DTDs
+		xif.setProperty(XMLInputFactory.SUPPORT_DTD, false);
 
 		XMLStreamReader xsr = xif.createXMLStreamReader(new StringReader(responseXmlString));
-        JAXBElement<UploadSiteHostedPicturesResponseType> respElement = 
-            (JAXBElement<UploadSiteHostedPicturesResponseType>) unmarshaller.unmarshal(xsr);
-        UploadSiteHostedPicturesResponseType response = respElement.getValue();
-        return response;
+		JAXBElement<UploadSiteHostedPicturesResponseType> respElement =
+			(JAXBElement<UploadSiteHostedPicturesResponseType>) unmarshaller.unmarshal(xsr);
+		UploadSiteHostedPicturesResponseType response = respElement.getValue();
+		return response;
 	}
-	
+
 	/**
 	 * Send the picture file using HttpsURLConnection
 	 * @param fileName, the full path of the picture file to be uploaded
@@ -426,45 +426,45 @@ public class eBayPictureServiceXMLCall implements PictureService {
 	 */
 	private String sendFile(String fileName, String requestXmlString) throws IOException {
 		// Sanitize the fileName and requestXmlString parameters
-    	fileName = StringEscapeUtils.escapeJava(fileName);
-    	requestXmlString = StringEscapeUtils.escapeXml11(requestXmlString);
+		fileName = StringEscapeUtils.escapeJava(fileName);
+		requestXmlString = StringEscapeUtils.escapeXml11(requestXmlString);
 
 		//Get Http connection
 		URL u = new URL(apiContext.getEpsServerUrl());
 		HttpsURLConnection c = (HttpsURLConnection) u.openConnection();
-		
+
 		setConnectionProperty(c);
-		
+
 		//First part of the request body
 		String	reqStr1= "--" + BOUNDARY + CRLF
-		+ "Content-Disposition: form-data; name=document" + CRLF
-		+ "Content-Type: text/xml; charset=\"UTF-8\"" + CRLF + CRLF
-		+ requestXmlString
-		+ CRLF + "--" + BOUNDARY + CRLF
-		+ "Content-Disposition: form-data; name=image; filename=image" + CRLF
-		+ "Content-Transfer-Encoding: binary" + CRLF
-		+ "Content-Type: application/octet-stream" + CRLF + CRLF;
-	 
-	    //Last part of the request body
+			+ "Content-Disposition: form-data; name=document" + CRLF
+			+ "Content-Type: text/xml; charset=\"UTF-8\"" + CRLF + CRLF
+			+ requestXmlString
+			+ CRLF + "--" + BOUNDARY + CRLF
+			+ "Content-Disposition: form-data; name=image; filename=image" + CRLF
+			+ "Content-Transfer-Encoding: binary" + CRLF
+			+ "Content-Type: application/octet-stream" + CRLF + CRLF;
+
+		//Last part of the request body
 		String reqStr2 = CRLF + "--" + BOUNDARY + "--" + CRLF;
 
 		//Read in the file to be sent
-	    byte[] content = readInFile(fileName);
-	    
+		byte[] content = readInFile(fileName);
+
 		//Send the request
-	    c.connect();
+		c.connect();
 		OutputStream os = c.getOutputStream();
 		os.write(reqStr1.getBytes());
 		os.write(content);
 		os.write(reqStr2.getBytes());
 		os.flush();
 		os.close();
-		
+
 		//Read in the response
 		StringBuffer buf = readInResponse(c);
-		
+
 		c.disconnect();
-		
+
 		//Return the response string
 		return buf.toString();
 	}
@@ -473,53 +473,53 @@ public class eBayPictureServiceXMLCall implements PictureService {
 		InputStreamReader is = new InputStreamReader(c.getInputStream());
 		BufferedReader reader = new BufferedReader(is);
 		StringBuffer buf = new StringBuffer();
-	    String line;
+		String line;
 
-	    while ( (line = reader.readLine()) != null) {
-	      buf.append(line + "\n");
-	    }
-	    
-	    is.close();
+		while ( (line = reader.readLine()) != null) {
+			buf.append(line + "\n");
+		}
+
+		is.close();
 		reader.close();
 		return buf;
 	}
 
 	private byte[] readInFile(String fileName) throws FileNotFoundException,
-			IOException {
+		IOException {
 		File file = new File(fileName);
 
 		if(fileName.contains("..")){
 			throw new IllegalArgumentException("Invalid file name");
 		}
 
-	    FileInputStream fin = new FileInputStream(file);
-	    byte[] content = new byte[(int)file.length()];
-	    fin.read(content);
-	    fin.close();
+		FileInputStream fin = new FileInputStream(file);
+		byte[] content = new byte[(int)file.length()];
+		fin.read(content);
+		fin.close();
 		return content;
 	}
 
 	private void setConnectionProperty(HttpsURLConnection c)
-			throws ProtocolException {
+		throws ProtocolException {
 		c.setRequestMethod("POST");
 		//c.setRequestProperty("ProtocolVersion", "HTTP/1.0");
 		//Set request headers
 		c.setRequestProperty("Content-Type", "multipart/form-data; boundary=" + BOUNDARY);
 		c.addRequestProperty("X-EBAY-API-COMPATIBILITY-LEVEL", apiContext.getWSDLVersion());
-        
+
 		c.addRequestProperty("X-EBAY-API-CALL-NAME", API_CALL_NAME);
-		
+
 		c.addRequestProperty("X-EBAY-API-SITEID",
-        		String.valueOf(SiteIDUtil.toNumericalID(this.apiContext.getSite())));
+			String.valueOf(SiteIDUtil.toNumericalID(this.apiContext.getSite())));
 		c.addRequestProperty("X-EBAY-API-DETAIL-LEVEL","0");
-		
-		//set X-EBAY-API-IAF-TOKEN http request header with OAuthToken value 
+
+		//set X-EBAY-API-IAF-TOKEN http request header with OAuthToken value
 		String tokenString = apiContext.getApiCredential().geteBayToken();
 		String oAuthToken = apiContext.getApiCredential().getOAuthToken();
-		if ( (oAuthToken != null || oAuthToken.trim().length() > 0) && 
-		     (tokenString == null || tokenString.trim().length() == 0)) {
+		if ( (oAuthToken != null || oAuthToken.trim().length() > 0) &&
+			(tokenString == null || tokenString.trim().length() == 0)) {
 			c.addRequestProperty("X-EBAY-API-IAF-TOKEN", oAuthToken);
-			
+
 		}
 		//Set additional request properties
 		c.setUseCaches(false);
@@ -540,9 +540,9 @@ public class eBayPictureServiceXMLCall implements PictureService {
 			if(oAuthToken == null || oAuthToken.trim().length() == 0){
 				throw new SdkException("No Token Found!!!");
 			}
-		} else if(tokenString != null || tokenString.trim().length() > 0){	
-		    Node requesterCredentials = XmlUtil.appendChildNode(doc, EBAY_NAMESPACE, node, "RequesterCredentials");
-		    XmlUtil.appendChildNode(doc, requesterCredentials, "eBayAuthToken", tokenString);
+		} else if(tokenString != null || tokenString.trim().length() > 0){
+			Node requesterCredentials = XmlUtil.appendChildNode(doc, EBAY_NAMESPACE, node, "RequesterCredentials");
+			XmlUtil.appendChildNode(doc, requesterCredentials, "eBayAuthToken", tokenString);
 		}
 	}
 

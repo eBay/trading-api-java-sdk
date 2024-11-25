@@ -13,7 +13,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				Indicates if the site supports shipping options for 
+ * 				Indicates if the site supports shipping options for
  * 				Classified Ad format listings.
  * 				Added for EbayMotors Pro users.
  * 			

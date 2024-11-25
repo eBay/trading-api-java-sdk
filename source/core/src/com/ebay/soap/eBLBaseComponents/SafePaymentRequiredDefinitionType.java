@@ -12,12 +12,12 @@ import org.w3c.dom.Element;
 
 
 /**
- *  
- * 				For the US, Canada and Australia sites, users are 
+ * 
+ * 				For the US, Canada and Australia sites, users are
  * 				required to offer at least one safe payment method.
  * 				<br><br>
- * 				If a seller has a 'SafePaymentExempt' status, they are exempt from the category 
- * 				requirement to offer at least one safe payment method when listing an item on a 
+ * 				If a seller has a 'SafePaymentExempt' status, they are exempt from the category
+ * 				requirement to offer at least one safe payment method when listing an item on a
  * 				site that has the safe payment requirement.
  * 				<br><br>
  * 					<span class="tablenote"><b>Note: </b> Although the <b>SafePaymentRequired</b> field is still being returned for now, sellers never need to set the available electronic payments, so this requirement is no longer applicable.

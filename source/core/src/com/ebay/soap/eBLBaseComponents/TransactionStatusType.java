@@ -36,8 +36,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="CompleteStatus" type="{urn:ebay:apis:eBLBaseComponents}CompleteStatusCodeType" minOccurs="0"/>
  *         &lt;element name="BuyerSelectedShipping" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="PaymentHoldStatus" type="{urn:ebay:apis:eBLBaseComponents}PaymentHoldStatusCodeType" minOccurs="0"/>
- *         &lt;element name="IntegratedMerchantCreditCardEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="eBayPaymentMismatchDetails" type="{urn:ebay:apis:eBLBaseComponents}eBayPaymentMismatchDetailsType" minOccurs="0"/>
  *         &lt;element name="InquiryStatus" type="{urn:ebay:apis:eBLBaseComponents}InquiryStatusCodeType" minOccurs="0"/>
  *         &lt;element name="ReturnStatus" type="{urn:ebay:apis:eBLBaseComponents}ReturnStatusCodeType" minOccurs="0"/>
  *         &lt;element name="PaymentInstrument" type="{urn:ebay:apis:eBLBaseComponents}BuyerPaymentInstrumentCodeType" minOccurs="0"/>
@@ -61,8 +59,6 @@ import org.w3c.dom.Element;
     "completeStatus",
     "buyerSelectedShipping",
     "paymentHoldStatus",
-    "integratedMerchantCreditCardEnabled",
-    "eBayPaymentMismatchDetails",
     "inquiryStatus",
     "returnStatus",
     "paymentInstrument",
@@ -90,9 +86,6 @@ public class TransactionStatusType
     protected Boolean buyerSelectedShipping;
     @XmlElement(name = "PaymentHoldStatus")
     protected PaymentHoldStatusCodeType paymentHoldStatus;
-    @XmlElement(name = "IntegratedMerchantCreditCardEnabled")
-    protected Boolean integratedMerchantCreditCardEnabled;
-    protected EBayPaymentMismatchDetailsType eBayPaymentMismatchDetails;
     @XmlElement(name = "InquiryStatus")
     protected InquiryStatusCodeType inquiryStatus;
     @XmlElement(name = "ReturnStatus")
@@ -272,54 +265,6 @@ public class TransactionStatusType
      */
     public void setPaymentHoldStatus(PaymentHoldStatusCodeType value) {
         this.paymentHoldStatus = value;
-    }
-
-    /**
-     * Gets the value of the integratedMerchantCreditCardEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIntegratedMerchantCreditCardEnabled() {
-        return integratedMerchantCreditCardEnabled;
-    }
-
-    /**
-     * Sets the value of the integratedMerchantCreditCardEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIntegratedMerchantCreditCardEnabled(Boolean value) {
-        this.integratedMerchantCreditCardEnabled = value;
-    }
-
-    /**
-     * Gets the value of the eBayPaymentMismatchDetails property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EBayPaymentMismatchDetailsType }
-     *     
-     */
-    public EBayPaymentMismatchDetailsType getEBayPaymentMismatchDetails() {
-        return eBayPaymentMismatchDetails;
-    }
-
-    /**
-     * Sets the value of the eBayPaymentMismatchDetails property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EBayPaymentMismatchDetailsType }
-     *     
-     */
-    public void setEBayPaymentMismatchDetails(EBayPaymentMismatchDetailsType value) {
-        this.eBayPaymentMismatchDetails = value;
     }
 
     /**

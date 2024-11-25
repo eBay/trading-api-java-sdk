@@ -34,7 +34,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="Currency" type="{urn:ebay:apis:eBLBaseComponents}CurrencyCodeType" minOccurs="0"/>
  *         &lt;element name="ItemID" type="{urn:ebay:apis:eBLBaseComponents}ItemIDType" minOccurs="0"/>
  *         &lt;element name="MaxBid" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
- *         &lt;element name="Discounts" type="{urn:ebay:apis:eBLBaseComponents}OfferDiscountsType" minOccurs="0"/>
  *         &lt;element name="Quantity" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="SecondChanceEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="SiteCurrency" type="{urn:ebay:apis:eBLBaseComponents}CurrencyCodeType" minOccurs="0"/>
@@ -63,7 +62,6 @@ import org.w3c.dom.Element;
     "currency",
     "itemID",
     "maxBid",
-    "discounts",
     "quantity",
     "secondChanceEnabled",
     "siteCurrency",
@@ -92,8 +90,6 @@ public class OfferType
     protected String itemID;
     @XmlElement(name = "MaxBid")
     protected AmountType maxBid;
-    @XmlElement(name = "Discounts")
-    protected OfferDiscountsType discounts;
     @XmlElement(name = "Quantity")
     protected Integer quantity;
     @XmlElement(name = "SecondChanceEnabled")
@@ -219,30 +215,6 @@ public class OfferType
      */
     public void setMaxBid(AmountType value) {
         this.maxBid = value;
-    }
-
-    /**
-     * Gets the value of the discounts property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link OfferDiscountsType }
-     *     
-     */
-    public OfferDiscountsType getDiscounts() {
-        return discounts;
-    }
-
-    /**
-     * Sets the value of the discounts property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link OfferDiscountsType }
-     *     
-     */
-    public void setDiscounts(OfferDiscountsType value) {
-        this.discounts = value;
     }
 
     /**

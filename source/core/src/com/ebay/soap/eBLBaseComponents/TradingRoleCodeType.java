@@ -30,8 +30,8 @@ public enum TradingRoleCodeType {
 
     /**
      * 
-     * 						The eBay user is acting as the buyer for the order(s). In <b>GetOrders</b>, 
-     * 						this value should be passed into the <b>OrderRole</b> field in the 
+     * 						The eBay user is acting as the buyer for the order(s). In <b>GetOrders</b>,
+     * 						this value should be passed into the <b>OrderRole</b> field in the
      * 						request to retrieve orders in which the calling eBay user is the buyer in the order.
      * 					
      * 
@@ -41,8 +41,8 @@ public enum TradingRoleCodeType {
 
     /**
      * 
-     * 						The eBay user is acting as the seller for the order(s). In <b>GetOrders</b>, 
-     * 						this value should be passed into the <b>OrderRole</b> field in the 
+     * 						The eBay user is acting as the seller for the order(s). In <b>GetOrders</b>,
+     * 						this value should be passed into the <b>OrderRole</b> field in the
      * 						request to retrieve orders in which the calling eBay user is the seller in the order.
      * 					
      * 

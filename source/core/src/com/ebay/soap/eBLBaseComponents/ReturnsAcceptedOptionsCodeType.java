@@ -30,7 +30,7 @@ public enum ReturnsAcceptedOptionsCodeType {
 
     /**
      * 
-     * 						The seller accepts returns, subject to other details 
+     * 						The seller accepts returns, subject to other details
      * 						specified in the policy.
      * 					
      * 

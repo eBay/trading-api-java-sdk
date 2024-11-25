@@ -29,7 +29,6 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;complexContent>
  *     &lt;extension base="{urn:ebay:apis:eBLBaseComponents}AbstractRequestType">
  *       &lt;sequence>
- *         &lt;element name="UserID" type="{urn:ebay:apis:eBLBaseComponents}UserIDType" minOccurs="0"/>
  *         &lt;element name="MotorsDealerUsers" type="{urn:ebay:apis:eBLBaseComponents}UserIDArrayType" minOccurs="0"/>
  *         &lt;element name="EndTimeFrom" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="EndTimeTo" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
@@ -53,7 +52,6 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "GetSellerListRequestType", propOrder = {
-    "userID",
     "motorsDealerUsers",
     "endTimeFrom",
     "endTimeTo",
@@ -74,8 +72,6 @@ public class GetSellerListRequestType
 {
 
     private final static long serialVersionUID = 12343L;
-    @XmlElement(name = "UserID")
-    protected String userID;
     @XmlElement(name = "MotorsDealerUsers")
     protected UserIDArrayType motorsDealerUsers;
     @XmlElement(name = "EndTimeFrom", type = String.class)
@@ -110,30 +106,6 @@ public class GetSellerListRequestType
     protected Integer categoryID;
     @XmlElement(name = "IncludeVariations")
     protected Boolean includeVariations;
-
-    /**
-     * Gets the value of the userID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUserID() {
-        return userID;
-    }
-
-    /**
-     * Sets the value of the userID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUserID(String value) {
-        this.userID = value;
-    }
 
     /**
      * Gets the value of the motorsDealerUsers property.

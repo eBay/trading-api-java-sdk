@@ -32,7 +32,7 @@ public enum OrderStatusFilterCodeType {
 
     /**
      * 
-     * 						All applicable sold listings, regardless of 
+     * 						All applicable sold listings, regardless of
      * 						their Paid or Shipped status.
      * 					
      * 

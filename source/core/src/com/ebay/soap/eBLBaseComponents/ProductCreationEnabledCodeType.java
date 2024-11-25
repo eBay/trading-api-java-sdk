@@ -31,7 +31,7 @@ public enum ProductCreationEnabledCodeType {
 
     /**
      * 
-     * 						Product creation is not supported for the category. 
+     * 						Product creation is not supported for the category.
      * 						AddItem family calls can still list with product.
      * 					
      * 
@@ -41,7 +41,7 @@ public enum ProductCreationEnabledCodeType {
 
     /**
      * 
-     * 						Product Creation is supported for the category. 
+     * 						Product Creation is supported for the category.
      * 						AddItem family calls can still list with product but can go through new product creation flow.
      * 					
      * 
@@ -51,7 +51,7 @@ public enum ProductCreationEnabledCodeType {
 
     /**
      * 
-     * 						Product Creation is required for the category. 
+     * 						Product Creation is required for the category.
      * 						AddItem family calls have to list with a product. If no product exists can go through new product creation flow.
      * 					
      * 

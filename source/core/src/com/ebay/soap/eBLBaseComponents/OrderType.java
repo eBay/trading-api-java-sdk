@@ -20,14 +20,14 @@ import org.w3c.dom.Element;
  * 
  *         This type is used to express the details of an order. An order may contain one or more line items (purchases) from the same buyer. Regardless of how many line items an order has, only one payment is made for the order.
  *         <br><br>
- *         The <b>GetOrders</b> and <b>GetOrderTransactions</b> calls return many of the fields of this type.
+ *         The <b>GetOrders</b> call returns many of the fields of this type.
  *         <br><br>
  *         The <b>GetItemTransactions</b> and <b>GetSellerTransactions</b> calls will only return order-level details if the <b>IncludeContainingOrder</b> boolean field is included in the call request and set to <code>true</code>.
  *         <br><br>
  *         The <b>AddOrder</b> call is used to combine two or more unpaid order line items (between the same seller and buyer) into a 'Combined Invoice' order. While combining these order line items into one 'Combined Invoice' order, the seller can make adjustments to accepted payment methods, shipping details (including costs), and the total cost of the order. Sometimes, sellers will reduce the cost of shipping if one or more order line items can be shipped together in the same package.
  *         <br><br>
  *         The <b>GetMyeBaySelling</b> call returns order details if the seller wishes to view listings that have sold, and the <b>GetMyeBayBuying</b> call returns order details if the buyer wishes to view items they have won or purchased.
- *       
+ * 			
  * 
  * <p>Java class for OrderType complex type.
  * 
@@ -53,20 +53,16 @@ import org.w3c.dom.Element;
  *         &lt;element name="ShippingServiceSelected" type="{urn:ebay:apis:eBLBaseComponents}ShippingServiceOptionsType" minOccurs="0"/>
  *         &lt;element name="Subtotal" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="Total" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
- *         &lt;element name="ExternalTransaction" type="{urn:ebay:apis:eBLBaseComponents}ExternalTransactionType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="TransactionArray" type="{urn:ebay:apis:eBLBaseComponents}TransactionArrayType" minOccurs="0"/>
  *         &lt;element name="BuyerUserID" type="{urn:ebay:apis:eBLBaseComponents}UserIDType" minOccurs="0"/>
  *         &lt;element name="PaidTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="ShippedTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="IntegratedMerchantCreditCardEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BundlePurchase" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BuyerCheckoutMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="EIASToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="PaymentHoldStatus" type="{urn:ebay:apis:eBLBaseComponents}PaymentHoldStatusCodeType" minOccurs="0"/>
- *         &lt;element name="PaymentHoldDetails" type="{urn:ebay:apis:eBLBaseComponents}PaymentHoldDetailType" minOccurs="0"/>
  *         &lt;element name="RefundAmount" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="RefundStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RefundArray" type="{urn:ebay:apis:eBLBaseComponents}RefundArrayType" minOccurs="0"/>
  *         &lt;element name="IsMultiLegShipping" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="MultiLegShippingDetails" type="{urn:ebay:apis:eBLBaseComponents}MultiLegShippingDetailsType" minOccurs="0"/>
  *         &lt;element name="MonetaryDetails" type="{urn:ebay:apis:eBLBaseComponents}PaymentsInformationType" minOccurs="0"/>
@@ -76,9 +72,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="SellerEIASToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="CancelReason" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
  *         &lt;element name="CancelStatus" type="{urn:ebay:apis:eBLBaseComponents}CancelStatusCodeType" minOccurs="0"/>
- *         &lt;element name="CancelReasonDetails" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ShippingConvenienceCharge" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
- *         &lt;element name="CancelDetail" type="{urn:ebay:apis:eBLBaseComponents}CancelDetailType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="LogisticsPlanType" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
  *         &lt;element name="BuyerTaxIdentifier" type="{urn:ebay:apis:eBLBaseComponents}TaxIdentifierType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="BuyerPackageEnclosures" type="{urn:ebay:apis:eBLBaseComponents}BuyerPackageEnclosuresType" minOccurs="0"/>
@@ -112,20 +105,16 @@ import org.w3c.dom.Element;
     "shippingServiceSelected",
     "subtotal",
     "total",
-    "externalTransaction",
     "transactionArray",
     "buyerUserID",
     "paidTime",
     "shippedTime",
-    "integratedMerchantCreditCardEnabled",
     "bundlePurchase",
     "buyerCheckoutMessage",
     "eiasToken",
     "paymentHoldStatus",
-    "paymentHoldDetails",
     "refundAmount",
     "refundStatus",
-    "refundArray",
     "isMultiLegShipping",
     "multiLegShippingDetails",
     "monetaryDetails",
@@ -135,9 +124,6 @@ import org.w3c.dom.Element;
     "sellerEIASToken",
     "cancelReason",
     "cancelStatus",
-    "cancelReasonDetails",
-    "shippingConvenienceCharge",
-    "cancelDetail",
     "logisticsPlanType",
     "buyerTaxIdentifier",
     "buyerPackageEnclosures",
@@ -184,8 +170,6 @@ public class OrderType
     protected AmountType subtotal;
     @XmlElement(name = "Total")
     protected AmountType total;
-    @XmlElement(name = "ExternalTransaction")
-    protected List<ExternalTransactionType> externalTransaction;
     @XmlElement(name = "TransactionArray")
     protected TransactionArrayType transactionArray;
     @XmlElement(name = "BuyerUserID")
@@ -198,8 +182,6 @@ public class OrderType
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "dateTime")
     protected Calendar shippedTime;
-    @XmlElement(name = "IntegratedMerchantCreditCardEnabled")
-    protected Boolean integratedMerchantCreditCardEnabled;
     @XmlElement(name = "BundlePurchase")
     protected Boolean bundlePurchase;
     @XmlElement(name = "BuyerCheckoutMessage")
@@ -208,14 +190,10 @@ public class OrderType
     protected String eiasToken;
     @XmlElement(name = "PaymentHoldStatus")
     protected PaymentHoldStatusCodeType paymentHoldStatus;
-    @XmlElement(name = "PaymentHoldDetails")
-    protected PaymentHoldDetailType paymentHoldDetails;
     @XmlElement(name = "RefundAmount")
     protected AmountType refundAmount;
     @XmlElement(name = "RefundStatus")
     protected String refundStatus;
-    @XmlElement(name = "RefundArray")
-    protected RefundArrayType refundArray;
     @XmlElement(name = "IsMultiLegShipping")
     protected Boolean isMultiLegShipping;
     @XmlElement(name = "MultiLegShippingDetails")
@@ -236,12 +214,6 @@ public class OrderType
     protected String cancelReason;
     @XmlElement(name = "CancelStatus")
     protected CancelStatusCodeType cancelStatus;
-    @XmlElement(name = "CancelReasonDetails")
-    protected String cancelReasonDetails;
-    @XmlElement(name = "ShippingConvenienceCharge")
-    protected AmountType shippingConvenienceCharge;
-    @XmlElement(name = "CancelDetail")
-    protected List<CancelDetailType> cancelDetail;
     @XmlElement(name = "LogisticsPlanType")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "token")
@@ -669,78 +641,6 @@ public class OrderType
     }
 
     /**
-     * 
-     * 
-     * @return
-     *     array of
-     *     {@link ExternalTransactionType }
-     *     
-     */
-    public ExternalTransactionType[] getExternalTransaction() {
-        if (this.externalTransaction == null) {
-            return new ExternalTransactionType[ 0 ] ;
-        }
-        return ((ExternalTransactionType[]) this.externalTransaction.toArray(new ExternalTransactionType[this.externalTransaction.size()] ));
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     one of
-     *     {@link ExternalTransactionType }
-     *     
-     */
-    public ExternalTransactionType getExternalTransaction(int idx) {
-        if (this.externalTransaction == null) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.externalTransaction.get(idx);
-    }
-
-    public int getExternalTransactionLength() {
-        if (this.externalTransaction == null) {
-            return  0;
-        }
-        return this.externalTransaction.size();
-    }
-
-    /**
-     * 
-     * 
-     * @param values
-     *     allowed objects are
-     *     {@link ExternalTransactionType }
-     *     
-     */
-    public void setExternalTransaction(ExternalTransactionType[] values) {
-        this._getExternalTransaction().clear();
-        int len = values.length;
-        for (int i = 0; (i<len); i ++) {
-            this.externalTransaction.add(values[i]);
-        }
-    }
-
-    protected List<ExternalTransactionType> _getExternalTransaction() {
-        if (externalTransaction == null) {
-            externalTransaction = new ArrayList<ExternalTransactionType>();
-        }
-        return externalTransaction;
-    }
-
-    /**
-     * 
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ExternalTransactionType }
-     *     
-     */
-    public ExternalTransactionType setExternalTransaction(int idx, ExternalTransactionType value) {
-        return this.externalTransaction.set(idx, value);
-    }
-
-    /**
      * Gets the value of the transactionArray property.
      * 
      * @return
@@ -834,30 +734,6 @@ public class OrderType
      */
     public void setShippedTime(Calendar value) {
         this.shippedTime = value;
-    }
-
-    /**
-     * Gets the value of the integratedMerchantCreditCardEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIntegratedMerchantCreditCardEnabled() {
-        return integratedMerchantCreditCardEnabled;
-    }
-
-    /**
-     * Sets the value of the integratedMerchantCreditCardEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIntegratedMerchantCreditCardEnabled(Boolean value) {
-        this.integratedMerchantCreditCardEnabled = value;
     }
 
     /**
@@ -957,30 +833,6 @@ public class OrderType
     }
 
     /**
-     * Gets the value of the paymentHoldDetails property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaymentHoldDetailType }
-     *     
-     */
-    public PaymentHoldDetailType getPaymentHoldDetails() {
-        return paymentHoldDetails;
-    }
-
-    /**
-     * Sets the value of the paymentHoldDetails property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaymentHoldDetailType }
-     *     
-     */
-    public void setPaymentHoldDetails(PaymentHoldDetailType value) {
-        this.paymentHoldDetails = value;
-    }
-
-    /**
      * Gets the value of the refundAmount property.
      * 
      * @return
@@ -1026,30 +878,6 @@ public class OrderType
      */
     public void setRefundStatus(String value) {
         this.refundStatus = value;
-    }
-
-    /**
-     * Gets the value of the refundArray property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RefundArrayType }
-     *     
-     */
-    public RefundArrayType getRefundArray() {
-        return refundArray;
-    }
-
-    /**
-     * Sets the value of the refundArray property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RefundArrayType }
-     *     
-     */
-    public void setRefundArray(RefundArrayType value) {
-        this.refundArray = value;
     }
 
     /**
@@ -1266,126 +1094,6 @@ public class OrderType
      */
     public void setCancelStatus(CancelStatusCodeType value) {
         this.cancelStatus = value;
-    }
-
-    /**
-     * Gets the value of the cancelReasonDetails property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCancelReasonDetails() {
-        return cancelReasonDetails;
-    }
-
-    /**
-     * Sets the value of the cancelReasonDetails property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCancelReasonDetails(String value) {
-        this.cancelReasonDetails = value;
-    }
-
-    /**
-     * Gets the value of the shippingConvenienceCharge property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AmountType }
-     *     
-     */
-    public AmountType getShippingConvenienceCharge() {
-        return shippingConvenienceCharge;
-    }
-
-    /**
-     * Sets the value of the shippingConvenienceCharge property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AmountType }
-     *     
-     */
-    public void setShippingConvenienceCharge(AmountType value) {
-        this.shippingConvenienceCharge = value;
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     array of
-     *     {@link CancelDetailType }
-     *     
-     */
-    public CancelDetailType[] getCancelDetail() {
-        if (this.cancelDetail == null) {
-            return new CancelDetailType[ 0 ] ;
-        }
-        return ((CancelDetailType[]) this.cancelDetail.toArray(new CancelDetailType[this.cancelDetail.size()] ));
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     one of
-     *     {@link CancelDetailType }
-     *     
-     */
-    public CancelDetailType getCancelDetail(int idx) {
-        if (this.cancelDetail == null) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.cancelDetail.get(idx);
-    }
-
-    public int getCancelDetailLength() {
-        if (this.cancelDetail == null) {
-            return  0;
-        }
-        return this.cancelDetail.size();
-    }
-
-    /**
-     * 
-     * 
-     * @param values
-     *     allowed objects are
-     *     {@link CancelDetailType }
-     *     
-     */
-    public void setCancelDetail(CancelDetailType[] values) {
-        this._getCancelDetail().clear();
-        int len = values.length;
-        for (int i = 0; (i<len); i ++) {
-            this.cancelDetail.add(values[i]);
-        }
-    }
-
-    protected List<CancelDetailType> _getCancelDetail() {
-        if (cancelDetail == null) {
-            cancelDetail = new ArrayList<CancelDetailType>();
-        }
-        return cancelDetail;
-    }
-
-    /**
-     * 
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CancelDetailType }
-     *     
-     */
-    public CancelDetailType setCancelDetail(int idx, CancelDetailType value) {
-        return this.cancelDetail.set(idx, value);
     }
 
     /**

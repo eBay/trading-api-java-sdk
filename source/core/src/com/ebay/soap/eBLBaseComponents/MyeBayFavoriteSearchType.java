@@ -51,7 +51,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="BidCountMax" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="BidCountMin" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="SearchFlag" type="{urn:ebay:apis:eBLBaseComponents}SearchFlagCodeType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="PaymentMethod" type="{urn:ebay:apis:eBLBaseComponents}PaymentMethodSearchCodeType" minOccurs="0"/>
  *         &lt;element name="PreferredLocation" type="{urn:ebay:apis:eBLBaseComponents}PreferredLocationCodeType" minOccurs="0"/>
  *         &lt;element name="SellerID" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="SellerIDExclude" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
@@ -89,7 +88,6 @@ import org.w3c.dom.Element;
     "bidCountMax",
     "bidCountMin",
     "searchFlag",
-    "paymentMethod",
     "preferredLocation",
     "sellerID",
     "sellerIDExclude",
@@ -144,8 +142,6 @@ public class MyeBayFavoriteSearchType
     protected Integer bidCountMin;
     @XmlElement(name = "SearchFlag")
     protected List<SearchFlagCodeType> searchFlag;
-    @XmlElement(name = "PaymentMethod")
-    protected PaymentMethodSearchCodeType paymentMethod;
     @XmlElement(name = "PreferredLocation")
     protected PreferredLocationCodeType preferredLocation;
     @XmlElement(name = "SellerID")
@@ -621,30 +617,6 @@ public class MyeBayFavoriteSearchType
      */
     public SearchFlagCodeType setSearchFlag(int idx, SearchFlagCodeType value) {
         return this.searchFlag.set(idx, value);
-    }
-
-    /**
-     * Gets the value of the paymentMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaymentMethodSearchCodeType }
-     *     
-     */
-    public PaymentMethodSearchCodeType getPaymentMethod() {
-        return paymentMethod;
-    }
-
-    /**
-     * Sets the value of the paymentMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaymentMethodSearchCodeType }
-     *     
-     */
-    public void setPaymentMethod(PaymentMethodSearchCodeType value) {
-        this.paymentMethod = value;
     }
 
     /**

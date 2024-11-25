@@ -12,7 +12,7 @@ import org.w3c.dom.Element;
 
 
 /**
- *  
+ * 
  * 				This enumerated type is deprecated.
  * 			
  * 

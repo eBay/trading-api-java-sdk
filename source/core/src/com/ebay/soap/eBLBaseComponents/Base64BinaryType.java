@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlValue;
  *         Base64 is a binary-to-text encoding scheme that represents binary data in an ASCII string format by translating it into a radix-64 representation. The term "Base64" originates from a specific MIME content transfer encoding.
  *         <br/><br/>
  *         <span class="tablenote">
- *         <strong>Note:</strong> This type contains the name or reference ID of the binary attachment, not the attachment data. 
+ *         <strong>Note:</strong> This type contains the name or reference ID of the binary attachment, not the attachment data.
  *         </span>
  *       
  * 

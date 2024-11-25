@@ -402,6 +402,10 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="HermesReturnLblSellerPaidShpFeeCr"/>
  *     &lt;enumeration value="DHLReturnLblShippingFee"/>
  *     &lt;enumeration value="DHLReturnLblShippingFeeCredit"/>
+ *     &lt;enumeration value="RegulatoryOperatingFee"/>
+ *     &lt;enumeration value="RegulatoryOperatingFeeCredit"/>
+ *     &lt;enumeration value="DHLPaymentProcessingFee"/>
+ *     &lt;enumeration value="DHLPaymentProcessingFeeCredit"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -1698,7 +1702,7 @@ public enum AccountDetailEntryCodeType {
     /**
      * 
      * 						This enumeration value indicates that the account entry is an insertion
-     * 						fee credit for a fixed-price listing. 
+     * 						fee credit for a fixed-price listing.
      * 					
      * 
      */
@@ -2878,7 +2882,7 @@ public enum AccountDetailEntryCodeType {
 
     /**
      * 
-     * 						This enumeration value indicates that the account entry is a fee charged to the seller's account if eBay refunds the buyer in a case where the buyer has used the eBay returns process and return shipped the item to the seller, but the seller has not issued a refund to the buyer within seven business days after receiving the returned item. 
+     * 						This enumeration value indicates that the account entry is a fee charged to the seller's account if eBay refunds the buyer in a case where the buyer has used the eBay returns process and return shipped the item to the seller, but the seller has not issued a refund to the buyer within seven business days after receiving the returned item.
      * 					
      * 
      */
@@ -2887,7 +2891,7 @@ public enum AccountDetailEntryCodeType {
 
     /**
      * 
-     * 						This enumeration value indicates that the account entry is a credit issued to the buyer's account by eBay in a case where the buyer has used the eBay returns process and return shipped the item to the seller, but the seller has not issued a refund to the buyer within seven business days after receiving the returned item. The buyer credit amounts to the total purchase price plus any shipping costs if the item was 'not as described'. 
+     * 						This enumeration value indicates that the account entry is a credit issued to the buyer's account by eBay in a case where the buyer has used the eBay returns process and return shipped the item to the seller, but the seller has not issued a refund to the buyer within seven business days after receiving the returned item. The buyer credit amounts to the total purchase price plus any shipping costs if the item was 'not as described'.
      * 					
      * 
      */
@@ -3094,7 +3098,7 @@ public enum AccountDetailEntryCodeType {
 
     /**
      * 
-     * 						This enumeration value indicates that the charge is a payment processing fee for the order. This fee is only applied at the order level, and the amount of the fee will be the same, regardless of how many line items are in the order or on the total cost of the order. Typically, this fee is $0.30. 
+     * 						This enumeration value indicates that the charge is a payment processing fee for the order. This fee is only applied at the order level, and the amount of the fee will be the same, regardless of how many line items are in the order or on the total cost of the order. Typically, this fee is $0.30.
      * 					
      * 
      */
@@ -3103,7 +3107,7 @@ public enum AccountDetailEntryCodeType {
 
     /**
      * 
-     * 						This enumeration value indicates that the credit is for a payment processing fee for the order. 
+     * 						This enumeration value indicates that the credit is for a payment processing fee for the order.
      * 					
      * 
      */
@@ -3112,7 +3116,7 @@ public enum AccountDetailEntryCodeType {
 
     /**
      * 
-     * 						This enumeration value indicates that the charge is a payment processing fee for the order. This fee is only applied at the order level, and the amount of the fee will be the same, regardless of how many line items are in the order or on the total cost of the order. Typically, this fee is $0.30. 
+     * 						This enumeration value indicates that the charge is a payment processing fee for the order. This fee is only applied at the order level, and the amount of the fee will be the same, regardless of how many line items are in the order or on the total cost of the order. Typically, this fee is $0.30.
      * 					
      * 
      */
@@ -3211,7 +3215,7 @@ public enum AccountDetailEntryCodeType {
 
     /**
      * 
-     * 						This enumeration value is no longer applicable, and should not be returned. Instead, the payment processing fee for all orders is represented with the <code>FinalValueFeeFixedFeePerOrder</code> value. 
+     * 						This enumeration value is no longer applicable, and should not be returned. Instead, the payment processing fee for all orders is represented with the <code>FinalValueFeeFixedFeePerOrder</code> value.
      * 					
      * 
      */
@@ -3220,7 +3224,7 @@ public enum AccountDetailEntryCodeType {
 
     /**
      * 
-     * 						This enumeration value is no longer applicable, and should not be returned. Instead, any credit for a payment processing fee is represented with the <code>FinalValueFeeFixedFeePerOrderCredit</code> value. 
+     * 						This enumeration value is no longer applicable, and should not be returned. Instead, any credit for a payment processing fee is represented with the <code>FinalValueFeeFixedFeePerOrderCredit</code> value.
      * 					
      * 
      */
@@ -3481,9 +3485,9 @@ public enum AccountDetailEntryCodeType {
 
     /**
      * 
-     * 						This enumeration value indicates that the account entry is a final value fee, which is a fee that is calculated as a percentage of the total amount of the order, including the purchase price and any shipping and handling charges. This fee is always deducted directly from the seller payout associated with the order. 
+     * 						This enumeration value indicates that the account entry is a final value fee, which is a fee that is calculated as a percentage of the total amount of the order, including the purchase price and any shipping and handling charges. This fee is always deducted directly from the seller payout associated with the order.
      * 						<br><br>
-     * 						For more information about how final value fees are handled, see the <a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822#section2" target="_blank">Selling fees</a> help page.
+     * 						For more information about how transaction fees are handled, see the <a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822#section2" target="_blank">Selling fees</a> help page.
      * 						</span>
      * 					
      * 
@@ -3524,10 +3528,10 @@ public enum AccountDetailEntryCodeType {
 
     /**
      * 
-     * 						This enumeration value indicates that the account entry is a payment processing fee, which is a fixed fee that is charged for all orders. This fixed fee may vary by country, but it is currently $0.30 in the US. This fee is always deducted directly from the seller payout associated with the order. 
+     * 						This enumeration value indicates that the account entry is a payment processing fee, which is a fixed fee that is charged for all orders. This fixed fee may vary by country, but it is currently $0.30 in the US. This fee is always deducted directly from the seller payout associated with the order.
      * 						<br><br>
      * 						<span class="tablenote"><b>Note: </b>
-     * 						For more information about how final value fees are handled, see the <a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822#section2" target="_blank">Selling fees</a> help page.
+     * 						For more information about how transaction fees are handled, see the <a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822#section2" target="_blank">Selling fees</a> help page.
      * 						</span>
      * 					
      * 
@@ -3962,7 +3966,50 @@ public enum AccountDetailEntryCodeType {
      * 
      */
     @XmlEnumValue("DHLReturnLblShippingFeeCredit")
-    DHL_RETURN_LBL_SHIPPING_FEE_CREDIT("DHLReturnLblShippingFeeCredit");
+    DHL_RETURN_LBL_SHIPPING_FEE_CREDIT("DHLReturnLblShippingFeeCredit"),
+
+    /**
+     * 
+     * 						This enumeration value indicates that a fee is charged by eBay to cover the costs associated with complying with regulatory requirements in specific marketplaces.
+     * 						<br>
+     * 						<span class="tablenote"><b>Note:</b> Currently, this fee is only applicable in the following marketplaces: United Kingdom, Italy, France, Spain, Austria, Belgium (Dutch), Belgium (French), Poland, Ireland, and Switzerland. </span>
+     * 					
+     * 
+     */
+    @XmlEnumValue("RegulatoryOperatingFee")
+    REGULATORY_OPERATING_FEE("RegulatoryOperatingFee"),
+
+    /**
+     * 
+     * 						This enumeration value indicates that a credit against a fee to cover the costs associated with complying with regulatory requirements in specific marketplaces was issued.
+     * 						<br>
+     * 						<span class="tablenote"><b>Note:</b> Currently, this fee is only applicable in the following marketplaces: United Kingdom, Italy, France, Spain, Austria, Belgium (Dutch), Belgium (French), Poland, Ireland, and Switzerland. </span>
+     * 					
+     * 
+     */
+    @XmlEnumValue("RegulatoryOperatingFeeCredit")
+    REGULATORY_OPERATING_FEE_CREDIT("RegulatoryOperatingFeeCredit"),
+
+    /**
+     * 
+     * 						This enumeration value indicates that the seller was charged a fee for DHL processing.
+     * 						<br>
+     * 						<span class="tablenote"><b>Note:</b> Currently, this fee is only applicable in the German marketplace. </span>
+     * 					
+     * 
+     */
+    @XmlEnumValue("DHLPaymentProcessingFee")
+    DHL_PAYMENT_PROCESSING_FEE("DHLPaymentProcessingFee"),
+
+    /**
+     * 
+     * 						This enumeration value indicates that the seller was issued a credit against a fee charged a fee for DHL processing.
+     * 						<span class="tablenote"><b>Note:</b> Currently, this fee is only applicable in the German marketplace. </span>
+     * 					
+     * 
+     */
+    @XmlEnumValue("DHLPaymentProcessingFeeCredit")
+    DHL_PAYMENT_PROCESSING_FEE_CREDIT("DHLPaymentProcessingFeeCredit");
     private final String value;
 
     AccountDetailEntryCodeType(String v) {

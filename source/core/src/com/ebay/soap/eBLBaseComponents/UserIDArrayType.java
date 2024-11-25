@@ -14,7 +14,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				Contains an array of eBay UserID entries. 
+ * 				Contains an array of eBay UserID entries.
  * 			
  * 
  * <p>Java class for UserIDArrayType complex type.

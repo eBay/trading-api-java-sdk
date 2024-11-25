@@ -49,7 +49,7 @@ public enum BestOfferActionCodeType {
 
     /**
      * 
-     * 						This value should be passed in to the <b>Action</b> field to counter a buyer's Best Offer or Counter Offer. Note that a seller may only counter one Best Offer in a single <b>RespondToBestOffer</b> call. If a seller is using the <b>RespondToBestOffer</b> call to counter a Best Offer, the counter offer price must be specified in the <b>CounterOfferPrice</b> field, and the quantity of items in the Best Offer must be specified in the <b>CounterOfferQuantity</b> field. 
+     * 						This value should be passed in to the <b>Action</b> field to counter a buyer's Best Offer or Counter Offer. Note that a seller may only counter one Best Offer in a single <b>RespondToBestOffer</b> call. If a seller is using the <b>RespondToBestOffer</b> call to counter a Best Offer, the counter offer price must be specified in the <b>CounterOfferPrice</b> field, and the quantity of items in the Best Offer must be specified in the <b>CounterOfferQuantity</b> field.
      * 					
      * 
      */

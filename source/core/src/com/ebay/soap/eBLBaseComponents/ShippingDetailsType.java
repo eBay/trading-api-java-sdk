@@ -40,7 +40,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="CalculatedShippingRate" type="{urn:ebay:apis:eBLBaseComponents}CalculatedShippingRateType" minOccurs="0"/>
  *         &lt;element name="ChangePaymentInstructions" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="PaymentEdited" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PaymentInstructions" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="SalesTax" type="{urn:ebay:apis:eBLBaseComponents}SalesTaxType" minOccurs="0"/>
  *         &lt;element name="ShippingRateErrorMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="ShippingRateType" type="{urn:ebay:apis:eBLBaseComponents}ShippingRateTypeCodeType" minOccurs="0"/>
@@ -84,7 +83,6 @@ import org.w3c.dom.Element;
     "calculatedShippingRate",
     "changePaymentInstructions",
     "paymentEdited",
-    "paymentInstructions",
     "salesTax",
     "shippingRateErrorMessage",
     "shippingRateType",
@@ -130,8 +128,6 @@ public class ShippingDetailsType
     protected Boolean changePaymentInstructions;
     @XmlElement(name = "PaymentEdited")
     protected Boolean paymentEdited;
-    @XmlElement(name = "PaymentInstructions")
-    protected String paymentInstructions;
     @XmlElement(name = "SalesTax")
     protected SalesTaxType salesTax;
     @XmlElement(name = "ShippingRateErrorMessage")
@@ -330,30 +326,6 @@ public class ShippingDetailsType
      */
     public void setPaymentEdited(Boolean value) {
         this.paymentEdited = value;
-    }
-
-    /**
-     * Gets the value of the paymentInstructions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPaymentInstructions() {
-        return paymentInstructions;
-    }
-
-    /**
-     * Sets the value of the paymentInstructions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPaymentInstructions(String value) {
-        this.paymentInstructions = value;
     }
 
     /**

@@ -13,8 +13,8 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				This field is returned (as an empty element) if the site supports contacting 
- * 				the seller for a Classified Ad listings. 
+ * 				This field is returned (as an empty element) if the site supports contacting
+ * 				the seller for a Classified Ad listings.
  * 				This is for EbayMotors Pro users only.
  * 			
  * 

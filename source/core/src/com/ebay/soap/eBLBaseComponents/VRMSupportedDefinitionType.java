@@ -13,8 +13,8 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				If present, the site defines category settings for whether the seller 
- * 				can provide a Vehicle Registration Mark (VRM) for a 
+ * 				If present, the site defines category settings for whether the seller
+ * 				can provide a Vehicle Registration Mark (VRM) for a
  * 				UK eBay Motors vehicle listing.
  * 			
  * 

@@ -491,7 +491,7 @@ public enum NotificationEventTypeCodeType {
 
     /**
      * 
-     * 						This notification is sent to a subscribed buyer or seller when that user has modified their eBay user ID.
+     * 						This notification is no longer applicable.
      * 					
      * 
      */
@@ -1107,7 +1107,7 @@ public enum NotificationEventTypeCodeType {
 
     /**
      * 
-     * 						This event type has been deprecated along with legacy user disputes. 
+     * 						This event type has been deprecated along with legacy user disputes.
      * 					
      * 
      */

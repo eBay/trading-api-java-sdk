@@ -28,7 +28,7 @@ public enum ShippingServiceType {
 
     /**
      * 
-     * 						This value should be used if the seller is overriding shipping costs for all domestic shipping services defined in the Business Policies shipping profile. 
+     * 						This value should be used if the seller is overriding shipping costs for all domestic shipping services defined in the Business Policies shipping profile.
      * 					
      * 
      */
@@ -37,7 +37,7 @@ public enum ShippingServiceType {
 
     /**
      * 
-     * 						This value should be used if the seller is overriding shipping costs for all international shipping services defined in the Business Policies shipping profile. 
+     * 						This value should be used if the seller is overriding shipping costs for all international shipping services defined in the Business Policies shipping profile.
      * 					
      * 
      */

@@ -29,20 +29,14 @@ import org.w3c.dom.Element;
  *         &lt;element name="BestOfferEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="AutoPayEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="B2BVATEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="CatalogEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="CategoryID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="CategoryLevel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="CategoryName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="CategoryParentID" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="CategoryParentName" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="ProductSearchPageAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ProductFinderIDs" type="{urn:ebay:apis:eBLBaseComponents}ExtendedProductFinderIDType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="Expired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IntlAutosFixedCat" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="LeafCategory" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="Virtual" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="NumOfItems" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SellerGuaranteeEligible" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ORPA" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ORRA" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="LSD" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
@@ -61,20 +55,14 @@ import org.w3c.dom.Element;
     "bestOfferEnabled",
     "autoPayEnabled",
     "b2BVATEnabled",
-    "catalogEnabled",
     "categoryID",
     "categoryLevel",
     "categoryName",
     "categoryParentID",
-    "categoryParentName",
-    "productSearchPageAvailable",
-    "productFinderIDs",
     "expired",
-    "intlAutosFixedCat",
     "leafCategory",
     "virtual",
     "numOfItems",
-    "sellerGuaranteeEligible",
     "orpa",
     "orra",
     "lsd",
@@ -92,8 +80,6 @@ public class CategoryType
     protected Boolean autoPayEnabled;
     @XmlElement(name = "B2BVATEnabled")
     protected Boolean b2BVATEnabled;
-    @XmlElement(name = "CatalogEnabled")
-    protected Boolean catalogEnabled;
     @XmlElement(name = "CategoryID")
     protected String categoryID;
     @XmlElement(name = "CategoryLevel")
@@ -102,24 +88,14 @@ public class CategoryType
     protected String categoryName;
     @XmlElement(name = "CategoryParentID")
     protected List<String> categoryParentID;
-    @XmlElement(name = "CategoryParentName")
-    protected List<String> categoryParentName;
-    @XmlElement(name = "ProductSearchPageAvailable")
-    protected Boolean productSearchPageAvailable;
-    @XmlElement(name = "ProductFinderIDs")
-    protected List<ExtendedProductFinderIDType> productFinderIDs;
     @XmlElement(name = "Expired")
     protected Boolean expired;
-    @XmlElement(name = "IntlAutosFixedCat")
-    protected Boolean intlAutosFixedCat;
     @XmlElement(name = "LeafCategory")
     protected Boolean leafCategory;
     @XmlElement(name = "Virtual")
     protected Boolean virtual;
     @XmlElement(name = "NumOfItems")
     protected Integer numOfItems;
-    @XmlElement(name = "SellerGuaranteeEligible")
-    protected Boolean sellerGuaranteeEligible;
     @XmlElement(name = "ORPA")
     protected Boolean orpa;
     @XmlElement(name = "ORRA")
@@ -201,30 +177,6 @@ public class CategoryType
      */
     public void setB2BVATEnabled(Boolean value) {
         this.b2BVATEnabled = value;
-    }
-
-    /**
-     * Gets the value of the catalogEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isCatalogEnabled() {
-        return catalogEnabled;
-    }
-
-    /**
-     * Sets the value of the catalogEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setCatalogEnabled(Boolean value) {
-        this.catalogEnabled = value;
     }
 
     /**
@@ -372,174 +324,6 @@ public class CategoryType
     }
 
     /**
-     * 
-     * 
-     * @return
-     *     array of
-     *     {@link String }
-     *     
-     */
-    public String[] getCategoryParentName() {
-        if (this.categoryParentName == null) {
-            return new String[ 0 ] ;
-        }
-        return ((String[]) this.categoryParentName.toArray(new String[this.categoryParentName.size()] ));
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     one of
-     *     {@link String }
-     *     
-     */
-    public String getCategoryParentName(int idx) {
-        if (this.categoryParentName == null) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.categoryParentName.get(idx);
-    }
-
-    public int getCategoryParentNameLength() {
-        if (this.categoryParentName == null) {
-            return  0;
-        }
-        return this.categoryParentName.size();
-    }
-
-    /**
-     * 
-     * 
-     * @param values
-     *     allowed objects are
-     *     {@link String }
-     *     
-     */
-    public void setCategoryParentName(String[] values) {
-        this._getCategoryParentName().clear();
-        int len = values.length;
-        for (int i = 0; (i<len); i ++) {
-            this.categoryParentName.add(values[i]);
-        }
-    }
-
-    protected List<String> _getCategoryParentName() {
-        if (categoryParentName == null) {
-            categoryParentName = new ArrayList<String>();
-        }
-        return categoryParentName;
-    }
-
-    /**
-     * 
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public String setCategoryParentName(int idx, String value) {
-        return this.categoryParentName.set(idx, value);
-    }
-
-    /**
-     * Gets the value of the productSearchPageAvailable property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isProductSearchPageAvailable() {
-        return productSearchPageAvailable;
-    }
-
-    /**
-     * Sets the value of the productSearchPageAvailable property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setProductSearchPageAvailable(Boolean value) {
-        this.productSearchPageAvailable = value;
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     array of
-     *     {@link ExtendedProductFinderIDType }
-     *     
-     */
-    public ExtendedProductFinderIDType[] getProductFinderIDs() {
-        if (this.productFinderIDs == null) {
-            return new ExtendedProductFinderIDType[ 0 ] ;
-        }
-        return ((ExtendedProductFinderIDType[]) this.productFinderIDs.toArray(new ExtendedProductFinderIDType[this.productFinderIDs.size()] ));
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     one of
-     *     {@link ExtendedProductFinderIDType }
-     *     
-     */
-    public ExtendedProductFinderIDType getProductFinderIDs(int idx) {
-        if (this.productFinderIDs == null) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.productFinderIDs.get(idx);
-    }
-
-    public int getProductFinderIDsLength() {
-        if (this.productFinderIDs == null) {
-            return  0;
-        }
-        return this.productFinderIDs.size();
-    }
-
-    /**
-     * 
-     * 
-     * @param values
-     *     allowed objects are
-     *     {@link ExtendedProductFinderIDType }
-     *     
-     */
-    public void setProductFinderIDs(ExtendedProductFinderIDType[] values) {
-        this._getProductFinderIDs().clear();
-        int len = values.length;
-        for (int i = 0; (i<len); i ++) {
-            this.productFinderIDs.add(values[i]);
-        }
-    }
-
-    protected List<ExtendedProductFinderIDType> _getProductFinderIDs() {
-        if (productFinderIDs == null) {
-            productFinderIDs = new ArrayList<ExtendedProductFinderIDType>();
-        }
-        return productFinderIDs;
-    }
-
-    /**
-     * 
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ExtendedProductFinderIDType }
-     *     
-     */
-    public ExtendedProductFinderIDType setProductFinderIDs(int idx, ExtendedProductFinderIDType value) {
-        return this.productFinderIDs.set(idx, value);
-    }
-
-    /**
      * Gets the value of the expired property.
      * 
      * @return
@@ -561,30 +345,6 @@ public class CategoryType
      */
     public void setExpired(Boolean value) {
         this.expired = value;
-    }
-
-    /**
-     * Gets the value of the intlAutosFixedCat property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIntlAutosFixedCat() {
-        return intlAutosFixedCat;
-    }
-
-    /**
-     * Sets the value of the intlAutosFixedCat property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIntlAutosFixedCat(Boolean value) {
-        this.intlAutosFixedCat = value;
     }
 
     /**
@@ -657,30 +417,6 @@ public class CategoryType
      */
     public void setNumOfItems(Integer value) {
         this.numOfItems = value;
-    }
-
-    /**
-     * Gets the value of the sellerGuaranteeEligible property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isSellerGuaranteeEligible() {
-        return sellerGuaranteeEligible;
-    }
-
-    /**
-     * Sets the value of the sellerGuaranteeEligible property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setSellerGuaranteeEligible(Boolean value) {
-        this.sellerGuaranteeEligible = value;
     }
 
     /**

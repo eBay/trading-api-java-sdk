@@ -18,8 +18,7 @@ import org.w3c.dom.Element;
 /**
  * 
  * 				Type defining the <b>CheckoutStatus</b> container that is returned in
- * 				<b>GetOrders</b> and <b>GetOrderTransactions</b> to indicate
- * 				the current checkout status of the order.
+ * 				<b>GetOrders</b> to indicate the current checkout status of the order.
  * 			
  * 
  * <p>Java class for CheckoutStatusType complex type.
@@ -36,7 +35,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="PaymentMethod" type="{urn:ebay:apis:eBLBaseComponents}BuyerPaymentMethodCodeType" minOccurs="0"/>
  *         &lt;element name="Status" type="{urn:ebay:apis:eBLBaseComponents}CompleteStatusCodeType" minOccurs="0"/>
  *         &lt;element name="IntegratedMerchantCreditCardEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="eBayPaymentMismatchDetails" type="{urn:ebay:apis:eBLBaseComponents}eBayPaymentMismatchDetailsType" minOccurs="0"/>
  *         &lt;element name="PaymentInstrument" type="{urn:ebay:apis:eBLBaseComponents}BuyerPaymentInstrumentCodeType" minOccurs="0"/>
  *         &lt;any/>
  *       &lt;/sequence>
@@ -54,7 +52,6 @@ import org.w3c.dom.Element;
     "paymentMethod",
     "status",
     "integratedMerchantCreditCardEnabled",
-    "eBayPaymentMismatchDetails",
     "paymentInstrument",
     "any"
 })
@@ -74,7 +71,6 @@ public class CheckoutStatusType
     protected CompleteStatusCodeType status;
     @XmlElement(name = "IntegratedMerchantCreditCardEnabled")
     protected Boolean integratedMerchantCreditCardEnabled;
-    protected EBayPaymentMismatchDetailsType eBayPaymentMismatchDetails;
     @XmlElement(name = "PaymentInstrument")
     protected BuyerPaymentInstrumentCodeType paymentInstrument;
     @XmlAnyElement(lax = true)
@@ -198,30 +194,6 @@ public class CheckoutStatusType
      */
     public void setIntegratedMerchantCreditCardEnabled(Boolean value) {
         this.integratedMerchantCreditCardEnabled = value;
-    }
-
-    /**
-     * Gets the value of the eBayPaymentMismatchDetails property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EBayPaymentMismatchDetailsType }
-     *     
-     */
-    public EBayPaymentMismatchDetailsType getEBayPaymentMismatchDetails() {
-        return eBayPaymentMismatchDetails;
-    }
-
-    /**
-     * Sets the value of the eBayPaymentMismatchDetails property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EBayPaymentMismatchDetailsType }
-     *     
-     */
-    public void setEBayPaymentMismatchDetails(EBayPaymentMismatchDetailsType value) {
-        this.eBayPaymentMismatchDetails = value;
     }
 
     /**

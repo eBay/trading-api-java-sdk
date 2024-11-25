@@ -32,7 +32,7 @@ public enum DaysCodeType {
 
     /**
      * 
-     * 						Seller does not want to be contacted. Contact hours will not be supported for 
+     * 						Seller does not want to be contacted. Contact hours will not be supported for
      * 						any days. If contact hours are specified, they will be ignored.
      * 					
      * 
@@ -42,7 +42,7 @@ public enum DaysCodeType {
 
     /**
      * 
-     * 						Seller can be contacted any day during the specified contact hours. 
+     * 						Seller can be contacted any day during the specified contact hours.
      * 					
      * 
      */
@@ -51,7 +51,7 @@ public enum DaysCodeType {
 
     /**
      * 
-     * 						Seller can be contacted Monday through Friday during the specified 
+     * 						Seller can be contacted Monday through Friday during the specified
      * 						contact hours.
      * 					
      * 
@@ -61,7 +61,7 @@ public enum DaysCodeType {
 
     /**
      * 
-     * 						Seller can  be contacted Saturday or Sunday during the specified 
+     * 						Seller can  be contacted Saturday or Sunday during the specified
      * 						contact hours.
      * 					
      * 

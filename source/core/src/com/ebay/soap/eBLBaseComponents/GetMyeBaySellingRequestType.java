@@ -26,8 +26,6 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="ActiveList" type="{urn:ebay:apis:eBLBaseComponents}ItemListCustomizationType" minOccurs="0"/>
  *         &lt;element name="SoldList" type="{urn:ebay:apis:eBLBaseComponents}ItemListCustomizationType" minOccurs="0"/>
  *         &lt;element name="UnsoldList" type="{urn:ebay:apis:eBLBaseComponents}ItemListCustomizationType" minOccurs="0"/>
- *         &lt;element name="DeletedFromSoldList" type="{urn:ebay:apis:eBLBaseComponents}ItemListCustomizationType" minOccurs="0"/>
- *         &lt;element name="DeletedFromUnsoldList" type="{urn:ebay:apis:eBLBaseComponents}ItemListCustomizationType" minOccurs="0"/>
  *         &lt;element name="SellingSummary" type="{urn:ebay:apis:eBLBaseComponents}ItemListCustomizationType" minOccurs="0"/>
  *         &lt;element name="HideVariations" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *       &lt;/sequence>
@@ -44,8 +42,6 @@ import javax.xml.bind.annotation.XmlType;
     "activeList",
     "soldList",
     "unsoldList",
-    "deletedFromSoldList",
-    "deletedFromUnsoldList",
     "sellingSummary",
     "hideVariations"
 })
@@ -63,10 +59,6 @@ public class GetMyeBaySellingRequestType
     protected ItemListCustomizationType soldList;
     @XmlElement(name = "UnsoldList")
     protected ItemListCustomizationType unsoldList;
-    @XmlElement(name = "DeletedFromSoldList")
-    protected ItemListCustomizationType deletedFromSoldList;
-    @XmlElement(name = "DeletedFromUnsoldList")
-    protected ItemListCustomizationType deletedFromUnsoldList;
     @XmlElement(name = "SellingSummary")
     protected ItemListCustomizationType sellingSummary;
     @XmlElement(name = "HideVariations")
@@ -166,54 +158,6 @@ public class GetMyeBaySellingRequestType
      */
     public void setUnsoldList(ItemListCustomizationType value) {
         this.unsoldList = value;
-    }
-
-    /**
-     * Gets the value of the deletedFromSoldList property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ItemListCustomizationType }
-     *     
-     */
-    public ItemListCustomizationType getDeletedFromSoldList() {
-        return deletedFromSoldList;
-    }
-
-    /**
-     * Sets the value of the deletedFromSoldList property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ItemListCustomizationType }
-     *     
-     */
-    public void setDeletedFromSoldList(ItemListCustomizationType value) {
-        this.deletedFromSoldList = value;
-    }
-
-    /**
-     * Gets the value of the deletedFromUnsoldList property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ItemListCustomizationType }
-     *     
-     */
-    public ItemListCustomizationType getDeletedFromUnsoldList() {
-        return deletedFromUnsoldList;
-    }
-
-    /**
-     * Sets the value of the deletedFromUnsoldList property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ItemListCustomizationType }
-     *     
-     */
-    public void setDeletedFromUnsoldList(ItemListCustomizationType value) {
-        this.deletedFromUnsoldList = value;
     }
 
     /**

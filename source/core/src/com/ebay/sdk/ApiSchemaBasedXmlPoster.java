@@ -18,7 +18,7 @@ package com.ebay.sdk;
 
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.net.HttpsURLConnection;
+import javax.net.ssl.HttpsURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 

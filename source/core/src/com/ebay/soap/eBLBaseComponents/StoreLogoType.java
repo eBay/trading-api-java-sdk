@@ -16,14 +16,6 @@ import org.w3c.dom.Element;
 /**
  * 
  * 				Store logo.
- * 				<br>
- * 				<br>
- * 				<span class="tablenote"><strong>Note:</strong>
- * 					The <b>Store.Logo</b> container can no longer be used in a <b>SetStore</b> call to upload a new logo to a store, and the <b>SetStore</b> call will be decommissioned on September 30, 2022. 
- * 					<br>
- * 					<br>
- * 					The <b>GetStore</b> call now only returns the <b>Logo.URL</b> value, but not <b>Logo.LogoID</b> or <b>Logo.Name</b>.
- * 				</span>
  * 			
  * 
  * <p>Java class for StoreLogoType complex type.

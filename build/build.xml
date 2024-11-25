@@ -11,8 +11,8 @@
     <property name="ossrh.deploy.url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/"/>
 
     <!-- change the version number for a new release- -->
-    <property name="new.version" value="1331"/>
-    <property name="old.version" value="1131"/>
+    <property name="new.version" value="1379"/>
+    <property name="old.version" value="1331"/>
     <!-- WSDL used for this release -->
     <property name="WSDLURL" value="https://developer.ebay.com/webservices/${new.version}/eBaySvc.wsdl"/>
     <property name="eBayWSDL" value="${eBaySDK.home}/source/wsdl/eBaySvc.wsdl"/>
@@ -249,12 +249,29 @@
 
     </target>
 
+    <property name="dependency.lib.home.sdkcore" value="${eBaySDK.home}/lib/sdkcore/"/>
+    <property name="dependency.lib.home.ebaycalls" value="${eBaySDK.home}/lib/ebaycalls/"/>
+    <property name="dependency.lib.home.helper" value="${eBaySDK.home}/lib/helper/"/>
+
+    <path id="sdkcore.classpath">
+        <fileset dir="${dependency.lib.home.sdkcore}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${dependency.lib.home.ebaycalls}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${dependency.lib.home.helper}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
     <target name="buildSdkCore" depends="resourceSdkCore">
 
         <echo message="Compile sdkCore source..."/>
         <javac srcdir="${srcSdkCore}"
                destdir="${destSdkCore}"
-               verbose="false">
+               verbose="false"
+               classpathref="sdkcore.classpath">
             <classpath refid="dependency.lib.classpath"/>
         </javac>
 
@@ -282,7 +299,8 @@
         <javac srcdir="${srcApiCalls}"
                destdir="${destApiCalls}"
                verbose="false"
-               debug="true">
+               debug="true"
+               classpathref="sdkcore.classpath">
             <classpath refid="dependency.lib.classpath"/>
             <classpath refid="sdk.classpath"/>
         </javac>

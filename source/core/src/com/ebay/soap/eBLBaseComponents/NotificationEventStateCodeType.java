@@ -56,7 +56,7 @@ public enum NotificationEventStateCodeType {
 
     /**
      * 
-     * 						Status indicating the end user application is marked down
+     * 						This enumeration value is deprecated and should no longer be used.<br><br>Status indicating the end user application is marked down.
      * 					
      * 
      */
@@ -83,7 +83,7 @@ public enum NotificationEventStateCodeType {
 
     /**
      * 
-     * 						Status indicating the notification is marked down pending
+     * 						This enumeration value is deprecated and should no longer be used. <br><br>Status indicating the notification is marked down pending
      * 					
      * 
      */
@@ -119,7 +119,7 @@ public enum NotificationEventStateCodeType {
 
     /**
      * 
-     * 						Status indicating the notification was cancelled
+     * 						Status indicating the notification was cancelled. This can be caused by multiple reasons, such as the destination being marked down or an unknown system error.
      * 					
      * 
      */

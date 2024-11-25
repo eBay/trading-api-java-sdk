@@ -55,24 +55,15 @@ import org.w3c.dom.Element;
  *         &lt;element name="BuyerInfo" type="{urn:ebay:apis:eBLBaseComponents}BuyerType" minOccurs="0"/>
  *         &lt;element name="SellerInfo" type="{urn:ebay:apis:eBLBaseComponents}SellerType" minOccurs="0"/>
  *         &lt;element name="BusinessRole" type="{urn:ebay:apis:eBLBaseComponents}BusinessRoleType" minOccurs="0"/>
- *         &lt;element name="CharityAffiliations" type="{urn:ebay:apis:eBLBaseComponents}CharityAffiliationsType" minOccurs="0"/>
- *         &lt;element name="PayPalAccountLevel" type="{urn:ebay:apis:eBLBaseComponents}PayPalAccountLevelCodeType" minOccurs="0"/>
- *         &lt;element name="PayPalAccountType" type="{urn:ebay:apis:eBLBaseComponents}PayPalAccountTypeCodeType" minOccurs="0"/>
- *         &lt;element name="PayPalAccountStatus" type="{urn:ebay:apis:eBLBaseComponents}PayPalAccountStatusCodeType" minOccurs="0"/>
  *         &lt;element name="UserSubscription" type="{urn:ebay:apis:eBLBaseComponents}EBaySubscriptionTypeCodeType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="SiteVerified" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SkypeID" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="eBayWikiReadOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="TUVLevel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="VATID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SellerPaymentMethod" type="{urn:ebay:apis:eBLBaseComponents}SellerPaymentMethodCodeType" minOccurs="0"/>
  *         &lt;element name="BiddingSummary" type="{urn:ebay:apis:eBLBaseComponents}BiddingSummaryType" minOccurs="0"/>
  *         &lt;element name="UserAnonymized" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="UniqueNeutralFeedbackCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="EnterpriseSeller" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="BillingEmail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="QualifiesForSelling" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="StaticAlias" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="ShippingAddress" type="{urn:ebay:apis:eBLBaseComponents}AddressType" minOccurs="0"/>
  *         &lt;element name="Membership" type="{urn:ebay:apis:eBLBaseComponents}MembershipDetailsType" minOccurs="0"/>
  *         &lt;element name="UserFirstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -111,24 +102,15 @@ import org.w3c.dom.Element;
     "buyerInfo",
     "sellerInfo",
     "businessRole",
-    "charityAffiliations",
-    "payPalAccountLevel",
-    "payPalAccountType",
-    "payPalAccountStatus",
     "userSubscription",
-    "siteVerified",
-    "skypeID",
     "eBayWikiReadOnly",
     "tuvLevel",
     "vatid",
-    "sellerPaymentMethod",
     "biddingSummary",
     "userAnonymized",
     "uniqueNeutralFeedbackCount",
     "enterpriseSeller",
-    "billingEmail",
     "qualifiesForSelling",
-    "staticAlias",
     "shippingAddress",
     "membership",
     "userFirstName",
@@ -189,27 +171,13 @@ public class UserType
     protected SellerType sellerInfo;
     @XmlElement(name = "BusinessRole")
     protected BusinessRoleType businessRole;
-    @XmlElement(name = "CharityAffiliations")
-    protected CharityAffiliationsType charityAffiliations;
-    @XmlElement(name = "PayPalAccountLevel")
-    protected PayPalAccountLevelCodeType payPalAccountLevel;
-    @XmlElement(name = "PayPalAccountType")
-    protected PayPalAccountTypeCodeType payPalAccountType;
-    @XmlElement(name = "PayPalAccountStatus")
-    protected PayPalAccountStatusCodeType payPalAccountStatus;
     @XmlElement(name = "UserSubscription")
     protected List<EBaySubscriptionTypeCodeType> userSubscription;
-    @XmlElement(name = "SiteVerified")
-    protected Boolean siteVerified;
-    @XmlElement(name = "SkypeID")
-    protected List<String> skypeID;
     protected Boolean eBayWikiReadOnly;
     @XmlElement(name = "TUVLevel")
     protected Integer tuvLevel;
     @XmlElement(name = "VATID")
     protected String vatid;
-    @XmlElement(name = "SellerPaymentMethod")
-    protected SellerPaymentMethodCodeType sellerPaymentMethod;
     @XmlElement(name = "BiddingSummary")
     protected BiddingSummaryType biddingSummary;
     @XmlElement(name = "UserAnonymized")
@@ -218,12 +186,8 @@ public class UserType
     protected Integer uniqueNeutralFeedbackCount;
     @XmlElement(name = "EnterpriseSeller")
     protected Boolean enterpriseSeller;
-    @XmlElement(name = "BillingEmail")
-    protected String billingEmail;
     @XmlElement(name = "QualifiesForSelling")
     protected Boolean qualifiesForSelling;
-    @XmlElement(name = "StaticAlias")
-    protected String staticAlias;
     @XmlElement(name = "ShippingAddress")
     protected AddressType shippingAddress;
     @XmlElement(name = "Membership")
@@ -788,102 +752,6 @@ public class UserType
     }
 
     /**
-     * Gets the value of the charityAffiliations property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CharityAffiliationsType }
-     *     
-     */
-    public CharityAffiliationsType getCharityAffiliations() {
-        return charityAffiliations;
-    }
-
-    /**
-     * Sets the value of the charityAffiliations property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CharityAffiliationsType }
-     *     
-     */
-    public void setCharityAffiliations(CharityAffiliationsType value) {
-        this.charityAffiliations = value;
-    }
-
-    /**
-     * Gets the value of the payPalAccountLevel property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PayPalAccountLevelCodeType }
-     *     
-     */
-    public PayPalAccountLevelCodeType getPayPalAccountLevel() {
-        return payPalAccountLevel;
-    }
-
-    /**
-     * Sets the value of the payPalAccountLevel property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PayPalAccountLevelCodeType }
-     *     
-     */
-    public void setPayPalAccountLevel(PayPalAccountLevelCodeType value) {
-        this.payPalAccountLevel = value;
-    }
-
-    /**
-     * Gets the value of the payPalAccountType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PayPalAccountTypeCodeType }
-     *     
-     */
-    public PayPalAccountTypeCodeType getPayPalAccountType() {
-        return payPalAccountType;
-    }
-
-    /**
-     * Sets the value of the payPalAccountType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PayPalAccountTypeCodeType }
-     *     
-     */
-    public void setPayPalAccountType(PayPalAccountTypeCodeType value) {
-        this.payPalAccountType = value;
-    }
-
-    /**
-     * Gets the value of the payPalAccountStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PayPalAccountStatusCodeType }
-     *     
-     */
-    public PayPalAccountStatusCodeType getPayPalAccountStatus() {
-        return payPalAccountStatus;
-    }
-
-    /**
-     * Sets the value of the payPalAccountStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PayPalAccountStatusCodeType }
-     *     
-     */
-    public void setPayPalAccountStatus(PayPalAccountStatusCodeType value) {
-        this.payPalAccountStatus = value;
-    }
-
-    /**
      * 
      * 
      * @return
@@ -956,102 +824,6 @@ public class UserType
     }
 
     /**
-     * Gets the value of the siteVerified property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isSiteVerified() {
-        return siteVerified;
-    }
-
-    /**
-     * Sets the value of the siteVerified property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setSiteVerified(Boolean value) {
-        this.siteVerified = value;
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     array of
-     *     {@link String }
-     *     
-     */
-    public String[] getSkypeID() {
-        if (this.skypeID == null) {
-            return new String[ 0 ] ;
-        }
-        return ((String[]) this.skypeID.toArray(new String[this.skypeID.size()] ));
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     one of
-     *     {@link String }
-     *     
-     */
-    public String getSkypeID(int idx) {
-        if (this.skypeID == null) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.skypeID.get(idx);
-    }
-
-    public int getSkypeIDLength() {
-        if (this.skypeID == null) {
-            return  0;
-        }
-        return this.skypeID.size();
-    }
-
-    /**
-     * 
-     * 
-     * @param values
-     *     allowed objects are
-     *     {@link String }
-     *     
-     */
-    public void setSkypeID(String[] values) {
-        this._getSkypeID().clear();
-        int len = values.length;
-        for (int i = 0; (i<len); i ++) {
-            this.skypeID.add(values[i]);
-        }
-    }
-
-    protected List<String> _getSkypeID() {
-        if (skypeID == null) {
-            skypeID = new ArrayList<String>();
-        }
-        return skypeID;
-    }
-
-    /**
-     * 
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public String setSkypeID(int idx, String value) {
-        return this.skypeID.set(idx, value);
-    }
-
-    /**
      * Gets the value of the eBayWikiReadOnly property.
      * 
      * @return
@@ -1121,30 +893,6 @@ public class UserType
      */
     public void setVATID(String value) {
         this.vatid = value;
-    }
-
-    /**
-     * Gets the value of the sellerPaymentMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SellerPaymentMethodCodeType }
-     *     
-     */
-    public SellerPaymentMethodCodeType getSellerPaymentMethod() {
-        return sellerPaymentMethod;
-    }
-
-    /**
-     * Sets the value of the sellerPaymentMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SellerPaymentMethodCodeType }
-     *     
-     */
-    public void setSellerPaymentMethod(SellerPaymentMethodCodeType value) {
-        this.sellerPaymentMethod = value;
     }
 
     /**
@@ -1244,30 +992,6 @@ public class UserType
     }
 
     /**
-     * Gets the value of the billingEmail property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getBillingEmail() {
-        return billingEmail;
-    }
-
-    /**
-     * Sets the value of the billingEmail property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setBillingEmail(String value) {
-        this.billingEmail = value;
-    }
-
-    /**
      * Gets the value of the qualifiesForSelling property.
      * 
      * @return
@@ -1289,30 +1013,6 @@ public class UserType
      */
     public void setQualifiesForSelling(Boolean value) {
         this.qualifiesForSelling = value;
-    }
-
-    /**
-     * Gets the value of the staticAlias property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getStaticAlias() {
-        return staticAlias;
-    }
-
-    /**
-     * Sets the value of the staticAlias property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setStaticAlias(String value) {
-        this.staticAlias = value;
     }
 
     /**

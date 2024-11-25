@@ -37,7 +37,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="AutoRelist" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="RemoveAllExcludedUsers" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ExcludedUser" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="AutoOptDonationRefund" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;any/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -54,7 +53,6 @@ import org.w3c.dom.Element;
     "autoRelist",
     "removeAllExcludedUsers",
     "excludedUser",
-    "autoOptDonationRefund",
     "any"
 })
 public class UnpaidItemAssistancePreferencesType
@@ -72,8 +70,6 @@ public class UnpaidItemAssistancePreferencesType
     protected Boolean removeAllExcludedUsers;
     @XmlElement(name = "ExcludedUser")
     protected List<String> excludedUser;
-    @XmlElement(name = "AutoOptDonationRefund")
-    protected Boolean autoOptDonationRefund;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
 
@@ -243,30 +239,6 @@ public class UnpaidItemAssistancePreferencesType
      */
     public String setExcludedUser(int idx, String value) {
         return this.excludedUser.set(idx, value);
-    }
-
-    /**
-     * Gets the value of the autoOptDonationRefund property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isAutoOptDonationRefund() {
-        return autoOptDonationRefund;
-    }
-
-    /**
-     * Sets the value of the autoOptDonationRefund property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setAutoOptDonationRefund(Boolean value) {
-        this.autoOptDonationRefund = value;
     }
 
     /**

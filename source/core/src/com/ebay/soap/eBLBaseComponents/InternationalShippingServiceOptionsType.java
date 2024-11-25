@@ -37,7 +37,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="ShippingServiceAdditionalCost" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="ShippingServicePriority" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="ShipToLocation" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="ShippingInsuranceCost" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="ImportCharge" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="ShippingServiceCutOffTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;any/>
@@ -56,7 +55,6 @@ import org.w3c.dom.Element;
     "shippingServiceAdditionalCost",
     "shippingServicePriority",
     "shipToLocation",
-    "shippingInsuranceCost",
     "importCharge",
     "shippingServiceCutOffTime",
     "any"
@@ -78,8 +76,6 @@ public class InternationalShippingServiceOptionsType
     protected Integer shippingServicePriority;
     @XmlElement(name = "ShipToLocation")
     protected List<String> shipToLocation;
-    @XmlElement(name = "ShippingInsuranceCost")
-    protected AmountType shippingInsuranceCost;
     @XmlElement(name = "ImportCharge")
     protected AmountType importCharge;
     @XmlElement(name = "ShippingServiceCutOffTime", type = String.class)
@@ -255,30 +251,6 @@ public class InternationalShippingServiceOptionsType
      */
     public String setShipToLocation(int idx, String value) {
         return this.shipToLocation.set(idx, value);
-    }
-
-    /**
-     * Gets the value of the shippingInsuranceCost property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AmountType }
-     *     
-     */
-    public AmountType getShippingInsuranceCost() {
-        return shippingInsuranceCost;
-    }
-
-    /**
-     * Sets the value of the shippingInsuranceCost property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AmountType }
-     *     
-     */
-    public void setShippingInsuranceCost(AmountType value) {
-        this.shippingInsuranceCost = value;
     }
 
     /**

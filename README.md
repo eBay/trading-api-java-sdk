@@ -8,7 +8,7 @@ Please note that upgrades to an SDK should always be done in a test environment 
 
 2. Note the location of the zip file you downloaded, but before extracting the file, create the following folder: C:\\eBayJavaSDK.
 
-3. Within C:\\eBayJavaSDK, create an "SDKInstallDir" folder to contain the SDK files. You could name that folder according to the Trading API version of the SDK you are installing. For example, for the SDK for Trading API version 1331, you could name the folder _eBayJavaSDK1331_.
+3. Within C:\\eBayJavaSDK, create an "SDKInstallDir" folder to contain the SDK files. You could name that folder according to the Trading API version of the SDK you are installing. For example, for the SDK for Trading API version 1379, you could name the folder _eBayJavaSDK1331_.
 
 4. Go the location of the zip file you downloaded (noted in step 3), and extract the zip file into the SDKInstallDir folder you created in step 4.
 
@@ -94,19 +94,19 @@ Adding dependency:
 <dependency>
   <groupId>com.ebay.developer</groupId>
   <artifactId>trading-api-sdkcore</artifactId>
-  <version>1.0.0-RELEASE</version>
+  <version>1.0.1-RELEASE</version>
 </dependency>
 
 <dependency>
   <groupId>com.ebay.developer</groupId>
   <artifactId>trading-api-ebaycalls</artifactId>
-  <version>1.0.0-RELEASE</version>
+  <version>1.0.1-RELEASE</version>
 </dependency>
 
 <dependency>
   <groupId>com.ebay.developer</groupId>
   <artifactId>trading-api-helper</artifactId>
-  <version>1.0.0-RELEASE</version>
+  <version>1.0.1-RELEASE</version>
 </dependency>
 ```
 
@@ -194,9 +194,9 @@ The WSDL is located at https://developer.ebay.com/webservices/_Version_/ebaySvc.
 
 _Version_ in the URL means _latest,_ or it means _a numerical version_ of a WSDL release (see the top of the particular WSDL file).
 
-In the case of _Version_ meaning _latest_, the WSDL is the latest released version (https://developer.ebay.com/webservices/latest/ebaySvc.wsdl). If _Version_ in the URL means _a numerical version_ of the WSDL, _Version_ is a number (for example, https://developer.ebay.com/webservices/1331/ebaySvc.wsdl).
+In the case of _Version_ meaning _latest_, the WSDL is the latest released version (https://developer.ebay.com/webservices/latest/ebaySvc.wsdl). If _Version_ in the URL means _a numerical version_ of the WSDL, _Version_ is a number (for example, https://developer.ebay.com/webservices/1379/ebaySvc.wsdl).
 
-Hypothetically, if the latest release of the WSDL were 1331, you would find that WSDL version at both https://developer.ebay.com/webservices/latest/ebaySvc.wsdl and at https://developer.ebay.com/webservices/1331/ebaySvc.wsdl.
+Hypothetically, if the latest release of the WSDL were 1379, you would find that WSDL version at both https://developer.ebay.com/webservices/latest/ebaySvc.wsdl and at https://developer.ebay.com/webservices/1331/ebaySvc.wsdl.
 
 ---
 

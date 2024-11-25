@@ -24,7 +24,7 @@ import org.w3c.dom.Element;
  * 				makes, and models) with which the part or accessory can  be used.
  * 				<br><br>
  * 				There are two ways to enter parts compatibility: by application and by
- * 				specification. 
+ * 				specification.
  * 				<ul>
  * 				<li> Entering parts compatibility by application specifies the assemblies
  * 				(e.g., a specific year, make, and model of car) to which the item applies. This can

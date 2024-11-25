@@ -153,12 +153,12 @@ public enum ListingDurationCodeType {
      * 						This value is used to set the duration of the listing to 'Good 'Til Cancelled. This option is available for fixed-price and Classified Ad listings. "Good 'Til Cancelled" fixed-price listings will be relisted automatically each month until all inventory is sold out (e.g., <b>Item.Quantity</b>=0 in a single-variation fixed-price listing, or all occurences of <b>Item.Variations.Variation.Quantity</b>=0 in a multi-variation fixed-price listing), or the seller ends the fixed-price listing.
      * 						<br>
      * 						<br>
-     * 						<span class="tablenote"><b>Note: </b> As of April 1, 2019, <code>GTC</code> (Good 'Til Cancelled) is the only supported listing duration for fixed-price listings on all eBay marketplaces and categories except for motor vehicle listings on eBay Motors US, and on the eBay UK and eBay Italy sites. Sellers do not have to take any action on existing listings with listing durations other than GTC, but if/when these items need to be relisted, only GTC will be supported. If any other listing duration value besides <code>GTC</code> is specified in this field, it will be ignored, and GTC will be used instead.
-     * 					</span>
-     * 					<br>
-     * 					<span class="tablenote"><b>Note: </b>
-     * 						On July 1, 2019, the Good 'Til Cancelled renewal schedule was modified from every 30 days to once per calendar month. For example, if a GTC listing is created July 5, the next monthly renewal date will be August 5. If a GTC listing is created on the 31st of the month, but the following month only has 30 days, the renewal will happen on the 30th in the following month. Finally, if a GTC listing is created on January 29-31, the renewal will happen on February 28th (or 29th during a 'Leap Year'). See the
-     * 						<a href="https://pages.ebay.com/seller-center/seller-updates/2019-spring/marketplace-updates.html#good-til-cancelled" target="_blank">Good 'Til Cancelled listings update</a> in the <b>Spring 2019 Seller Updates</b> for more information about this change.
+     * 						<span class="tablenote"><b>Note: </b>
+     * 							The <code>GTC</code> (Good 'Til Cancelled) value is the only supported listing duration for fixed-price listings on all eBay marketplaces and categories except for motor vehicle listings on eBay Motors US, and on the eBay UK and eBay Italy sites.
+     * 						</span>
+     * 						<br>
+     * 						<span class="tablenote"><b>Note: </b>
+     * 							As long as a fixed-price listing has inventory available, or if the out-of-stock control feature is being used, GTC listings are automatically renewed each month according to the calendar day.
      * 						</span>
      * 					
      * 

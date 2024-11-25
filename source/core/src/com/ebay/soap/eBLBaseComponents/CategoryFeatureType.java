@@ -30,13 +30,9 @@ import org.w3c.dom.Element;
  *         &lt;element name="ListingDuration" type="{urn:ebay:apis:eBLBaseComponents}ListingDurationReferenceType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ShippingTermsRequired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BestOfferEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DutchBINEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="UserConsentRequired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="HomePageFeaturedEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ProPackEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="BasicUpgradePackEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ValuePackEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ProPackPlusEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="AdFormatEnabled" type="{urn:ebay:apis:eBLBaseComponents}AdFormatEnabledCodeType" minOccurs="0"/>
  *         &lt;element name="BestOfferCounterEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BestOfferAutoDeclineEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
@@ -44,15 +40,9 @@ import org.w3c.dom.Element;
  *         &lt;element name="LocalMarketRegularSubscription" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="LocalMarketPremiumSubscription" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="LocalMarketNonSubscription" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ExpressEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ExpressPicturesRequired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ExpressConditionRequired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="MinimumReservePrice" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
  *         &lt;element name="SellerContactDetailsEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="TransactionConfirmationRequestEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="StoreInventoryEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SkypeMeTransactionalEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SkypeMeNonTransactionalEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ClassifiedAdPaymentMethodEnabled" type="{urn:ebay:apis:eBLBaseComponents}ClassifiedAdPaymentMethodEnabledCodeType" minOccurs="0"/>
  *         &lt;element name="ClassifiedAdShippingMethodEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ClassifiedAdBestOfferEnabled" type="{urn:ebay:apis:eBLBaseComponents}ClassifiedAdBestOfferEnabledCodeType" minOccurs="0"/>
@@ -70,11 +60,8 @@ import org.w3c.dom.Element;
  *         &lt;element name="CrossBorderTradeNorthAmericaEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="CrossBorderTradeGBEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="CrossBorderTradeAustraliaEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PayPalBuyerProtectionEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BuyerGuaranteeEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="CombinedFixedPriceTreatmentEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="GalleryFeaturedDurations" type="{urn:ebay:apis:eBLBaseComponents}ListingEnhancementDurationReferenceType" minOccurs="0"/>
- *         &lt;element name="PayPalRequired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="eBayMotorsProAdFormatEnabled" type="{urn:ebay:apis:eBLBaseComponents}AdFormatEnabledCodeType" minOccurs="0"/>
  *         &lt;element name="eBayMotorsProContactByPhoneEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="eBayMotorsProPhoneCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
@@ -112,7 +99,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="PremiumSubscription" type="{urn:ebay:apis:eBLBaseComponents}GeographicExposureCodeType" minOccurs="0"/>
  *         &lt;element name="NonSubscription" type="{urn:ebay:apis:eBLBaseComponents}GeographicExposureCodeType" minOccurs="0"/>
  *         &lt;element name="INEscrowWorkflowTimeline" type="{urn:ebay:apis:eBLBaseComponents}INEscrowWorkflowTimelineCodeType" minOccurs="0"/>
- *         &lt;element name="PayPalRequiredForStoreOwner" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ReviseQuantityAllowed" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="RevisePriceAllowed" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="StoreOwnerExtendedListingDurationsEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
@@ -125,7 +111,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="Group3MaxFlatShippingCost" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="PaymentMethod" type="{urn:ebay:apis:eBLBaseComponents}BuyerPaymentMethodCodeType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="VariationsEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="AttributeConversionEnabled" type="{urn:ebay:apis:eBLBaseComponents}AttributeConversionEnabledCodeType" minOccurs="0"/>
  *         &lt;element name="FreeGalleryPlusEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="FreePicturePackEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ItemCompatibilityEnabled" type="{urn:ebay:apis:eBLBaseComponents}ItemCompatibilityEnabledCodeType" minOccurs="0"/>
@@ -141,7 +126,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="UPCEnabled" type="{urn:ebay:apis:eBLBaseComponents}ProductIdentiferEnabledCodeType" minOccurs="0"/>
  *         &lt;element name="MaxGranularFitmentCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="CompatibleVehicleType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PaymentOptionsGroup" type="{urn:ebay:apis:eBLBaseComponents}PaymentOptionsGroupEnabledCodeType" minOccurs="0"/>
  *         &lt;element name="ShippingProfileCategoryGroup" type="{urn:ebay:apis:eBLBaseComponents}ProfileCategoryGroupCodeType" minOccurs="0"/>
  *         &lt;element name="PaymentProfileCategoryGroup" type="{urn:ebay:apis:eBLBaseComponents}ProfileCategoryGroupCodeType" minOccurs="0"/>
  *         &lt;element name="ReturnPolicyProfileCategoryGroup" type="{urn:ebay:apis:eBLBaseComponents}ProfileCategoryGroupCodeType" minOccurs="0"/>
@@ -156,7 +140,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="DigitalGoodDeliveryEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="EpidSupported" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="KTypeSupported" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ProductRequiredEnabled" type="{urn:ebay:apis:eBLBaseComponents}ProductRequiredEnabledCodeType" minOccurs="0"/>
  *         &lt;element name="DomesticReturnsAcceptedValues" type="{urn:ebay:apis:eBLBaseComponents}DomesticReturnsAcceptedCodeType" minOccurs="0"/>
  *         &lt;element name="InternationalReturnsAcceptedValues" type="{urn:ebay:apis:eBLBaseComponents}InternationalReturnsAcceptedCodeType" minOccurs="0"/>
  *         &lt;element name="DomesticReturnsDurationValues" type="{urn:ebay:apis:eBLBaseComponents}DomesticReturnsDurationCodeType" minOccurs="0"/>
@@ -180,13 +163,9 @@ import org.w3c.dom.Element;
     "listingDuration",
     "shippingTermsRequired",
     "bestOfferEnabled",
-    "dutchBINEnabled",
     "userConsentRequired",
     "homePageFeaturedEnabled",
     "proPackEnabled",
-    "basicUpgradePackEnabled",
-    "valuePackEnabled",
-    "proPackPlusEnabled",
     "adFormatEnabled",
     "bestOfferCounterEnabled",
     "bestOfferAutoDeclineEnabled",
@@ -194,15 +173,9 @@ import org.w3c.dom.Element;
     "localMarketRegularSubscription",
     "localMarketPremiumSubscription",
     "localMarketNonSubscription",
-    "expressEnabled",
-    "expressPicturesRequired",
-    "expressConditionRequired",
     "minimumReservePrice",
     "sellerContactDetailsEnabled",
     "transactionConfirmationRequestEnabled",
-    "storeInventoryEnabled",
-    "skypeMeTransactionalEnabled",
-    "skypeMeNonTransactionalEnabled",
     "classifiedAdPaymentMethodEnabled",
     "classifiedAdShippingMethodEnabled",
     "classifiedAdBestOfferEnabled",
@@ -220,11 +193,8 @@ import org.w3c.dom.Element;
     "crossBorderTradeNorthAmericaEnabled",
     "crossBorderTradeGBEnabled",
     "crossBorderTradeAustraliaEnabled",
-    "payPalBuyerProtectionEnabled",
     "buyerGuaranteeEnabled",
-    "combinedFixedPriceTreatmentEnabled",
     "galleryFeaturedDurations",
-    "payPalRequired",
     "eBayMotorsProAdFormatEnabled",
     "eBayMotorsProContactByPhoneEnabled",
     "eBayMotorsProPhoneCount",
@@ -262,7 +232,6 @@ import org.w3c.dom.Element;
     "premiumSubscription",
     "nonSubscription",
     "inEscrowWorkflowTimeline",
-    "payPalRequiredForStoreOwner",
     "reviseQuantityAllowed",
     "revisePriceAllowed",
     "storeOwnerExtendedListingDurationsEnabled",
@@ -275,7 +244,6 @@ import org.w3c.dom.Element;
     "group3MaxFlatShippingCost",
     "paymentMethod",
     "variationsEnabled",
-    "attributeConversionEnabled",
     "freeGalleryPlusEnabled",
     "freePicturePackEnabled",
     "itemCompatibilityEnabled",
@@ -291,7 +259,6 @@ import org.w3c.dom.Element;
     "upcEnabled",
     "maxGranularFitmentCount",
     "compatibleVehicleType",
-    "paymentOptionsGroup",
     "shippingProfileCategoryGroup",
     "paymentProfileCategoryGroup",
     "returnPolicyProfileCategoryGroup",
@@ -306,7 +273,6 @@ import org.w3c.dom.Element;
     "digitalGoodDeliveryEnabled",
     "epidSupported",
     "kTypeSupported",
-    "productRequiredEnabled",
     "domesticReturnsAcceptedValues",
     "internationalReturnsAcceptedValues",
     "domesticReturnsDurationValues",
@@ -330,20 +296,12 @@ public class CategoryFeatureType
     protected Boolean shippingTermsRequired;
     @XmlElement(name = "BestOfferEnabled")
     protected Boolean bestOfferEnabled;
-    @XmlElement(name = "DutchBINEnabled")
-    protected Boolean dutchBINEnabled;
     @XmlElement(name = "UserConsentRequired")
     protected Boolean userConsentRequired;
     @XmlElement(name = "HomePageFeaturedEnabled")
     protected Boolean homePageFeaturedEnabled;
     @XmlElement(name = "ProPackEnabled")
     protected Boolean proPackEnabled;
-    @XmlElement(name = "BasicUpgradePackEnabled")
-    protected Boolean basicUpgradePackEnabled;
-    @XmlElement(name = "ValuePackEnabled")
-    protected Boolean valuePackEnabled;
-    @XmlElement(name = "ProPackPlusEnabled")
-    protected Boolean proPackPlusEnabled;
     @XmlElement(name = "AdFormatEnabled")
     protected AdFormatEnabledCodeType adFormatEnabled;
     @XmlElement(name = "BestOfferCounterEnabled")
@@ -358,24 +316,12 @@ public class CategoryFeatureType
     protected Boolean localMarketPremiumSubscription;
     @XmlElement(name = "LocalMarketNonSubscription")
     protected Boolean localMarketNonSubscription;
-    @XmlElement(name = "ExpressEnabled")
-    protected Boolean expressEnabled;
-    @XmlElement(name = "ExpressPicturesRequired")
-    protected Boolean expressPicturesRequired;
-    @XmlElement(name = "ExpressConditionRequired")
-    protected Boolean expressConditionRequired;
     @XmlElement(name = "MinimumReservePrice")
     protected Double minimumReservePrice;
     @XmlElement(name = "SellerContactDetailsEnabled")
     protected Boolean sellerContactDetailsEnabled;
     @XmlElement(name = "TransactionConfirmationRequestEnabled")
     protected Boolean transactionConfirmationRequestEnabled;
-    @XmlElement(name = "StoreInventoryEnabled")
-    protected Boolean storeInventoryEnabled;
-    @XmlElement(name = "SkypeMeTransactionalEnabled")
-    protected Boolean skypeMeTransactionalEnabled;
-    @XmlElement(name = "SkypeMeNonTransactionalEnabled")
-    protected Boolean skypeMeNonTransactionalEnabled;
     @XmlElement(name = "ClassifiedAdPaymentMethodEnabled")
     protected ClassifiedAdPaymentMethodEnabledCodeType classifiedAdPaymentMethodEnabled;
     @XmlElement(name = "ClassifiedAdShippingMethodEnabled")
@@ -410,16 +356,10 @@ public class CategoryFeatureType
     protected Boolean crossBorderTradeGBEnabled;
     @XmlElement(name = "CrossBorderTradeAustraliaEnabled")
     protected Boolean crossBorderTradeAustraliaEnabled;
-    @XmlElement(name = "PayPalBuyerProtectionEnabled")
-    protected Boolean payPalBuyerProtectionEnabled;
     @XmlElement(name = "BuyerGuaranteeEnabled")
     protected Boolean buyerGuaranteeEnabled;
-    @XmlElement(name = "CombinedFixedPriceTreatmentEnabled")
-    protected Boolean combinedFixedPriceTreatmentEnabled;
     @XmlElement(name = "GalleryFeaturedDurations")
     protected ListingEnhancementDurationReferenceType galleryFeaturedDurations;
-    @XmlElement(name = "PayPalRequired")
-    protected Boolean payPalRequired;
     protected AdFormatEnabledCodeType eBayMotorsProAdFormatEnabled;
     protected Boolean eBayMotorsProContactByPhoneEnabled;
     protected Integer eBayMotorsProPhoneCount;
@@ -480,8 +420,6 @@ public class CategoryFeatureType
     protected GeographicExposureCodeType nonSubscription;
     @XmlElement(name = "INEscrowWorkflowTimeline")
     protected INEscrowWorkflowTimelineCodeType inEscrowWorkflowTimeline;
-    @XmlElement(name = "PayPalRequiredForStoreOwner")
-    protected Boolean payPalRequiredForStoreOwner;
     @XmlElement(name = "ReviseQuantityAllowed")
     protected Boolean reviseQuantityAllowed;
     @XmlElement(name = "RevisePriceAllowed")
@@ -506,8 +444,6 @@ public class CategoryFeatureType
     protected List<BuyerPaymentMethodCodeType> paymentMethod;
     @XmlElement(name = "VariationsEnabled")
     protected Boolean variationsEnabled;
-    @XmlElement(name = "AttributeConversionEnabled")
-    protected AttributeConversionEnabledCodeType attributeConversionEnabled;
     @XmlElement(name = "FreeGalleryPlusEnabled")
     protected Boolean freeGalleryPlusEnabled;
     @XmlElement(name = "FreePicturePackEnabled")
@@ -538,8 +474,6 @@ public class CategoryFeatureType
     protected Integer maxGranularFitmentCount;
     @XmlElement(name = "CompatibleVehicleType")
     protected String compatibleVehicleType;
-    @XmlElement(name = "PaymentOptionsGroup")
-    protected PaymentOptionsGroupEnabledCodeType paymentOptionsGroup;
     @XmlElement(name = "ShippingProfileCategoryGroup")
     protected ProfileCategoryGroupCodeType shippingProfileCategoryGroup;
     @XmlElement(name = "PaymentProfileCategoryGroup")
@@ -568,8 +502,6 @@ public class CategoryFeatureType
     protected Boolean epidSupported;
     @XmlElement(name = "KTypeSupported")
     protected Boolean kTypeSupported;
-    @XmlElement(name = "ProductRequiredEnabled")
-    protected ProductRequiredEnabledCodeType productRequiredEnabled;
     @XmlElement(name = "DomesticReturnsAcceptedValues")
     protected DomesticReturnsAcceptedCodeType domesticReturnsAcceptedValues;
     @XmlElement(name = "InternationalReturnsAcceptedValues")
@@ -734,30 +666,6 @@ public class CategoryFeatureType
     }
 
     /**
-     * Gets the value of the dutchBINEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isDutchBINEnabled() {
-        return dutchBINEnabled;
-    }
-
-    /**
-     * Sets the value of the dutchBINEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setDutchBINEnabled(Boolean value) {
-        this.dutchBINEnabled = value;
-    }
-
-    /**
      * Gets the value of the userConsentRequired property.
      * 
      * @return
@@ -827,78 +735,6 @@ public class CategoryFeatureType
      */
     public void setProPackEnabled(Boolean value) {
         this.proPackEnabled = value;
-    }
-
-    /**
-     * Gets the value of the basicUpgradePackEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isBasicUpgradePackEnabled() {
-        return basicUpgradePackEnabled;
-    }
-
-    /**
-     * Sets the value of the basicUpgradePackEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setBasicUpgradePackEnabled(Boolean value) {
-        this.basicUpgradePackEnabled = value;
-    }
-
-    /**
-     * Gets the value of the valuePackEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isValuePackEnabled() {
-        return valuePackEnabled;
-    }
-
-    /**
-     * Sets the value of the valuePackEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setValuePackEnabled(Boolean value) {
-        this.valuePackEnabled = value;
-    }
-
-    /**
-     * Gets the value of the proPackPlusEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isProPackPlusEnabled() {
-        return proPackPlusEnabled;
-    }
-
-    /**
-     * Sets the value of the proPackPlusEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setProPackPlusEnabled(Boolean value) {
-        this.proPackPlusEnabled = value;
     }
 
     /**
@@ -1070,78 +906,6 @@ public class CategoryFeatureType
     }
 
     /**
-     * Gets the value of the expressEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isExpressEnabled() {
-        return expressEnabled;
-    }
-
-    /**
-     * Sets the value of the expressEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setExpressEnabled(Boolean value) {
-        this.expressEnabled = value;
-    }
-
-    /**
-     * Gets the value of the expressPicturesRequired property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isExpressPicturesRequired() {
-        return expressPicturesRequired;
-    }
-
-    /**
-     * Sets the value of the expressPicturesRequired property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setExpressPicturesRequired(Boolean value) {
-        this.expressPicturesRequired = value;
-    }
-
-    /**
-     * Gets the value of the expressConditionRequired property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isExpressConditionRequired() {
-        return expressConditionRequired;
-    }
-
-    /**
-     * Sets the value of the expressConditionRequired property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setExpressConditionRequired(Boolean value) {
-        this.expressConditionRequired = value;
-    }
-
-    /**
      * Gets the value of the minimumReservePrice property.
      * 
      * @return
@@ -1211,78 +975,6 @@ public class CategoryFeatureType
      */
     public void setTransactionConfirmationRequestEnabled(Boolean value) {
         this.transactionConfirmationRequestEnabled = value;
-    }
-
-    /**
-     * Gets the value of the storeInventoryEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isStoreInventoryEnabled() {
-        return storeInventoryEnabled;
-    }
-
-    /**
-     * Sets the value of the storeInventoryEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setStoreInventoryEnabled(Boolean value) {
-        this.storeInventoryEnabled = value;
-    }
-
-    /**
-     * Gets the value of the skypeMeTransactionalEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isSkypeMeTransactionalEnabled() {
-        return skypeMeTransactionalEnabled;
-    }
-
-    /**
-     * Sets the value of the skypeMeTransactionalEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setSkypeMeTransactionalEnabled(Boolean value) {
-        this.skypeMeTransactionalEnabled = value;
-    }
-
-    /**
-     * Gets the value of the skypeMeNonTransactionalEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isSkypeMeNonTransactionalEnabled() {
-        return skypeMeNonTransactionalEnabled;
-    }
-
-    /**
-     * Sets the value of the skypeMeNonTransactionalEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setSkypeMeNonTransactionalEnabled(Boolean value) {
-        this.skypeMeNonTransactionalEnabled = value;
     }
 
     /**
@@ -1694,30 +1386,6 @@ public class CategoryFeatureType
     }
 
     /**
-     * Gets the value of the payPalBuyerProtectionEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isPayPalBuyerProtectionEnabled() {
-        return payPalBuyerProtectionEnabled;
-    }
-
-    /**
-     * Sets the value of the payPalBuyerProtectionEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setPayPalBuyerProtectionEnabled(Boolean value) {
-        this.payPalBuyerProtectionEnabled = value;
-    }
-
-    /**
      * Gets the value of the buyerGuaranteeEnabled property.
      * 
      * @return
@@ -1742,30 +1410,6 @@ public class CategoryFeatureType
     }
 
     /**
-     * Gets the value of the combinedFixedPriceTreatmentEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isCombinedFixedPriceTreatmentEnabled() {
-        return combinedFixedPriceTreatmentEnabled;
-    }
-
-    /**
-     * Sets the value of the combinedFixedPriceTreatmentEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setCombinedFixedPriceTreatmentEnabled(Boolean value) {
-        this.combinedFixedPriceTreatmentEnabled = value;
-    }
-
-    /**
      * Gets the value of the galleryFeaturedDurations property.
      * 
      * @return
@@ -1787,30 +1431,6 @@ public class CategoryFeatureType
      */
     public void setGalleryFeaturedDurations(ListingEnhancementDurationReferenceType value) {
         this.galleryFeaturedDurations = value;
-    }
-
-    /**
-     * Gets the value of the payPalRequired property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isPayPalRequired() {
-        return payPalRequired;
-    }
-
-    /**
-     * Sets the value of the payPalRequired property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setPayPalRequired(Boolean value) {
-        this.payPalRequired = value;
     }
 
     /**
@@ -2702,30 +2322,6 @@ public class CategoryFeatureType
     }
 
     /**
-     * Gets the value of the payPalRequiredForStoreOwner property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isPayPalRequiredForStoreOwner() {
-        return payPalRequiredForStoreOwner;
-    }
-
-    /**
-     * Sets the value of the payPalRequiredForStoreOwner property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setPayPalRequiredForStoreOwner(Boolean value) {
-        this.payPalRequiredForStoreOwner = value;
-    }
-
-    /**
      * Gets the value of the reviseQuantityAllowed property.
      * 
      * @return
@@ -3059,30 +2655,6 @@ public class CategoryFeatureType
      */
     public void setVariationsEnabled(Boolean value) {
         this.variationsEnabled = value;
-    }
-
-    /**
-     * Gets the value of the attributeConversionEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AttributeConversionEnabledCodeType }
-     *     
-     */
-    public AttributeConversionEnabledCodeType getAttributeConversionEnabled() {
-        return attributeConversionEnabled;
-    }
-
-    /**
-     * Sets the value of the attributeConversionEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AttributeConversionEnabledCodeType }
-     *     
-     */
-    public void setAttributeConversionEnabled(AttributeConversionEnabledCodeType value) {
-        this.attributeConversionEnabled = value;
     }
 
     /**
@@ -3443,30 +3015,6 @@ public class CategoryFeatureType
      */
     public void setCompatibleVehicleType(String value) {
         this.compatibleVehicleType = value;
-    }
-
-    /**
-     * Gets the value of the paymentOptionsGroup property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaymentOptionsGroupEnabledCodeType }
-     *     
-     */
-    public PaymentOptionsGroupEnabledCodeType getPaymentOptionsGroup() {
-        return paymentOptionsGroup;
-    }
-
-    /**
-     * Sets the value of the paymentOptionsGroup property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaymentOptionsGroupEnabledCodeType }
-     *     
-     */
-    public void setPaymentOptionsGroup(PaymentOptionsGroupEnabledCodeType value) {
-        this.paymentOptionsGroup = value;
     }
 
     /**
@@ -3855,30 +3403,6 @@ public class CategoryFeatureType
      */
     public void setKTypeSupported(Boolean value) {
         this.kTypeSupported = value;
-    }
-
-    /**
-     * Gets the value of the productRequiredEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ProductRequiredEnabledCodeType }
-     *     
-     */
-    public ProductRequiredEnabledCodeType getProductRequiredEnabled() {
-        return productRequiredEnabled;
-    }
-
-    /**
-     * Sets the value of the productRequiredEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ProductRequiredEnabledCodeType }
-     *     
-     */
-    public void setProductRequiredEnabled(ProductRequiredEnabledCodeType value) {
-        this.productRequiredEnabled = value;
     }
 
     /**

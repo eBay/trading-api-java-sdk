@@ -24,11 +24,9 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ShowBidderNoticePreferences" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="ShowCombinedPaymentPreferences" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="ShowCrossPromotionPreferences" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="ShowSellerPaymentPreferences" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="ShowEndOfAuctionEmailPreferences" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ShowSellerFavoriteItemPreferences" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ShowProStoresPreferences" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ShowEmailShipmentTrackingNumberPreference" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ShowRequiredShipPhoneNumberPreference" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ShowSellerExcludeShipToLocationPreference" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
@@ -56,11 +54,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "GetUserPreferencesRequestType", propOrder = {
     "showBidderNoticePreferences",
     "showCombinedPaymentPreferences",
-    "showCrossPromotionPreferences",
     "showSellerPaymentPreferences",
     "showEndOfAuctionEmailPreferences",
     "showSellerFavoriteItemPreferences",
-    "showProStoresPreferences",
     "showEmailShipmentTrackingNumberPreference",
     "showRequiredShipPhoneNumberPreference",
     "showSellerExcludeShipToLocationPreference",
@@ -87,16 +83,12 @@ public class GetUserPreferencesRequestType
     protected boolean showBidderNoticePreferences;
     @XmlElement(name = "ShowCombinedPaymentPreferences")
     protected boolean showCombinedPaymentPreferences;
-    @XmlElement(name = "ShowCrossPromotionPreferences")
-    protected boolean showCrossPromotionPreferences;
     @XmlElement(name = "ShowSellerPaymentPreferences")
     protected boolean showSellerPaymentPreferences;
     @XmlElement(name = "ShowEndOfAuctionEmailPreferences")
     protected Boolean showEndOfAuctionEmailPreferences;
     @XmlElement(name = "ShowSellerFavoriteItemPreferences")
     protected Boolean showSellerFavoriteItemPreferences;
-    @XmlElement(name = "ShowProStoresPreferences")
-    protected Boolean showProStoresPreferences;
     @XmlElement(name = "ShowEmailShipmentTrackingNumberPreference")
     protected Boolean showEmailShipmentTrackingNumberPreference;
     @XmlElement(name = "ShowRequiredShipPhoneNumberPreference")
@@ -161,22 +153,6 @@ public class GetUserPreferencesRequestType
     }
 
     /**
-     * Gets the value of the showCrossPromotionPreferences property.
-     * 
-     */
-    public boolean isShowCrossPromotionPreferences() {
-        return showCrossPromotionPreferences;
-    }
-
-    /**
-     * Sets the value of the showCrossPromotionPreferences property.
-     * 
-     */
-    public void setShowCrossPromotionPreferences(boolean value) {
-        this.showCrossPromotionPreferences = value;
-    }
-
-    /**
      * Gets the value of the showSellerPaymentPreferences property.
      * 
      */
@@ -238,30 +214,6 @@ public class GetUserPreferencesRequestType
      */
     public void setShowSellerFavoriteItemPreferences(Boolean value) {
         this.showSellerFavoriteItemPreferences = value;
-    }
-
-    /**
-     * Gets the value of the showProStoresPreferences property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isShowProStoresPreferences() {
-        return showProStoresPreferences;
-    }
-
-    /**
-     * Sets the value of the showProStoresPreferences property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setShowProStoresPreferences(Boolean value) {
-        this.showProStoresPreferences = value;
     }
 
     /**

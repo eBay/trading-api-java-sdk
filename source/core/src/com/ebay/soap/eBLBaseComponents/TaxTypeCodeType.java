@@ -74,7 +74,7 @@ public enum TaxTypeCodeType {
      * 
      * 						This enumeration value indicates that European VAT tax was charged to the buyer against the order line item.
      * 						<br/><br/>
-     * 						This enumeration applies to VAT tax on the UK marketplace, the Norway marketplace, and other EU marketplaces (except for France). 
+     * 						This enumeration applies to VAT tax on the UK marketplace, the Norway marketplace, and other EU marketplaces (except for France).
      * 					
      * 
      */

@@ -15,8 +15,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				<span class="tablenote"><b>Note: </b> This type is currently available only on the German (DE) marketplace.</span>
- * 				<br />Type defining the <b>ImageURL</b>, <b>ImageDescription</b>, and <b>ProductInformationsheet</b> regulatory fields that are used at the listing level to provide Energy Efficiency Label related information.<br>
+ * 				Type defining the <b>ImageURL</b>, <b>ImageDescription</b>, and <b>ProductInformationsheet</b> regulatory fields that are used at the listing level to provide Energy Efficiency Label related information.<br>
  * 			
  * 
  * <p>Java class for EnergyEfficiencyType complex type.

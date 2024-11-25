@@ -24,7 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ActiveAuctionCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="AuctionSellingCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="AuctionBidCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="TotalAuctionSellingValue" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="TotalSoldCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="TotalSoldValue" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
@@ -41,7 +40,6 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "SellingSummaryType", propOrder = {
     "activeAuctionCount",
     "auctionSellingCount",
-    "auctionBidCount",
     "totalAuctionSellingValue",
     "totalSoldCount",
     "totalSoldValue",
@@ -56,8 +54,6 @@ public class SellingSummaryType
     protected Integer activeAuctionCount;
     @XmlElement(name = "AuctionSellingCount")
     protected Integer auctionSellingCount;
-    @XmlElement(name = "AuctionBidCount")
-    protected Integer auctionBidCount;
     @XmlElement(name = "TotalAuctionSellingValue")
     protected AmountType totalAuctionSellingValue;
     @XmlElement(name = "TotalSoldCount")
@@ -113,30 +109,6 @@ public class SellingSummaryType
      */
     public void setAuctionSellingCount(Integer value) {
         this.auctionSellingCount = value;
-    }
-
-    /**
-     * Gets the value of the auctionBidCount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getAuctionBidCount() {
-        return auctionBidCount;
-    }
-
-    /**
-     * Sets the value of the auctionBidCount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setAuctionBidCount(Integer value) {
-        this.auctionBidCount = value;
     }
 
     /**

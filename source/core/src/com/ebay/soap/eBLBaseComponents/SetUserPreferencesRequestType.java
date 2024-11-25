@@ -24,7 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="BidderNoticePreferences" type="{urn:ebay:apis:eBLBaseComponents}BidderNoticePreferencesType" minOccurs="0"/>
  *         &lt;element name="CombinedPaymentPreferences" type="{urn:ebay:apis:eBLBaseComponents}CombinedPaymentPreferencesType" minOccurs="0"/>
- *         &lt;element name="CrossPromotionPreferences" type="{urn:ebay:apis:eBLBaseComponents}CrossPromotionPreferencesType" minOccurs="0"/>
  *         &lt;element name="SellerPaymentPreferences" type="{urn:ebay:apis:eBLBaseComponents}SellerPaymentPreferencesType" minOccurs="0"/>
  *         &lt;element name="SellerFavoriteItemPreferences" type="{urn:ebay:apis:eBLBaseComponents}SellerFavoriteItemPreferencesType" minOccurs="0"/>
  *         &lt;element name="EndOfAuctionEmailPreferences" type="{urn:ebay:apis:eBLBaseComponents}EndOfAuctionEmailPreferencesType" minOccurs="0"/>
@@ -32,7 +31,6 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="RequiredShipPhoneNumberPreference" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="UnpaidItemAssistancePreferences" type="{urn:ebay:apis:eBLBaseComponents}UnpaidItemAssistancePreferencesType" minOccurs="0"/>
  *         &lt;element name="PurchaseReminderEmailPreferences" type="{urn:ebay:apis:eBLBaseComponents}PurchaseReminderEmailPreferencesType" minOccurs="0"/>
- *         &lt;element name="SellerThirdPartyCheckoutDisabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="DispatchCutoffTimePreference" type="{urn:ebay:apis:eBLBaseComponents}DispatchCutoffTimePreferencesType" minOccurs="0"/>
  *         &lt;element name="GlobalShippingProgramListingPreference" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="OverrideGSPserviceWithIntlService" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
@@ -49,7 +47,6 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "SetUserPreferencesRequestType", propOrder = {
     "bidderNoticePreferences",
     "combinedPaymentPreferences",
-    "crossPromotionPreferences",
     "sellerPaymentPreferences",
     "sellerFavoriteItemPreferences",
     "endOfAuctionEmailPreferences",
@@ -57,7 +54,6 @@ import javax.xml.bind.annotation.XmlType;
     "requiredShipPhoneNumberPreference",
     "unpaidItemAssistancePreferences",
     "purchaseReminderEmailPreferences",
-    "sellerThirdPartyCheckoutDisabled",
     "dispatchCutoffTimePreference",
     "globalShippingProgramListingPreference",
     "overrideGSPserviceWithIntlService",
@@ -73,8 +69,6 @@ public class SetUserPreferencesRequestType
     protected BidderNoticePreferencesType bidderNoticePreferences;
     @XmlElement(name = "CombinedPaymentPreferences")
     protected CombinedPaymentPreferencesType combinedPaymentPreferences;
-    @XmlElement(name = "CrossPromotionPreferences")
-    protected CrossPromotionPreferencesType crossPromotionPreferences;
     @XmlElement(name = "SellerPaymentPreferences")
     protected SellerPaymentPreferencesType sellerPaymentPreferences;
     @XmlElement(name = "SellerFavoriteItemPreferences")
@@ -89,8 +83,6 @@ public class SetUserPreferencesRequestType
     protected UnpaidItemAssistancePreferencesType unpaidItemAssistancePreferences;
     @XmlElement(name = "PurchaseReminderEmailPreferences")
     protected PurchaseReminderEmailPreferencesType purchaseReminderEmailPreferences;
-    @XmlElement(name = "SellerThirdPartyCheckoutDisabled")
-    protected Boolean sellerThirdPartyCheckoutDisabled;
     @XmlElement(name = "DispatchCutoffTimePreference")
     protected DispatchCutoffTimePreferencesType dispatchCutoffTimePreference;
     @XmlElement(name = "GlobalShippingProgramListingPreference")
@@ -146,30 +138,6 @@ public class SetUserPreferencesRequestType
      */
     public void setCombinedPaymentPreferences(CombinedPaymentPreferencesType value) {
         this.combinedPaymentPreferences = value;
-    }
-
-    /**
-     * Gets the value of the crossPromotionPreferences property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CrossPromotionPreferencesType }
-     *     
-     */
-    public CrossPromotionPreferencesType getCrossPromotionPreferences() {
-        return crossPromotionPreferences;
-    }
-
-    /**
-     * Sets the value of the crossPromotionPreferences property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CrossPromotionPreferencesType }
-     *     
-     */
-    public void setCrossPromotionPreferences(CrossPromotionPreferencesType value) {
-        this.crossPromotionPreferences = value;
     }
 
     /**
@@ -338,30 +306,6 @@ public class SetUserPreferencesRequestType
      */
     public void setPurchaseReminderEmailPreferences(PurchaseReminderEmailPreferencesType value) {
         this.purchaseReminderEmailPreferences = value;
-    }
-
-    /**
-     * Gets the value of the sellerThirdPartyCheckoutDisabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isSellerThirdPartyCheckoutDisabled() {
-        return sellerThirdPartyCheckoutDisabled;
-    }
-
-    /**
-     * Sets the value of the sellerThirdPartyCheckoutDisabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setSellerThirdPartyCheckoutDisabled(Boolean value) {
-        this.sellerThirdPartyCheckoutDisabled = value;
     }
 
     /**

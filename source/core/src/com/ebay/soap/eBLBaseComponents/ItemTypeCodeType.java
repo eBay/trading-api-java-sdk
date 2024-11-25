@@ -38,8 +38,8 @@ public enum ItemTypeCodeType {
 
     /**
      * 
-     * 						When setting up filtering for the Saved Search, the buyer was only looking for 
-     * 						auction items (with or without the Buy It Now option), so only selected the <b>Auction</b> checkbox in the 
+     * 						When setting up filtering for the Saved Search, the buyer was only looking for
+     * 						auction items (with or without the Buy It Now option), so only selected the <b>Auction</b> checkbox in the
      * 						<b>Format</b> dialog box. When this filter is used in a Saved Search,
      * 						fixed-price items and classified ad listings are not retrieved for the buyer.
      * 					
@@ -53,8 +53,8 @@ public enum ItemTypeCodeType {
      * 						When setting up filtering for the Saved Search, the buyer was looking for all
      * 						fixed-price items and auction items with Buy It Now available, so only selected the
      * 						<b>Buy It Now</b> checkbox in the <b>Format</b> dialog box.
-     * 						When this filter is used in a Saved Search, auction items (without the Buy It Now 
-     * 						option) and classified ad listings are not retrieved for the buyer. 
+     * 						When this filter is used in a Saved Search, auction items (without the Buy It Now
+     * 						option) and classified ad listings are not retrieved for the buyer.
      * 					
      * 
      */
@@ -64,9 +64,9 @@ public enum ItemTypeCodeType {
     /**
      * 
      * 						When setting up filtering for the Saved Search, the buyer was looking for all
-     * 						items closely associated with the search term, so selected all buying formats 
-     * 						(Auction, Buy It Now, and Classified Ads). All items are retrieved for the buyer, 
-     * 						including auction items (with or without the Buy It Now option), fixed-price 
+     * 						items closely associated with the search term, so selected all buying formats
+     * 						(Auction, Buy It Now, and Classified Ads). All items are retrieved for the buyer,
+     * 						including auction items (with or without the Buy It Now option), fixed-price
      * 						items, and classified ad listings.
      * 					
      * 
@@ -76,9 +76,9 @@ public enum ItemTypeCodeType {
 
     /**
      * 
-     * 						When setting up filtering for the Saved Search, the buyer was only looking for 
-     * 						items sold by sellers with eBay stores, so selected the 
-     * 						<b>Sellers with eBay stores</b> checkbox in the 
+     * 						When setting up filtering for the Saved Search, the buyer was only looking for
+     * 						items sold by sellers with eBay stores, so selected the
+     * 						<b>Sellers with eBay stores</b> checkbox in the
      * 						<b>Seller</b> dialog box. When this filter is used in a Saved Search,
      * 						only items for sale in an eBay store are retrieved for the buyer.
      * 					
@@ -113,7 +113,7 @@ public enum ItemTypeCodeType {
      * 
      * 						
      * 						Retrieves listings whether or not listing type is set to StoresFixedPrice;
-     * 						include auction items. 
+     * 						include auction items.
      * 					
      * 
      */
@@ -146,10 +146,10 @@ public enum ItemTypeCodeType {
 
     /**
      * 
-     * 						When setting up filtering for the Saved Search, the buyer was only looking for 
-     * 						classified ad listings, so only selected the <b>Classified ads</b> checkbox in the 
+     * 						When setting up filtering for the Saved Search, the buyer was only looking for
+     * 						classified ad listings, so only selected the <b>Classified ads</b> checkbox in the
      * 						<b>Format</b> dialog box. When this filter is used in a Saved Search,
-     * 						auction (with or without the Buy It Now option) and fixed-price items 
+     * 						auction (with or without the Buy It Now option) and fixed-price items
      * 						are not retrieved for the buyer.
      * 					
      * 

@@ -39,12 +39,10 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *         &lt;element name="URLDetails" type="{urn:ebay:apis:eBLBaseComponents}URLDetailsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="TimeZoneDetails" type="{urn:ebay:apis:eBLBaseComponents}TimeZoneDetailsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ItemSpecificDetails" type="{urn:ebay:apis:eBLBaseComponents}ItemSpecificDetailsType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="UnitOfMeasurementDetails" type="{urn:ebay:apis:eBLBaseComponents}UnitOfMeasurementDetailsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="RegionOfOriginDetails" type="{urn:ebay:apis:eBLBaseComponents}RegionOfOriginDetailsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ShippingPackageDetails" type="{urn:ebay:apis:eBLBaseComponents}ShippingPackageDetailsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ShippingCarrierDetails" type="{urn:ebay:apis:eBLBaseComponents}ShippingCarrierDetailsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ReturnPolicyDetails" type="{urn:ebay:apis:eBLBaseComponents}ReturnPolicyDetailsType" minOccurs="0"/>
- *         &lt;element name="InternationalReturnPolicyDetails" type="{urn:ebay:apis:eBLBaseComponents}ReturnPolicyDetailsType" minOccurs="0"/>
  *         &lt;element name="ListingStartPriceDetails" type="{urn:ebay:apis:eBLBaseComponents}ListingStartPriceDetailsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="BuyerRequirementDetails" type="{urn:ebay:apis:eBLBaseComponents}SiteBuyerRequirementDetailsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ListingFeatureDetails" type="{urn:ebay:apis:eBLBaseComponents}ListingFeatureDetailsType" maxOccurs="unbounded" minOccurs="0"/>
@@ -76,12 +74,10 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
     "urlDetails",
     "timeZoneDetails",
     "itemSpecificDetails",
-    "unitOfMeasurementDetails",
     "regionOfOriginDetails",
     "shippingPackageDetails",
     "shippingCarrierDetails",
     "returnPolicyDetails",
-    "internationalReturnPolicyDetails",
     "listingStartPriceDetails",
     "buyerRequirementDetails",
     "listingFeatureDetails",
@@ -122,8 +118,6 @@ public class GeteBayDetailsResponseType
     protected List<TimeZoneDetailsType> timeZoneDetails;
     @XmlElement(name = "ItemSpecificDetails")
     protected List<ItemSpecificDetailsType> itemSpecificDetails;
-    @XmlElement(name = "UnitOfMeasurementDetails")
-    protected List<UnitOfMeasurementDetailsType> unitOfMeasurementDetails;
     @XmlElement(name = "RegionOfOriginDetails")
     protected List<RegionOfOriginDetailsType> regionOfOriginDetails;
     @XmlElement(name = "ShippingPackageDetails")
@@ -132,8 +126,6 @@ public class GeteBayDetailsResponseType
     protected List<ShippingCarrierDetailsType> shippingCarrierDetails;
     @XmlElement(name = "ReturnPolicyDetails")
     protected ReturnPolicyDetailsType returnPolicyDetails;
-    @XmlElement(name = "InternationalReturnPolicyDetails")
-    protected ReturnPolicyDetailsType internationalReturnPolicyDetails;
     @XmlElement(name = "ListingStartPriceDetails")
     protected List<ListingStartPriceDetailsType> listingStartPriceDetails;
     @XmlElement(name = "BuyerRequirementDetails")
@@ -1024,78 +1016,6 @@ public class GeteBayDetailsResponseType
      * 
      * @return
      *     array of
-     *     {@link UnitOfMeasurementDetailsType }
-     *     
-     */
-    public UnitOfMeasurementDetailsType[] getUnitOfMeasurementDetails() {
-        if (this.unitOfMeasurementDetails == null) {
-            return new UnitOfMeasurementDetailsType[ 0 ] ;
-        }
-        return ((UnitOfMeasurementDetailsType[]) this.unitOfMeasurementDetails.toArray(new UnitOfMeasurementDetailsType[this.unitOfMeasurementDetails.size()] ));
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     one of
-     *     {@link UnitOfMeasurementDetailsType }
-     *     
-     */
-    public UnitOfMeasurementDetailsType getUnitOfMeasurementDetails(int idx) {
-        if (this.unitOfMeasurementDetails == null) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.unitOfMeasurementDetails.get(idx);
-    }
-
-    public int getUnitOfMeasurementDetailsLength() {
-        if (this.unitOfMeasurementDetails == null) {
-            return  0;
-        }
-        return this.unitOfMeasurementDetails.size();
-    }
-
-    /**
-     * 
-     * 
-     * @param values
-     *     allowed objects are
-     *     {@link UnitOfMeasurementDetailsType }
-     *     
-     */
-    public void setUnitOfMeasurementDetails(UnitOfMeasurementDetailsType[] values) {
-        this._getUnitOfMeasurementDetails().clear();
-        int len = values.length;
-        for (int i = 0; (i<len); i ++) {
-            this.unitOfMeasurementDetails.add(values[i]);
-        }
-    }
-
-    protected List<UnitOfMeasurementDetailsType> _getUnitOfMeasurementDetails() {
-        if (unitOfMeasurementDetails == null) {
-            unitOfMeasurementDetails = new ArrayList<UnitOfMeasurementDetailsType>();
-        }
-        return unitOfMeasurementDetails;
-    }
-
-    /**
-     * 
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UnitOfMeasurementDetailsType }
-     *     
-     */
-    public UnitOfMeasurementDetailsType setUnitOfMeasurementDetails(int idx, UnitOfMeasurementDetailsType value) {
-        return this.unitOfMeasurementDetails.set(idx, value);
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     array of
      *     {@link RegionOfOriginDetailsType }
      *     
      */
@@ -1329,30 +1249,6 @@ public class GeteBayDetailsResponseType
      */
     public void setReturnPolicyDetails(ReturnPolicyDetailsType value) {
         this.returnPolicyDetails = value;
-    }
-
-    /**
-     * Gets the value of the internationalReturnPolicyDetails property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ReturnPolicyDetailsType }
-     *     
-     */
-    public ReturnPolicyDetailsType getInternationalReturnPolicyDetails() {
-        return internationalReturnPolicyDetails;
-    }
-
-    /**
-     * Sets the value of the internationalReturnPolicyDetails property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ReturnPolicyDetailsType }
-     *     
-     */
-    public void setInternationalReturnPolicyDetails(ReturnPolicyDetailsType value) {
-        this.internationalReturnPolicyDetails = value;
     }
 
     /**

@@ -29,7 +29,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="ItemID" type="{urn:ebay:apis:eBLBaseComponents}ItemIDType" minOccurs="0"/>
  *         &lt;element name="EndingReason" type="{urn:ebay:apis:eBLBaseComponents}EndReasonCodeType" minOccurs="0"/>
  *         &lt;element name="MessageID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SellerInventoryID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;any/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -44,7 +43,6 @@ import org.w3c.dom.Element;
     "itemID",
     "endingReason",
     "messageID",
-    "sellerInventoryID",
     "any"
 })
 public class EndItemRequestContainerType
@@ -58,8 +56,6 @@ public class EndItemRequestContainerType
     protected EndReasonCodeType endingReason;
     @XmlElement(name = "MessageID")
     protected String messageID;
-    @XmlElement(name = "SellerInventoryID")
-    protected String sellerInventoryID;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
 
@@ -133,30 +129,6 @@ public class EndItemRequestContainerType
      */
     public void setMessageID(String value) {
         this.messageID = value;
-    }
-
-    /**
-     * Gets the value of the sellerInventoryID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSellerInventoryID() {
-        return sellerInventoryID;
-    }
-
-    /**
-     * Sets the value of the sellerInventoryID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSellerInventoryID(String value) {
-        this.sellerInventoryID = value;
     }
 
     /**

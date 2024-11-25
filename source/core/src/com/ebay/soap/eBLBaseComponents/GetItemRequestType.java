@@ -24,7 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ItemID" type="{urn:ebay:apis:eBLBaseComponents}ItemIDType" minOccurs="0"/>
  *         &lt;element name="IncludeWatchCount" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IncludeCrossPromotion" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="IncludeItemSpecifics" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="IncludeTaxTable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="SKU" type="{urn:ebay:apis:eBLBaseComponents}SKUType" minOccurs="0"/>
@@ -44,7 +43,6 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "GetItemRequestType", propOrder = {
     "itemID",
     "includeWatchCount",
-    "includeCrossPromotion",
     "includeItemSpecifics",
     "includeTaxTable",
     "sku",
@@ -63,8 +61,6 @@ public class GetItemRequestType
     protected String itemID;
     @XmlElement(name = "IncludeWatchCount")
     protected Boolean includeWatchCount;
-    @XmlElement(name = "IncludeCrossPromotion")
-    protected Boolean includeCrossPromotion;
     @XmlElement(name = "IncludeItemSpecifics")
     protected Boolean includeItemSpecifics;
     @XmlElement(name = "IncludeTaxTable")
@@ -126,30 +122,6 @@ public class GetItemRequestType
      */
     public void setIncludeWatchCount(Boolean value) {
         this.includeWatchCount = value;
-    }
-
-    /**
-     * Gets the value of the includeCrossPromotion property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIncludeCrossPromotion() {
-        return includeCrossPromotion;
-    }
-
-    /**
-     * Sets the value of the includeCrossPromotion property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIncludeCrossPromotion(Boolean value) {
-        this.includeCrossPromotion = value;
     }
 
     /**
