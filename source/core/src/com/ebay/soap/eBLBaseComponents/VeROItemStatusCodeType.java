@@ -69,8 +69,8 @@ public enum VeROItemStatusCodeType {
 
     /**
      * 
-     * 						(out) The VeRO report request for the item has been received by eBay, but 
-     * 						additional clarification is needed before eBay can end the item. 
+     * 						(out) The VeRO report request for the item has been received by eBay, but
+     * 						additional clarification is needed before eBay can end the item.
      * 					
      * 
      */

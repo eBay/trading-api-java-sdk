@@ -13,7 +13,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				Indicates which address option the site supports for 
+ * 				Indicates which address option the site supports for
  * 				Classified Ad format listings.
  * 				Added for EbayMotors Pro users.
  * 			

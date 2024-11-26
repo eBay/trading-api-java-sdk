@@ -29,7 +29,7 @@ public enum RefundSourceTypeCodeType {
 
 
     /**
-     * 	
+     * 
      * 						This value indicates that the merchant issued a store credit to the buyer for the amount of the returned item(s).
      * 					
      * 
@@ -38,7 +38,7 @@ public enum RefundSourceTypeCodeType {
     STORE_CREDIT("StoreCredit"),
 
     /**
-     * 	
+     * 
      * 						This value indicates that the merchant issued a cash refund (or debit card/credit card reversal) to the buyer for the amount of the returned item(s).
      * 					
      * 

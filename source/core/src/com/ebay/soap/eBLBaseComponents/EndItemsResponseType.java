@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				Contains a response of the resulting status of ending each item.				
+ * 				Contains a response of the resulting status of ending each item.
  * 			
  * 
  * <p>Java class for EndItemsResponseType complex type.

@@ -29,8 +29,6 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="SoldList" type="{urn:ebay:apis:eBLBaseComponents}PaginatedOrderTransactionArrayType" minOccurs="0"/>
  *         &lt;element name="UnsoldList" type="{urn:ebay:apis:eBLBaseComponents}PaginatedItemArrayType" minOccurs="0"/>
  *         &lt;element name="Summary" type="{urn:ebay:apis:eBLBaseComponents}MyeBaySellingSummaryType" minOccurs="0"/>
- *         &lt;element name="DeletedFromSoldList" type="{urn:ebay:apis:eBLBaseComponents}PaginatedOrderTransactionArrayType" minOccurs="0"/>
- *         &lt;element name="DeletedFromUnsoldList" type="{urn:ebay:apis:eBLBaseComponents}PaginatedItemArrayType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -46,9 +44,7 @@ import javax.xml.bind.annotation.XmlType;
     "activeList",
     "soldList",
     "unsoldList",
-    "summary",
-    "deletedFromSoldList",
-    "deletedFromUnsoldList"
+    "summary"
 })
 public class GetMyeBaySellingResponseType
     extends AbstractResponseType
@@ -68,10 +64,6 @@ public class GetMyeBaySellingResponseType
     protected PaginatedItemArrayType unsoldList;
     @XmlElement(name = "Summary")
     protected MyeBaySellingSummaryType summary;
-    @XmlElement(name = "DeletedFromSoldList")
-    protected PaginatedOrderTransactionArrayType deletedFromSoldList;
-    @XmlElement(name = "DeletedFromUnsoldList")
-    protected PaginatedItemArrayType deletedFromUnsoldList;
 
     /**
      * Gets the value of the sellingSummary property.
@@ -215,54 +207,6 @@ public class GetMyeBaySellingResponseType
      */
     public void setSummary(MyeBaySellingSummaryType value) {
         this.summary = value;
-    }
-
-    /**
-     * Gets the value of the deletedFromSoldList property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaginatedOrderTransactionArrayType }
-     *     
-     */
-    public PaginatedOrderTransactionArrayType getDeletedFromSoldList() {
-        return deletedFromSoldList;
-    }
-
-    /**
-     * Sets the value of the deletedFromSoldList property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaginatedOrderTransactionArrayType }
-     *     
-     */
-    public void setDeletedFromSoldList(PaginatedOrderTransactionArrayType value) {
-        this.deletedFromSoldList = value;
-    }
-
-    /**
-     * Gets the value of the deletedFromUnsoldList property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaginatedItemArrayType }
-     *     
-     */
-    public PaginatedItemArrayType getDeletedFromUnsoldList() {
-        return deletedFromUnsoldList;
-    }
-
-    /**
-     * Sets the value of the deletedFromUnsoldList property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaginatedItemArrayType }
-     *     
-     */
-    public void setDeletedFromUnsoldList(PaginatedItemArrayType value) {
-        this.deletedFromUnsoldList = value;
     }
 
 }

@@ -14,7 +14,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				Identifies an individual product suggestion. The product details include the EPID, Title, Stock photo url and if it is 
+ * 				Identifies an individual product suggestion. The product details include the EPID, Title, Stock photo url and if it is
  * 				an exact match.
  * 			
  * 

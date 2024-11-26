@@ -21,7 +21,7 @@ import org.w3c.dom.Element;
  * 				<span class="tablenote">
  * 				<strong>Note:</strong> Currently, eBay Plus is available only to buyers in Germany and Australia. In Australia, the seller has no control/responsibility over setting the eBay Plus feature for a listing. Instead, eBay will evaluate/determine whether a listing is eligible for eBay Plus.
  * 				</span>
- * 				For more details about eBay Plus, see <a href="../../../../guides/features-guide/default.html#development/Feature-eBayPlus.html">Offering eBay Plus</a>.
+ * 				For more details about eBay Plus, see <a href="/api-docs/user-guides/static/trading-user-guide/ebay-plus.html">eBay Plus</a>.
  * 			
  * 
  * <p>Java class for EBayPLUSPreferenceType complex type.

@@ -30,10 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="InternationalShippingServiceOptions" type="{urn:ebay:apis:eBLBaseComponents}InternationalShippingServiceOptionsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ShippingServiceOptions" type="{urn:ebay:apis:eBLBaseComponents}ShippingServiceOptionsType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="SalesTax" type="{urn:ebay:apis:eBLBaseComponents}SalesTaxType" minOccurs="0"/>
- *         &lt;element name="InsuranceOption" type="{urn:ebay:apis:eBLBaseComponents}InsuranceOptionCodeType" minOccurs="0"/>
- *         &lt;element name="InsuranceFee" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="PaymentMethods" type="{urn:ebay:apis:eBLBaseComponents}BuyerPaymentMethodCodeType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="PayPalEmailAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="CheckoutInstructions" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="EmailCopyToSeller" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="SKU" type="{urn:ebay:apis:eBLBaseComponents}SKUType" minOccurs="0"/>
@@ -55,10 +52,7 @@ import javax.xml.bind.annotation.XmlType;
     "internationalShippingServiceOptions",
     "shippingServiceOptions",
     "salesTax",
-    "insuranceOption",
-    "insuranceFee",
     "paymentMethods",
-    "payPalEmailAddress",
     "checkoutInstructions",
     "emailCopyToSeller",
     "sku",
@@ -83,14 +77,8 @@ public class SendInvoiceRequestType
     protected List<ShippingServiceOptionsType> shippingServiceOptions;
     @XmlElement(name = "SalesTax")
     protected SalesTaxType salesTax;
-    @XmlElement(name = "InsuranceOption")
-    protected InsuranceOptionCodeType insuranceOption;
-    @XmlElement(name = "InsuranceFee")
-    protected AmountType insuranceFee;
     @XmlElement(name = "PaymentMethods")
     protected List<BuyerPaymentMethodCodeType> paymentMethods;
-    @XmlElement(name = "PayPalEmailAddress")
-    protected String payPalEmailAddress;
     @XmlElement(name = "CheckoutInstructions")
     protected String checkoutInstructions;
     @XmlElement(name = "EmailCopyToSeller")
@@ -343,54 +331,6 @@ public class SendInvoiceRequestType
     }
 
     /**
-     * Gets the value of the insuranceOption property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link InsuranceOptionCodeType }
-     *     
-     */
-    public InsuranceOptionCodeType getInsuranceOption() {
-        return insuranceOption;
-    }
-
-    /**
-     * Sets the value of the insuranceOption property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link InsuranceOptionCodeType }
-     *     
-     */
-    public void setInsuranceOption(InsuranceOptionCodeType value) {
-        this.insuranceOption = value;
-    }
-
-    /**
-     * Gets the value of the insuranceFee property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AmountType }
-     *     
-     */
-    public AmountType getInsuranceFee() {
-        return insuranceFee;
-    }
-
-    /**
-     * Sets the value of the insuranceFee property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AmountType }
-     *     
-     */
-    public void setInsuranceFee(AmountType value) {
-        this.insuranceFee = value;
-    }
-
-    /**
      * 
      * 
      * @return
@@ -460,30 +400,6 @@ public class SendInvoiceRequestType
      */
     public BuyerPaymentMethodCodeType setPaymentMethods(int idx, BuyerPaymentMethodCodeType value) {
         return this.paymentMethods.set(idx, value);
-    }
-
-    /**
-     * Gets the value of the payPalEmailAddress property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPayPalEmailAddress() {
-        return payPalEmailAddress;
-    }
-
-    /**
-     * Sets the value of the payPalEmailAddress property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPayPalEmailAddress(String value) {
-        this.payPalEmailAddress = value;
     }
 
     /**

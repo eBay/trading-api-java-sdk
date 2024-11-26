@@ -32,7 +32,6 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="PictureData" type="{urn:ebay:apis:eBLBaseComponents}Base64BinaryType" minOccurs="0"/>
  *         &lt;element name="PictureUploadPolicy" type="{urn:ebay:apis:eBLBaseComponents}PictureUploadPolicyCodeType" minOccurs="0"/>
  *         &lt;element name="ExternalPictureURL" type="{http://www.w3.org/2001/XMLSchema}anyURI" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="PictureWatermark" type="{urn:ebay:apis:eBLBaseComponents}PictureWatermarkCodeType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ExtensionInDays" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
@@ -50,7 +49,6 @@ import javax.xml.bind.annotation.XmlType;
     "pictureData",
     "pictureUploadPolicy",
     "externalPictureURL",
-    "pictureWatermark",
     "extensionInDays"
 })
 public class UploadSiteHostedPicturesRequestType
@@ -72,8 +70,6 @@ public class UploadSiteHostedPicturesRequestType
     @XmlElement(name = "ExternalPictureURL")
     @XmlSchemaType(name = "anyURI")
     protected List<String> externalPictureURL;
-    @XmlElement(name = "PictureWatermark")
-    protected List<PictureWatermarkCodeType> pictureWatermark;
     @XmlElement(name = "ExtensionInDays")
     protected Integer extensionInDays;
 
@@ -267,78 +263,6 @@ public class UploadSiteHostedPicturesRequestType
      */
     public String setExternalPictureURL(int idx, String value) {
         return this.externalPictureURL.set(idx, value);
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     array of
-     *     {@link PictureWatermarkCodeType }
-     *     
-     */
-    public PictureWatermarkCodeType[] getPictureWatermark() {
-        if (this.pictureWatermark == null) {
-            return new PictureWatermarkCodeType[ 0 ] ;
-        }
-        return ((PictureWatermarkCodeType[]) this.pictureWatermark.toArray(new PictureWatermarkCodeType[this.pictureWatermark.size()] ));
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     one of
-     *     {@link PictureWatermarkCodeType }
-     *     
-     */
-    public PictureWatermarkCodeType getPictureWatermark(int idx) {
-        if (this.pictureWatermark == null) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.pictureWatermark.get(idx);
-    }
-
-    public int getPictureWatermarkLength() {
-        if (this.pictureWatermark == null) {
-            return  0;
-        }
-        return this.pictureWatermark.size();
-    }
-
-    /**
-     * 
-     * 
-     * @param values
-     *     allowed objects are
-     *     {@link PictureWatermarkCodeType }
-     *     
-     */
-    public void setPictureWatermark(PictureWatermarkCodeType[] values) {
-        this._getPictureWatermark().clear();
-        int len = values.length;
-        for (int i = 0; (i<len); i ++) {
-            this.pictureWatermark.add(values[i]);
-        }
-    }
-
-    protected List<PictureWatermarkCodeType> _getPictureWatermark() {
-        if (pictureWatermark == null) {
-            pictureWatermark = new ArrayList<PictureWatermarkCodeType>();
-        }
-        return pictureWatermark;
-    }
-
-    /**
-     * 
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PictureWatermarkCodeType }
-     *     
-     */
-    public PictureWatermarkCodeType setPictureWatermark(int idx, PictureWatermarkCodeType value) {
-        return this.pictureWatermark.set(idx, value);
     }
 
     /**

@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 			  Type defining the <b>SellerProfilePreferences</b> container. This container
  * 				consists of a flag that indicates whether or not the seller has opted into Business
- * 				Policies, as well as a list of Business Policies profiles that have been set up for the 
+ * 				Policies, as well as a list of Business Policies profiles that have been set up for the
  * 				seller's account.
  * 			
  * 

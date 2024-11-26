@@ -40,7 +40,6 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="ReturnedTransactionCountActual" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="Item" type="{urn:ebay:apis:eBLBaseComponents}ItemType" minOccurs="0"/>
  *         &lt;element name="TransactionArray" type="{urn:ebay:apis:eBLBaseComponents}TransactionArrayType" minOccurs="0"/>
- *         &lt;element name="PayPalPreferred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -57,8 +56,7 @@ import javax.xml.bind.annotation.XmlType;
     "pageNumber",
     "returnedTransactionCountActual",
     "item",
-    "transactionArray",
-    "payPalPreferred"
+    "transactionArray"
 })
 public class GetItemTransactionsResponseType
     extends AbstractResponseType
@@ -80,8 +78,6 @@ public class GetItemTransactionsResponseType
     protected ItemType item;
     @XmlElement(name = "TransactionArray")
     protected TransactionArrayType transactionArray;
-    @XmlElement(name = "PayPalPreferred")
-    protected Boolean payPalPreferred;
 
     /**
      * Gets the value of the paginationResult property.
@@ -249,30 +245,6 @@ public class GetItemTransactionsResponseType
      */
     public void setTransactionArray(TransactionArrayType value) {
         this.transactionArray = value;
-    }
-
-    /**
-     * Gets the value of the payPalPreferred property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isPayPalPreferred() {
-        return payPalPreferred;
-    }
-
-    /**
-     * Sets the value of the payPalPreferred property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setPayPalPreferred(Boolean value) {
-        this.payPalPreferred = value;
     }
 
 }

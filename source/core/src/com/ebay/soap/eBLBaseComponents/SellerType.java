@@ -27,7 +27,6 @@ import org.w3c.dom.Element;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="PaisaPayStatus" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="AllowPaymentEdit" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="BillingCurrency" type="{urn:ebay:apis:eBLBaseComponents}CurrencyCodeType" minOccurs="0"/>
  *         &lt;element name="CheckoutEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
@@ -45,21 +44,16 @@ import org.w3c.dom.Element;
  *         &lt;element name="RegisteredBusinessSeller" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="StoreSite" type="{urn:ebay:apis:eBLBaseComponents}SiteCodeType" minOccurs="0"/>
  *         &lt;element name="PaymentMethod" type="{urn:ebay:apis:eBLBaseComponents}SellerPaymentMethodCodeType" minOccurs="0"/>
- *         &lt;element name="ProStoresPreference" type="{urn:ebay:apis:eBLBaseComponents}ProStoresCheckoutPreferenceType" minOccurs="0"/>
  *         &lt;element name="CharityRegistered" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="SafePaymentExempt" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PaisaPayEscrowEMIStatus" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="CharityAffiliationDetails" type="{urn:ebay:apis:eBLBaseComponents}CharityAffiliationDetailsType" minOccurs="0"/>
  *         &lt;element name="TransactionPercent" type="{http://www.w3.org/2001/XMLSchema}float" minOccurs="0"/>
- *         &lt;element name="IntegratedMerchantCreditCardInfo" type="{urn:ebay:apis:eBLBaseComponents}IntegratedMerchantCreditCardInfoType" minOccurs="0"/>
  *         &lt;element name="FeatureEligibility" type="{urn:ebay:apis:eBLBaseComponents}FeatureEligibilityType" minOccurs="0"/>
  *         &lt;element name="TopRatedSeller" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="TopRatedSellerDetails" type="{urn:ebay:apis:eBLBaseComponents}TopRatedSellerDetailsType" minOccurs="0"/>
  *         &lt;element name="RecoupmentPolicyConsent" type="{urn:ebay:apis:eBLBaseComponents}RecoupmentPolicyConsentType" minOccurs="0"/>
  *         &lt;element name="DomesticRateTable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="InternationalRateTable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SellereBayPaymentProcessStatus" type="{urn:ebay:apis:eBLBaseComponents}SellereBayPaymentProcessStatusCodeType" minOccurs="0"/>
- *         &lt;element name="SellereBayPaymentProcessConsent" type="{urn:ebay:apis:eBLBaseComponents}SellereBayPaymentProcessConsentCodeType" minOccurs="0"/>
  *         &lt;any/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -71,7 +65,6 @@ import org.w3c.dom.Element;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SellerType", propOrder = {
-    "paisaPayStatus",
     "allowPaymentEdit",
     "billingCurrency",
     "checkoutEnabled",
@@ -89,21 +82,16 @@ import org.w3c.dom.Element;
     "registeredBusinessSeller",
     "storeSite",
     "paymentMethod",
-    "proStoresPreference",
     "charityRegistered",
     "safePaymentExempt",
-    "paisaPayEscrowEMIStatus",
     "charityAffiliationDetails",
     "transactionPercent",
-    "integratedMerchantCreditCardInfo",
     "featureEligibility",
     "topRatedSeller",
     "topRatedSellerDetails",
     "recoupmentPolicyConsent",
     "domesticRateTable",
     "internationalRateTable",
-    "sellereBayPaymentProcessStatus",
-    "sellereBayPaymentProcessConsent",
     "any"
 })
 public class SellerType
@@ -111,8 +99,6 @@ public class SellerType
 {
 
     private final static long serialVersionUID = 12343L;
-    @XmlElement(name = "PaisaPayStatus")
-    protected Integer paisaPayStatus;
     @XmlElement(name = "AllowPaymentEdit")
     protected boolean allowPaymentEdit;
     @XmlElement(name = "BillingCurrency")
@@ -148,20 +134,14 @@ public class SellerType
     protected SiteCodeType storeSite;
     @XmlElement(name = "PaymentMethod")
     protected SellerPaymentMethodCodeType paymentMethod;
-    @XmlElement(name = "ProStoresPreference")
-    protected ProStoresCheckoutPreferenceType proStoresPreference;
     @XmlElement(name = "CharityRegistered")
     protected Boolean charityRegistered;
     @XmlElement(name = "SafePaymentExempt")
     protected Boolean safePaymentExempt;
-    @XmlElement(name = "PaisaPayEscrowEMIStatus")
-    protected Integer paisaPayEscrowEMIStatus;
     @XmlElement(name = "CharityAffiliationDetails")
     protected CharityAffiliationDetailsType charityAffiliationDetails;
     @XmlElement(name = "TransactionPercent")
     protected Float transactionPercent;
-    @XmlElement(name = "IntegratedMerchantCreditCardInfo")
-    protected IntegratedMerchantCreditCardInfoType integratedMerchantCreditCardInfo;
     @XmlElement(name = "FeatureEligibility")
     protected FeatureEligibilityType featureEligibility;
     @XmlElement(name = "TopRatedSeller")
@@ -174,36 +154,8 @@ public class SellerType
     protected Boolean domesticRateTable;
     @XmlElement(name = "InternationalRateTable")
     protected Boolean internationalRateTable;
-    @XmlElement(name = "SellereBayPaymentProcessStatus")
-    protected SellereBayPaymentProcessStatusCodeType sellereBayPaymentProcessStatus;
-    @XmlElement(name = "SellereBayPaymentProcessConsent")
-    protected SellereBayPaymentProcessConsentCodeType sellereBayPaymentProcessConsent;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
-
-    /**
-     * Gets the value of the paisaPayStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getPaisaPayStatus() {
-        return paisaPayStatus;
-    }
-
-    /**
-     * Sets the value of the paisaPayStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setPaisaPayStatus(Integer value) {
-        this.paisaPayStatus = value;
-    }
 
     /**
      * Gets the value of the allowPaymentEdit property.
@@ -566,30 +518,6 @@ public class SellerType
     }
 
     /**
-     * Gets the value of the proStoresPreference property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ProStoresCheckoutPreferenceType }
-     *     
-     */
-    public ProStoresCheckoutPreferenceType getProStoresPreference() {
-        return proStoresPreference;
-    }
-
-    /**
-     * Sets the value of the proStoresPreference property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ProStoresCheckoutPreferenceType }
-     *     
-     */
-    public void setProStoresPreference(ProStoresCheckoutPreferenceType value) {
-        this.proStoresPreference = value;
-    }
-
-    /**
      * Gets the value of the charityRegistered property.
      * 
      * @return
@@ -638,30 +566,6 @@ public class SellerType
     }
 
     /**
-     * Gets the value of the paisaPayEscrowEMIStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getPaisaPayEscrowEMIStatus() {
-        return paisaPayEscrowEMIStatus;
-    }
-
-    /**
-     * Sets the value of the paisaPayEscrowEMIStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setPaisaPayEscrowEMIStatus(Integer value) {
-        this.paisaPayEscrowEMIStatus = value;
-    }
-
-    /**
      * Gets the value of the charityAffiliationDetails property.
      * 
      * @return
@@ -707,30 +611,6 @@ public class SellerType
      */
     public void setTransactionPercent(Float value) {
         this.transactionPercent = value;
-    }
-
-    /**
-     * Gets the value of the integratedMerchantCreditCardInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link IntegratedMerchantCreditCardInfoType }
-     *     
-     */
-    public IntegratedMerchantCreditCardInfoType getIntegratedMerchantCreditCardInfo() {
-        return integratedMerchantCreditCardInfo;
-    }
-
-    /**
-     * Sets the value of the integratedMerchantCreditCardInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link IntegratedMerchantCreditCardInfoType }
-     *     
-     */
-    public void setIntegratedMerchantCreditCardInfo(IntegratedMerchantCreditCardInfoType value) {
-        this.integratedMerchantCreditCardInfo = value;
     }
 
     /**
@@ -875,54 +755,6 @@ public class SellerType
      */
     public void setInternationalRateTable(Boolean value) {
         this.internationalRateTable = value;
-    }
-
-    /**
-     * Gets the value of the sellereBayPaymentProcessStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SellereBayPaymentProcessStatusCodeType }
-     *     
-     */
-    public SellereBayPaymentProcessStatusCodeType getSellereBayPaymentProcessStatus() {
-        return sellereBayPaymentProcessStatus;
-    }
-
-    /**
-     * Sets the value of the sellereBayPaymentProcessStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SellereBayPaymentProcessStatusCodeType }
-     *     
-     */
-    public void setSellereBayPaymentProcessStatus(SellereBayPaymentProcessStatusCodeType value) {
-        this.sellereBayPaymentProcessStatus = value;
-    }
-
-    /**
-     * Gets the value of the sellereBayPaymentProcessConsent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SellereBayPaymentProcessConsentCodeType }
-     *     
-     */
-    public SellereBayPaymentProcessConsentCodeType getSellereBayPaymentProcessConsent() {
-        return sellereBayPaymentProcessConsent;
-    }
-
-    /**
-     * Sets the value of the sellereBayPaymentProcessConsent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SellereBayPaymentProcessConsentCodeType }
-     *     
-     */
-    public void setSellereBayPaymentProcessConsent(SellereBayPaymentProcessConsentCodeType value) {
-        this.sellereBayPaymentProcessConsent = value;
     }
 
     /**

@@ -14,8 +14,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				<span class="tablenote"><b>Note: </b> This type is currently available only on the German (DE) marketplace. The <b>RepairScore</b> field is provided for future use (not presently available). </span> 
- * 				<br />Type defining the <b>EnergyEfficiencyLabel</b>, <b>Hazmat</b>, and <b>RepairScore</b> regulatory containers that are used at the listing level to provide Energy Efficiency Label information, hazardous material related information, and the repair score.
+ * 				Type defining the regulatory containers that are used at the listing level to provide Energy Efficiency Label information, hazardous material related information, product safety related information, manufacturer and responsible person information, and the repair score.
  * 			
  * 
  * <p>Java class for RegulatoryType complex type.
@@ -29,7 +28,11 @@ import org.w3c.dom.Element;
  *       &lt;sequence>
  *         &lt;element name="EnergyEfficiencyLabel" type="{urn:ebay:apis:eBLBaseComponents}EnergyEfficiencyType" minOccurs="0"/>
  *         &lt;element name="Hazmat" type="{urn:ebay:apis:eBLBaseComponents}HazmatType" minOccurs="0"/>
+ *         &lt;element name="ProductSafety" type="{urn:ebay:apis:eBLBaseComponents}ProductSafetyType" minOccurs="0"/>
  *         &lt;element name="RepairScore" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
+ *         &lt;element name="Manufacturer" type="{urn:ebay:apis:eBLBaseComponents}ManufacturerType" minOccurs="0"/>
+ *         &lt;element name="ResponsiblePersons" type="{urn:ebay:apis:eBLBaseComponents}ResponsiblePersonsType" minOccurs="0"/>
+ *         &lt;element name="Documents" type="{urn:ebay:apis:eBLBaseComponents}DocumentsType" minOccurs="0"/>
  *         &lt;any/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -43,7 +46,11 @@ import org.w3c.dom.Element;
 @XmlType(name = "RegulatoryType", propOrder = {
     "energyEfficiencyLabel",
     "hazmat",
+    "productSafety",
     "repairScore",
+    "manufacturer",
+    "responsiblePersons",
+    "documents",
     "any"
 })
 public class RegulatoryType
@@ -55,8 +62,16 @@ public class RegulatoryType
     protected EnergyEfficiencyType energyEfficiencyLabel;
     @XmlElement(name = "Hazmat")
     protected HazmatType hazmat;
+    @XmlElement(name = "ProductSafety")
+    protected ProductSafetyType productSafety;
     @XmlElement(name = "RepairScore")
     protected Double repairScore;
+    @XmlElement(name = "Manufacturer")
+    protected ManufacturerType manufacturer;
+    @XmlElement(name = "ResponsiblePersons")
+    protected ResponsiblePersonsType responsiblePersons;
+    @XmlElement(name = "Documents")
+    protected DocumentsType documents;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
 
@@ -109,6 +124,30 @@ public class RegulatoryType
     }
 
     /**
+     * Gets the value of the productSafety property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ProductSafetyType }
+     *     
+     */
+    public ProductSafetyType getProductSafety() {
+        return productSafety;
+    }
+
+    /**
+     * Sets the value of the productSafety property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ProductSafetyType }
+     *     
+     */
+    public void setProductSafety(ProductSafetyType value) {
+        this.productSafety = value;
+    }
+
+    /**
      * Gets the value of the repairScore property.
      * 
      * @return
@@ -130,6 +169,78 @@ public class RegulatoryType
      */
     public void setRepairScore(Double value) {
         this.repairScore = value;
+    }
+
+    /**
+     * Gets the value of the manufacturer property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ManufacturerType }
+     *     
+     */
+    public ManufacturerType getManufacturer() {
+        return manufacturer;
+    }
+
+    /**
+     * Sets the value of the manufacturer property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ManufacturerType }
+     *     
+     */
+    public void setManufacturer(ManufacturerType value) {
+        this.manufacturer = value;
+    }
+
+    /**
+     * Gets the value of the responsiblePersons property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ResponsiblePersonsType }
+     *     
+     */
+    public ResponsiblePersonsType getResponsiblePersons() {
+        return responsiblePersons;
+    }
+
+    /**
+     * Sets the value of the responsiblePersons property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ResponsiblePersonsType }
+     *     
+     */
+    public void setResponsiblePersons(ResponsiblePersonsType value) {
+        this.responsiblePersons = value;
+    }
+
+    /**
+     * Gets the value of the documents property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DocumentsType }
+     *     
+     */
+    public DocumentsType getDocuments() {
+        return documents;
+    }
+
+    /**
+     * Sets the value of the documents property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DocumentsType }
+     *     
+     */
+    public void setDocuments(DocumentsType value) {
+        this.documents = value;
     }
 
     /**

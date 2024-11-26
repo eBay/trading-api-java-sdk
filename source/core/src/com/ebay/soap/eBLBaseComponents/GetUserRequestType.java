@@ -24,7 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ItemID" type="{urn:ebay:apis:eBLBaseComponents}ItemIDType" minOccurs="0"/>
  *         &lt;element name="UserID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IncludeExpressRequirements" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="IncludeFeatureEligibility" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
@@ -38,7 +37,6 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "GetUserRequestType", propOrder = {
     "itemID",
     "userID",
-    "includeExpressRequirements",
     "includeFeatureEligibility"
 })
 public class GetUserRequestType
@@ -51,8 +49,6 @@ public class GetUserRequestType
     protected String itemID;
     @XmlElement(name = "UserID")
     protected String userID;
-    @XmlElement(name = "IncludeExpressRequirements")
-    protected Boolean includeExpressRequirements;
     @XmlElement(name = "IncludeFeatureEligibility")
     protected Boolean includeFeatureEligibility;
 
@@ -102,30 +98,6 @@ public class GetUserRequestType
      */
     public void setUserID(String value) {
         this.userID = value;
-    }
-
-    /**
-     * Gets the value of the includeExpressRequirements property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIncludeExpressRequirements() {
-        return includeExpressRequirements;
-    }
-
-    /**
-     * Sets the value of the includeExpressRequirements property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIncludeExpressRequirements(Boolean value) {
-        this.includeExpressRequirements = value;
     }
 
     /**

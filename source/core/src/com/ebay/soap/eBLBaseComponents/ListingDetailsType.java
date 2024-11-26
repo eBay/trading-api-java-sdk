@@ -49,13 +49,9 @@ import org.w3c.dom.Element;
  *         &lt;element name="HasUnansweredQuestions" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="HasPublicMessages" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BuyItNowAvailable" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SellerBusinessType" type="{urn:ebay:apis:eBLBaseComponents}SellerBusinessCodeType" minOccurs="0"/>
  *         &lt;element name="MinimumBestOfferPrice" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
- *         &lt;element name="MinimumBestOfferMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="LocalListingDistance" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TCROriginalItemID" type="{urn:ebay:apis:eBLBaseComponents}ItemIDType" minOccurs="0"/>
  *         &lt;element name="ViewItemURLForNaturalSearch" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
- *         &lt;element name="PayPerLeadEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BestOfferAutoAcceptPrice" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="EndingReason" type="{urn:ebay:apis:eBLBaseComponents}EndReasonCodeType" minOccurs="0"/>
  *         &lt;any/>
@@ -84,13 +80,9 @@ import org.w3c.dom.Element;
     "hasUnansweredQuestions",
     "hasPublicMessages",
     "buyItNowAvailable",
-    "sellerBusinessType",
     "minimumBestOfferPrice",
-    "minimumBestOfferMessage",
     "localListingDistance",
-    "tcrOriginalItemID",
     "viewItemURLForNaturalSearch",
-    "payPerLeadEnabled",
     "bestOfferAutoAcceptPrice",
     "endingReason",
     "any"
@@ -135,21 +127,13 @@ public class ListingDetailsType
     protected Boolean hasPublicMessages;
     @XmlElement(name = "BuyItNowAvailable")
     protected Boolean buyItNowAvailable;
-    @XmlElement(name = "SellerBusinessType")
-    protected SellerBusinessCodeType sellerBusinessType;
     @XmlElement(name = "MinimumBestOfferPrice")
     protected AmountType minimumBestOfferPrice;
-    @XmlElement(name = "MinimumBestOfferMessage")
-    protected String minimumBestOfferMessage;
     @XmlElement(name = "LocalListingDistance")
     protected String localListingDistance;
-    @XmlElement(name = "TCROriginalItemID")
-    protected String tcrOriginalItemID;
     @XmlElement(name = "ViewItemURLForNaturalSearch")
     @XmlSchemaType(name = "anyURI")
     protected String viewItemURLForNaturalSearch;
-    @XmlElement(name = "PayPerLeadEnabled")
-    protected Boolean payPerLeadEnabled;
     @XmlElement(name = "BestOfferAutoAcceptPrice")
     protected AmountType bestOfferAutoAcceptPrice;
     @XmlElement(name = "EndingReason")
@@ -518,30 +502,6 @@ public class ListingDetailsType
     }
 
     /**
-     * Gets the value of the sellerBusinessType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SellerBusinessCodeType }
-     *     
-     */
-    public SellerBusinessCodeType getSellerBusinessType() {
-        return sellerBusinessType;
-    }
-
-    /**
-     * Sets the value of the sellerBusinessType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SellerBusinessCodeType }
-     *     
-     */
-    public void setSellerBusinessType(SellerBusinessCodeType value) {
-        this.sellerBusinessType = value;
-    }
-
-    /**
      * Gets the value of the minimumBestOfferPrice property.
      * 
      * @return
@@ -563,30 +523,6 @@ public class ListingDetailsType
      */
     public void setMinimumBestOfferPrice(AmountType value) {
         this.minimumBestOfferPrice = value;
-    }
-
-    /**
-     * Gets the value of the minimumBestOfferMessage property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getMinimumBestOfferMessage() {
-        return minimumBestOfferMessage;
-    }
-
-    /**
-     * Sets the value of the minimumBestOfferMessage property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setMinimumBestOfferMessage(String value) {
-        this.minimumBestOfferMessage = value;
     }
 
     /**
@@ -614,30 +550,6 @@ public class ListingDetailsType
     }
 
     /**
-     * Gets the value of the tcrOriginalItemID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTCROriginalItemID() {
-        return tcrOriginalItemID;
-    }
-
-    /**
-     * Sets the value of the tcrOriginalItemID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTCROriginalItemID(String value) {
-        this.tcrOriginalItemID = value;
-    }
-
-    /**
      * Gets the value of the viewItemURLForNaturalSearch property.
      * 
      * @return
@@ -659,30 +571,6 @@ public class ListingDetailsType
      */
     public void setViewItemURLForNaturalSearch(String value) {
         this.viewItemURLForNaturalSearch = value;
-    }
-
-    /**
-     * Gets the value of the payPerLeadEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isPayPerLeadEnabled() {
-        return payPerLeadEnabled;
-    }
-
-    /**
-     * Sets the value of the payPerLeadEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setPayPerLeadEnabled(Boolean value) {
-        this.payPerLeadEnabled = value;
     }
 
     /**

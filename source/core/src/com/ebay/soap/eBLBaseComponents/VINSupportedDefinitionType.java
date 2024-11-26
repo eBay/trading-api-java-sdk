@@ -13,10 +13,10 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				If present, the site defines category settings for when the seller 
- * 				can provide a Vehicle Identification Number (VIN) for 
- * 				US, CA, and CAFR eBay Motors sites. VIN is required for cars and trucks 
- * 				from model year 1981 and later. (The US developed national standards for VIN 
+ * 				If present, the site defines category settings for when the seller
+ * 				can provide a Vehicle Identification Number (VIN) for
+ * 				US, CA, and CAFR eBay Motors sites. VIN is required for cars and trucks
+ * 				from model year 1981 and later. (The US developed national standards for VIN
  * 				values as of 1981.)
  * 			
  * 

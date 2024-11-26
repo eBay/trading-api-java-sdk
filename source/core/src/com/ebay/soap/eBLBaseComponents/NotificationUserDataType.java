@@ -26,8 +26,6 @@ import org.w3c.dom.Element;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="SMSSubscription" type="{urn:ebay:apis:eBLBaseComponents}SMSSubscriptionType" minOccurs="0"/>
- *         &lt;element name="SummarySchedule" type="{urn:ebay:apis:eBLBaseComponents}SummaryEventScheduleType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ExternalUserData" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;any/>
  *       &lt;/sequence>
@@ -40,8 +38,6 @@ import org.w3c.dom.Element;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "NotificationUserDataType", propOrder = {
-    "smsSubscription",
-    "summarySchedule",
     "externalUserData",
     "any"
 })
@@ -50,110 +46,10 @@ public class NotificationUserDataType
 {
 
     private final static long serialVersionUID = 12343L;
-    @XmlElement(name = "SMSSubscription")
-    protected SMSSubscriptionType smsSubscription;
-    @XmlElement(name = "SummarySchedule")
-    protected List<SummaryEventScheduleType> summarySchedule;
     @XmlElement(name = "ExternalUserData")
     protected String externalUserData;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
-
-    /**
-     * Gets the value of the smsSubscription property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SMSSubscriptionType }
-     *     
-     */
-    public SMSSubscriptionType getSMSSubscription() {
-        return smsSubscription;
-    }
-
-    /**
-     * Sets the value of the smsSubscription property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SMSSubscriptionType }
-     *     
-     */
-    public void setSMSSubscription(SMSSubscriptionType value) {
-        this.smsSubscription = value;
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     array of
-     *     {@link SummaryEventScheduleType }
-     *     
-     */
-    public SummaryEventScheduleType[] getSummarySchedule() {
-        if (this.summarySchedule == null) {
-            return new SummaryEventScheduleType[ 0 ] ;
-        }
-        return ((SummaryEventScheduleType[]) this.summarySchedule.toArray(new SummaryEventScheduleType[this.summarySchedule.size()] ));
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     one of
-     *     {@link SummaryEventScheduleType }
-     *     
-     */
-    public SummaryEventScheduleType getSummarySchedule(int idx) {
-        if (this.summarySchedule == null) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.summarySchedule.get(idx);
-    }
-
-    public int getSummaryScheduleLength() {
-        if (this.summarySchedule == null) {
-            return  0;
-        }
-        return this.summarySchedule.size();
-    }
-
-    /**
-     * 
-     * 
-     * @param values
-     *     allowed objects are
-     *     {@link SummaryEventScheduleType }
-     *     
-     */
-    public void setSummarySchedule(SummaryEventScheduleType[] values) {
-        this._getSummarySchedule().clear();
-        int len = values.length;
-        for (int i = 0; (i<len); i ++) {
-            this.summarySchedule.add(values[i]);
-        }
-    }
-
-    protected List<SummaryEventScheduleType> _getSummarySchedule() {
-        if (summarySchedule == null) {
-            summarySchedule = new ArrayList<SummaryEventScheduleType>();
-        }
-        return summarySchedule;
-    }
-
-    /**
-     * 
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SummaryEventScheduleType }
-     *     
-     */
-    public SummaryEventScheduleType setSummarySchedule(int idx, SummaryEventScheduleType value) {
-        return this.summarySchedule.set(idx, value);
-    }
 
     /**
      * Gets the value of the externalUserData property.

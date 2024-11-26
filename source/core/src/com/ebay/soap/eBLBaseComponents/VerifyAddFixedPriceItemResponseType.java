@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				Returns the listing recommendations (if applicable), the estimated fees for the proposed new listing (except the Final Value Fee, which isn't calculated until the item has sold), and other details.
+ * 				Returns the listing recommendations (if applicable), the estimated fees for the proposed new listing (except the transaction fees, which aren't calculated until the item has sold), and other details.
  * 			
  * 
  * <p>Java class for VerifyAddFixedPriceItemResponseType complex type.
@@ -27,8 +27,6 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="ItemID" type="{urn:ebay:apis:eBLBaseComponents}ItemIDType" minOccurs="0"/>
  *         &lt;element name="SKU" type="{urn:ebay:apis:eBLBaseComponents}SKUType" minOccurs="0"/>
  *         &lt;element name="Fees" type="{urn:ebay:apis:eBLBaseComponents}FeesType" minOccurs="0"/>
- *         &lt;element name="ExpressListing" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ExpressItemRequirements" type="{urn:ebay:apis:eBLBaseComponents}ExpressItemRequirementsType" minOccurs="0"/>
  *         &lt;element name="CategoryID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Category2ID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="DiscountReason" type="{urn:ebay:apis:eBLBaseComponents}DiscountReasonCodeType" maxOccurs="unbounded" minOccurs="0"/>
@@ -45,8 +43,6 @@ import javax.xml.bind.annotation.XmlType;
     "itemID",
     "sku",
     "fees",
-    "expressListing",
-    "expressItemRequirements",
     "categoryID",
     "category2ID",
     "discountReason"
@@ -63,10 +59,6 @@ public class VerifyAddFixedPriceItemResponseType
     protected String sku;
     @XmlElement(name = "Fees")
     protected FeesType fees;
-    @XmlElement(name = "ExpressListing")
-    protected Boolean expressListing;
-    @XmlElement(name = "ExpressItemRequirements")
-    protected ExpressItemRequirementsType expressItemRequirements;
     @XmlElement(name = "CategoryID")
     protected String categoryID;
     @XmlElement(name = "Category2ID")
@@ -144,54 +136,6 @@ public class VerifyAddFixedPriceItemResponseType
      */
     public void setFees(FeesType value) {
         this.fees = value;
-    }
-
-    /**
-     * Gets the value of the expressListing property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isExpressListing() {
-        return expressListing;
-    }
-
-    /**
-     * Sets the value of the expressListing property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setExpressListing(Boolean value) {
-        this.expressListing = value;
-    }
-
-    /**
-     * Gets the value of the expressItemRequirements property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ExpressItemRequirementsType }
-     *     
-     */
-    public ExpressItemRequirementsType getExpressItemRequirements() {
-        return expressItemRequirements;
-    }
-
-    /**
-     * Sets the value of the expressItemRequirements property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ExpressItemRequirementsType }
-     *     
-     */
-    public void setExpressItemRequirements(ExpressItemRequirementsType value) {
-        this.expressItemRequirements = value;
     }
 
     /**

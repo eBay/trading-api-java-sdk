@@ -40,7 +40,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="MaximumUnpaidItemStrikesInfo" type="{urn:ebay:apis:eBLBaseComponents}MaximumUnpaidItemStrikesInfoDetailsType" minOccurs="0"/>
  *         &lt;element name="MinimumFeedbackScore" type="{urn:ebay:apis:eBLBaseComponents}MinimumFeedbackScoreDetailsType" minOccurs="0"/>
  *         &lt;element name="ShipToRegistrationCountry" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="VerifiedUserRequirements" type="{urn:ebay:apis:eBLBaseComponents}VerifiedUserRequirementsDetailsType" minOccurs="0"/>
  *         &lt;element name="DetailVersion" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="UpdateTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;any/>
@@ -60,7 +59,6 @@ import org.w3c.dom.Element;
     "maximumUnpaidItemStrikesInfo",
     "minimumFeedbackScore",
     "shipToRegistrationCountry",
-    "verifiedUserRequirements",
     "detailVersion",
     "updateTime",
     "any"
@@ -82,8 +80,6 @@ public class SiteBuyerRequirementDetailsType
     protected MinimumFeedbackScoreDetailsType minimumFeedbackScore;
     @XmlElement(name = "ShipToRegistrationCountry")
     protected Boolean shipToRegistrationCountry;
-    @XmlElement(name = "VerifiedUserRequirements")
-    protected VerifiedUserRequirementsDetailsType verifiedUserRequirements;
     @XmlElement(name = "DetailVersion")
     protected String detailVersion;
     @XmlElement(name = "UpdateTime", type = String.class)
@@ -235,30 +231,6 @@ public class SiteBuyerRequirementDetailsType
      */
     public void setShipToRegistrationCountry(Boolean value) {
         this.shipToRegistrationCountry = value;
-    }
-
-    /**
-     * Gets the value of the verifiedUserRequirements property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VerifiedUserRequirementsDetailsType }
-     *     
-     */
-    public VerifiedUserRequirementsDetailsType getVerifiedUserRequirements() {
-        return verifiedUserRequirements;
-    }
-
-    /**
-     * Sets the value of the verifiedUserRequirements property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VerifiedUserRequirementsDetailsType }
-     *     
-     */
-    public void setVerifiedUserRequirements(VerifiedUserRequirementsDetailsType value) {
-        this.verifiedUserRequirements = value;
     }
 
     /**

@@ -3,7 +3,6 @@ package com.ebay.soap.eBLBaseComponents;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -11,7 +10,6 @@ import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.w3c.dom.Element;
 
 
@@ -31,7 +29,6 @@ import org.w3c.dom.Element;
  *       &lt;sequence>
  *         &lt;element name="ResponseEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ResponseURL" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
- *         &lt;element name="UserResponseDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;any/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -45,7 +42,6 @@ import org.w3c.dom.Element;
 @XmlType(name = "MyMessagesResponseDetailsType", propOrder = {
     "responseEnabled",
     "responseURL",
-    "userResponseDate",
     "any"
 })
 public class MyMessagesResponseDetailsType
@@ -58,10 +54,6 @@ public class MyMessagesResponseDetailsType
     @XmlElement(name = "ResponseURL")
     @XmlSchemaType(name = "anyURI")
     protected String responseURL;
-    @XmlElement(name = "UserResponseDate", type = String.class)
-    @XmlJavaTypeAdapter(Adapter1 .class)
-    @XmlSchemaType(name = "dateTime")
-    protected Calendar userResponseDate;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
 
@@ -111,30 +103,6 @@ public class MyMessagesResponseDetailsType
      */
     public void setResponseURL(String value) {
         this.responseURL = value;
-    }
-
-    /**
-     * Gets the value of the userResponseDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public Calendar getUserResponseDate() {
-        return userResponseDate;
-    }
-
-    /**
-     * Sets the value of the userResponseDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUserResponseDate(Calendar value) {
-        this.userResponseDate = value;
     }
 
     /**

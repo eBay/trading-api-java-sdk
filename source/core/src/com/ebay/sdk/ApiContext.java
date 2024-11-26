@@ -48,7 +48,7 @@ public class ApiContext {
   private SiteCodeType site = SiteCodeType.US;
   private String requestXml;
   private String responseXml;
-  private String wsdlVersion = "1331";
+  private String wsdlVersion = "1379";
   private String ruName = null;
 
   /**

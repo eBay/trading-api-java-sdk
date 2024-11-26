@@ -34,9 +34,9 @@ public enum PaymentStatusCodeType {
 
     /**
      * 
-     * 						This value indicates that the buyer's payment for the order has cleared. A 
-     * 						<b>CheckoutStatus.eBayPaymentStatus</b> value of 'NoPaymentFailure' 
-     * 						and a <b>CheckoutStatus.Status</b> value of 'Complete' indicates that 
+     * 						This value indicates that the buyer's payment for the order has cleared. A
+     * 						<b>CheckoutStatus.eBayPaymentStatus</b> value of 'NoPaymentFailure'
+     * 						and a <b>CheckoutStatus.Status</b> value of 'Complete' indicates that
      * 						checkout is complete.
      * 					
      * 
@@ -82,7 +82,7 @@ public enum PaymentStatusCodeType {
 
     /**
      * 
-     * 						This value indicates that the buyer's payment is in process, but has not yet cleared. 
+     * 						This value indicates that the buyer's payment is in process, but has not yet cleared.
      * 						<br/>
      * 						<br/>
      * 							<span class="tablenote"><b>Note:</b>

@@ -28,14 +28,11 @@ import org.w3c.dom.Element;
  *       &lt;sequence>
  *         &lt;element name="ActiveAuctionCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="AuctionSellingCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="AuctionBidCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="TotalAuctionSellingValue" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="TotalSoldCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="TotalSoldValue" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="SoldDurationInDays" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="ClassifiedAdCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TotalLeadCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ClassifiedAdOfferCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="TotalListingsWithLeads" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="QuantityLimitRemaining" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *         &lt;element name="AmountLimitRemaining" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
@@ -52,14 +49,11 @@ import org.w3c.dom.Element;
 @XmlType(name = "MyeBaySellingSummaryType", propOrder = {
     "activeAuctionCount",
     "auctionSellingCount",
-    "auctionBidCount",
     "totalAuctionSellingValue",
     "totalSoldCount",
     "totalSoldValue",
     "soldDurationInDays",
     "classifiedAdCount",
-    "totalLeadCount",
-    "classifiedAdOfferCount",
     "totalListingsWithLeads",
     "quantityLimitRemaining",
     "amountLimitRemaining",
@@ -74,8 +68,6 @@ public class MyeBaySellingSummaryType
     protected Integer activeAuctionCount;
     @XmlElement(name = "AuctionSellingCount")
     protected Integer auctionSellingCount;
-    @XmlElement(name = "AuctionBidCount")
-    protected Integer auctionBidCount;
     @XmlElement(name = "TotalAuctionSellingValue")
     protected AmountType totalAuctionSellingValue;
     @XmlElement(name = "TotalSoldCount")
@@ -86,10 +78,6 @@ public class MyeBaySellingSummaryType
     protected Integer soldDurationInDays;
     @XmlElement(name = "ClassifiedAdCount")
     protected Integer classifiedAdCount;
-    @XmlElement(name = "TotalLeadCount")
-    protected Integer totalLeadCount;
-    @XmlElement(name = "ClassifiedAdOfferCount")
-    protected Integer classifiedAdOfferCount;
     @XmlElement(name = "TotalListingsWithLeads")
     protected Integer totalListingsWithLeads;
     @XmlElement(name = "QuantityLimitRemaining")
@@ -145,30 +133,6 @@ public class MyeBaySellingSummaryType
      */
     public void setAuctionSellingCount(Integer value) {
         this.auctionSellingCount = value;
-    }
-
-    /**
-     * Gets the value of the auctionBidCount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getAuctionBidCount() {
-        return auctionBidCount;
-    }
-
-    /**
-     * Sets the value of the auctionBidCount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setAuctionBidCount(Integer value) {
-        this.auctionBidCount = value;
     }
 
     /**
@@ -289,54 +253,6 @@ public class MyeBaySellingSummaryType
      */
     public void setClassifiedAdCount(Integer value) {
         this.classifiedAdCount = value;
-    }
-
-    /**
-     * Gets the value of the totalLeadCount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getTotalLeadCount() {
-        return totalLeadCount;
-    }
-
-    /**
-     * Sets the value of the totalLeadCount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setTotalLeadCount(Integer value) {
-        this.totalLeadCount = value;
-    }
-
-    /**
-     * Gets the value of the classifiedAdOfferCount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getClassifiedAdOfferCount() {
-        return classifiedAdOfferCount;
-    }
-
-    /**
-     * Sets the value of the classifiedAdOfferCount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setClassifiedAdOfferCount(Integer value) {
-        this.classifiedAdOfferCount = value;
     }
 
     /**

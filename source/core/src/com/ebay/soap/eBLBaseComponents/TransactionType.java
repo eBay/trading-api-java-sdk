@@ -48,11 +48,8 @@ import org.w3c.dom.Element;
  *         &lt;element name="TransactionPrice" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="BestOfferSale" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="VATPercent" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="ExternalTransaction" type="{urn:ebay:apis:eBLBaseComponents}ExternalTransactionType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="SellingManagerProductDetails" type="{urn:ebay:apis:eBLBaseComponents}SellingManagerProductDetailsType" minOccurs="0"/>
  *         &lt;element name="ShippingServiceSelected" type="{urn:ebay:apis:eBLBaseComponents}ShippingServiceOptionsType" minOccurs="0"/>
  *         &lt;element name="BuyerMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="DutchAuctionBid" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="BuyerPaidStatus" type="{urn:ebay:apis:eBLBaseComponents}PaidStatusCodeType" minOccurs="0"/>
  *         &lt;element name="SellerPaidStatus" type="{urn:ebay:apis:eBLBaseComponents}PaidStatusCodeType" minOccurs="0"/>
  *         &lt;element name="PaidTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
@@ -62,15 +59,8 @@ import org.w3c.dom.Element;
  *         &lt;element name="FeedbackReceived" type="{urn:ebay:apis:eBLBaseComponents}FeedbackInfoType" minOccurs="0"/>
  *         &lt;element name="ContainingOrder" type="{urn:ebay:apis:eBLBaseComponents}OrderType" minOccurs="0"/>
  *         &lt;element name="FinalValueFee" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
- *         &lt;element name="ListingCheckoutRedirectPreference" type="{urn:ebay:apis:eBLBaseComponents}ListingCheckoutRedirectPreferenceType" minOccurs="0"/>
- *         &lt;element name="RefundArray" type="{urn:ebay:apis:eBLBaseComponents}RefundArrayType" minOccurs="0"/>
  *         &lt;element name="TransactionSiteID" type="{urn:ebay:apis:eBLBaseComponents}SiteCodeType" minOccurs="0"/>
  *         &lt;element name="Platform" type="{urn:ebay:apis:eBLBaseComponents}TransactionPlatformCodeType" minOccurs="0"/>
- *         &lt;element name="CartID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SellerContactBuyerByEmail" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PayPalEmailAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PaisaPayID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="BuyerGuaranteePrice" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="Variation" type="{urn:ebay:apis:eBLBaseComponents}VariationType" minOccurs="0"/>
  *         &lt;element name="BuyerCheckoutMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="TotalTransactionPrice" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
@@ -80,20 +70,15 @@ import org.w3c.dom.Element;
  *         &lt;element name="ActualHandlingCost" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="OrderLineItemID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="eBayPaymentID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PaymentHoldDetails" type="{urn:ebay:apis:eBLBaseComponents}PaymentHoldDetailType" minOccurs="0"/>
  *         &lt;element name="SellerDiscounts" type="{urn:ebay:apis:eBLBaseComponents}SellerDiscountsType" minOccurs="0"/>
- *         &lt;element name="RefundAmount" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
- *         &lt;element name="RefundStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="CodiceFiscale" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="IsMultiLegShipping" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="MultiLegShippingDetails" type="{urn:ebay:apis:eBLBaseComponents}MultiLegShippingDetailsType" minOccurs="0"/>
  *         &lt;element name="InvoiceSentTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="UnpaidItem" type="{urn:ebay:apis:eBLBaseComponents}UnpaidItemType" minOccurs="0"/>
  *         &lt;element name="IntangibleItem" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="MonetaryDetails" type="{urn:ebay:apis:eBLBaseComponents}PaymentsInformationType" minOccurs="0"/>
  *         &lt;element name="PickupDetails" type="{urn:ebay:apis:eBLBaseComponents}PickupDetailsType" minOccurs="0"/>
  *         &lt;element name="PickupMethodSelected" type="{urn:ebay:apis:eBLBaseComponents}PickupMethodSelectedType" minOccurs="0"/>
- *         &lt;element name="ShippingConvenienceCharge" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="LogisticsPlanType" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
  *         &lt;element name="BuyerPackageEnclosures" type="{urn:ebay:apis:eBLBaseComponents}BuyerPackageEnclosuresType" minOccurs="0"/>
  *         &lt;element name="InventoryReservationID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -135,11 +120,8 @@ import org.w3c.dom.Element;
     "transactionPrice",
     "bestOfferSale",
     "vatPercent",
-    "externalTransaction",
-    "sellingManagerProductDetails",
     "shippingServiceSelected",
     "buyerMessage",
-    "dutchAuctionBid",
     "buyerPaidStatus",
     "sellerPaidStatus",
     "paidTime",
@@ -149,15 +131,8 @@ import org.w3c.dom.Element;
     "feedbackReceived",
     "containingOrder",
     "finalValueFee",
-    "listingCheckoutRedirectPreference",
-    "refundArray",
     "transactionSiteID",
     "platform",
-    "cartID",
-    "sellerContactBuyerByEmail",
-    "payPalEmailAddress",
-    "paisaPayID",
-    "buyerGuaranteePrice",
     "variation",
     "buyerCheckoutMessage",
     "totalTransactionPrice",
@@ -167,20 +142,15 @@ import org.w3c.dom.Element;
     "actualHandlingCost",
     "orderLineItemID",
     "eBayPaymentID",
-    "paymentHoldDetails",
     "sellerDiscounts",
-    "refundAmount",
-    "refundStatus",
     "codiceFiscale",
     "isMultiLegShipping",
     "multiLegShippingDetails",
     "invoiceSentTime",
-    "unpaidItem",
     "intangibleItem",
     "monetaryDetails",
     "pickupDetails",
     "pickupMethodSelected",
-    "shippingConvenienceCharge",
     "logisticsPlanType",
     "buyerPackageEnclosures",
     "inventoryReservationID",
@@ -236,16 +206,10 @@ public class TransactionType
     protected Boolean bestOfferSale;
     @XmlElement(name = "VATPercent")
     protected BigDecimal vatPercent;
-    @XmlElement(name = "ExternalTransaction")
-    protected List<ExternalTransactionType> externalTransaction;
-    @XmlElement(name = "SellingManagerProductDetails")
-    protected SellingManagerProductDetailsType sellingManagerProductDetails;
     @XmlElement(name = "ShippingServiceSelected")
     protected ShippingServiceOptionsType shippingServiceSelected;
     @XmlElement(name = "BuyerMessage")
     protected String buyerMessage;
-    @XmlElement(name = "DutchAuctionBid")
-    protected AmountType dutchAuctionBid;
     @XmlElement(name = "BuyerPaidStatus")
     protected PaidStatusCodeType buyerPaidStatus;
     @XmlElement(name = "SellerPaidStatus")
@@ -268,24 +232,10 @@ public class TransactionType
     protected OrderType containingOrder;
     @XmlElement(name = "FinalValueFee")
     protected AmountType finalValueFee;
-    @XmlElement(name = "ListingCheckoutRedirectPreference")
-    protected ListingCheckoutRedirectPreferenceType listingCheckoutRedirectPreference;
-    @XmlElement(name = "RefundArray")
-    protected RefundArrayType refundArray;
     @XmlElement(name = "TransactionSiteID")
     protected SiteCodeType transactionSiteID;
     @XmlElement(name = "Platform")
     protected TransactionPlatformCodeType platform;
-    @XmlElement(name = "CartID")
-    protected String cartID;
-    @XmlElement(name = "SellerContactBuyerByEmail")
-    protected Boolean sellerContactBuyerByEmail;
-    @XmlElement(name = "PayPalEmailAddress")
-    protected String payPalEmailAddress;
-    @XmlElement(name = "PaisaPayID")
-    protected String paisaPayID;
-    @XmlElement(name = "BuyerGuaranteePrice")
-    protected AmountType buyerGuaranteePrice;
     @XmlElement(name = "Variation")
     protected VariationType variation;
     @XmlElement(name = "BuyerCheckoutMessage")
@@ -303,14 +253,8 @@ public class TransactionType
     @XmlElement(name = "OrderLineItemID")
     protected String orderLineItemID;
     protected String eBayPaymentID;
-    @XmlElement(name = "PaymentHoldDetails")
-    protected PaymentHoldDetailType paymentHoldDetails;
     @XmlElement(name = "SellerDiscounts")
     protected SellerDiscountsType sellerDiscounts;
-    @XmlElement(name = "RefundAmount")
-    protected AmountType refundAmount;
-    @XmlElement(name = "RefundStatus")
-    protected String refundStatus;
     @XmlElement(name = "CodiceFiscale")
     protected String codiceFiscale;
     @XmlElement(name = "IsMultiLegShipping")
@@ -321,8 +265,6 @@ public class TransactionType
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "dateTime")
     protected Calendar invoiceSentTime;
-    @XmlElement(name = "UnpaidItem")
-    protected UnpaidItemType unpaidItem;
     @XmlElement(name = "IntangibleItem")
     protected Boolean intangibleItem;
     @XmlElement(name = "MonetaryDetails")
@@ -331,8 +273,6 @@ public class TransactionType
     protected PickupDetailsType pickupDetails;
     @XmlElement(name = "PickupMethodSelected")
     protected PickupMethodSelectedType pickupMethodSelected;
-    @XmlElement(name = "ShippingConvenienceCharge")
-    protected AmountType shippingConvenienceCharge;
     @XmlElement(name = "LogisticsPlanType")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "token")
@@ -748,102 +688,6 @@ public class TransactionType
     }
 
     /**
-     * 
-     * 
-     * @return
-     *     array of
-     *     {@link ExternalTransactionType }
-     *     
-     */
-    public ExternalTransactionType[] getExternalTransaction() {
-        if (this.externalTransaction == null) {
-            return new ExternalTransactionType[ 0 ] ;
-        }
-        return ((ExternalTransactionType[]) this.externalTransaction.toArray(new ExternalTransactionType[this.externalTransaction.size()] ));
-    }
-
-    /**
-     * 
-     * 
-     * @return
-     *     one of
-     *     {@link ExternalTransactionType }
-     *     
-     */
-    public ExternalTransactionType getExternalTransaction(int idx) {
-        if (this.externalTransaction == null) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.externalTransaction.get(idx);
-    }
-
-    public int getExternalTransactionLength() {
-        if (this.externalTransaction == null) {
-            return  0;
-        }
-        return this.externalTransaction.size();
-    }
-
-    /**
-     * 
-     * 
-     * @param values
-     *     allowed objects are
-     *     {@link ExternalTransactionType }
-     *     
-     */
-    public void setExternalTransaction(ExternalTransactionType[] values) {
-        this._getExternalTransaction().clear();
-        int len = values.length;
-        for (int i = 0; (i<len); i ++) {
-            this.externalTransaction.add(values[i]);
-        }
-    }
-
-    protected List<ExternalTransactionType> _getExternalTransaction() {
-        if (externalTransaction == null) {
-            externalTransaction = new ArrayList<ExternalTransactionType>();
-        }
-        return externalTransaction;
-    }
-
-    /**
-     * 
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ExternalTransactionType }
-     *     
-     */
-    public ExternalTransactionType setExternalTransaction(int idx, ExternalTransactionType value) {
-        return this.externalTransaction.set(idx, value);
-    }
-
-    /**
-     * Gets the value of the sellingManagerProductDetails property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SellingManagerProductDetailsType }
-     *     
-     */
-    public SellingManagerProductDetailsType getSellingManagerProductDetails() {
-        return sellingManagerProductDetails;
-    }
-
-    /**
-     * Sets the value of the sellingManagerProductDetails property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SellingManagerProductDetailsType }
-     *     
-     */
-    public void setSellingManagerProductDetails(SellingManagerProductDetailsType value) {
-        this.sellingManagerProductDetails = value;
-    }
-
-    /**
      * Gets the value of the shippingServiceSelected property.
      * 
      * @return
@@ -889,30 +733,6 @@ public class TransactionType
      */
     public void setBuyerMessage(String value) {
         this.buyerMessage = value;
-    }
-
-    /**
-     * Gets the value of the dutchAuctionBid property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AmountType }
-     *     
-     */
-    public AmountType getDutchAuctionBid() {
-        return dutchAuctionBid;
-    }
-
-    /**
-     * Sets the value of the dutchAuctionBid property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AmountType }
-     *     
-     */
-    public void setDutchAuctionBid(AmountType value) {
-        this.dutchAuctionBid = value;
     }
 
     /**
@@ -1132,54 +952,6 @@ public class TransactionType
     }
 
     /**
-     * Gets the value of the listingCheckoutRedirectPreference property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ListingCheckoutRedirectPreferenceType }
-     *     
-     */
-    public ListingCheckoutRedirectPreferenceType getListingCheckoutRedirectPreference() {
-        return listingCheckoutRedirectPreference;
-    }
-
-    /**
-     * Sets the value of the listingCheckoutRedirectPreference property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ListingCheckoutRedirectPreferenceType }
-     *     
-     */
-    public void setListingCheckoutRedirectPreference(ListingCheckoutRedirectPreferenceType value) {
-        this.listingCheckoutRedirectPreference = value;
-    }
-
-    /**
-     * Gets the value of the refundArray property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RefundArrayType }
-     *     
-     */
-    public RefundArrayType getRefundArray() {
-        return refundArray;
-    }
-
-    /**
-     * Sets the value of the refundArray property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RefundArrayType }
-     *     
-     */
-    public void setRefundArray(RefundArrayType value) {
-        this.refundArray = value;
-    }
-
-    /**
      * Gets the value of the transactionSiteID property.
      * 
      * @return
@@ -1225,126 +997,6 @@ public class TransactionType
      */
     public void setPlatform(TransactionPlatformCodeType value) {
         this.platform = value;
-    }
-
-    /**
-     * Gets the value of the cartID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCartID() {
-        return cartID;
-    }
-
-    /**
-     * Sets the value of the cartID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCartID(String value) {
-        this.cartID = value;
-    }
-
-    /**
-     * Gets the value of the sellerContactBuyerByEmail property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isSellerContactBuyerByEmail() {
-        return sellerContactBuyerByEmail;
-    }
-
-    /**
-     * Sets the value of the sellerContactBuyerByEmail property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setSellerContactBuyerByEmail(Boolean value) {
-        this.sellerContactBuyerByEmail = value;
-    }
-
-    /**
-     * Gets the value of the payPalEmailAddress property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPayPalEmailAddress() {
-        return payPalEmailAddress;
-    }
-
-    /**
-     * Sets the value of the payPalEmailAddress property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPayPalEmailAddress(String value) {
-        this.payPalEmailAddress = value;
-    }
-
-    /**
-     * Gets the value of the paisaPayID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPaisaPayID() {
-        return paisaPayID;
-    }
-
-    /**
-     * Sets the value of the paisaPayID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPaisaPayID(String value) {
-        this.paisaPayID = value;
-    }
-
-    /**
-     * Gets the value of the buyerGuaranteePrice property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AmountType }
-     *     
-     */
-    public AmountType getBuyerGuaranteePrice() {
-        return buyerGuaranteePrice;
-    }
-
-    /**
-     * Sets the value of the buyerGuaranteePrice property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AmountType }
-     *     
-     */
-    public void setBuyerGuaranteePrice(AmountType value) {
-        this.buyerGuaranteePrice = value;
     }
 
     /**
@@ -1564,30 +1216,6 @@ public class TransactionType
     }
 
     /**
-     * Gets the value of the paymentHoldDetails property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaymentHoldDetailType }
-     *     
-     */
-    public PaymentHoldDetailType getPaymentHoldDetails() {
-        return paymentHoldDetails;
-    }
-
-    /**
-     * Sets the value of the paymentHoldDetails property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaymentHoldDetailType }
-     *     
-     */
-    public void setPaymentHoldDetails(PaymentHoldDetailType value) {
-        this.paymentHoldDetails = value;
-    }
-
-    /**
      * Gets the value of the sellerDiscounts property.
      * 
      * @return
@@ -1609,54 +1237,6 @@ public class TransactionType
      */
     public void setSellerDiscounts(SellerDiscountsType value) {
         this.sellerDiscounts = value;
-    }
-
-    /**
-     * Gets the value of the refundAmount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AmountType }
-     *     
-     */
-    public AmountType getRefundAmount() {
-        return refundAmount;
-    }
-
-    /**
-     * Sets the value of the refundAmount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AmountType }
-     *     
-     */
-    public void setRefundAmount(AmountType value) {
-        this.refundAmount = value;
-    }
-
-    /**
-     * Gets the value of the refundStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRefundStatus() {
-        return refundStatus;
-    }
-
-    /**
-     * Sets the value of the refundStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRefundStatus(String value) {
-        this.refundStatus = value;
     }
 
     /**
@@ -1756,30 +1336,6 @@ public class TransactionType
     }
 
     /**
-     * Gets the value of the unpaidItem property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UnpaidItemType }
-     *     
-     */
-    public UnpaidItemType getUnpaidItem() {
-        return unpaidItem;
-    }
-
-    /**
-     * Sets the value of the unpaidItem property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UnpaidItemType }
-     *     
-     */
-    public void setUnpaidItem(UnpaidItemType value) {
-        this.unpaidItem = value;
-    }
-
-    /**
      * Gets the value of the intangibleItem property.
      * 
      * @return
@@ -1873,30 +1429,6 @@ public class TransactionType
      */
     public void setPickupMethodSelected(PickupMethodSelectedType value) {
         this.pickupMethodSelected = value;
-    }
-
-    /**
-     * Gets the value of the shippingConvenienceCharge property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AmountType }
-     *     
-     */
-    public AmountType getShippingConvenienceCharge() {
-        return shippingConvenienceCharge;
-    }
-
-    /**
-     * Sets the value of the shippingConvenienceCharge property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AmountType }
-     *     
-     */
-    public void setShippingConvenienceCharge(AmountType value) {
-        this.shippingConvenienceCharge = value;
     }
 
     /**

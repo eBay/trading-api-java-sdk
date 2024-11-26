@@ -24,7 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="ItemID" type="{urn:ebay:apis:eBLBaseComponents}ItemIDType" minOccurs="0"/>
  *         &lt;element name="EndingReason" type="{urn:ebay:apis:eBLBaseComponents}EndReasonCodeType" minOccurs="0"/>
- *         &lt;element name="SellerInventoryID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -36,8 +35,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EndItemRequestType", propOrder = {
     "itemID",
-    "endingReason",
-    "sellerInventoryID"
+    "endingReason"
 })
 public class EndItemRequestType
     extends AbstractRequestType
@@ -49,8 +47,6 @@ public class EndItemRequestType
     protected String itemID;
     @XmlElement(name = "EndingReason")
     protected EndReasonCodeType endingReason;
-    @XmlElement(name = "SellerInventoryID")
-    protected String sellerInventoryID;
 
     /**
      * Gets the value of the itemID property.
@@ -98,30 +94,6 @@ public class EndItemRequestType
      */
     public void setEndingReason(EndReasonCodeType value) {
         this.endingReason = value;
-    }
-
-    /**
-     * Gets the value of the sellerInventoryID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSellerInventoryID() {
-        return sellerInventoryID;
-    }
-
-    /**
-     * Sets the value of the sellerInventoryID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSellerInventoryID(String value) {
-        this.sellerInventoryID = value;
     }
 
 }

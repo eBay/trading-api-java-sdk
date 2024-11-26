@@ -32,7 +32,6 @@ import org.w3c.dom.Element;
  *       &lt;sequence>
  *         &lt;element name="VariationSpecificValue" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="PictureURL" type="{http://www.w3.org/2001/XMLSchema}anyURI" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="GalleryURL" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
  *         &lt;element name="ExternalPictureURL" type="{http://www.w3.org/2001/XMLSchema}anyURI" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ExtendedPictureDetails" type="{urn:ebay:apis:eBLBaseComponents}ExtendedPictureDetailsType" minOccurs="0"/>
  *         &lt;any/>
@@ -48,7 +47,6 @@ import org.w3c.dom.Element;
 @XmlType(name = "VariationSpecificPictureSetType", propOrder = {
     "variationSpecificValue",
     "pictureURL",
-    "galleryURL",
     "externalPictureURL",
     "extendedPictureDetails",
     "any"
@@ -63,9 +61,6 @@ public class VariationSpecificPictureSetType
     @XmlElement(name = "PictureURL")
     @XmlSchemaType(name = "anyURI")
     protected List<String> pictureURL;
-    @XmlElement(name = "GalleryURL")
-    @XmlSchemaType(name = "anyURI")
-    protected String galleryURL;
     @XmlElement(name = "ExternalPictureURL")
     @XmlSchemaType(name = "anyURI")
     protected List<String> externalPictureURL;
@@ -168,30 +163,6 @@ public class VariationSpecificPictureSetType
      */
     public String setPictureURL(int idx, String value) {
         return this.pictureURL.set(idx, value);
-    }
-
-    /**
-     * Gets the value of the galleryURL property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getGalleryURL() {
-        return galleryURL;
-    }
-
-    /**
-     * Sets the value of the galleryURL property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setGalleryURL(String value) {
-        this.galleryURL = value;
     }
 
     /**

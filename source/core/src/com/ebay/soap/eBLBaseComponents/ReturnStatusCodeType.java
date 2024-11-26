@@ -74,7 +74,7 @@ public enum ReturnStatusCodeType {
 
     /**
      * 
-     * 						This value indicates that the buyer's return request was rejected by the seller.
+     * 						This value indicates that the buyer's return request was rejected by the seller or other authorized party.
      * 					
      * 
      */

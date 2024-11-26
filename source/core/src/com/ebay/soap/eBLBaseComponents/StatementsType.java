@@ -14,7 +14,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- *             Type defining the <b>Statements</b> regulatory container used at the listing level to provide hazard statements for the listing.
+ *             Type defining the <b>Statements</b> regulatory container used at the listing level to provide statements for the listing.
  *          
  * 
  * <p>Java class for StatementsType complex type.

@@ -44,7 +44,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="UPC" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="EAN" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="BrandMPN" type="{urn:ebay:apis:eBLBaseComponents}BrandMPNType" minOccurs="0"/>
- *         &lt;element name="TicketListingDetails" type="{urn:ebay:apis:eBLBaseComponents}TicketListingDetailsType" minOccurs="0"/>
  *         &lt;element name="UseFirstProduct" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="IncludeeBayProductDetails" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="NameValueList" type="{urn:ebay:apis:eBLBaseComponents}NameValueListType" maxOccurs="unbounded" minOccurs="0"/>
@@ -71,7 +70,6 @@ import org.w3c.dom.Element;
     "upc",
     "ean",
     "brandMPN",
-    "ticketListingDetails",
     "useFirstProduct",
     "includeeBayProductDetails",
     "nameValueList",
@@ -109,8 +107,6 @@ public class ProductListingDetailsType
     protected String ean;
     @XmlElement(name = "BrandMPN")
     protected BrandMPNType brandMPN;
-    @XmlElement(name = "TicketListingDetails")
-    protected TicketListingDetailsType ticketListingDetails;
     @XmlElement(name = "UseFirstProduct")
     protected Boolean useFirstProduct;
     @XmlElement(name = "IncludeeBayProductDetails")
@@ -454,30 +450,6 @@ public class ProductListingDetailsType
      */
     public void setBrandMPN(BrandMPNType value) {
         this.brandMPN = value;
-    }
-
-    /**
-     * Gets the value of the ticketListingDetails property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TicketListingDetailsType }
-     *     
-     */
-    public TicketListingDetailsType getTicketListingDetails() {
-        return ticketListingDetails;
-    }
-
-    /**
-     * Sets the value of the ticketListingDetails property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TicketListingDetailsType }
-     *     
-     */
-    public void setTicketListingDetails(TicketListingDetailsType value) {
-        this.ticketListingDetails = value;
     }
 
     /**

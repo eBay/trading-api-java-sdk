@@ -13,7 +13,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				Indicates which address option the category supports for 
+ * 				Indicates which address option the category supports for
  * 				Classified Ad format listings.
  * 				Added for the For Sale By Owner format.
  * 			

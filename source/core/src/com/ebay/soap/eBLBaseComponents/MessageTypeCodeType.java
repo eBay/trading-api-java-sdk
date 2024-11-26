@@ -51,6 +51,9 @@ public enum MessageTypeCodeType {
      * 
      *             Member to Member message initiated as a response
      *             to an Ask A Question message.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
      *           
      * 
      */
@@ -61,6 +64,9 @@ public enum MessageTypeCodeType {
      * 
      *             Member to Member message initiated by any eBay member
      *             to another eBay member.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
      *           
      * 
      */
@@ -71,6 +77,9 @@ public enum MessageTypeCodeType {
      * 
      *             Member message between order partners within 90 days
      *             after creation of the order.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
      *           
      * 
      */
@@ -81,6 +90,9 @@ public enum MessageTypeCodeType {
      * 
      *             Member to Member message initiated as a response
      *             to a Contact eBay Member message.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
      *           
      * 
      */
@@ -92,6 +104,9 @@ public enum MessageTypeCodeType {
      *             Member to Member message initiated by any eBay member
      *             to another eBay member who has posted on a community forum
      *             within the past 7 days.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
      *           
      * 
      */
@@ -101,6 +116,9 @@ public enum MessageTypeCodeType {
     /**
      * 
      *             Reserved for future or internal use.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
      *           
      * 
      */
@@ -120,6 +138,9 @@ public enum MessageTypeCodeType {
      * 
      *             Member to Member message initiated by sellers to their
      *             bidders during an active listing.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
      *           
      * 
      */
@@ -130,6 +151,9 @@ public enum MessageTypeCodeType {
      * 
      *             Member message initiated after eBay receives an email sent by an
      *             eBay member's email client to another eBay member.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
      *           
      * 
      */
@@ -138,9 +162,12 @@ public enum MessageTypeCodeType {
 
     /**
      * 
-     *              Indicates that an inquiry has been sent to the seller regarding the
-     * 						 corresponding classified ad listing.
-     * 					 
+     *             Indicates that an inquiry has been sent to the seller regarding the
+     * 			corresponding classified ad listing.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
+     * 			
      * 
      */
     @XmlEnumValue("ClassifiedsContactSeller")
@@ -148,10 +175,13 @@ public enum MessageTypeCodeType {
 
     /**
      * 
-     * 						Indicates that a Best Offer has been made on the seller's corresponding
-     * 						classified ad listing. This message type is only applicable to Classified
-     * 						categories that allow the Best Offer feature, such as motor vehicles.
-     * 					 
+     * 			Indicates that a Best Offer has been made on the seller's corresponding
+     * 			classified ad listing. This message type is only applicable to Classified
+     * 			categories that allow the Best Offer feature, such as motor vehicles.
+     * 			<span class="tablenote"><b>Note:</b>
+     * 				This value is not supported in the <b>MailMessageType</b> field of a <b>GetMemberMessages</b> request.
+     * 			</span>
+     *            
      * 
      */
     @XmlEnumValue("ClassifiedsBestOffer")

@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * 
  * 			  Type defining the <b>SupportedSellerProfile</b> container, which contains
- * 				summary information related to specific Business Policies payment, return policy, and shipping 
+ * 				summary information related to specific Business Policies payment, return policy, and shipping
  * 				profiles. The profile type is found in the <b>ProfileType</b> field.
  * 			
  * 

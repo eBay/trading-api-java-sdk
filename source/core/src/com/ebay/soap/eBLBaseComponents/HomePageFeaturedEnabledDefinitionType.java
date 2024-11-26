@@ -12,7 +12,7 @@ import org.w3c.dom.Element;
 
 
 /**
- *  
+ * 
  * 				Defines whether Home Page Featured is available on the site.
  * 			
  * 

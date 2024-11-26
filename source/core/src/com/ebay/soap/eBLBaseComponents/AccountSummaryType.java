@@ -45,7 +45,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="CreditCardInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="CreditCardModifyDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="CurrentBalance" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
- *         &lt;element name="Email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="InvoiceBalance" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="InvoiceDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="LastAmountPaid" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
@@ -77,7 +76,6 @@ import org.w3c.dom.Element;
     "creditCardInfo",
     "creditCardModifyDate",
     "currentBalance",
-    "email",
     "invoiceBalance",
     "invoiceDate",
     "lastAmountPaid",
@@ -124,8 +122,6 @@ public class AccountSummaryType
     protected Calendar creditCardModifyDate;
     @XmlElement(name = "CurrentBalance")
     protected AmountType currentBalance;
-    @XmlElement(name = "Email")
-    protected String email;
     @XmlElement(name = "InvoiceBalance")
     protected AmountType invoiceBalance;
     @XmlElement(name = "InvoiceDate", type = String.class)
@@ -505,30 +501,6 @@ public class AccountSummaryType
      */
     public void setCurrentBalance(AmountType value) {
         this.currentBalance = value;
-    }
-
-    /**
-     * Gets the value of the email property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getEmail() {
-        return email;
-    }
-
-    /**
-     * Sets the value of the email property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setEmail(String value) {
-        this.email = value;
     }
 
     /**

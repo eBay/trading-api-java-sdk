@@ -39,7 +39,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="ShippingServiceID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="ShippingTimeMax" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="ShippingTimeMin" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ShippingServiceCode" type="{urn:ebay:apis:eBLBaseComponents}ShippingServiceCodeType" minOccurs="0"/>
  *         &lt;element name="ServiceType" type="{urn:ebay:apis:eBLBaseComponents}ShippingTypeCodeType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="ShippingPackage" type="{urn:ebay:apis:eBLBaseComponents}ShippingPackageCodeType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="DimensionsRequired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
@@ -73,7 +72,6 @@ import org.w3c.dom.Element;
     "shippingServiceID",
     "shippingTimeMax",
     "shippingTimeMin",
-    "shippingServiceCode",
     "serviceType",
     "shippingPackage",
     "dimensionsRequired",
@@ -112,8 +110,6 @@ public class ShippingServiceDetailsType
     protected Integer shippingTimeMax;
     @XmlElement(name = "ShippingTimeMin")
     protected Integer shippingTimeMin;
-    @XmlElement(name = "ShippingServiceCode")
-    protected ShippingServiceCodeType shippingServiceCode;
     @XmlElement(name = "ServiceType")
     protected List<ShippingTypeCodeType> serviceType;
     @XmlElement(name = "ShippingPackage")
@@ -319,30 +315,6 @@ public class ShippingServiceDetailsType
      */
     public void setShippingTimeMin(Integer value) {
         this.shippingTimeMin = value;
-    }
-
-    /**
-     * Gets the value of the shippingServiceCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ShippingServiceCodeType }
-     *     
-     */
-    public ShippingServiceCodeType getShippingServiceCode() {
-        return shippingServiceCode;
-    }
-
-    /**
-     * Sets the value of the shippingServiceCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ShippingServiceCodeType }
-     *     
-     */
-    public void setShippingServiceCode(ShippingServiceCodeType value) {
-        this.shippingServiceCode = value;
     }
 
     /**

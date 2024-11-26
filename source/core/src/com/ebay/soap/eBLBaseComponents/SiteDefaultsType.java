@@ -65,19 +65,13 @@ import org.w3c.dom.Element;
  *         &lt;element name="SafePaymentRequired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ClassifiedAdPayPerLeadEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ItemSpecificsEnabled" type="{urn:ebay:apis:eBLBaseComponents}ItemSpecificsEnabledCodeType" minOccurs="0"/>
- *         &lt;element name="PaisaPayFullEscrowEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ISBNIdentifierEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="UPCIdentifierEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="EANIdentifierEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BrandMPNIdentifierEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="ClassifiedAdAutoAcceptEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BestOfferAutoAcceptEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="CrossBorderTradeNorthAmericaEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="CrossBorderTradeGBEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="CrossBorderTradeAustraliaEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PayPalBuyerProtectionEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="BuyerGuaranteeEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="INEscrowWorkflowTimeline" type="{urn:ebay:apis:eBLBaseComponents}INEscrowWorkflowTimelineCodeType" minOccurs="0"/>
  *         &lt;element name="CombinedFixedPriceTreatmentEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="GalleryFeaturedDurations" type="{urn:ebay:apis:eBLBaseComponents}ListingEnhancementDurationReferenceType" minOccurs="0"/>
  *         &lt;element name="PayPalRequired" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
@@ -147,7 +141,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="UPCEnabled" type="{urn:ebay:apis:eBLBaseComponents}ProductIdentiferEnabledCodeType" minOccurs="0"/>
  *         &lt;element name="MaxGranularFitmentCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="CompatibleVehicleType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PaymentOptionsGroup" type="{urn:ebay:apis:eBLBaseComponents}PaymentOptionsGroupEnabledCodeType" minOccurs="0"/>
  *         &lt;element name="ShippingProfileCategoryGroup" type="{urn:ebay:apis:eBLBaseComponents}ProfileCategoryGroupCodeType" minOccurs="0"/>
  *         &lt;element name="PaymentProfileCategoryGroup" type="{urn:ebay:apis:eBLBaseComponents}ProfileCategoryGroupCodeType" minOccurs="0"/>
  *         &lt;element name="ReturnPolicyProfileCategoryGroup" type="{urn:ebay:apis:eBLBaseComponents}ProfileCategoryGroupCodeType" minOccurs="0"/>
@@ -221,19 +214,13 @@ import org.w3c.dom.Element;
     "safePaymentRequired",
     "classifiedAdPayPerLeadEnabled",
     "itemSpecificsEnabled",
-    "paisaPayFullEscrowEnabled",
-    "isbnIdentifierEnabled",
-    "upcIdentifierEnabled",
-    "eanIdentifierEnabled",
     "brandMPNIdentifierEnabled",
     "classifiedAdAutoAcceptEnabled",
     "bestOfferAutoAcceptEnabled",
     "crossBorderTradeNorthAmericaEnabled",
     "crossBorderTradeGBEnabled",
     "crossBorderTradeAustraliaEnabled",
-    "payPalBuyerProtectionEnabled",
     "buyerGuaranteeEnabled",
-    "inEscrowWorkflowTimeline",
     "combinedFixedPriceTreatmentEnabled",
     "galleryFeaturedDurations",
     "payPalRequired",
@@ -303,7 +290,6 @@ import org.w3c.dom.Element;
     "upcEnabled",
     "maxGranularFitmentCount",
     "compatibleVehicleType",
-    "paymentOptionsGroup",
     "shippingProfileCategoryGroup",
     "paymentProfileCategoryGroup",
     "returnPolicyProfileCategoryGroup",
@@ -412,14 +398,6 @@ public class SiteDefaultsType
     protected Boolean classifiedAdPayPerLeadEnabled;
     @XmlElement(name = "ItemSpecificsEnabled")
     protected ItemSpecificsEnabledCodeType itemSpecificsEnabled;
-    @XmlElement(name = "PaisaPayFullEscrowEnabled")
-    protected Boolean paisaPayFullEscrowEnabled;
-    @XmlElement(name = "ISBNIdentifierEnabled")
-    protected Boolean isbnIdentifierEnabled;
-    @XmlElement(name = "UPCIdentifierEnabled")
-    protected Boolean upcIdentifierEnabled;
-    @XmlElement(name = "EANIdentifierEnabled")
-    protected Boolean eanIdentifierEnabled;
     @XmlElement(name = "BrandMPNIdentifierEnabled")
     protected Boolean brandMPNIdentifierEnabled;
     @XmlElement(name = "ClassifiedAdAutoAcceptEnabled")
@@ -432,12 +410,8 @@ public class SiteDefaultsType
     protected Boolean crossBorderTradeGBEnabled;
     @XmlElement(name = "CrossBorderTradeAustraliaEnabled")
     protected Boolean crossBorderTradeAustraliaEnabled;
-    @XmlElement(name = "PayPalBuyerProtectionEnabled")
-    protected Boolean payPalBuyerProtectionEnabled;
     @XmlElement(name = "BuyerGuaranteeEnabled")
     protected Boolean buyerGuaranteeEnabled;
-    @XmlElement(name = "INEscrowWorkflowTimeline")
-    protected INEscrowWorkflowTimelineCodeType inEscrowWorkflowTimeline;
     @XmlElement(name = "CombinedFixedPriceTreatmentEnabled")
     protected Boolean combinedFixedPriceTreatmentEnabled;
     @XmlElement(name = "GalleryFeaturedDurations")
@@ -562,8 +536,6 @@ public class SiteDefaultsType
     protected Integer maxGranularFitmentCount;
     @XmlElement(name = "CompatibleVehicleType")
     protected String compatibleVehicleType;
-    @XmlElement(name = "PaymentOptionsGroup")
-    protected PaymentOptionsGroupEnabledCodeType paymentOptionsGroup;
     @XmlElement(name = "ShippingProfileCategoryGroup")
     protected ProfileCategoryGroupCodeType shippingProfileCategoryGroup;
     @XmlElement(name = "PaymentProfileCategoryGroup")
@@ -1598,102 +1570,6 @@ public class SiteDefaultsType
     }
 
     /**
-     * Gets the value of the paisaPayFullEscrowEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isPaisaPayFullEscrowEnabled() {
-        return paisaPayFullEscrowEnabled;
-    }
-
-    /**
-     * Sets the value of the paisaPayFullEscrowEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setPaisaPayFullEscrowEnabled(Boolean value) {
-        this.paisaPayFullEscrowEnabled = value;
-    }
-
-    /**
-     * Gets the value of the isbnIdentifierEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isISBNIdentifierEnabled() {
-        return isbnIdentifierEnabled;
-    }
-
-    /**
-     * Sets the value of the isbnIdentifierEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setISBNIdentifierEnabled(Boolean value) {
-        this.isbnIdentifierEnabled = value;
-    }
-
-    /**
-     * Gets the value of the upcIdentifierEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isUPCIdentifierEnabled() {
-        return upcIdentifierEnabled;
-    }
-
-    /**
-     * Sets the value of the upcIdentifierEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setUPCIdentifierEnabled(Boolean value) {
-        this.upcIdentifierEnabled = value;
-    }
-
-    /**
-     * Gets the value of the eanIdentifierEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isEANIdentifierEnabled() {
-        return eanIdentifierEnabled;
-    }
-
-    /**
-     * Sets the value of the eanIdentifierEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setEANIdentifierEnabled(Boolean value) {
-        this.eanIdentifierEnabled = value;
-    }
-
-    /**
      * Gets the value of the brandMPNIdentifierEnabled property.
      * 
      * @return
@@ -1838,30 +1714,6 @@ public class SiteDefaultsType
     }
 
     /**
-     * Gets the value of the payPalBuyerProtectionEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isPayPalBuyerProtectionEnabled() {
-        return payPalBuyerProtectionEnabled;
-    }
-
-    /**
-     * Sets the value of the payPalBuyerProtectionEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setPayPalBuyerProtectionEnabled(Boolean value) {
-        this.payPalBuyerProtectionEnabled = value;
-    }
-
-    /**
      * Gets the value of the buyerGuaranteeEnabled property.
      * 
      * @return
@@ -1883,30 +1735,6 @@ public class SiteDefaultsType
      */
     public void setBuyerGuaranteeEnabled(Boolean value) {
         this.buyerGuaranteeEnabled = value;
-    }
-
-    /**
-     * Gets the value of the inEscrowWorkflowTimeline property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link INEscrowWorkflowTimelineCodeType }
-     *     
-     */
-    public INEscrowWorkflowTimelineCodeType getINEscrowWorkflowTimeline() {
-        return inEscrowWorkflowTimeline;
-    }
-
-    /**
-     * Sets the value of the inEscrowWorkflowTimeline property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link INEscrowWorkflowTimelineCodeType }
-     *     
-     */
-    public void setINEscrowWorkflowTimeline(INEscrowWorkflowTimelineCodeType value) {
-        this.inEscrowWorkflowTimeline = value;
     }
 
     /**
@@ -3611,30 +3439,6 @@ public class SiteDefaultsType
      */
     public void setCompatibleVehicleType(String value) {
         this.compatibleVehicleType = value;
-    }
-
-    /**
-     * Gets the value of the paymentOptionsGroup property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaymentOptionsGroupEnabledCodeType }
-     *     
-     */
-    public PaymentOptionsGroupEnabledCodeType getPaymentOptionsGroup() {
-        return paymentOptionsGroup;
-    }
-
-    /**
-     * Sets the value of the paymentOptionsGroup property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaymentOptionsGroupEnabledCodeType }
-     *     
-     */
-    public void setPaymentOptionsGroup(PaymentOptionsGroupEnabledCodeType value) {
-        this.paymentOptionsGroup = value;
     }
 
     /**

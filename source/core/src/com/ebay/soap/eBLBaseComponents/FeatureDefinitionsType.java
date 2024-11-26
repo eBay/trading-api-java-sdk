@@ -66,21 +66,16 @@ import org.w3c.dom.Element;
  *         &lt;element name="ClassifiedAdPayPerLeadEnabled" type="{urn:ebay:apis:eBLBaseComponents}ClassifiedAdPayPerLeadEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="ItemSpecificsEnabled" type="{urn:ebay:apis:eBLBaseComponents}ItemSpecificsEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="PaisaPayFullEscrowEnabled" type="{urn:ebay:apis:eBLBaseComponents}PaisaPayFullEscrowEnabledDefinitionType" minOccurs="0"/>
- *         &lt;element name="ISBNIdentifierEnabled" type="{urn:ebay:apis:eBLBaseComponents}ISBNIdentifierEnabledDefinitionType" minOccurs="0"/>
- *         &lt;element name="UPCIdentifierEnabled" type="{urn:ebay:apis:eBLBaseComponents}UPCIdentifierEnabledDefinitionType" minOccurs="0"/>
- *         &lt;element name="EANIdentifierEnabled" type="{urn:ebay:apis:eBLBaseComponents}EANIdentifierEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="BrandMPNIdentifierEnabled" type="{urn:ebay:apis:eBLBaseComponents}BrandMPNIdentifierEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="BestOfferAutoAcceptEnabled" type="{urn:ebay:apis:eBLBaseComponents}BestOfferAutoAcceptEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="ClassifiedAdAutoAcceptEnabled" type="{urn:ebay:apis:eBLBaseComponents}ClassifiedAdAutoAcceptEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="CrossBorderTradeNorthAmericaEnabled" type="{urn:ebay:apis:eBLBaseComponents}CrossBorderTradeNorthAmericaEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="CrossBorderTradeGBEnabled" type="{urn:ebay:apis:eBLBaseComponents}CrossBorderTradeGBEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="CrossBorderTradeAustraliaEnabled" type="{urn:ebay:apis:eBLBaseComponents}CrossBorderTradeAustraliaEnabledDefinitionType" minOccurs="0"/>
- *         &lt;element name="PayPalBuyerProtectionEnabled" type="{urn:ebay:apis:eBLBaseComponents}PayPalBuyerProtectionEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="BuyerGuaranteeEnabled" type="{urn:ebay:apis:eBLBaseComponents}BuyerGuaranteeEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="CombinedFixedPriceTreatmentEnabled" type="{urn:ebay:apis:eBLBaseComponents}CombinedFixedPriceTreatmentEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="GalleryFeaturedDurations" type="{urn:ebay:apis:eBLBaseComponents}ListingEnhancementDurationDefinitionType" minOccurs="0"/>
  *         &lt;element name="INEscrowWorkflowTimeline" type="{urn:ebay:apis:eBLBaseComponents}INEscrowWorkflowTimelineDefinitionType" minOccurs="0"/>
- *         &lt;element name="PayPalRequired" type="{urn:ebay:apis:eBLBaseComponents}PayPalRequiredDefinitionType" minOccurs="0"/>
  *         &lt;element name="eBayMotorsProAdFormatEnabled" type="{urn:ebay:apis:eBLBaseComponents}eBayMotorsProAdFormatEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="eBayMotorsProContactByPhoneEnabled" type="{urn:ebay:apis:eBLBaseComponents}eBayMotorsProContactByPhoneEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="eBayMotorsProPhoneCount" type="{urn:ebay:apis:eBLBaseComponents}eBayMotorsProPhoneCountDefinitionType" minOccurs="0"/>
@@ -146,7 +141,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="UPCEnabled" type="{urn:ebay:apis:eBLBaseComponents}UPCEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="CompatibleVehicleType" type="{urn:ebay:apis:eBLBaseComponents}CompatibleVehicleTypeDefinitionType" minOccurs="0"/>
  *         &lt;element name="MaxGranularFitmentCount" type="{urn:ebay:apis:eBLBaseComponents}MaxGranularFitmentCountDefinitionType" minOccurs="0"/>
- *         &lt;element name="PaymentOptionsGroup" type="{urn:ebay:apis:eBLBaseComponents}PaymentOptionsGroupEnabledDefinitionType" minOccurs="0"/>
  *         &lt;element name="ShippingProfileCategoryGroup" type="{urn:ebay:apis:eBLBaseComponents}ProfileCategoryGroupDefinitionType" minOccurs="0"/>
  *         &lt;element name="PaymentProfileCategoryGroup" type="{urn:ebay:apis:eBLBaseComponents}ProfileCategoryGroupDefinitionType" minOccurs="0"/>
  *         &lt;element name="ReturnPolicyProfileCategoryGroup" type="{urn:ebay:apis:eBLBaseComponents}ProfileCategoryGroupDefinitionType" minOccurs="0"/>
@@ -221,21 +215,16 @@ import org.w3c.dom.Element;
     "classifiedAdPayPerLeadEnabled",
     "itemSpecificsEnabled",
     "paisaPayFullEscrowEnabled",
-    "isbnIdentifierEnabled",
-    "upcIdentifierEnabled",
-    "eanIdentifierEnabled",
     "brandMPNIdentifierEnabled",
     "bestOfferAutoAcceptEnabled",
     "classifiedAdAutoAcceptEnabled",
     "crossBorderTradeNorthAmericaEnabled",
     "crossBorderTradeGBEnabled",
     "crossBorderTradeAustraliaEnabled",
-    "payPalBuyerProtectionEnabled",
     "buyerGuaranteeEnabled",
     "combinedFixedPriceTreatmentEnabled",
     "galleryFeaturedDurations",
     "inEscrowWorkflowTimeline",
-    "payPalRequired",
     "eBayMotorsProAdFormatEnabled",
     "eBayMotorsProContactByPhoneEnabled",
     "eBayMotorsProPhoneCount",
@@ -301,7 +290,6 @@ import org.w3c.dom.Element;
     "upcEnabled",
     "compatibleVehicleType",
     "maxGranularFitmentCount",
-    "paymentOptionsGroup",
     "shippingProfileCategoryGroup",
     "paymentProfileCategoryGroup",
     "returnPolicyProfileCategoryGroup",
@@ -412,12 +400,6 @@ public class FeatureDefinitionsType
     protected ItemSpecificsEnabledDefinitionType itemSpecificsEnabled;
     @XmlElement(name = "PaisaPayFullEscrowEnabled")
     protected PaisaPayFullEscrowEnabledDefinitionType paisaPayFullEscrowEnabled;
-    @XmlElement(name = "ISBNIdentifierEnabled")
-    protected ISBNIdentifierEnabledDefinitionType isbnIdentifierEnabled;
-    @XmlElement(name = "UPCIdentifierEnabled")
-    protected UPCIdentifierEnabledDefinitionType upcIdentifierEnabled;
-    @XmlElement(name = "EANIdentifierEnabled")
-    protected EANIdentifierEnabledDefinitionType eanIdentifierEnabled;
     @XmlElement(name = "BrandMPNIdentifierEnabled")
     protected BrandMPNIdentifierEnabledDefinitionType brandMPNIdentifierEnabled;
     @XmlElement(name = "BestOfferAutoAcceptEnabled")
@@ -430,8 +412,6 @@ public class FeatureDefinitionsType
     protected CrossBorderTradeGBEnabledDefinitionType crossBorderTradeGBEnabled;
     @XmlElement(name = "CrossBorderTradeAustraliaEnabled")
     protected CrossBorderTradeAustraliaEnabledDefinitionType crossBorderTradeAustraliaEnabled;
-    @XmlElement(name = "PayPalBuyerProtectionEnabled")
-    protected PayPalBuyerProtectionEnabledDefinitionType payPalBuyerProtectionEnabled;
     @XmlElement(name = "BuyerGuaranteeEnabled")
     protected BuyerGuaranteeEnabledDefinitionType buyerGuaranteeEnabled;
     @XmlElement(name = "CombinedFixedPriceTreatmentEnabled")
@@ -440,8 +420,6 @@ public class FeatureDefinitionsType
     protected ListingEnhancementDurationDefinitionType galleryFeaturedDurations;
     @XmlElement(name = "INEscrowWorkflowTimeline")
     protected INEscrowWorkflowTimelineDefinitionType inEscrowWorkflowTimeline;
-    @XmlElement(name = "PayPalRequired")
-    protected PayPalRequiredDefinitionType payPalRequired;
     protected EBayMotorsProAdFormatEnabledDefinitionType eBayMotorsProAdFormatEnabled;
     protected EBayMotorsProContactByPhoneEnabledDefinitionType eBayMotorsProContactByPhoneEnabled;
     protected EBayMotorsProPhoneCountDefinitionType eBayMotorsProPhoneCount;
@@ -558,8 +536,6 @@ public class FeatureDefinitionsType
     protected CompatibleVehicleTypeDefinitionType compatibleVehicleType;
     @XmlElement(name = "MaxGranularFitmentCount")
     protected MaxGranularFitmentCountDefinitionType maxGranularFitmentCount;
-    @XmlElement(name = "PaymentOptionsGroup")
-    protected PaymentOptionsGroupEnabledDefinitionType paymentOptionsGroup;
     @XmlElement(name = "ShippingProfileCategoryGroup")
     protected ProfileCategoryGroupDefinitionType shippingProfileCategoryGroup;
     @XmlElement(name = "PaymentProfileCategoryGroup")
@@ -1570,78 +1546,6 @@ public class FeatureDefinitionsType
     }
 
     /**
-     * Gets the value of the isbnIdentifierEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ISBNIdentifierEnabledDefinitionType }
-     *     
-     */
-    public ISBNIdentifierEnabledDefinitionType getISBNIdentifierEnabled() {
-        return isbnIdentifierEnabled;
-    }
-
-    /**
-     * Sets the value of the isbnIdentifierEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ISBNIdentifierEnabledDefinitionType }
-     *     
-     */
-    public void setISBNIdentifierEnabled(ISBNIdentifierEnabledDefinitionType value) {
-        this.isbnIdentifierEnabled = value;
-    }
-
-    /**
-     * Gets the value of the upcIdentifierEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UPCIdentifierEnabledDefinitionType }
-     *     
-     */
-    public UPCIdentifierEnabledDefinitionType getUPCIdentifierEnabled() {
-        return upcIdentifierEnabled;
-    }
-
-    /**
-     * Sets the value of the upcIdentifierEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UPCIdentifierEnabledDefinitionType }
-     *     
-     */
-    public void setUPCIdentifierEnabled(UPCIdentifierEnabledDefinitionType value) {
-        this.upcIdentifierEnabled = value;
-    }
-
-    /**
-     * Gets the value of the eanIdentifierEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EANIdentifierEnabledDefinitionType }
-     *     
-     */
-    public EANIdentifierEnabledDefinitionType getEANIdentifierEnabled() {
-        return eanIdentifierEnabled;
-    }
-
-    /**
-     * Sets the value of the eanIdentifierEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EANIdentifierEnabledDefinitionType }
-     *     
-     */
-    public void setEANIdentifierEnabled(EANIdentifierEnabledDefinitionType value) {
-        this.eanIdentifierEnabled = value;
-    }
-
-    /**
      * Gets the value of the brandMPNIdentifierEnabled property.
      * 
      * @return
@@ -1786,30 +1690,6 @@ public class FeatureDefinitionsType
     }
 
     /**
-     * Gets the value of the payPalBuyerProtectionEnabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PayPalBuyerProtectionEnabledDefinitionType }
-     *     
-     */
-    public PayPalBuyerProtectionEnabledDefinitionType getPayPalBuyerProtectionEnabled() {
-        return payPalBuyerProtectionEnabled;
-    }
-
-    /**
-     * Sets the value of the payPalBuyerProtectionEnabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PayPalBuyerProtectionEnabledDefinitionType }
-     *     
-     */
-    public void setPayPalBuyerProtectionEnabled(PayPalBuyerProtectionEnabledDefinitionType value) {
-        this.payPalBuyerProtectionEnabled = value;
-    }
-
-    /**
      * Gets the value of the buyerGuaranteeEnabled property.
      * 
      * @return
@@ -1903,30 +1783,6 @@ public class FeatureDefinitionsType
      */
     public void setINEscrowWorkflowTimeline(INEscrowWorkflowTimelineDefinitionType value) {
         this.inEscrowWorkflowTimeline = value;
-    }
-
-    /**
-     * Gets the value of the payPalRequired property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PayPalRequiredDefinitionType }
-     *     
-     */
-    public PayPalRequiredDefinitionType getPayPalRequired() {
-        return payPalRequired;
-    }
-
-    /**
-     * Sets the value of the payPalRequired property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PayPalRequiredDefinitionType }
-     *     
-     */
-    public void setPayPalRequired(PayPalRequiredDefinitionType value) {
-        this.payPalRequired = value;
     }
 
     /**
@@ -3487,30 +3343,6 @@ public class FeatureDefinitionsType
      */
     public void setMaxGranularFitmentCount(MaxGranularFitmentCountDefinitionType value) {
         this.maxGranularFitmentCount = value;
-    }
-
-    /**
-     * Gets the value of the paymentOptionsGroup property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaymentOptionsGroupEnabledDefinitionType }
-     *     
-     */
-    public PaymentOptionsGroupEnabledDefinitionType getPaymentOptionsGroup() {
-        return paymentOptionsGroup;
-    }
-
-    /**
-     * Sets the value of the paymentOptionsGroup property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaymentOptionsGroupEnabledDefinitionType }
-     *     
-     */
-    public void setPaymentOptionsGroup(PaymentOptionsGroupEnabledDefinitionType value) {
-        this.paymentOptionsGroup = value;
     }
 
     /**

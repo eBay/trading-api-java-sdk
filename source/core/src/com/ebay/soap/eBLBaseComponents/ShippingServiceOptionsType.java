@@ -31,7 +31,6 @@ import org.w3c.dom.Element;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="ShippingInsuranceCost" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="ShippingService" type="{http://www.w3.org/2001/XMLSchema}token" minOccurs="0"/>
  *         &lt;element name="ShippingServiceCost" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
  *         &lt;element name="ShippingServiceAdditionalCost" type="{urn:ebay:apis:eBLBaseComponents}AmountType" minOccurs="0"/>
@@ -56,7 +55,6 @@ import org.w3c.dom.Element;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ShippingServiceOptionsType", propOrder = {
-    "shippingInsuranceCost",
     "shippingService",
     "shippingServiceCost",
     "shippingServiceAdditionalCost",
@@ -77,8 +75,6 @@ public class ShippingServiceOptionsType
 {
 
     private final static long serialVersionUID = 12343L;
-    @XmlElement(name = "ShippingInsuranceCost")
-    protected AmountType shippingInsuranceCost;
     @XmlElement(name = "ShippingService")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "token")
@@ -111,30 +107,6 @@ public class ShippingServiceOptionsType
     protected String logisticPlanType;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
-
-    /**
-     * Gets the value of the shippingInsuranceCost property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AmountType }
-     *     
-     */
-    public AmountType getShippingInsuranceCost() {
-        return shippingInsuranceCost;
-    }
-
-    /**
-     * Sets the value of the shippingInsuranceCost property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AmountType }
-     *     
-     */
-    public void setShippingInsuranceCost(AmountType value) {
-        this.shippingInsuranceCost = value;
-    }
 
     /**
      * Gets the value of the shippingService property.

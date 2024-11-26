@@ -349,18 +349,6 @@ public interface EBayAPIInterface {
 
     /**
      * 
-     * @param getClientAlertsAuthTokenRequest
-     * @return
-     *     returns com.ebay.soap.eBLBaseComponents.GetClientAlertsAuthTokenResponseType
-     */
-    @WebMethod(operationName = "GetClientAlertsAuthToken")
-    @WebResult(name = "GetClientAlertsAuthTokenResponse", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetClientAlertsAuthTokenResponse")
-    public GetClientAlertsAuthTokenResponseType getClientAlertsAuthToken(
-        @WebParam(name = "GetClientAlertsAuthTokenRequest", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetClientAlertsAuthTokenRequest")
-        GetClientAlertsAuthTokenRequestType getClientAlertsAuthTokenRequest);
-
-    /**
-     * 
      * @param getDescriptionTemplatesRequest
      * @return
      *     returns com.ebay.soap.eBLBaseComponents.GetDescriptionTemplatesResponseType
@@ -517,18 +505,6 @@ public interface EBayAPIInterface {
 
     /**
      * 
-     * @param getOrderTransactionsRequest
-     * @return
-     *     returns com.ebay.soap.eBLBaseComponents.GetOrderTransactionsResponseType
-     */
-    @WebMethod(operationName = "GetOrderTransactions")
-    @WebResult(name = "GetOrderTransactionsResponse", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetOrderTransactionsResponse")
-    public GetOrderTransactionsResponseType getOrderTransactions(
-        @WebParam(name = "GetOrderTransactionsRequest", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetOrderTransactionsRequest")
-        GetOrderTransactionsRequestType getOrderTransactionsRequest);
-
-    /**
-     * 
      * @param getOrdersRequest
      * @return
      *     returns com.ebay.soap.eBLBaseComponents.GetOrdersResponseType
@@ -538,18 +514,6 @@ public interface EBayAPIInterface {
     public GetOrdersResponseType getOrders(
         @WebParam(name = "GetOrdersRequest", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetOrdersRequest")
         GetOrdersRequestType getOrdersRequest);
-
-    /**
-     * 
-     * @param getSellerDashboardRequest
-     * @return
-     *     returns com.ebay.soap.eBLBaseComponents.GetSellerDashboardResponseType
-     */
-    @WebMethod(operationName = "GetSellerDashboard")
-    @WebResult(name = "GetSellerDashboardResponse", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetSellerDashboardResponse")
-    public GetSellerDashboardResponseType getSellerDashboard(
-        @WebParam(name = "GetSellerDashboardRequest", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetSellerDashboardRequest")
-        GetSellerDashboardRequestType getSellerDashboardRequest);
 
     /**
      * 
@@ -634,18 +598,6 @@ public interface EBayAPIInterface {
     public GetStoreCategoryUpdateStatusResponseType getStoreCategoryUpdateStatus(
         @WebParam(name = "GetStoreCategoryUpdateStatusRequest", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetStoreCategoryUpdateStatusRequest")
         GetStoreCategoryUpdateStatusRequestType getStoreCategoryUpdateStatusRequest);
-
-    /**
-     * 
-     * @param getSuggestedCategoriesRequest
-     * @return
-     *     returns com.ebay.soap.eBLBaseComponents.GetSuggestedCategoriesResponseType
-     */
-    @WebMethod(operationName = "GetSuggestedCategories")
-    @WebResult(name = "GetSuggestedCategoriesResponse", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetSuggestedCategoriesResponse")
-    public GetSuggestedCategoriesResponseType getSuggestedCategories(
-        @WebParam(name = "GetSuggestedCategoriesRequest", targetNamespace = "urn:ebay:apis:eBLBaseComponents", partName = "GetSuggestedCategoriesRequest")
-        GetSuggestedCategoriesRequestType getSuggestedCategoriesRequest);
 
     /**
      * 

@@ -11,8 +11,8 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- *  
- * 				An array of one or more Best Offers. This type is used in the responses of the  <b>GetBestOffers</b> and <b>RespondToBestOffer</b> calls. 
+ * 
+ * 				An array of one or more Best Offers. This type is used in the responses of the  <b>GetBestOffers</b> and <b>RespondToBestOffer</b> calls.
  * 			
  * 
  * <p>Java class for BestOfferArrayType complex type.

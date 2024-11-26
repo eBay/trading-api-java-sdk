@@ -40,7 +40,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="Text" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Flagged" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="Read" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="CreationDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="ReceiveDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="ExpirationDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="ItemID" type="{urn:ebay:apis:eBLBaseComponents}ItemIDType" minOccurs="0"/>
@@ -75,7 +74,6 @@ import org.w3c.dom.Element;
     "text",
     "flagged",
     "read",
-    "creationDate",
     "receiveDate",
     "expirationDate",
     "itemID",
@@ -115,10 +113,6 @@ public class MyMessagesMessageType
     protected Boolean flagged;
     @XmlElement(name = "Read")
     protected Boolean read;
-    @XmlElement(name = "CreationDate", type = String.class)
-    @XmlJavaTypeAdapter(Adapter1 .class)
-    @XmlSchemaType(name = "dateTime")
-    protected Calendar creationDate;
     @XmlElement(name = "ReceiveDate", type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "dateTime")
@@ -370,30 +364,6 @@ public class MyMessagesMessageType
      */
     public void setRead(Boolean value) {
         this.read = value;
-    }
-
-    /**
-     * Gets the value of the creationDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public Calendar getCreationDate() {
-        return creationDate;
-    }
-
-    /**
-     * Sets the value of the creationDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCreationDate(Calendar value) {
-        this.creationDate = value;
     }
 
     /**

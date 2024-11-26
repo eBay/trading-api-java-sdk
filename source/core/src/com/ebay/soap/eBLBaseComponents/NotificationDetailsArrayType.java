@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 				Type used by the <b>NotificationDetailsArray</b> container that is returned by the <b>GetNotificationsUsage</b> call. The <b>NotificationDetailsArray</b> container consists of one or more notifications that match the input criteria in the call request.
  * 				<br><br>
- * 				This container is only returned if an <b>ItemID</b> value was specified in the request, and there were notifications related to this listing during the specified time range.
+ * 				This container is only returned if there were notifications related to this listing during the specified time range.
  * 			
  * 
  * <p>Java class for NotificationDetailsArrayType complex type.

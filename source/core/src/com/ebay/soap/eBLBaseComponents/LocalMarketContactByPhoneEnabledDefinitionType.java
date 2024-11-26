@@ -13,7 +13,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				Indicates whether the category supports using the telephone 
+ * 				Indicates whether the category supports using the telephone
  * 				as a contact method.
  * 				Added for Local Market users.
  * 			

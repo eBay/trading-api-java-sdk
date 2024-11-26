@@ -46,7 +46,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="AddressID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="AddressOwner" type="{urn:ebay:apis:eBLBaseComponents}AddressOwnerCodeType" minOccurs="0"/>
  *         &lt;element name="AddressStatus" type="{urn:ebay:apis:eBLBaseComponents}AddressStatusCodeType" minOccurs="0"/>
- *         &lt;element name="ExternalAddressID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="InternationalName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="InternationalStateAndCity" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="InternationalStreet" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -55,7 +54,6 @@ import org.w3c.dom.Element;
  *         &lt;element name="FirstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="LastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Phone2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AddressUsage" type="{urn:ebay:apis:eBLBaseComponents}AddressUsageCodeType" minOccurs="0"/>
  *         &lt;element name="ReferenceID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="AddressAttribute" type="{urn:ebay:apis:eBLBaseComponents}AddressAttributeType" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;any/>
@@ -87,7 +85,6 @@ import org.w3c.dom.Element;
     "addressID",
     "addressOwner",
     "addressStatus",
-    "externalAddressID",
     "internationalName",
     "internationalStateAndCity",
     "internationalStreet",
@@ -96,7 +93,6 @@ import org.w3c.dom.Element;
     "firstName",
     "lastName",
     "phone2",
-    "addressUsage",
     "referenceID",
     "addressAttribute",
     "any"
@@ -142,8 +138,6 @@ public class AddressType
     protected AddressOwnerCodeType addressOwner;
     @XmlElement(name = "AddressStatus")
     protected AddressStatusCodeType addressStatus;
-    @XmlElement(name = "ExternalAddressID")
-    protected String externalAddressID;
     @XmlElement(name = "InternationalName")
     protected String internationalName;
     @XmlElement(name = "InternationalStateAndCity")
@@ -160,8 +154,6 @@ public class AddressType
     protected String lastName;
     @XmlElement(name = "Phone2")
     protected String phone2;
-    @XmlElement(name = "AddressUsage")
-    protected AddressUsageCodeType addressUsage;
     @XmlElement(name = "ReferenceID")
     protected String referenceID;
     @XmlElement(name = "AddressAttribute")
@@ -602,30 +594,6 @@ public class AddressType
     }
 
     /**
-     * Gets the value of the externalAddressID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getExternalAddressID() {
-        return externalAddressID;
-    }
-
-    /**
-     * Sets the value of the externalAddressID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExternalAddressID(String value) {
-        this.externalAddressID = value;
-    }
-
-    /**
      * Gets the value of the internationalName property.
      * 
      * @return
@@ -815,30 +783,6 @@ public class AddressType
      */
     public void setPhone2(String value) {
         this.phone2 = value;
-    }
-
-    /**
-     * Gets the value of the addressUsage property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AddressUsageCodeType }
-     *     
-     */
-    public AddressUsageCodeType getAddressUsage() {
-        return addressUsage;
-    }
-
-    /**
-     * Sets the value of the addressUsage property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AddressUsageCodeType }
-     *     
-     */
-    public void setAddressUsage(AddressUsageCodeType value) {
-        this.addressUsage = value;
     }
 
     /**

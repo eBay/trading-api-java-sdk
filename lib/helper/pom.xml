@@ -4,7 +4,7 @@
 
     <groupId>com.ebay.developer</groupId>
     <artifactId>trading-api-helper</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
 
     <name>trading-api-helper</name>
     <description>eBay Trading API Java SDK Helper</description>

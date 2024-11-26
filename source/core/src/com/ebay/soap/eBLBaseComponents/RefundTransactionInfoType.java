@@ -33,7 +33,6 @@ import org.w3c.dom.Element;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="RefundStatus" type="{urn:ebay:apis:eBLBaseComponents}PaymentTransactionStatusCodeType" minOccurs="0"/>
  *         &lt;element name="RefundType" type="{urn:ebay:apis:eBLBaseComponents}RefundSourceTypeCodeType" minOccurs="0"/>
  *         &lt;element name="RefundTo" type="{urn:ebay:apis:eBLBaseComponents}UserIdentityType" minOccurs="0"/>
  *         &lt;element name="RefundTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
@@ -51,7 +50,6 @@ import org.w3c.dom.Element;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RefundTransactionInfoType", propOrder = {
-    "refundStatus",
     "refundType",
     "refundTo",
     "refundTime",
@@ -65,8 +63,6 @@ public class RefundTransactionInfoType
 {
 
     private final static long serialVersionUID = 12343L;
-    @XmlElement(name = "RefundStatus")
-    protected PaymentTransactionStatusCodeType refundStatus;
     @XmlElement(name = "RefundType")
     protected RefundSourceTypeCodeType refundType;
     @XmlElement(name = "RefundTo")
@@ -83,30 +79,6 @@ public class RefundTransactionInfoType
     protected AmountType feeOrCreditAmount;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
-
-    /**
-     * Gets the value of the refundStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaymentTransactionStatusCodeType }
-     *     
-     */
-    public PaymentTransactionStatusCodeType getRefundStatus() {
-        return refundStatus;
-    }
-
-    /**
-     * Sets the value of the refundStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaymentTransactionStatusCodeType }
-     *     
-     */
-    public void setRefundStatus(PaymentTransactionStatusCodeType value) {
-        this.refundStatus = value;
-    }
 
     /**
      * Gets the value of the refundType property.

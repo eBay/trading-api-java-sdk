@@ -14,11 +14,7 @@ import org.w3c.dom.Element;
 
 /**
  * 
- * 				This type defines the <strong>MonetaryDetails</strong> container, which consists of detailed information about one or more exchanges of funds that occur between the buyer, seller, eBay, and eBay partners during the lifecycle of an order, as well as detailed information about a merchant's refund (or store credit) to a buyer who has returned an In-Store Pickup item. 
- * 				<br/><br/>
- * 				<span class="tablenote">
- * 				<strong>Note:</strong> At this time, the In-Store Pickup feature is generally only available to large retail merchants, and can only be applied to multi-quantity, fixed-price listings. 
- * 				</span>
+ * 				This type defines the <strong>MonetaryDetails</strong> container, which consists of detailed information about one or more exchanges of funds that occur between the buyer, seller, eBay, and eBay partners during the lifecycle of an order, as well as detailed information about a seller's refund (or store credit) to a buyer who has returned an item.
  * 			
  * 
  * <p>Java class for PaymentsInformationType complex type.

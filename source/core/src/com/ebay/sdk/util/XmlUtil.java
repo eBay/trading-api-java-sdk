@@ -761,11 +761,14 @@ public abstract class XmlUtil {
     xmlReader.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
 
     // Use the XMLReader to create a SAXSource for the transformer
-    SAXSource source = new SAXSource(xmlReader, new InputSource(new String(file)));
+    try (FileInputStream fileInputStream = new FileInputStream(file)) {
+      InputSource inputSource = new InputSource(fileInputStream);
+      SAXSource source = new SAXSource(xmlReader, inputSource);
 
-    Transformer transformer = tf.newTransformer();
-    DOMSource domSource = new DOMSource(doc);
-    StreamResult result = new StreamResult(file);
-    xformer.transform(source, result);
+      Transformer transformer = tf.newTransformer();
+      DOMSource domSource = new DOMSource(doc);
+      StreamResult result = new StreamResult(file);
+      transformer.transform(source, result);
+    }
   }
 }

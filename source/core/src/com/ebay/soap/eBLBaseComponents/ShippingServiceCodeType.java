@@ -4980,7 +4980,7 @@ public enum ShippingServiceCodeType {
      * 								<tr><td><code>210</code></td>
      * 									<td>CA_FR</td>
      * 									<td><code>CA_Freight</code></code></td>
-     * 								</tr>		
+     * 								</tr>
      * 							</table>
      * 						</span>
      * 					

@@ -30,7 +30,7 @@ public enum StatusCodeType {
 
     /**
      * 
-     * 						 This field is deprecated. 
+     * 						 This field is deprecated.
      * 					
      * 					
      * 
@@ -40,7 +40,7 @@ public enum StatusCodeType {
 
     /**
      * 
-     * 						 This field is deprecated. 
+     * 						 This field is deprecated.
      * 					
      * 					
      * 
@@ -50,7 +50,7 @@ public enum StatusCodeType {
 
     /**
      * 
-     * 						 This field is deprecated. 
+     * 						 This field is deprecated.
      * 					
      * 					
      * 

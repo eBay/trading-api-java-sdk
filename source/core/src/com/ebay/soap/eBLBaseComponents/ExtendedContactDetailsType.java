@@ -28,7 +28,6 @@ import org.w3c.dom.Element;
  *       &lt;sequence>
  *         &lt;element name="ContactHoursDetails" type="{urn:ebay:apis:eBLBaseComponents}ContactHoursDetailsType" minOccurs="0"/>
  *         &lt;element name="ClassifiedAdContactByEmailEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PayPerLeadPhoneNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;any/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -42,7 +41,6 @@ import org.w3c.dom.Element;
 @XmlType(name = "ExtendedContactDetailsType", propOrder = {
     "contactHoursDetails",
     "classifiedAdContactByEmailEnabled",
-    "payPerLeadPhoneNumber",
     "any"
 })
 public class ExtendedContactDetailsType
@@ -54,8 +52,6 @@ public class ExtendedContactDetailsType
     protected ContactHoursDetailsType contactHoursDetails;
     @XmlElement(name = "ClassifiedAdContactByEmailEnabled")
     protected Boolean classifiedAdContactByEmailEnabled;
-    @XmlElement(name = "PayPerLeadPhoneNumber")
-    protected String payPerLeadPhoneNumber;
     @XmlAnyElement(lax = true)
     protected List<Object> any;
 
@@ -105,30 +101,6 @@ public class ExtendedContactDetailsType
      */
     public void setClassifiedAdContactByEmailEnabled(Boolean value) {
         this.classifiedAdContactByEmailEnabled = value;
-    }
-
-    /**
-     * Gets the value of the payPerLeadPhoneNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPayPerLeadPhoneNumber() {
-        return payPerLeadPhoneNumber;
-    }
-
-    /**
-     * Sets the value of the payPerLeadPhoneNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPayPerLeadPhoneNumber(String value) {
-        this.payPerLeadPhoneNumber = value;
     }
 
     /**

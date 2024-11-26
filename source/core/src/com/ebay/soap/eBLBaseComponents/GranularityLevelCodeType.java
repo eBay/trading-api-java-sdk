@@ -32,7 +32,7 @@ public enum GranularityLevelCodeType {
     /**
      * 
      * 						(in) For each record in the response, retrieves less data than Medium.
-     * 						See the <a href="https://developer.ebay.com/DevZone/guides/features-guide/default.html#basics/eBay-SelectingFields.html">eBay Features Guide</a> for a list of the output fields
+     * 						See the <a href="https://developer.ebay.com/api-docs/user-guides/static/make-a-call/tapi-input-data.html#details">Standard input data</a> section of the Making a Trading API call guide for a list of the output fields
      * 						that are returned when this level is specified.
      * 					
      * 
@@ -43,7 +43,7 @@ public enum GranularityLevelCodeType {
     /**
      * 
      * 						For each record in the response, retrieves more data than Medium.
-     * 						See the <a href="https://developer.ebay.com/DevZone/guides/features-guide/default.html#basics/eBay-SelectingFields.html">eBay Features Guide</a> for a list of the output fields
+     * 						See the <a href="https://developer.ebay.com/api-docs/user-guides/static/make-a-call/tapi-input-data.html#details">Standard input data</a> section of the Making a Trading API call guide for a list of the output fields
      * 						that are returned when this level is specified.
      * 					
      * 
@@ -54,7 +54,7 @@ public enum GranularityLevelCodeType {
     /**
      * 
      * 						For each record in the response, retrieves more data than Coarse and less data
-     * 						than Fine. See the <a href="https://developer.ebay.com/DevZone/guides/features-guide/default.html#basics/eBay-SelectingFields.html">eBay Features Guide</a> for a list of the output fields
+     * 						than Fine. See the <a href="https://developer.ebay.com/api-docs/user-guides/static/make-a-call/tapi-input-data.html#details">Standard input data</a> section of the Making a Trading API call guide for a list of the output fields
      * 						that are returned when this level is specified.
      * 					
      * 
